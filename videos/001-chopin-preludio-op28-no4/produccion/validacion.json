@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-15",
+  "work": "Frédéric Chopin — Preludio en mi menor, op. 28 n.º 4",
+  "video": {
+    "duration_seconds": 405.875,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "codec": "H.264",
+    "audio_codec": "AAC",
+    "full_file_decode": "passed; ffmpeg -v error -xerror -i video.mp4 -map 0:v:0 -map 0:a:0 -f null -; exit 0"
+  },
+  "audio_master": {
+    "duration_seconds": 405.775,
+    "format": "WAV PCM16 stereo 44100Hz",
+    "complete_performances": 3,
+    "notes": 1800,
+    "integrated_lufs": -21.54,
+    "true_peak_dbtp": -1.5,
+    "clipped_samples": 0
+  },
+  "thumbnail": {
+    "width": 1280,
+    "height": 720,
+    "under_2MiB": true
+  },
+  "privacy_check": "No se incluyen exportaciones de YouTube Studio ni el ZIP del usuario.",
+  "review_scope": "Controles técnicos y revisión visual de un fotograma; no se afirma escucha humana del audio.",
+  "files": {
+    "video.mp4": {
+      "bytes": 38178343,
+      "sha256": "9df08aaba04226da42d0bbd7d4f0a9177822faeb803424e756a398ae7bb1188f"
+    },
+    "audio.wav": {
+      "bytes": 71578740,
+      "sha256": "cc20a64a27388185597cdbbb660b4595a8e2daffcd9117fc59e4146953720e26"
+    },
+    "imagen.png": {
+      "bytes": 2574417,
+      "sha256": "e304543b452cf96fbdee7f06bda6ef58b43dee4a53fa6f31f2e08e105d679d88"
+    },
+    "miniatura.jpg": {
+      "bytes": 380201,
+      "sha256": "d5544a7642cced914273632d9393a645811d1be155278905b26e80a9cf2de9ac"
+    },
+    "publicacion.txt": {
+      "bytes": 3015,
+      "sha256": "0fce48587f49e675e3edcfa8b4a8fc70dcd78bb2f8ab2039c92dbc42a8ae7398"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+PUBLICACIÓN PROPUESTA — JAGONCITO
+
+TÍTULO (63 caracteres)
+Chopin Prelude Op. 28 No. 4 | Quiet Piano for an Autumn Evening
+
+DESCRIPCIÓN (texto en inglés para YouTube)
+A quiet autumn evening with Frédéric Chopin’s Prelude in E minor, Op. 28 No. 4. Soft piano and a warm nighttime scene for reading, resting, or taking a moment to slow down.
+
+This short listening session presents the complete prelude three times, with gentle changes in tempo and dynamics. The piano was digitally rendered for Jagoncito.
+
+00:00 First performance
+02:15 Second performance
+04:28 Third performance
+
+Composition: Frédéric Chopin — Prelude in E minor, Op. 28 No. 4.
+Score entered by Magnus Lewis-Smith, via the Mutopia Project. Source edition: Peters, 1879. The score transcription is marked Public Domain.
+Score source:
+https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/ChopinFF/O28/Chop-28-4/Chop-28-4.ly
+
+Piano sound: VSCO 2 Community Edition, Upright Piano — Simon Dalzell / Ivy Audio and Versilian Studios / Sam Gossner. Piano samples released under CC0 1.0 Universal.
+Instrument source:
+https://github.com/sgossner/VSCO-2-CE/tree/440300901dfe9275fd84e0b7763af1f8443ae62e
+Sample license:
+https://creativecommons.org/publicdomain/zero/1.0/
+
+If you enjoy quiet classical piano, subscribe to Jagoncito for more music.
+
+ETIQUETAS (separadas por comas)
+Chopin, Chopin Prelude, Prelude Op 28 No 4, Prelude in E minor, classical piano, quiet piano, autumn piano, relaxing piano, piano for reading, Jagoncito
+
+COMENTARIO FIJADO PROPUESTO (borrador; no se ha publicado)
+Thank you for spending a quiet moment here. Which piano piece would you like to hear next?
+
+ARCHIVOS
+video.mp4 — vídeo final para subir a YouTube.
+audio.wav — único archivo de audio de entrega, para montaje o escucha.
+imagen.png — imagen utilizada en el vídeo.
+miniatura.jpg — miniatura preparada para YouTube, 1280 × 720 píxeles.
+
+CONFIGURACIÓN SUGERIDA
+Categoría: Música.
+Idioma del título y de la descripción: Inglés. La música es instrumental y no tiene un idioma hablado.
+Miniatura: subir miniatura.jpg; conservar el contraste cálido de la habitación y el azul nocturno de la ventana, con el piano como protagonista.
+Publicación: vídeo normal, sin estreno. Publicar tras revisar el archivo final; no se propone un horario fijo porque no hay datos de actividad horaria del público.
+
+NOTAS PARA LA REVISIÓN
+El vídeo ofrece tres interpretaciones completas de la misma obra en una sesión corta. Duración del audio: 6:45,775. Capítulos basados en los comienzos medidos de las tres interpretaciones: 0:00, 2:15,662 y 4:28,761. Se redondean hacia abajo a segundos completos en la descripción.
+Los créditos de dominio público y CC0 anteriores se refieren, respectivamente, a la transcripción de la partitura y a las muestras del instrumento. No son una declaración de licencia para todos los archivos del paquete ni una garantía sobre reclamaciones automáticas de YouTube.
