@@ -1,0 +1,18 @@
+{
+  "frames": 288,
+  "fps": 24,
+  "period_seconds": 12,
+  "normal_frame_mean_absolute_delta": 0.012320299632847309,
+  "p95_frame_delta": 0.06405658274888992,
+  "wrap_frame_delta": 0.02343621477484703,
+  "wrap_under_1p5_times_p95": true,
+  "fix": "Rounded local displacement map, neutral edges, smoothed breathing, cosine firelight, encoder warmup and CRF10.",
+  "source_raw_check": {
+    "wrap_global_mae": 0.002621,
+    "normal_first_step_mae": 0.002734,
+    "normal_last_step_mae": 0.002803,
+    "fire_and_cat_wrap_mae": 0,
+    "logical_periodicity_pass": true
+  },
+  "review": "Decoded frame inspected; encoded periodic seam compared to ordinary motion and uncompressed source separately."
+}

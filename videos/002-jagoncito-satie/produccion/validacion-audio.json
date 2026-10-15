@@ -1,0 +1,30 @@
+{
+  "score_checks": [
+    {
+      "work_number": 1,
+      "note_onset_count": 455,
+      "original_vs_separated_pitch_and_onset_match": true,
+      "original_midi_sha256": "0335ed9805b4ca0bb69a2d5066fe3adb154cf72d842417805a487f3976f68dea"
+    },
+    {
+      "work_number": 3,
+      "note_onset_count": 326,
+      "original_vs_separated_pitch_and_onset_match": true,
+      "original_midi_sha256": "468878b6db5a506f1cdf84124421d2f67b10eaf6995d51baf675e3d1d053c492"
+    }
+  ],
+  "score_comparison": "Partituras originales recompiladas con unfoldRepeats, sin separar pentagramas: coincidencia exacta de alturas e inicios de todas las notas. Las duraciones por voz se conservan en las pistas separadas; el MIDI combinado puede interrumpir ligaduras cuando coincide una tecla entre voces.",
+  "wav_exact_duration_seconds": 360.0,
+  "stereo_correlation": 0.72401,
+  "loop_boundary_jump_pcm16": [
+    31,
+    41
+  ],
+  "maximum_normal_step_in_neighboring_noise_pcm16": [
+    174.0,
+    160.0
+  ],
+  "seam_jump_below_normal_neighboring_noise_step": true,
+  "auditory_review": "No se afirma escucha humana; validación automatizada.",
+  "sha256": "614daaa12892b872fe85d928a33ff84fb5abc6ee4677f1aa373885e18ef2f568"
+}

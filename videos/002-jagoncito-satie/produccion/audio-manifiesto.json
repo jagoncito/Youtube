@@ -1,0 +1,73 @@
+{
+  "title": "Erik Satie — Gymnopédies n.º 1 y n.º 3",
+  "complete_works": 2,
+  "sample_rate": 44100,
+  "channels": 2,
+  "pcm_bits": 16,
+  "duration_seconds": 360,
+  "bytes": 63504044,
+  "sha256": "614daaa12892b872fe85d928a33ff84fb5abc6ee4677f1aa373885e18ef2f568",
+  "chapters": [
+    {
+      "title": "Erik Satie — Gymnopédie n.º 1",
+      "start_seconds": 0,
+      "duration_seconds": 190,
+      "mean_quarter_bpm": 76.139,
+      "minimum_quarter_bpm": 63.668,
+      "maximum_quarter_bpm": 78.56,
+      "score_seconds": 184.4,
+      "notes": 455,
+      "bars": 78,
+      "quarters": 234,
+      "midi": "gymnopedie-1.midi",
+      "pitch_range_midi": [
+        33,
+        81
+      ],
+      "notes_by_role": {
+        "melody": 128,
+        "harmony": 239,
+        "bass": 88
+      }
+    },
+    {
+      "title": "Erik Satie — Gymnopédie n.º 3",
+      "start_seconds": 190,
+      "duration_seconds": 170,
+      "mean_quarter_bpm": 65.693,
+      "minimum_quarter_bpm": 55.204,
+      "maximum_quarter_bpm": 67.898,
+      "score_seconds": 164.4,
+      "notes": 326,
+      "bars": 60,
+      "quarters": 180,
+      "midi": "gymnopedie-3.midi",
+      "pitch_range_midi": [
+        31,
+        81
+      ],
+      "notes_by_role": {
+        "melody": 91,
+        "harmony": 174,
+        "bass": 61
+      }
+    }
+  ],
+  "music": "Interpretaciones virtuales nuevas; notas, silencios y repeticiones completos de ambas partituras.",
+  "ambience": "Lluvia sintética filtrada, creada con ruido; sin grabaciones externas ni truenos.",
+  "ambience_rms_relative_to_music_db": -27.0,
+  "integrated_lufs": -21.0,
+  "true_peak_dbtp": -2.68,
+  "loudness_range_lu": 5.2,
+  "linear_master_gain_db": 18.67,
+  "pcm_peak_dbfs": -2.682,
+  "clipped_samples": 0,
+  "loop_boundary_delta_pcm16": [
+    31,
+    41
+  ],
+  "loop_seam_max_sample_step_dbfs": -36.576,
+  "rights": "Satie (1888), transcripciones Mutopia de dominio público; muestras VSCO2 CC0, lluvia original.",
+  "listening_review": "Revisión técnica automatizada. No se afirma escucha humana o valoración auditiva subjetiva.",
+  "no_commercial_work_recording_used": true
+}

@@ -1,0 +1,65 @@
+PUBLICACIÓN PROPUESTA — JAGONCITO
+
+TÍTULO (61 caracteres)
+A Rainy Night with Jagoncito | Satie Gymnopédies · 30 Minutes
+
+DESCRIPCIÓN (texto en inglés para YouTube)
+Spend a rainy evening with Jagoncito, a little dragon with a warm room and nowhere to hurry. A sleepy cat and a tiny mouse keep him company as Satie's piano fills the room.
+
+Erik Satie's Gymnopédies No. 1 and No. 3 accompany this quiet scene, with gently animated rain and firelight. Soft piano and a very light layer of rain make room for reading, drawing, or a quiet break.
+
+This 30-minute video repeats one six-minute sequence five times. Each sequence contains both complete pieces, in order: Gymnopédie No. 1, then Gymnopédie No. 3. The music is a new digital piano production created for Jagoncito from public-domain score transcriptions, accompanied by quiet, synthetically generated rain.
+
+00:00 Gymnopédie No. 1
+03:10 Gymnopédie No. 3
+06:00 Gymnopédie No. 1
+09:10 Gymnopédie No. 3
+12:00 Gymnopédie No. 1
+15:10 Gymnopédie No. 3
+18:00 Gymnopédie No. 1
+21:10 Gymnopédie No. 3
+24:00 Gymnopédie No. 1
+27:10 Gymnopédie No. 3
+
+MUSIC CREDITS
+Composition: Erik Satie — Gymnopédies No. 1 and No. 3 (1888).
+Score transcriptions: Evin Robertson, via the Mutopia Project; both are marked Public Domain.
+Gymnopédie No. 1:
+https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SatieE/gymnopedie_1/gymnopedie_1.ly
+Gymnopédie No. 3:
+https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SatieE/gymnopedie_3/gymnopedie_3.ly
+
+Piano sound: VSCO 2 Community Edition, Upright Piano — Simon Dalzell / Ivy Audio and Versilian Studios / Sam Gossner. Samples released under CC0 1.0 Universal.
+Instrument source:
+https://github.com/sgossner/VSCO-2-CE/tree/440300901dfe9275fd84e0b7763af1f8443ae62e
+Sample license:
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Stay a little longer with Jagoncito. More quiet rooms and classical piano on the channel.
+
+#Jagoncito #Satie #ClassicalPiano
+
+ETIQUETAS (separadas por comas)
+Jagoncito, Erik Satie, Satie Gymnopedies, Gymnopedie No 1, Gymnopedie No 3, classical piano, soft piano, cozy piano, piano for reading, rainy night ambience, cozy dragon, 30 minute piano
+
+COMENTARIO FIJADO PROPUESTO (borrador; no se ha publicado)
+Jagoncito has saved you a quiet corner. Which classical piano piece would you like to hear here next?
+
+ARCHIVOS
+video-30min.mp4 — montaje de 30 minutos para subir a YouTube.
+bucle-6min.mp4 — secuencia de 6 minutos para reproducir o montar en bucle.
+audio-bucle-6min.wav — único archivo de audio independiente: la secuencia de piano con lluvia tenue, de 6 minutos. Repetirla cinco veces produce la sesión de 30 minutos.
+imagen.png — ilustración principal.
+miniatura.jpg — miniatura para YouTube.
+
+CONFIGURACIÓN SUGERIDA
+Categoría: Música.
+Idioma del título y de la descripción: Inglés. La música es instrumental, sin idioma hablado.
+Miniatura: utilizar miniatura.jpg; Jagoncito debe reconocerse incluso en tamaño pequeño. Evitar añadir más texto.
+Publicación: vídeo normal. No se prescribe una hora sin datos suficientes de actividad del público.
+
+NOTAS DE DERECHOS
+Las declaraciones Public Domain y CC0 anteriores se refieren respectivamente a las transcripciones y a las muestras de piano. No son una licencia general de todos los archivos de esta carpeta ni garantizan ausencia de reclamaciones automáticas de Content ID. Conservar los documentos de producción y las fuentes como registro de la nueva interpretación.
+
+REVISIÓN TRAS PUBLICAR
+Comparar esta entrega con vídeos de antigüedad y alcance semejantes. Observar impresiones, clics, retención al comienzo y alrededor de cada repetición de seis minutos, tiempo de reproducción y espectadores que vuelven. Registrar la fecha de cualquier cambio de título o miniatura antes de atribuirle un efecto. El concepto a evaluar es si un Jagoncito reconocible y una escena con vida acompañan mejor una sesión de piano; no se da por demostrado de antemano.

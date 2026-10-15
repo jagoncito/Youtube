@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-15",
+  "workflow": "Replacement of previous Chopin package with Jagoncito/Satie, a6-minute base and30-minute film.",
+  "video6": {
+    "duration_seconds": 360,
+    "full_decode_exit_code": 0,
+    "stderr_bytes": 0,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "codec": "H.264",
+    "audio": "AAC192kbps stereo44100Hz"
+  },
+  "video30": {
+    "duration_seconds": 1800,
+    "full_decode_exit_code": 0,
+    "independent_report": "validacion-video30.json",
+    "LFS": true
+  },
+  "music": {
+    "complete_works": [
+      "ErikSatie — GymnopédieNo1",
+      "ErikSatie — GymnopédieNo3"
+    ],
+    "loop_minutes": 6,
+    "works_start_seconds": [
+      0,
+      190
+    ],
+    "master_audio": "audio-bucle-6min.wav",
+    "video_repetitions": 5
+  },
+  "animation": {
+    "period_seconds": 12,
+    "encoded_seam_check_pass": true,
+    "rain_light_subtle_kitten_breathing": true
+  },
+  "thumbnail": {
+    "dimensions": [
+      1280,
+      720
+    ],
+    "under_2MiB": true
+  },
+  "privacy": "No user Studio exports or raw analytics are included.",
+  "scope": "Automated technical validation and still-frame visual review; no subjective hearing claim.",
+  "files": {
+    "video-30min.mp4": {
+      "bytes": 344719906,
+      "sha256": "9280c11b8b50d21f1630b19570f5ab23cc97490a4135d0618d9fd19ed69fe78f"
+    },
+    "bucle-6min.mp4": {
+      "bytes": 68944579,
+      "sha256": "2f94e80a187d701e9e4dbc4e8ce134b82d73b1775f66d911f4c722319df2a7c7"
+    },
+    "audio-bucle-6min.wav": {
+      "bytes": 63504044,
+      "sha256": "614daaa12892b872fe85d928a33ff84fb5abc6ee4677f1aa373885e18ef2f568"
+    },
+    "imagen.png": {
+      "bytes": 2767670,
+      "sha256": "ef376ad030349ee8c38ab995754887986d6e75c0f2afab6442a7395a4857f3b9"
+    },
+    "miniatura.jpg": {
+      "bytes": 504981,
+      "sha256": "24df8f6af884c7bd7f089e35559fd1f5d9542d37af8105beff072c277996306d"
+    },
+    "publicacion.txt": {
+      "bytes": 4076,
+      "sha256": "b5f3e6737c76dc5b16b2f3514431837081bdfead9a90b7eb9c973ef08966d2a8"
+    }
+  }
+}

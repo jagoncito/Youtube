@@ -1,0 +1,34 @@
+{
+  "repository": "https://github.com/MutopiaProject/MutopiaProject",
+  "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+  "works": [
+    {
+      "work": "Erik Satie — Gymnopédie n.º 1",
+      "year": 1888,
+      "typesetter": "Evin Robertson",
+      "declared_license": "Public Domain",
+      "original_repository_path": "ftp/SatieE/gymnopedie_1/gymnopedie_1.ly",
+      "url": "https://raw.githubusercontent.com/MutopiaProject/MutopiaProject/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SatieE/gymnopedie_1/gymnopedie_1.ly",
+      "sha256": {
+        "gymnopedie-1.ly": "420a52244e9fbe106dd33ba2cac84414fd66e0d01c6d472205bad39678d4ce04",
+        "gymnopedie-1-render.ly": "9977b55c9595cb746ebb21815ba1d181a0de04cff5b8b6187ad8adb848121863",
+        "gymnopedie-1.midi": "c50ea7524f3fe31bbd0460216e52fffb9898c881c06daec16b5591b85d7b6b2e"
+      }
+    },
+    {
+      "work": "Erik Satie — Gymnopédie n.º 3",
+      "year": 1888,
+      "typesetter": "Evin Robertson",
+      "declared_license": "Public Domain",
+      "original_repository_path": "ftp/SatieE/gymnopedie_3/gymnopedie_3.ly",
+      "url": "https://raw.githubusercontent.com/MutopiaProject/MutopiaProject/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SatieE/gymnopedie_3/gymnopedie_3.ly",
+      "sha256": {
+        "gymnopedie-3.ly": "d0b774aee7df39627d57b66c1269ec3a10e89f9fe3d271df9f4d5e3c082d9001",
+        "gymnopedie-3-render.ly": "5eb0277952c7b6b0108723a9879d5bb7a10ca536f89a6d6f228005767f7fb374",
+        "gymnopedie-3.midi": "87314570b0f19a7251b7278e759dc847486feaa74b4250fc9441e14ed493ce7f"
+      }
+    }
+  ],
+  "lilypond_version": "2.24.4",
+  "derivation": "Separación de voces en pistas; eliminación de cambios de pentagrama de la voz intermedia; unfoldRepeats y salida MIDI. Notas sin modificar."
+}

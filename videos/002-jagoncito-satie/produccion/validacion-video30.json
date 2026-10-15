@@ -1,0 +1,69 @@
+{
+  "file": "/workspace/Youtube/videos/002-jagoncito-satie/video-30min.mp4",
+  "ffprobe_exit_code": 0,
+  "review": "Validación técnica automatizada; no se afirma escucha humana.",
+  "video": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "pix_fmt": "yuv420p",
+    "avg_frame_rate": "24/1",
+    "duration": "1800.000000",
+    "nb_frames": "43200"
+  },
+  "audio": {
+    "codec_name": "aac",
+    "sample_rate": "44100",
+    "channels": 2,
+    "channel_layout": "stereo",
+    "duration": "1800.000000"
+  },
+  "format_duration": 1800.0,
+  "bytes": 344719906,
+  "stream_checks_pass": true,
+  "full_decode_command": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-xerror",
+    "-threads",
+    "2",
+    "-i",
+    "/workspace/Youtube/videos/002-jagoncito-satie/video-30min.mp4",
+    "-map",
+    "0:v:0",
+    "-map",
+    "0:a:0",
+    "-f",
+    "null",
+    "-"
+  ],
+  "full_decode_exit_code": 0,
+  "full_decode_stderr": "",
+  "full_decode_seconds": 146.333,
+  "aac_seam_decode_exit_code": 0,
+  "aac_join_at_360_seconds": {
+    "samples_in_one_second_segment": 44100,
+    "boundary_step_linear": [
+      0.0007976993219926953,
+      0.0013853833370376378
+    ],
+    "neighboring_20ms_max_step_linear": [
+      0.005278660682961345,
+      0.004834176856093109
+    ],
+    "boundary_step_dbfs": [
+      -61.963,
+      -57.169
+    ],
+    "boundary_step_below_neighboring_noise_step_per_channel": [
+      true,
+      true
+    ],
+    "passed": true,
+    "neighboring_comparison_excludes_boundary_step": true,
+    "note": "The small sample step is within ordinary adjacent rain waveform variation. No auditory quality assessment is claimed."
+  },
+  "passed": true,
+  "sha256": "9280c11b8b50d21f1630b19570f5ab23cc97490a4135d0618d9fd19ed69fe78f"
+}
