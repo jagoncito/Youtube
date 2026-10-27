@@ -1,6 +1,7 @@
+"""Real Git/LFS publication tests; no network or media rendering is required."""
 import datetime as dt
-import hashlib
 import importlib.util
+import hashlib
 import json
 from pathlib import Path
 import subprocess
@@ -13,110 +14,135 @@ MODULE = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(MODULE)
 
 
-def result(code=0, stdout='', stderr=''):
-    return subprocess.CompletedProcess([], code, stdout, stderr)
 
+def artwork(label,compression=6):
+    """Deterministic textured PNG, encoded with only the standard library."""
+    import struct,zlib
+    label=label.encode() if isinstance(label,str) else label
+    cells={(x,y):hashlib.sha256(label+f':{x}:{y}'.encode()).digest()[:3]
+           for y in range(8) for x in range(12)}
+    raw=b''.join(b'\0'+b''.join(cells[x//8,y//8] for x in range(96)) for y in range(64))
+    def chunk(kind,data):
+        return struct.pack('>I',len(data))+kind+data+struct.pack('>I',zlib.crc32(kind+data))
+    return (b'\x89PNG\r\n\x1a\n'+chunk(b'IHDR',struct.pack('>IIBBBBB',96,64,8,2,0,0,0))
+            +chunk(b'IDAT',zlib.compress(raw,compression))+chunk(b'IEND',b''))
 
-class FakeGitHub(MODULE.Runner):
-    """Git remains real against a temporary bare repository; only GitHub is mocked."""
+class FailingPushRunner(MODULE.Runner):
     def __init__(self, root):
         super().__init__(root)
-        self.releases = {}
-        self.calls = []
-        self.fail_upload = False
-        self.fail_auth = False
-        self.hide_drafts_by_tag = True
-        self.asset_bytes = {}
+        self.fail_success_push = False
+        self.fail_pending_push = False
+        self.fail_success_commit = False
+        self.pushes = 0
 
-    def gh(self, *args, check=True):
-        self.calls.append(args)
-        if self.fail_auth:
-            response = result(1, stderr='gh: Resource not accessible (HTTP 403)')
-        elif args[0] == 'api':
-            endpoint = next(arg for arg in args if str(arg).startswith('repos/'))
-            if '/releases/tags/' in endpoint:
-                release = self.releases.get(endpoint.rsplit('/', 1)[1])
-                if release and release['draft'] and self.hide_drafts_by_tag:
-                    release = None
-                response = result(stdout=json.dumps(release)) if release else result(1, stderr='gh: Not Found (HTTP 404)')
-            elif '/releases?per_page=' in endpoint:
-                response = result(stdout=json.dumps([list(self.releases.values())]))
-            else:
-                response = result(stdout='jagoncito/Youtube\n')
-        elif args[:2] == ('release', 'create'):
-            tag = args[2]
-            self.releases[tag] = dict(draft=True, tag_name=tag, name=args[args.index('--title') + 1],
-                                      html_url=f'https://github.com/jagoncito/Youtube/releases/tag/{tag}', assets=[])
-            response = result()
-        elif args[:2] == ('release', 'edit'):
-            release = self.releases[args[2]]
-            if '--draft=false' in args:
-                release['draft'] = False
-            if '--title' in args:
-                release['name'] = args[args.index('--title') + 1]
-            response = result()
-        elif args[:2] == ('release', 'upload'):
-            if self.fail_upload:
-                response = result(1, stderr='Transient storage failure (HTTP 500)')
-            else:
-                paths = [Path(p) for p in args[3:args.index('--repo')]]
-                self.asset_bytes[args[2]] = {p.name: p.read_bytes() for p in paths}
-                self.releases[args[2]]['assets'] = [dict(name=p.name, size=p.stat().st_size,
-                    digest='sha256:' + hashlib.sha256(p.read_bytes()).hexdigest(),
-                    browser_download_url=f'https://github.com/example/{p.name}') for p in paths]
-                response = result()
-        elif args[:2] == ('release', 'download'):
-            directory = Path(args[args.index('--dir') + 1])
-            for i, value in enumerate(args):
-                if value == '--pattern':
-                    name = args[i + 1]
-                    (directory / name).write_bytes(self.asset_bytes[args[2]][name])
-            response = result()
-        else:
-            raise AssertionError(f'Unexpected GitHub call: {args}')
-        if check and response.returncode:
-            raise MODULE.CommandError('mock GitHub', response)
-        return response
+    def git(self, *args, check=True):
+        if 'commit' in args and self.fail_success_commit:
+            state = self.root / 'automatizacion/estado.json'
+            if state.exists() and json.loads(state.read_text()).get('status') == 'success':
+                self.fail_success_commit = False
+                response = subprocess.CompletedProcess(args, 1, '', 'Commit hook transient failure')
+                if check:
+                    raise MODULE.CommandError('Git commit', response)
+                return response
+        if args[0] == 'push':
+            self.pushes += 1
+            state = self.root / 'automatizacion/estado.json'
+            status = json.loads(state.read_text()).get('status') if state.exists() else None
+            should_fail = ((status == 'success' and self.fail_success_push) or
+                           (status == 'running' and self.fail_pending_push))
+            if should_fail:
+                self.fail_success_push = False
+                self.fail_pending_push = False
+                response = subprocess.CompletedProcess(args, 1, '',
+                    'Authorization: secret must never appear in status documents (HTTP 503)')
+                if check:
+                    raise MODULE.CommandError('Git push', response)
+                return response
+        return super().git(*args, check=check)
 
 
-class ProductionTests(unittest.TestCase):
+class PublicationTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
-        base = Path(self.temp.name)
-        self.root = base / 'repo'
+        self.base = Path(self.temp.name)
+        self.root = self.base / 'repo'
         self.root.mkdir()
-        self.remote = base / 'remote.git'
+        self.remote = self.base / 'remote.git'
         subprocess.run(['git', 'init', '--bare', str(self.remote)], check=True, capture_output=True)
         subprocess.run(['git', 'init', '-b', 'main', str(self.root)], check=True, capture_output=True)
-        self.runner = FakeGitHub(self.root)
+        self.runner = FailingPushRunner(self.root)
         self.runner.git('config', 'user.name', 'Test')
         self.runner.git('config', 'user.email', 'test@example.invalid')
         self.runner.git('remote', 'add', 'origin', str(self.remote))
-        (self.root / 'README.md').write_text('# Existing creator guidance\n\nDo not overwrite this.\n')
-        initial = self.root / 'automatizacion' / 'entregas' / '0001-existente.json'
-        MODULE.json_write(initial, dict(number=1, status='success', title='Existing film',
-            slot='2026-10-15T12:00:00Z', url='https://github.com/existing',
-            card_path='videos/video-0001/README.md'))
-        self.commit()
-        self.publisher = MODULE.Publisher(self.root, 'jagoncito/Youtube', self.runner)
-        self.date = MODULE.utc_slot('2026-10-27T12:00:00Z')
+        self.runner.git('lfs', 'install', '--local')
+        (self.root / '.gitattributes').write_text(
+            'videos/**/*.mp4 filter=lfs diff=lfs merge=lfs -text\n'
+            'videos/**/*.wav filter=lfs diff=lfs merge=lfs -text\n')
+        (self.root / 'README.md').write_text('# Existing creator guidance\n\nKeep this paragraph.\n')
+        self.date = MODULE.utc_slot('2026-10-27T16:00:00Z')
+        self.plan = {'id': 'new-boathouse-23', 'creative_identity': {
+            'scene_sha256': self.hash_bytes(artwork(b'new boathouse')), 'program': [2, 3], 'scene_id': 'boathouse'}}
         self.productions = 0
+        # Preserve the historical duplicate scene in 001 and 002. Both it and
+        # the Atelier are already used; their existence must block future reuse.
+        for number, art, works, scene in [(1, b'rainy room', [1, 3], 'rainy'),
+                                          (2, b'rainy room', [1, 2], 'rainy'),
+                                          (3, b'atelier', [2, 1], 'atelier')]:
+            art = artwork(art)
+            date = self.date - dt.timedelta(hours=(4 - number) * 4)
+            folder = self.root / f'videos/{number:03d}'
+            plan = {'id': f'old-{number}', 'creative_identity': {
+                'scene_sha256': self.hash_bytes(art), 'program': works, 'scene_id': scene}}
+            self.write_bundle(date, folder, plan, art, f'historical-{number}')
+            MODULE.json_write(self.root / f'automatizacion/entregas/old-{number}.json', {
+                'number': number, 'status': 'success', 'slot': MODULE.iso(date),
+                'tag': MODULE.tag_for(date), 'title': f'Existing film {number}',
+                'folder': f'videos/{number:03d}', 'creative_identity': plan['creative_identity']})
+        self.commit()
+        self.publisher = MODULE.Publisher(self.root, 'jagoncito/Youtube', self.runner, self.planner)
+
+    @staticmethod
+    def hash_bytes(data):
+        import hashlib
+        return hashlib.sha256(data).hexdigest()
+
+    def planner(self, date, root, *, exclude_tag=None):
+        # Exercise the real catalogue history gate with a minimal local bank.
+        production = SCRIPT.parent / 'produccion'
+        import sys
+        if str(production) not in sys.path:
+            sys.path.insert(0, str(production))
+        import crear_entrega
+        scene = {'id': self.plan['creative_identity']['scene_id'], 'image': 'assets/new.png'}
+        catalog = {'version': 3, 'plans': [{'id': self.plan['id'], 'works': [2, 3],
+                    'title': 'A new scene and programme', 'intent': 'reading', 'scene': scene}]}
+        try:
+            return crear_entrega.select_new_plan(date, catalog, root=root, exclude_tag=exclude_tag)
+        except crear_entrega.NeedsNewAssets as error:
+            raise MODULE.NeedsNewAssets(str(error)) from error
+
+    def prepare_asset(self, data=b'new boathouse'):
+        path = self.root / 'assets/new.png'
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(artwork(data))
+        self.commit()
 
     def commit(self):
         self.runner.git('add', '.')
         self.runner.git('commit', '-m', 'Fixture update')
         self.runner.git('push', '-u', 'origin', 'main')
 
-    def produce(self, date, folder, cache):
-        self.productions += 1
-        folder.mkdir()
-        for name in MODULE.REQUIRED - {'manifest.json'}:
-            (folder / name).write_text(f'Fixture asset {name}')
+    def write_bundle(self, date, folder, plan, art, content):
+        folder.mkdir(parents=True)
+        for name in MODULE.REQUIRED - {'manifest.json', 'imagen.png'}:
+            (folder / name).write_text(f'{content}: {name}')
+        (folder / 'imagen.png').write_bytes(art)
         (folder / 'fuentes').mkdir()
-        (folder / 'fuentes' / 'license.txt').write_text('CC0 fixture source')
-        manifest = dict(slot=MODULE.iso(date), title='Quiet Piano for Reading', plan_id='reading-2-1',
-            audio={'clipped_samples': 0}, video_checks={
+        (folder / 'fuentes/license.txt').write_text('CC0 fixture source')
+        manifest = dict(slot=MODULE.iso(date), title='Quiet Piano for Reading', plan_id=plan['id'],
+            creative_identity=plan['creative_identity'], works=plan['creative_identity']['program'],
+            audio={'clipped_samples': 0, 'chapters': [{'number': n} for n in plan['creative_identity']['program']]}, video_checks={
                 'bucle-6min.mp4': {'duration_seconds': 360, 'complete_decode_exit_code': 0},
                 'video-30min.mp4': {'duration_seconds': 1800, 'complete_decode_exit_code': 0}}, files={})
         for path in folder.rglob('*'):
@@ -125,167 +151,216 @@ class ProductionTests(unittest.TestCase):
                     'bytes': path.stat().st_size, 'sha256': MODULE.file_hash(path)}
         MODULE.json_write(folder / 'manifest.json', manifest)
 
-    def test_publish_is_complete_numbered_and_idempotent(self):
-        entry = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        self.assertEqual(entry['number'], 2)
-        self.assertEqual(self.productions, 1)
-        self.assertFalse(self.runner.releases[entry['tag']]['draft'])
+    def produce(self, date, folder, cache, plan):
+        self.productions += 1
+        self.write_bundle(date, folder, plan, artwork(b'new boathouse'), 'new original media')
+
+    def execute(self, date=None, produce=None):
+        return self.publisher.execute(date or self.date, self.base / 'cache', produce or self.produce)
+
+    def test_direct_files_use_lfs_and_slot_is_idempotent(self):
+        self.prepare_asset()
+        entry = self.execute()
+        self.assertEqual((entry['number'], entry['folder'], self.productions), (4, 'videos/004', 1))
+        folder = self.root / entry['folder']
+        self.assertTrue(MODULE.REQUIRED.issubset({path.name for path in folder.iterdir()}))
+        self.assertTrue((folder / 'fuentes/license.txt').is_file())
+        self.assertFalse(any((self.root / 'videos').glob('video-*')))
         self.assertTrue(MODULE.REQUIRED.issubset(entry['assets']))
-        self.assertEqual(json.loads((self.root / 'automatizacion/estado.json').read_text())['status'], 'success')
-        card = self.root / 'videos/video-0002'
-        self.assertTrue((card / 'manifest.json').is_file())
-        self.assertTrue((card / 'publicacion.txt').is_file())
-        self.assertIn('Vídeo 002', (card / 'README.md').read_text())
-        self.assertIn('Do not overwrite this.', (self.root / 'README.md').read_text())
+        for name, meta in entry['assets'].items():
+            self.assertEqual(meta['path'], name)
+            self.assertNotIn('url', meta)
+            self.assertEqual(MODULE.file_hash(folder / name), meta['sha256'])
+        for name in ['video-30min.mp4', 'bucle-6min.mp4', 'audio-bucle-6min.wav']:
+            pointer = self.runner.git('show', f'HEAD:videos/004/{name}').stdout
+            self.assertTrue(pointer.startswith('version https://git-lfs.github.com/spec/v1\n'))
+        self.assertIn('Keep this paragraph.', (self.root / 'README.md').read_text())
         before = self.runner.git('rev-parse', 'HEAD').stdout
-        self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        self.assertEqual(self.runner.git('rev-parse', 'HEAD').stdout, before)
+        self.assertEqual(self.execute(), entry)
         self.assertEqual(self.productions, 1)
+        self.assertEqual(self.runner.git('rev-parse', 'HEAD').stdout, before)
         self.assertEqual(self.runner.git('rev-parse', 'origin/main').stdout, before)
+        # Check a fresh checkout actually receives the original bytes via LFS.
+        fresh = self.base / 'fresh'
+        subprocess.run(['git', 'clone', str(self.remote), str(fresh), '--branch', 'main'],
+                       check=True, capture_output=True)
+        replacement = MODULE.Publisher(fresh, 'jagoncito/Youtube', MODULE.Runner(fresh), self.planner)
+        self.assertEqual(replacement.execute(self.date, self.base / 'cache', self.produce), entry)
+        self.assertEqual(self.productions, 1)
+        self.assertEqual((fresh / 'videos/004/video-30min.mp4').read_bytes(),
+                         (folder / 'video-30min.mp4').read_bytes())
 
-    def test_upload_failure_keeps_draft_and_reservation_retry_reuses_number(self):
-        self.runner.fail_upload = True
+    def test_exhausted_bank_does_not_render_or_allocate_another_number(self):
+        self.prepare_asset()
+        self.execute()
+        result = self.execute(self.date + dt.timedelta(hours=4))
+        self.assertEqual(result['status'], 'needs_new_assets')
+        self.assertNotIn('number', result)
+        self.assertEqual(self.productions, 1)
+        self.assertEqual(len(self.publisher.entries()), 4)
+        self.assertFalse((self.root / 'videos/005').exists())
+
+    def test_reused_image_from_any_existing_folder_is_blocked_before_production(self):
+        self.prepare_asset(b'rainy room')
+        result = self.execute()
+        self.assertEqual(result['status'], 'needs_new_assets')
+        self.assertEqual((self.productions, len(self.publisher.entries())), (0, 3))
+
+    def test_reordered_programme_with_new_seed_is_blocked(self):
+        self.prepare_asset()
+        original = self.planner
+        def reused(date, root, *, exclude_tag=None):
+            import crear_entrega
+            catalog = {'version': 99, 'plans': [{'id': 'new-seed-old-works', 'works': [3, 1],
+                'title': 'Same programme', 'intent': 'reading',
+                'scene': {'id': 'boathouse', 'image': 'assets/new.png'}}]}
+            try:
+                return crear_entrega.select_new_plan(date, catalog, root=root, exclude_tag=exclude_tag)
+            except crear_entrega.NeedsNewAssets as error:
+                raise MODULE.NeedsNewAssets(str(error)) from error
+        # Load the producer module once through the normal planner first.
+        original(self.date, self.root)
+        self.publisher.planner = reused
+        result = self.execute()
+        self.assertEqual((result['status'], self.productions), ('needs_new_assets', 0))
+
+    def test_successful_local_commit_recovers_after_partial_push_without_rerender(self):
+        self.prepare_asset()
+        self.runner.fail_success_push = True
         with self.assertRaises(MODULE.CommandError):
-            self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        tag = MODULE.tag_for(self.date)
-        self.assertTrue(self.runner.releases[tag]['draft'])
-        record = json.loads((self.root / 'automatizacion/entregas' / f'{tag}.json').read_text())
-        self.assertEqual((record['status'], record['number']), ('failure', 2))
-        self.assertFalse((self.root / 'videos/video-0002').exists())
-        self.runner.fail_upload = False
-        recovered = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        self.assertEqual(recovered['number'], 2)
-        creates = [call for call in self.runner.calls if call[:2] == ('release', 'create')]
-        self.assertEqual(len(creates), 1)
+            self.execute()
+        record = self.publisher.entry_for(MODULE.tag_for(self.date))
+        self.assertEqual((record['status'], record['number'], self.productions), ('success', 4, 1))
+        self.assertNotEqual(self.runner.git('rev-parse', 'HEAD').stdout,
+                            self.runner.git('rev-parse', 'origin/main').stdout)
+        recovered = self.execute()
+        self.assertEqual((recovered['number'], self.productions), (4, 1))
+        self.assertEqual(self.runner.git('rev-parse', 'HEAD').stdout,
+                         self.runner.git('rev-parse', 'origin/main').stdout)
 
-    def test_next_slot_allocates_next_number_without_reusing_old_id(self):
-        one = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        two = self.publisher.execute(self.date + dt.timedelta(hours=4), Path('/tmp/cache'), self.produce)
-        self.assertEqual((one['number'], two['number']), (2, 3))
-        self.assertTrue((self.root / 'videos/video-0002/README.md').exists())
-        self.assertTrue((self.root / 'videos/video-0003/README.md').exists())
-
-    def test_auth_failure_is_not_treated_as_absent_release(self):
-        self.runner.fail_auth = True
+    def test_failed_commit_recovers_the_verified_staged_bundle(self):
+        self.prepare_asset()
+        self.runner.fail_success_commit = True
         with self.assertRaises(MODULE.CommandError):
-            self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
+            self.execute()
+        self.assertTrue(self.runner.git('status', '--porcelain').stdout)
+        recovered = self.execute()
+        self.assertEqual((recovered['number'], self.productions), (4, 1))
+        self.assertFalse(self.runner.git('status', '--porcelain').stdout)
+
+    def test_staged_recovery_refuses_unrelated_dirty_work(self):
+        self.prepare_asset()
+        self.runner.fail_success_commit = True
+        with self.assertRaises(MODULE.CommandError):
+            self.execute()
+        unrelated = self.root / 'user-notes.txt'
+        unrelated.write_text('Preserve my work')
+        with self.assertRaisesRegex(ValueError, 'dirty checkout'):
+            self.execute()
+        self.assertEqual(unrelated.read_text(), 'Preserve my work')
+        self.assertEqual(self.productions, 1)
+
+    def test_fresh_runner_recovers_remote_reservation_before_new_slot(self):
+        self.prepare_asset()
+        self.runner.fail_success_push = True
+        with self.assertRaises(MODULE.CommandError):
+            self.execute()
+        fresh = self.base / 'replacement-runner'
+        subprocess.run(['git', 'clone', '--branch', 'main', str(self.remote), str(fresh)],
+                       check=True, capture_output=True)
+        runner = MODULE.Runner(fresh)
+        runner.git('lfs', 'install', '--local')
+        runner.git('lfs', 'pull')
+        replacement = MODULE.Publisher(fresh, 'jagoncito/Youtube', runner, self.planner)
+        self.assertFalse((fresh / 'videos/004').exists())
+        next_slot = self.date + dt.timedelta(hours=4)
+        recovered = MODULE.recover_prior_completed_delivery(replacement, next_slot,
+            self.base / 'cache', self.produce)
+        self.assertEqual((recovered['number'], self.productions), (4, 2))
+        self.assertTrue((fresh / 'videos/004/video-30min.mp4').is_file())
+        blocked = replacement.execute(next_slot, self.base / 'cache', self.produce)
+        self.assertEqual(blocked['status'], 'needs_new_assets')
+        self.assertFalse((fresh / 'videos/005').exists())
+
+    def test_pending_push_failure_retry_reuses_reserved_number(self):
+        self.prepare_asset()
+        self.runner.fail_pending_push = True
+        with self.assertRaises(MODULE.CommandError):
+            self.execute()
+        record = self.publisher.entry_for(MODULE.tag_for(self.date))
+        self.assertEqual((record['status'], record['number'], self.productions), ('failure', 4, 0))
+        self.assertNotIn('secret', (self.root / 'automatizacion/estado.json').read_text())
+        recovered = self.execute()
+        self.assertEqual((recovered['number'], self.productions), (4, 1))
+
+    def test_missing_lfs_tracking_stops_before_rendering(self):
+        self.prepare_asset()
+        (self.root / '.gitattributes').write_text('*.wav filter=lfs diff=lfs merge=lfs -text\n')
+        self.commit()
+        with self.assertRaisesRegex(ValueError, 'Git LFS tracking'):
+            self.execute()
         self.assertEqual(self.productions, 0)
-        self.assertFalse(any(call[:2] == ('release', 'create') for call in self.runner.calls))
+        self.assertFalse((self.root / 'videos/004').exists())
 
-    def test_sync_refreshes_main_with_head_only_fetch_configuration(self):
-        peer = Path(self.temp.name) / 'peer'
+    def test_tampered_media_is_not_committed_as_a_delivery(self):
+        self.prepare_asset()
+        def tampered(date, folder, cache, plan):
+            self.produce(date, folder, cache, plan)
+            (folder / 'audio-bucle-6min.wav').write_text('tampered audio')
+        with self.assertRaisesRegex(ValueError, 'checksum'):
+            self.execute(produce=tampered)
+        self.assertFalse((self.root / 'videos/004').exists())
+        self.assertEqual(self.publisher.entry_for(MODULE.tag_for(self.date))['status'], 'failure')
+
+    def test_exact_old_video_is_rejected_even_with_unused_scene_and_programme(self):
+        self.prepare_asset()
+        def copied(date, folder, cache, plan):
+            self.produce(date, folder, cache, plan)
+            shutil = __import__('shutil')
+            target = folder / 'video-30min.mp4'
+            shutil.copyfile(self.root / 'videos/001/video-30min.mp4', target)
+            manifest = json.loads((folder / 'manifest.json').read_text())
+            manifest['files']['video-30min.mp4'] = {
+                'bytes': target.stat().st_size, 'sha256': MODULE.file_hash(target)}
+            MODULE.json_write(folder / 'manifest.json', manifest)
+        with self.assertRaisesRegex(ValueError, 'already appeared'):
+            self.execute(produce=copied)
+        self.assertFalse((self.root / 'videos/004').exists())
+
+    def test_claimed_new_programme_cannot_hide_old_audio_chapters(self):
+        self.prepare_asset()
+        def mislabeled(date, folder, cache, plan):
+            self.produce(date, folder, cache, plan)
+            manifest = json.loads((folder / 'manifest.json').read_text())
+            manifest['audio']['chapters'] = [{'number': 3}, {'number': 1}]
+            MODULE.json_write(folder / 'manifest.json', manifest)
+        with self.assertRaisesRegex(ValueError, 'music does not match'):
+            self.execute(produce=mislabeled)
+        self.assertFalse((self.root / 'videos/004').exists())
+
+    def test_head_only_fetch_config_still_refreshes_main(self):
+        peer = self.base / 'peer'
         subprocess.run(['git', 'clone', '--branch', 'main', str(self.remote), str(peer)],
                        check=True, capture_output=True)
-        peer_runner = MODULE.Runner(peer)
-        peer_runner.git('config', 'user.name', 'Peer')
-        peer_runner.git('config', 'user.email', 'peer@example.invalid')
+        runner = MODULE.Runner(peer)
+        runner.git('config', 'user.name', 'Peer')
+        runner.git('config', 'user.email', 'peer@example.invalid')
         (peer / 'upstream.txt').write_text('A newer remote commit')
-        peer_runner.git('add', 'upstream.txt')
-        peer_runner.git('commit', '-m', 'Upstream change')
-        peer_runner.git('push', 'origin', 'main')
+        runner.git('add', 'upstream.txt')
+        runner.git('commit', '-m', 'Upstream change')
+        runner.git('push', 'origin', 'main')
         self.runner.git('config', 'remote.origin.fetch', '+HEAD:refs/remotes/origin/HEAD')
         self.publisher.sync()
         self.assertEqual((self.root / 'upstream.txt').read_text(), 'A newer remote commit')
-        self.assertEqual(self.runner.git('rev-parse', 'HEAD').stdout,
-                         peer_runner.git('rev-parse', 'HEAD').stdout)
 
-    def test_failed_checksum_does_not_create_a_release(self):
-        def tampered(date, folder, cache):
-            self.produce(date, folder, cache)
-            (folder / 'audio-bucle-6min.wav').write_text('tampered audio')
-        with self.assertRaisesRegex(ValueError, 'checksum'):
-            self.publisher.execute(self.date, Path('/tmp/cache'), tampered)
-        self.assertFalse(self.runner.releases)
-        status = json.loads((self.root / 'automatizacion/estado.json').read_text())
-        self.assertEqual(status['status'], 'failure')
-
-    def test_published_but_unindexed_release_recovers_without_new_production(self):
-        first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        record = self.root / 'automatizacion/entregas' / f'{first["tag"]}.json'
-        item = json.loads(record.read_text())
-        item['status'] = 'failure'
-        MODULE.json_write(record, item)
-        self.commit()
-        recovered = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        self.assertEqual(recovered['number'], 2)
-        self.assertEqual(self.productions, 1)
-        self.assertEqual((self.root / 'videos/video-0002/publicacion.txt').read_text(),
-                         'Fixture asset publicacion.txt')
-
-    def test_complete_draft_hidden_from_by_tag_recovers_without_production(self):
-        first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        tag = first['tag']
-        self.runner.releases[tag]['draft'] = True
-        record = self.root / 'automatizacion/entregas' / f'{tag}.json'
-        item = json.loads(record.read_text())
-        item['status'] = 'failure'
-        MODULE.json_write(record, item)
-        self.commit()
-        uploads_before = sum(call[:2] == ('release', 'upload') for call in self.runner.calls)
-        recovered = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        self.assertEqual((recovered['number'], self.productions), (2, 1))
-        self.assertFalse(self.runner.releases[tag]['draft'])
-        self.assertEqual(sum(call[:2] == ('release', 'upload') for call in self.runner.calls), uploads_before)
-        self.assertTrue(json.loads((self.root / 'automatizacion/estado.json').read_text())['recovered'])
-        self.assertTrue(any('--paginate' in call for call in self.runner.calls))
-
-    def test_complete_draft_without_remote_digests_downloads_and_hashes_assets(self):
-        first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        tag = first['tag']
-        self.runner.releases[tag]['draft'] = True
-        for asset in self.runner.releases[tag]['assets']:
-            asset.pop('digest')
-        self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        self.assertEqual(self.productions, 1)
-        self.assertFalse(self.runner.releases[tag]['draft'])
-        downloads = [call for call in self.runner.calls if call[:2] == ('release', 'download')]
-        self.assertTrue(any('video-30min.mp4' in call and '--clobber' in call for call in downloads))
-
-    def test_next_slot_recovers_prior_complete_draft_without_rerendering(self):
-        first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        tag = first['tag']
-        self.runner.releases[tag]['draft'] = True
-        record = self.root / 'automatizacion/entregas' / f'{tag}.json'
-        item = json.loads(record.read_text())
-        item['status'] = 'failure'
-        MODULE.json_write(record, item)
-        self.commit()
-        target = self.date + dt.timedelta(hours=4)
-        recovered = MODULE.recover_prior_completed_delivery(
-            self.publisher, target, Path('/tmp/cache'), self.produce)
-        self.assertEqual((recovered['number'], self.productions), (2, 1))
-        self.assertFalse(self.runner.releases[tag]['draft'])
-        self.assertNotIn(MODULE.tag_for(target), self.runner.releases)
-
-    def test_next_slot_does_not_rebuild_an_incomplete_old_draft(self):
-        first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        tag = first['tag']
-        self.runner.releases[tag]['draft'] = True
-        self.runner.releases[tag]['assets'] = [asset for asset in self.runner.releases[tag]['assets']
-                                              if asset['name'] != 'video-30min.mp4']
-        record = self.root / 'automatizacion/entregas' / f'{tag}.json'
-        item = json.loads(record.read_text())
-        item['status'] = 'failure'
-        MODULE.json_write(record, item)
-        self.commit()
-        recovered = MODULE.recover_prior_completed_delivery(
-            self.publisher, self.date + dt.timedelta(hours=4), Path('/tmp/cache'), self.produce)
-        self.assertIsNone(recovered)
-        self.assertEqual(self.productions, 1)
-        self.assertTrue(self.runner.releases[tag]['draft'])
-
-    def test_complete_draft_with_mismatched_remote_digest_is_not_published(self):
-        first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        tag = first['tag']
-        self.runner.releases[tag]['draft'] = True
-        asset = next(x for x in self.runner.releases[tag]['assets'] if x['name'] == 'video-30min.mp4')
-        asset['digest'] = 'sha256:' + '0' * 64
-        with self.assertRaisesRegex(ValueError, 'checksum'):
-            self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
-        self.assertEqual(self.productions, 1)
-        self.assertTrue(self.runner.releases[tag]['draft'])
-        state = json.loads((self.root / 'automatizacion/estado.json').read_text())
-        self.assertIn('checksum', state['error_message'])
+    def test_prior_failed_push_can_recover_before_next_slot(self):
+        self.prepare_asset()
+        self.runner.fail_success_push = True
+        with self.assertRaises(MODULE.CommandError):
+            self.execute()
+        recovered = MODULE.recover_prior_completed_delivery(self.publisher,
+            self.date + dt.timedelta(hours=4), self.base / 'cache', self.produce)
+        self.assertEqual((recovered['number'], self.productions), (4, 1))
 
 
 class SlotTests(unittest.TestCase):

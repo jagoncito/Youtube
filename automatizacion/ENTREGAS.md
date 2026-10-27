@@ -1,9 +1,9 @@
-# Entregas automáticas
+# Vídeos existentes
 
-Cada fila corresponde a un paquete completo subido a GitHub Releases.
+| Número | Entrega | Archivos reales |
+| --- | --- | --- |
+| 001 | Original: Satie1y3, habitación nocturna | [videos/001](../videos/001/) |
+| 002 | Variante: Satie1y2, misma escena que001 | [videos/002](../videos/002/) |
+| 003 | Taller: Satie2y1, escena distinta y repertorio de002 reordenado | [videos/003](../videos/003/) |
 
-| Número | Vídeo | Carpeta | Archivos |
-| --- | --- | --- | --- |
-| 001 | A Rainy Night with Jagoncito \| Satie Gymnopédies · 30 Minutes | [Abrir carpeta](../videos/video-0001/README.md) | [Descargar](https://github.com/jagoncito/Youtube/tree/main/videos/video-0001) |
-| 002 | Unwind with Jagoncito \| Gentle Satie Piano on a Rainy Night | [Abrir carpeta](../videos/video-0002/README.md) | [Descargar](https://github.com/jagoncito/Youtube/releases/tag/jagoncito-20261027-0800Z) |
-| 003 | Quiet Focus in Jagoncito’s Workshop \| Satie Piano & Rain | [Abrir carpeta](../videos/video-0003/README.md) | [Descargar](https://github.com/jagoncito/Youtube/releases/tag/jagoncito-20261027-1200Z) |
+Las tres carpetas contienen sus medios. Las anteriores fichas puente se han retirado.

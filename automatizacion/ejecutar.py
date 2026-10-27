@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run one four-hour production slot and publish its validated bundle to Releases."""
+"""Evaluate a four-hour slot and commit an original bundle under videos/NNN."""
 from __future__ import annotations
 
 import argparse
@@ -9,15 +9,19 @@ import json
 import os
 from pathlib import Path
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
-import zipfile
-from zoneinfo import ZoneInfo
 
 BOT_EMAIL = '41898282+github-actions[bot]@users.noreply.github.com'
 REQUIRED = {'video-30min.mp4', 'bucle-6min.mp4', 'audio-bucle-6min.wav',
             'imagen.png', 'miniatura.jpg', 'publicacion.txt', 'README.md', 'manifest.json'}
+
+
+class NeedsNewAssets(ValueError):
+    """No unused scene and music programme remain in the finite catalogue."""
+
 
 class CommandError(RuntimeError):
     def __init__(self, operation, result):
@@ -27,6 +31,7 @@ class CommandError(RuntimeError):
         detail = f'; HTTP {status.group(1)}' if status else ''
         super().__init__(f'{operation} failed (exit {result.returncode}{detail})')
 
+
 class Runner:
     def __init__(self, root):
         self.root = Path(root)
@@ -35,16 +40,12 @@ class Runner:
         result = subprocess.run([str(x) for x in args], cwd=self.root, text=True,
                                 capture_output=True)
         if check and result.returncode:
-            # Avoid writing credentials, request headers or raw external stderr
-            # into the public status document.
+            # External stderr can include request headers or credentials.
             raise CommandError(str(args[0]), result)
         return result
 
     def git(self, *args, check=True):
         return self.call(['git', *args], check=check)
-
-    def gh(self, *args, check=True):
-        return self.call(['gh', *args], check=check)
 
 
 def utc_slot(value=None, now=None):
@@ -79,24 +80,10 @@ def file_hash(path):
         return hashlib.file_digest(stream, 'sha256').hexdigest()
 
 
-def verify_bundle(folder, slot):
-    if not REQUIRED.issubset({p.name for p in folder.iterdir() if p.is_file()}):
-        raise ValueError('Incomplete production bundle')
-    manifest = json.loads((folder / 'manifest.json').read_text())
-    verify_manifest(manifest, slot)
-    for name, meta in manifest['files'].items():
-        path = (folder / name).resolve()
-        if not path.is_relative_to(folder.resolve()) or not path.is_file():
-            raise ValueError('Unsafe or missing manifest file')
-        if path.stat().st_size != meta['bytes'] or file_hash(path) != meta['sha256']:
-            raise ValueError('Bundle checksum mismatch')
-    return manifest
-
-
 def verify_manifest(manifest, slot):
     if not isinstance(manifest, dict) or manifest.get('slot') != slot:
         raise ValueError('Bundle slot mismatch')
-    if not (REQUIRED - {'manifest.json'}).issubset(manifest['files']):
+    if not (REQUIRED - {'manifest.json'}).issubset(manifest.get('files', {})):
         raise ValueError('Required assets are missing from the checksum manifest')
     for name, duration in [('bucle-6min.mp4', 360), ('video-30min.mp4', 1800)]:
         result = manifest['video_checks'][name]
@@ -106,46 +93,103 @@ def verify_manifest(manifest, slot):
         raise ValueError('Audio validation did not pass')
 
 
+def verify_bundle(folder, slot):
+    folder = Path(folder)
+    if not folder.is_dir() or not REQUIRED.issubset({p.name for p in folder.iterdir() if p.is_file()}):
+        raise ValueError('Incomplete production bundle')
+    manifest = json.loads((folder / 'manifest.json').read_text())
+    verify_manifest(manifest, slot)
+    expected = set(manifest['files']) | {'manifest.json'}
+    actual = {str(path.relative_to(folder)) for path in folder.rglob('*') if path.is_file()}
+    if actual != expected or not any(name.startswith('fuentes/') for name in expected):
+        raise ValueError('Bundle must include exactly its checksummed media and sources')
+    for name, meta in manifest['files'].items():
+        path = folder / name
+        resolved = path.resolve()
+        if path.is_symlink() or not resolved.is_relative_to(folder.resolve()) or not path.is_file():
+            raise ValueError('Unsafe or missing manifest file')
+        if path.stat().st_size != meta['bytes'] or file_hash(path) != meta['sha256']:
+            raise ValueError('Bundle checksum mismatch')
+    return manifest
+
+
+def plan_delivery(date, root, *, exclude_tag=None):
+    """Load the same strict planner used by the renderer, without rendering."""
+    production = Path(__file__).resolve().parent / 'produccion'
+    if str(production) not in sys.path:
+        sys.path.insert(0, str(production))
+    import crear_entrega
+    catalog = json.loads((Path(root) / 'automatizacion/produccion/catalogo.json').read_text())
+    try:
+        return crear_entrega.select_new_plan(date, catalog, root=Path(root), exclude_tag=exclude_tag)
+    except crear_entrega.NeedsNewAssets as error:
+        raise NeedsNewAssets(str(error)) from error
+
+
+def creative_identity(value):
+    """A seed or a different order of the same works is never a new programme."""
+    identity = value.get('creative_identity', {})
+    image_hash = identity.get('scene_sha256')
+    works = identity.get('program')
+    if not isinstance(image_hash, str) or not re.fullmatch('[0-9a-f]{64}', image_hash):
+        raise ValueError('Missing creative scene fingerprint')
+    if not isinstance(works, list) or not works or any(type(n) is not int for n in works):
+        raise ValueError('Missing creative programme fingerprint')
+    return dict(scene_sha256=image_hash, program=sorted(set(works)),
+                scene_id=identity.get('scene_id'))
+
+
 class Publisher:
-    def __init__(self, root, repository, runner=None):
+    def __init__(self, root, repository, runner=None, planner=None):
         if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', repository):
             raise ValueError('Invalid repository identity')
         self.root = Path(root)
         self.repository = repository
         self.runner = runner or Runner(root)
+        self.planner = planner or plan_delivery
         self.directory = self.root / 'automatizacion'
-
-    def release(self, tag):
-        response = self.runner.gh('api', f'repos/{self.repository}/releases/tags/{tag}', check=False)
-        if response.returncode == 0:
-            release = json.loads(response.stdout)
-            if not isinstance(release, dict) or not isinstance(release.get('assets'), list):
-                raise ValueError('GitHub returned an invalid release response')
-            return release
-        if re.search(r'\bHTTP 404\b', response.stderr):
-            # A missing release is only accepted after the repository itself is
-            # readable. This avoids treating an auth failure as a missing tag.
-            self.runner.gh('api', f'repos/{self.repository}', '--jq', '.full_name')
-            # A draft can exist before its Git tag does. The by-tag endpoint
-            # consequently returns404 for a perfectly valid uploaded draft.
-            pages = json.loads(self.runner.gh('api', '--paginate', '--slurp',
-                f'repos/{self.repository}/releases?per_page=100').stdout)
-            if not isinstance(pages, list) or any(not isinstance(page, list) for page in pages):
-                raise ValueError('GitHub returned an invalid release list')
-            for page in pages:
-                for release in page:
-                    if isinstance(release, dict) and release.get('tag_name') == tag:
-                        if not isinstance(release.get('assets'), list):
-                            raise ValueError('GitHub returned an invalid draft response')
-                        return release
-            return None
-        raise CommandError('GitHub release lookup', response)
 
     def sync(self):
         if self.runner.git('status', '--porcelain').stdout.strip():
             raise ValueError('Refusing to update status over a dirty checkout')
         self.runner.git('fetch', 'origin', 'refs/heads/main:refs/remotes/origin/main')
+        # A locally committed delivery can be ahead after a failed push. Keep it
+        # available for the retry; never reset it to the older remote state.
         self.runner.git('merge', '--ff-only', 'origin/main')
+
+    def recover_staged_delivery(self, date):
+        """Finish our already-staged bundle after a failed commit, without rendering.
+
+        Refuse recovery if anything is unstaged, untracked or outside the exact
+        delivery/status paths. An arbitrary dirty checkout remains an error.
+        """
+        if not self.runner.git('status', '--porcelain').stdout.strip():
+            return False
+        tag = tag_for(date)
+        entry = self.entry_for(tag)
+        if not entry or entry.get('status') != 'success':
+            return False
+        folder = f'videos/{entry["number"]:03d}'
+        record = f'automatizacion/entregas/{tag}.json'
+        if entry.get('folder') != folder or entry.get('slot') != iso(date):
+            return False
+        if self.runner.git('diff', '--name-only').stdout or self.runner.git(
+                'ls-files', '--others', '--exclude-standard').stdout:
+            return False
+        staged = set(filter(None, self.runner.git('diff', '--cached', '--name-only', '-z').stdout.split('\0')))
+        required = {record, f'{folder}/manifest.json'}
+        allowed = {record, 'automatizacion/estado.json', 'automatizacion/ENTREGAS.md', 'README.md'}
+        if not required.issubset(staged) or any(path not in allowed and not path.startswith(folder + '/')
+                                              for path in staged):
+            return False
+        state = json.loads((self.directory / 'estado.json').read_text())
+        if state.get('tag') != tag or state.get('status') != 'success':
+            return False
+        verify_bundle(self.root / folder, iso(date))
+        self.ensure_lfs(entry['number'])
+        self.runner.git('-c', 'user.name=github-actions[bot]', '-c', f'user.email={BOT_EMAIL}',
+                        'commit', '-m', f'Production recovery: {tag}')
+        return True
 
     def entries(self):
         return [json.loads(path.read_text()) for path in
@@ -156,261 +200,181 @@ class Publisher:
         return json.loads(path.read_text()) if path.exists() else None
 
     def reserve(self, date):
-        tag = tag_for(date)
-        current = self.entry_for(tag)
+        current = self.entry_for(tag_for(date))
         if current is not None:
             return current
-        number = max([1] + [int(x['number']) for x in self.entries()
-                            if isinstance(x.get('number'), int)]) + 1
-        return dict(number=number, status='pending', slot=iso(date), tag=tag,
-                    title='Producción pendiente', published_to_youtube=False)
+        numbers = [int(item['number']) for item in self.entries()
+                   if isinstance(item.get('number'), int)]
+        numbers += [int(path.name) for path in (self.root / 'videos').glob('[0-9][0-9][0-9]')
+                    if path.is_dir()]
+        return dict(number=max([0] + numbers) + 1, status='pending', slot=iso(date),
+                    tag=tag_for(date), title='Producción pendiente', published_to_youtube=False)
 
-    def card_text(self, entry):
-        stamp = dt.datetime.fromisoformat(entry.get('published_at', entry['slot']).replace('Z', '+00:00'))
-        local = stamp.astimezone(ZoneInfo('Europe/Madrid')).strftime('%d/%m/%Y %H:%M %Z')
-        assets = entry.get('assets', {})
-        rows = [('video-30min.mp4', 'Vídeo completo — 30:00'),
-                ('bucle-6min.mp4', 'Vídeo para bucle — 6:00'),
-                ('audio-bucle-6min.wav', 'Único audio WAV — 6:00'),
-                ('imagen.png', 'Imagen principal'), ('miniatura.jpg', 'Miniatura'),
-                ('publicacion.txt', 'Título, descripción, capítulos y etiquetas'),
-                ('fuentes-y-validacion.zip', 'Fuentes, licencias y comprobaciones')]
-        text = f'# Vídeo {entry["number"]:03d} — {entry["title"]}\n\n'
-        text += f'Publicado en GitHub: **{local}**. Los dos MP4 ya llevan el audio incorporado.\n\n'
-        text += f'[Abrir todos los archivos en GitHub Releases]({entry["url"]})\n\n'
-        for name, label in rows:
-            if name in assets:
-                text += f'- [{label}]({assets[name]["url"]})\n'
-        if 'miniatura.jpg' in assets:
-            text += f'\n![Miniatura]({assets["miniatura.jpg"]["url"]})\n'
-        text += '\nLa sesión repite cinco veces el programa de seis minutos. '
-        text += 'Consulta las obras y tiempos reales en [manifest.json](manifest.json). '
-        text += 'Esta entrega está en GitHub; no se ha publicado automáticamente en YouTube.\n'
-        return text
+    def ensure_lfs(self, number):
+        self.runner.git('lfs', 'version')
+        paths = [f'videos/{number:03d}/{name}' for name in
+                 ['video-30min.mp4', 'bucle-6min.mp4', 'audio-bucle-6min.wav']]
+        attributes = self.runner.git('check-attr', 'filter', '--', *paths).stdout.splitlines()
+        if len(attributes) != len(paths) or any(not line.endswith(': filter: lfs') for line in attributes):
+            raise ValueError('Git LFS tracking is required for all delivery MP4 and WAV files')
+        self.runner.git('lfs', 'install', '--local')
 
-    def commit_status(self, state, *, entry=None, card_files=None):
-        self.sync()
-        json_write(self.directory / 'estado.json', state)
-        staged = ['automatizacion/estado.json', 'automatizacion/ENTREGAS.md', 'README.md']
-        if entry is not None:
-            json_write(self.directory / 'entregas' / f'{entry["tag"]}.json', entry)
-            staged.append(f'automatizacion/entregas/{entry["tag"]}.json')
-            if entry['status'] == 'success':
-                card = self.root / entry['card_path']
-                card.parent.mkdir(parents=True, exist_ok=True)
-                card.write_text(self.card_text(entry))
-                if not card_files:
-                    raise ValueError('Successful delivery needs its publication and manifest files')
-                for name in ['publicacion.txt', 'manifest.json']:
-                    (card.parent / name).write_text(card_files[name])
-                staged.append(str(card.parent.relative_to(self.root)))
-        records = [item for item in self.entries() if item.get('status') == 'success']
-        records.sort(key=lambda x: x.get('number', 0))
-        table = '# Entregas automáticas\n\nCada fila corresponde a un paquete completo subido a GitHub Releases.\n\n'
-        table += '| Número | Vídeo | Carpeta | Archivos |\n| --- | --- | --- | --- |\n'
-        root_links = []
+    def push(self):
+        # The local LFS pre-push hook sends the media before the Git reference.
+        self.runner.git('push', 'origin', 'HEAD:main')
+
+    def update_index(self):
+        records = sorted((item for item in self.entries() if item.get('status') == 'success'),
+                         key=lambda item: item['number'])
+        table = '# Entregas automáticas\n\nLos archivos de cada vídeo están dentro de su carpeta.\n\n'
+        table += '| Número | Vídeo | Archivos |\n| --- | --- | --- |\n'
+        links = []
         for item in records:
             title = item['title'].replace('|', '\\|').replace('\n', ' ')
-            card_path = item.get('card_path', f'videos/video-{item["number"]:04d}/README.md')
-            table += (f'| {item["number"]:03d} | {title} | [Abrir carpeta](../{card_path}) '
-                      f'| [Descargar]({item["url"]}) |\n')
-            root_links.append(f'- [Vídeo {item["number"]:03d} — {title}]({card_path})')
+            folder = item.get('folder', f'videos/{item["number"]:03d}')
+            table += f'| {item["number"]:03d} | {title} | [Abrir carpeta](../{folder}/) |\n'
+            links.append(f'- [Vídeo {item["number"]:03d} — {title}]({folder}/)')
         (self.directory / 'ENTREGAS.md').write_text(table)
         readme = self.root / 'README.md'
         current = readme.read_text() if readme.exists() else '# Jagoncito\n'
         start, end = '<!-- JAGONCITO:ENTREGAS:START -->', '<!-- JAGONCITO:ENTREGAS:END -->'
-        managed = start + '\n\n' + '\n'.join(root_links) + '\n\n' + end
+        managed = start + '\n\n' + '\n'.join(links) + '\n\n' + end
         if start in current and end in current:
             current = current[:current.index(start)] + managed + current[current.index(end) + len(end):]
         else:
             current += '\n\n## Vídeos por orden\n\n' + managed + '\n'
         readme.write_text(current)
+
+    def commit_status(self, state, *, entry=None, bundle=None):
+        # Callers synchronize before writing; syncing here would reject the
+        # verified bundle that is about to be included in this same commit.
+        staged = ['automatizacion/estado.json']
+        if entry is not None:
+            if entry['status'] == 'success':
+                target = self.root / entry['folder']
+                if bundle is not None:
+                    if target.exists():
+                        raise ValueError('Refusing to overwrite an existing delivery folder')
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copytree(bundle, target)
+                verify_bundle(target, entry['slot'])
+                staged.append(entry['folder'])
+            record = f'automatizacion/entregas/{entry["tag"]}.json'
+            json_write(self.root / record, entry)
+            staged.append(record)
+            self.update_index()
+            staged += ['automatizacion/ENTREGAS.md', 'README.md']
+        json_write(self.directory / 'estado.json', state)
         self.runner.git('add', *staged)
         diff = self.runner.git('diff', '--cached', '--quiet', check=False)
-        if diff.returncode == 0:
-            return
-        if diff.returncode != 1:
+        if diff.returncode not in (0, 1):
             raise CommandError('Git status diff', diff)
-        self.runner.git('-c', 'user.name=github-actions[bot]', '-c', f'user.email={BOT_EMAIL}',
-                        'commit', '-m', f'Production {state["status"]}: {state["tag"]}')
-        self.runner.git('push', 'origin', 'HEAD:main')
+        if diff.returncode:
+            self.runner.git('-c', 'user.name=github-actions[bot]', '-c', f'user.email={BOT_EMAIL}',
+                            'commit', '-m', f'Production {state["status"]}: {state["tag"]}')
+        self.push()
 
-    def published_entry(self, date, release, number, manifest=None):
-        assets = {x['name']: {'bytes': x['size'], 'url': x['browser_download_url']}
-                  for x in release.get('assets', [])}
-        if not REQUIRED.issubset(assets):
-            raise ValueError('Published release is incomplete; do not silently skip it')
-        title = (manifest or {}).get('title') or re.sub(
-            r'^Vídeo\s+\d+\s+—\s+', '', release.get('name') or tag_for(date))
+    def published_entry(self, date, number, manifest):
+        folder = f'videos/{number:03d}'
+        files = manifest['files']
         return dict(status='success', number=number, slot=iso(date), tag=tag_for(date),
-                    title=title, url=release['html_url'], assets=assets,
-                    published_at=release.get('published_at') or iso(dt.datetime.now(dt.timezone.utc)),
-                    card_path=f'videos/video-{number:04d}/README.md',
-                    plan_id=(manifest or {}).get('plan_id'),
-                    validation=(manifest or {}).get('video_checks'),
-                    published_to_youtube=False)
+                    title=manifest['title'], folder=folder, card_path=f'{folder}/README.md',
+                    url=f'https://github.com/{self.repository}/tree/main/{folder}',
+                    assets={name: dict(path=name, **meta) for name, meta in files.items() if meta is not None},
+                    published_at=iso(dt.datetime.now(dt.timezone.utc)),
+                    plan_id=manifest.get('plan_id'), creative_identity=creative_identity(manifest),
+                    validation=manifest['video_checks'], published_to_youtube=False)
 
-    def recover_card_files(self, tag):
-        with tempfile.TemporaryDirectory(prefix='jagoncito-card-') as folder:
-            self.runner.gh('release', 'download', tag, '--repo', self.repository,
-                           '--pattern', 'manifest.json', '--pattern', 'publicacion.txt', '--dir', folder)
-            return {name: (Path(folder) / name).read_text()
-                    for name in ['manifest.json', 'publicacion.txt']}
+    def reject_repeated_video(self, manifest):
+        used = set()
+        for item in self.entries():
+            for name, meta in item.get('assets', {}).items():
+                if name.endswith('.mp4') and isinstance(meta, dict) and meta.get('sha256'):
+                    used.add(meta['sha256'])
+        for path in (self.root / 'videos').glob('*/manifest.json'):
+            previous = json.loads(path.read_text())
+            used.update(meta['sha256'] for name, meta in previous.get('files', {}).items()
+                        if name.endswith('.mp4') and isinstance(meta, dict) and meta.get('sha256'))
+        if any(meta['sha256'] in used for name, meta in manifest['files'].items() if name.endswith('.mp4')):
+            raise ValueError('A rendered video has already appeared in the delivery history')
 
     def persist_failure(self, base, reservation, error):
         message = str(error) if isinstance(error, (CommandError, ValueError)) else type(error).__name__
         message = re.sub(r'[\r\n\t]+', ' ', message)
         message = re.sub(r'(?:gh[pousr]_|github_pat_)[A-Za-z0-9_]+', '[redacted]', message)[:300]
-        failure = dict(base, status='failure', failed_at=iso(dt.datetime.now(dt.timezone.utc)),
-                       error_type=type(error).__name__,
-                       error_message=message,
-                       error='The scheduled production failed; inspect the Actions run log.')
+        state = dict(base, status='failure', failed_at=iso(dt.datetime.now(dt.timezone.utc)),
+                     error_type=type(error).__name__, error_message=message,
+                     error='The scheduled production failed; inspect the Actions run log.')
+        # A failed push leaves a complete local success commit. Do not replace
+        # its durable record with failure or consume another delivery number.
+        current = self.entry_for(base['tag'])
+        if current and current.get('status') == 'success':
+            record = f'automatizacion/entregas/{base["tag"]}.json'
+            committed = self.runner.git('show', f'HEAD:{record}', check=False)
+            durable = committed.returncode == 0 and json.loads(committed.stdout).get('status') == 'success'
+            print('Delivery committed locally; retry will push the existing files.' if durable else
+                  'Validated delivery is staged; retry will finish the existing commit.', file=sys.stderr)
+            return
         try:
-            self.commit_status(failure, entry=dict(reservation, status='failure'))
+            self.commit_status(state, entry=dict(reservation, status='failure') if reservation else None)
         except Exception:
             print('Unable to persist failure status; inspect the Actions run.', file=sys.stderr)
 
-    def recover_complete_draft(self, date, release):
-        """Validate already-uploaded assets, without spending minutes rendering again."""
-        assets = {item['name']: item for item in release.get('assets', [])}
-        archive_name = 'fuentes-y-validacion.zip'
-        if not (REQUIRED | {archive_name}).issubset(assets):
-            return None
-        tag = tag_for(date)
-        with tempfile.TemporaryDirectory(prefix='jagoncito-recover-') as temporary:
-            folder = Path(temporary)
-            self.runner.gh('release', 'download', tag, '--repo', self.repository,
-                '--pattern', 'manifest.json', '--pattern', 'publicacion.txt',
-                '--pattern', archive_name, '--dir', folder)
-            manifest = json.loads((folder / 'manifest.json').read_text())
-            verify_manifest(manifest, iso(date))
-            # Source files are verified against the same manifest. Never extract
-            # arbitrary archive paths or execute anything from an uploaded zip.
-            with zipfile.ZipFile(folder / archive_name) as source:
-                if source.read('manifest.json') != (folder / 'manifest.json').read_bytes():
-                    raise ValueError('Recovery source manifest mismatch')
-                for name, meta in manifest['files'].items():
-                    if '/' in name:
-                        target = (folder / name).resolve()
-                        if not name.startswith('fuentes/') or not target.is_relative_to(folder.resolve()):
-                            raise ValueError('Unsafe recovery source path')
-                        data = source.read(name)
-                        if len(data) != meta['bytes'] or hashlib.sha256(data).hexdigest() != meta['sha256']:
-                            raise ValueError('Recovery source checksum mismatch')
-                        target.parent.mkdir(parents=True, exist_ok=True)
-                        target.write_bytes(data)
-            missing_digest = False
-            for name in REQUIRED - {'manifest.json'}:
-                meta = manifest['files'][name]
-                remote = assets[name]
-                if remote.get('size') != meta['bytes']:
-                    raise ValueError('Recovery asset size mismatch')
-                digest = remote.get('digest')
-                if digest and digest != 'sha256:' + meta['sha256']:
-                    raise ValueError('Recovery asset checksum mismatch')
-                missing_digest |= not bool(digest)
-            for name in ['manifest.json', 'publicacion.txt', archive_name]:
-                path = folder / name
-                if path.stat().st_size != assets[name].get('size'):
-                    raise ValueError('Recovery downloaded asset size mismatch')
-                if assets[name].get('digest') and assets[name]['digest'] != 'sha256:' + file_hash(path):
-                    raise ValueError('Recovery downloaded asset checksum mismatch')
-            if missing_digest:
-                # Older assets may lack GitHub's sha256 digest. Download and
-                # hash every required asset rather than trusting only its size.
-                command = ['release', 'download', tag, '--repo', self.repository, '--clobber']
-                for name in sorted(REQUIRED):
-                    command += ['--pattern', name]
-                self.runner.gh(*command, '--dir', folder)
-                verify_bundle(folder, iso(date))
-            elif file_hash(folder / 'publicacion.txt') != manifest['files']['publicacion.txt']['sha256']:
-                raise ValueError('Recovery publication checksum mismatch')
-            return manifest, {name: (folder / name).read_text()
-                              for name in ['manifest.json', 'publicacion.txt']}
-
     def execute(self, date, cache, produce):
         tag = tag_for(date)
+        self.recover_staged_delivery(date)
         self.sync()
-        reservation = self.reserve(date)
-        number = reservation['number']
+        reservation = self.entry_for(tag)
         run_id = os.environ.get('GITHUB_RUN_ID')
-        run_url = f'https://github.com/{self.repository}/actions/runs/{run_id}' if run_id else None
-        base = dict(slot=iso(date), tag=tag, number=number, run_url=run_url, schedule_utc='0 */4 * * *',
-                    interval_hours=4, published_to_youtube=False)
+        base = dict(slot=iso(date), tag=tag,
+                    run_url=f'https://github.com/{self.repository}/actions/runs/{run_id}' if run_id else None,
+                    schedule_utc='0 */4 * * *', interval_hours=4, published_to_youtube=False)
+        if reservation and reservation.get('status') == 'success':
+            self.ensure_lfs(reservation['number'])
+            self.runner.git('lfs', 'pull', '--include', reservation['folder'] + '/**', '--exclude', '')
+            verify_bundle(self.root / reservation['folder'], iso(date))
+            self.push()
+            print(f'Already committed: {tag}')
+            return reservation
         try:
-            release = self.release(tag)
+            plan = self.planner(date, self.root, exclude_tag=tag)
+            identity = creative_identity(plan)
+        except NeedsNewAssets as error:
+            blocked = dict(base, status='needs_new_assets', reason=str(error),
+                           checked_at=iso(dt.datetime.now(dt.timezone.utc)),
+                           required='An unpublished original scene and an unused music programme.')
+            self.commit_status(blocked)
+            print('needs_new_assets: no unused original scene and music programme remain.')
+            return blocked
         except Exception as error:
             self.persist_failure(base, reservation, error)
             raise
-        if release and not release['draft']:
-            entry = self.published_entry(date, release, number)
-            record = self.directory / 'entregas' / f'{tag}.json'
-            if record.is_file() and json.loads(record.read_text()).get('status') == 'success':
-                print(f'Already published: {tag}')
-                return entry
-            self.commit_status(dict(base, status='success', recovered=True), entry=entry,
-                               card_files=self.recover_card_files(tag))
-            return entry
-        reservation = dict(reservation, status='pending')
-        self.commit_status(dict(base, status='running', started_at=iso(dt.datetime.now(dt.timezone.utc))),
-                           entry=reservation)
+        reservation = self.reserve(date)
+        number = reservation['number']
+        base['number'] = number
+        reservation = dict(reservation, status='pending', creative_identity=identity, plan_id=plan['id'])
         try:
-            recovered = self.recover_complete_draft(date, release) if release else None
-            if recovered is not None:
-                manifest, card_files = recovered
-                self.runner.gh('release', 'edit', tag, '--repo', self.repository, '--draft=false')
-                published = self.release(tag)
-                if published is None or published.get('draft'):
-                    raise ValueError('Recovered release was not published')
-                entry = self.published_entry(date, published, number, manifest)
-                self.commit_status(dict(base, status='success', recovered=True,
-                    completed_at=iso(dt.datetime.now(dt.timezone.utc)), release_url=entry['url']),
-                    entry=entry, card_files=card_files)
-                print(entry['url'])
-                return entry
+            self.ensure_lfs(number)
+            self.commit_status(dict(base, status='running', started_at=iso(dt.datetime.now(dt.timezone.utc))),
+                               entry=reservation)
             with tempfile.TemporaryDirectory(prefix='jagoncito-publish-') as temporary:
                 folder = Path(temporary) / 'bundle'
-                produce(date, folder, cache)
+                produce(date, folder, cache, plan)
                 manifest = verify_bundle(folder, iso(date))
-                # Sources and checks travel with the media, with no private studies.
-                archive = folder / 'fuentes-y-validacion.zip'
-                with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED) as output:
-                    for item in sorted((folder / 'fuentes').rglob('*')):
-                        if item.is_file():
-                            output.write(item, item.relative_to(folder))
-                    output.write(folder / 'manifest.json', 'manifest.json')
-                notes = folder / '.release-notes.md'
-                notes.write_text((folder / 'README.md').read_text() + '\n\n' +
-                                 (folder / 'publicacion.txt').read_text())
-                title = f'Vídeo {number:03d} — {manifest["title"]}'
-                if release is None:
-                    self.runner.gh('release', 'create', tag, '--repo', self.repository, '--draft',
-                                   '--target', 'main', '--title', title, '--notes-file', notes)
-                else:
-                    self.runner.gh('release', 'edit', tag, '--repo', self.repository,
-                                   '--title', title, '--notes-file', notes)
-                upload = [str(folder / name) for name in sorted(REQUIRED)] + [str(archive)]
-                self.runner.gh('release', 'upload', tag, *upload, '--repo', self.repository, '--clobber')
-                uploaded = self.release(tag)
-                if uploaded is None:
-                    raise ValueError('Uploaded draft could not be found for verification')
-                remote = {x['name']: x for x in uploaded.get('assets', [])}
-                for item in upload:
-                    path = Path(item)
-                    stored = remote.get(path.name, {})
-                    if stored.get('size') != path.stat().st_size:
-                        raise ValueError('Release asset verification failed')
-                    if stored.get('digest') and stored['digest'] != 'sha256:' + file_hash(path):
-                        raise ValueError('Release asset checksum verification failed')
-                self.runner.gh('release', 'edit', tag, '--repo', self.repository, '--draft=false')
-                published = self.release(tag)
-                if published is None or published.get('draft'):
-                    raise ValueError('Release is still a draft')
-                entry = self.published_entry(date, published, number, manifest)
-                card_files = {name: (folder / name).read_text()
-                              for name in ['manifest.json', 'publicacion.txt']}
+                if creative_identity(manifest) != identity or file_hash(folder / 'imagen.png') != identity['scene_sha256']:
+                    raise ValueError('Rendered bundle does not match the unused creative plan')
+                chapters = manifest['audio'].get('chapters', [])
+                actual_program = sorted({chapter['number'] for chapter in chapters})
+                if actual_program != identity['program']:
+                    raise ValueError('Rendered music does not match the unused programme')
+                if 'works' in manifest and sorted(set(manifest['works'])) != identity['program']:
+                    raise ValueError('Manifest works do not match the unused programme')
+                self.reject_repeated_video(manifest)
+                entry = self.published_entry(date, number, manifest)
+                entry['assets']['manifest.json'] = dict(path='manifest.json',
+                    bytes=(folder / 'manifest.json').stat().st_size, sha256=file_hash(folder / 'manifest.json'))
                 self.commit_status(dict(base, status='success', completed_at=iso(dt.datetime.now(dt.timezone.utc)),
-                                        release_url=entry['url']), entry=entry, card_files=card_files)
+                                        folder=entry['folder']), entry=entry, bundle=folder)
                 print(entry['url'])
                 return entry
         except Exception as error:
@@ -419,33 +383,37 @@ class Publisher:
 
 
 def recover_prior_completed_delivery(publisher, date, cache, produce):
-    """Finish one old uploaded delivery before processing the current slot.
+    """Finish a prior reservation before considering another delivery number.
 
-    A code fix can arrive after the four-hour boundary. Recover completed
-    uploads from that earlier slot without rerendering or consuming a new ID.
-    Incomplete old drafts remain available for an explicit retry.
+    A new Actions runner can only see the remote pending reservation after a
+    failed final push. Retry that same slot/number; render again only when its
+    verified bundle is no longer available in the checkout.
     """
-    publisher.sync()
-    candidates = sorted(publisher.entries(), key=lambda item: int(item.get('number', 0)))
+    candidates = sorted(publisher.entries(), key=lambda entry: entry.get('number', 0))
     for item in candidates:
-        if item.get('status') not in ('failure', 'pending'):
+        if item.get('status') == 'success' and item.get('tag'):
+            try:
+                previous = utc_slot(item['slot'])
+            except (KeyError, ValueError, TypeError):
+                continue
+            if previous < date:
+                publisher.recover_staged_delivery(previous)
+    publisher.sync()
+    ahead = publisher.runner.git('rev-list', '--count', 'origin/main..HEAD').stdout.strip()
+    for item in sorted(publisher.entries(), key=lambda entry: entry.get('number', 0), reverse=True):
+        if item.get('status') not in ('success', 'pending', 'failure') or not item.get('tag'):
             continue
         try:
             previous = utc_slot(item['slot'])
         except (KeyError, ValueError, TypeError):
             continue
-        if previous >= date or item.get('tag') != tag_for(previous):
+        if previous >= date or item['tag'] != tag_for(previous):
             continue
-        release = publisher.release(tag_for(previous))
-        if release is None:
-            continue
-        names = {asset['name'] for asset in release.get('assets', [])}
-        needed = REQUIRED | ({'fuentes-y-validacion.zip'} if release.get('draft') else set())
-        if not needed.issubset(names):
-            continue
-        recovered = publisher.execute(previous, cache, produce)
-        print(f'Recovered previous delivery: Video {recovered["number"]:03d}')
-        return recovered
+        if item['status'] == 'success':
+            if ahead != '0':
+                return publisher.execute(previous, cache, produce)
+        elif item.get('creative_identity') and item.get('plan_id'):
+            return publisher.execute(previous, cache, produce)
     return None
 
 
@@ -458,14 +426,18 @@ def main():
     root = Path(__file__).resolve().parents[1]
     if not args.repository:
         raise ValueError('GITHUB_REPOSITORY is required')
-    def produce(date, folder, cache):
+
+    def produce(date, folder, cache, plan):
         subprocess.run([sys.executable, str(root / 'automatizacion/produccion/crear_entrega.py'),
-                        '--slot', iso(date), '--output', str(folder), '--cache', str(cache)], check=True, cwd=root)
+                        '--slot', iso(date), '--output', str(folder), '--cache', str(cache),
+                        '--plan-id', plan['id'], '--history-exclude-tag', tag_for(date)], check=True, cwd=root)
+
     publisher = Publisher(root, args.repository)
     date = utc_slot(args.slot)
     if args.slot is None:
         recover_prior_completed_delivery(publisher, date, args.cache, produce)
     publisher.execute(date, args.cache, produce)
+
 
 if __name__ == '__main__':
     main()

@@ -1,57 +1,56 @@
-# Producción de Jagoncito cada cuatro horas
+# Producción de Jagoncito
 
-El workflow [Jagoncito cada 4 horas](../.github/workflows/jagoncito-cada-4h.yml) crea un paquete de vídeo y lo sube a **GitHub Releases**. La frecuencia configurada es `0 */4 * * *`: 00:00, 04:00, 08:00, 12:00, 16:00 y 20:00 **UTC**. GitHub puede demorar las ejecuciones de calendario. No se publica nada en YouTube.
+## Organización
 
-## Encontrar los vídeos
+Los vídeos se guardan directamente en `videos/001`, `videos/002`, `videos/003` y así sucesivamente. Cada carpeta contiene el MP4 de30minutos, el MP4 de6minutos para bucle, un solo WAV de6minutos, imagen, miniatura, textos y fuentes. Los MP4/WAV se suben mediante Git LFS; una carpeta no se considera terminada hasta que sus objetos y su commit estén subidos.
 
-- [Índice por orden](ENTREGAS.md): Vídeo 001, Vídeo 002, Vídeo 003…
-- Cada entrega terminada tiene una carpeta `videos/video-NNNN/` con su ficha, título, publicación y manifiesto.
-- Los MP4 y el WAV se descargan de la Release enlazada desde la ficha; no se guardan medios de cientos de MB en el historial Git.
-- `estado.json` muestra el último turno, su estado real y la ejecución de Actions. `entregas/` conserva el registro de cada turno.
+Los registros técnicos están en `entregas/`; no representan vídeos adicionales. `estado.json` identifica la última actividad. La portada del repositorio y `ENTREGAS.md` muestran el orden.
 
-El Vídeo 001 existente conserva su número. El siguiente número se reserva al empezar un turno y se reutiliza si ese turno debe reintentarse. Un turno ya publicado no vuelve a producir ni sobrescribe los archivos. La reserva de un turno fallido puede dejar un hueco temporal hasta que se reintente; no se renumeran los vídeos anteriores.
+## Regla de novedad
 
-## Qué se ejecuta
+Antes de reservar un número o renderizar, el planificador revisa los manifiestos, los archivos y el historial completo. Rechaza:
 
-1. Comprobar el turno UTC y si ya existe una entrega completa.
-2. Registrar `running` en GitHub, con número y enlace de la ejecución.
-3. Seleccionar un programa del catálogo, renderizar una interpretación nueva y crear el bucle de 6 minutos y el vídeo de 30 minutos.
-4. Verificar archivos, checksums, audio y decodificación íntegra de ambos vídeos.
-5. Crear o recuperar una Release **borrador**, subir los archivos y comprobar los tamaños y los hashes remotos cuando GitHub los proporciona.
-6. Publicar la Release únicamente después de esas comprobaciones. Guardar su ficha, índice y estado `success`.
+- Una imagen o identidad de escena ya usada.
+- Recompresiones, cambios de metadatos y variaciones visuales casi idénticas detectadas por la comparación perceptual.
+- Un programa musical ya publicado, aunque cambie el orden de las obras o la semilla.
+- Un vídeo cuyo máster ya exista.
 
-Si una operación falla, el trabajo termina con error y procura registrar `failure`. Un borrador incompleto no se presenta como entrega terminada. La ejecución siguiente del mismo turno puede recuperar el borrador; los estados de autenticación fallida no se confunden con una Release inexistente.
+Las reutilizaciones de los tres vídeos históricos se mantienen documentadas; no conceden permiso para repetirlas en el futuro. Las pruebas técnicas no certifican calidad artística ni éxito en YouTube.
 
-Si una corrección llega después de cambiar el turno, la ejecución automática recupera primero una entrega antigua cuyos archivos ya estén completos y verificados. Conserva su número y evita volver a renderizarla. Después procesa el turno actual. Un borrador antiguo incompleto no provoca un render adicional no solicitado; puede reintentarse indicando su turno en la ejecución manual.
+Si no existe una escena y un programa inéditos compatibles, se guarda **`needs_new_assets`**. No se publica un sustituto, no se reserva un número y no se llama «nuevo» a un cambio cosmético.
 
-Los commits de estado y fichas no coinciden con los filtros `push` del workflow, así que no disparan producción recursiva. Hay una sola ejecución de producción concurrente. Git no se fuerza ni se reescribe; se actualiza mediante avance rápido antes de guardar estados.
+## Calendario y alcance real
 
-## Alcance creativo
+El calendario configurado revisa la cola cada4horas (`0 */4 * * *`, UTC); GitHub puede retrasar el inicio. Las modificaciones de código no generan un vídeo por sí solas. También se permite una ejecución manual desde Actions.
 
-La producción programada utiliza **un catálogo curado finito** de partituras de dominio público, piano de muestras CC0 y escenas preparadas para Jagoncito. Cada interpretación se renderiza con el programa y la semilla de su turno; no copia el MP4 anterior. El manifiesto identifica las obras completas, tiempos, fuentes, huellas y activos visuales reutilizados.
+La publicación se realiza únicamente cuando hay un plan que supera los controles. El banco actual es finito: después de001–003 queda un programa y escena inéditos —embarcadero con las Gymnopédies2y3—. Tras utilizarlos se necesita ampliar el material; el sistema se bloqueará en lugar de volver a usar una imagen. No hay un generador de ilustraciones con IA autónomo configurado en segundo plano. La preparación editorial de nuevas escenas y repertorio se realiza de forma expresa.
 
-Esto no es un agente creativo que investigue YouTube ni genere ilustraciones nuevas con IA en segundo plano. Las escenas, el repertorio y los criterios se amplían mediante cambios revisables en el catálogo. No se requiere una clave de OpenAI para ejecutar el programa actual. Las comprobaciones automáticas no se describen como escucha humana ni garantizan crecimiento o monetización.
+La programación prepara archivos en GitHub; no publica en YouTube. El documento original de128informes y los datos privados de Studio se mantienen fuera del repositorio.
 
-Los 128 estudios aportados orientan el criterio editorial; su documento original y los datos privados de Studio permanecen fuera del repositorio y de las Releases. La programación de seis entregas diarias responde a la petición del creador, no a una supuesta frecuencia óptima de YouTube.
+## Controles
 
-## Ejecutar y mantener
+- Integridad de partituras, muestras y licencias.
+- Obras completas, duración exacta y audio sin saturación o saltos anómalos.
+- Decodificación íntegra de ambos MP4.
+- Historial de imágenes, semejanza perceptual, programa y vídeo.
+- Archivos reales completos y checksums antes de publicar.
+- Git LFS y recuperación de commits o subidas fallidos sin duplicar ni cambiar números.
 
-GitHub aporta el `GITHUB_TOKEN` del trabajo, con `contents: write`; no se copia ninguna credencial del chat. Deben estar habilitados GitHub Actions y esos permisos en la configuración del repositorio. El job instala Python 3.12, FFmpeg y las dependencias fijadas, y conserva una caché de muestras verificadas.
+## Uso
 
-En **Actions → Jagoncito cada 4 horas → Run workflow** se puede iniciar una ejecución manual. El turno opcional debe ser una de las seis horas UTC; si se omite, se usa el bloque UTC de cuatro horas actual. Una ejecución repetida del mismo turno publicado se omite de forma idempotente.
+El workflow requiere Python3.12, FFmpeg, Git LFS y las dependencias fijadas. GitHub proporciona su token de trabajo; no se copian credenciales del chat.
 
-Para probar el programador sin red ni publicar medios reales:
+Pruebas:
 
 ```bash
 python -m unittest discover -s automatizacion/tests -v
+python -m unittest discover -s automatizacion/produccion -p 'test*.py' -v
 ```
 
-Las pruebas usan Git real en repositorios temporales y simulan solo la API de GitHub. Cubren numeración, reintentos de borrador, publicación completa, reserva tras fallo, autenticación, checksum y recuperación de una publicación sin índice.
-
-Para una ejecución real desde una máquina configurada con acceso a GitHub y las dependencias:
+Consultar el siguiente plan, sin crear medios:
 
 ```bash
-python automatizacion/ejecutar.py --repository jagoncito/Youtube --cache /tmp/jagoncito-piano
+python automatizacion/produccion/crear_entrega.py --slot 2026-10-27T16:00:00Z --output /tmp/solo-plan --cache /tmp/jagoncito-piano --plan-only
 ```
 
-El productor escribe sus medios en un directorio temporal fuera del checkout. El programador necesita un checkout limpio de `main` y permiso para guardar los estados y fichas en esa rama.
+Para recuperar los medios al clonar: `git lfs pull`. Las muestras del instrumento se descargan en una caché externa y se verifican con SHA-256.

@@ -1,65 +1,51 @@
-# Productor de entregas programadas
+# Productor de entregas inéditas
 
-Este programa crea archivos nuevos de vídeo y música a partir de un catálogo **finito y explícito**, sin claves de IA ni grabaciones comerciales. No es un agente de investigación autónomo ni genera una ilustración nueva cada cuatro horas.
+El productor crea un programa musical completo y sus medios. Antes de generar, comprueba el historial: la imagen y la escena deben ser inéditas y el conjunto de obras no puede coincidir con otro programa publicado, aunque cambie su orden o semilla.
 
-## Contrato
+## Ejecutar
 
 ```bash
 python -m pip install -r automatizacion/produccion/requirements.txt
-python automatizacion/produccion/crear_entrega.py \
-  --slot 2026-10-27T12:00:00Z \
-  --output /tmp/entrega-jagoncito \
-  --cache /tmp/jagoncito-piano-cache
+python automatizacion/produccion/crear_entrega.py --slot 2026-10-27T16:00:00Z --output /tmp/entrega-jagoncito --cache /tmp/jagoncito-piano-cache
 ```
 
-Requiere Python 3.12, FFmpeg con libx264 y libass, y las dependencias fijadas. No hace falta LilyPond en el runner: los MIDI verificados ya están incluidos. Las muestras de piano se descargan cuando faltan, con TLS y SHA-256, y quedan fuera del repositorio.
+Requiere Python3.12 y FFmpeg con libx264 y libass. Los MIDI revisados ya están incluidos; el runner no necesita LilyPond. Las muestras se descargan en una caché externa, conservando TLS y la comprobación SHA-256.
 
-- `--slot` admite una fecha con zona UTC y hora 00/04/08/12/16/20, sin minutos ni segundos. Un reintento del mismo slot reproduce la misma selección y semilla.
-- `--plan-only` devuelve la selección en JSON y no produce archivos.
-- `--plan-id` permite seleccionar manualmente un programa del catálogo.
-- `--catalog` admite un catálogo alternativo previamente revisado.
-- El directorio de salida no debe existir. El bundle solo aparece al final: cualquier fallo limpia la producción temporal y termina con código distinto de cero.
+- `--slot`: turno UTC00/04/08/12/16/20, con minutos y segundos cero.
+- `--plan-only`: comprueba la disponibilidad y devuelve el plan sin crear medios.
+- `--plan-id`: solicita un plan concreto, sujeto a los mismos controles de originalidad.
+- `--catalog`: banco alternativo previamente revisado.
+- `--history-exclude-tag`: uso interno para reintentar únicamente una reserva pendiente o fallida; no permite excluir un vídeo publicado.
+- La salida no debe existir. Solo aparece como paquete completo después de superar los controles.
 
-## Contenido de una entrega
+Sin material inédito se produce `needs_new_assets`. Cambiar el título, la semilla o el formato de imagen no permite saltarse ese bloqueo.
 
-`video-30min.mp4`, `bucle-6min.mp4`, un único `audio-bucle-6min.wav`, `imagen.png`, `miniatura.jpg`, `publicacion.txt`, `README.md`, `manifest.json` y `fuentes/`.
+## Paquete
 
-El WAV dura 360 s. Incluye dos Gymnopédies completas, con fraseo, rubato y dinámica controlados por una semilla del slot. La interpretación se renderiza de nuevo; no se copia el MP4 de la entrega anterior. El vídeo de30min repite cinco veces ese programa. El audio largo se codifica continuamente y solo sus últimos tres segundos llevan un fundido, situado después del final escrito de la obra.
+`video-30min.mp4`, `bucle-6min.mp4`, `audio-bucle-6min.wav`, `imagen.png`, `miniatura.jpg`, `publicacion.txt`, `README.md`, `manifest.json` y `fuentes/`.
 
-`manifest.json` contiene título, intención, slot, programa, semilla, capítulos, niveles, controles de vídeo y hashes. El publicador debe usarlo como fuente; el programa **no hace push, no crea releases y no publica en YouTube**.
+El WAV dura360s y contiene dos obras completas. El vídeo de30min repite cinco veces ese programa con audio codificado continuamente; el fundido final se sitúa después del final escrito de la obra. Los dos MP4 incorporan el audio. El publicador coloca los archivos reales en `videos/NNN/` mediante Git LFS; no crea carpetas puente ni nuevas Releases.
 
-## Catálogo y escenas
+## Banco y novedad
 
-`catalogo.json` contiene seis programas de lectura, concentración tranquila o descanso, con las seis combinaciones ordenadas de las Gymnopédies1,2y3 de Satie. Hay un programa por slot durante el día; en días posteriores se repite el repertorio con una interpretación programada distinta. Esto no equivale a seis composiciones ni seis escenas inéditas por día.
+El banco inicial contiene las tres Gymnopédies de Satie y tres escenas revisadas. Las entregas001–003 ya consumen la habitación nocturna, el taller y los programas[1,3]y[1,2]. Queda inédito el embarcadero con el programa[2,3]. Una vez utilizado se necesitan nuevas escenas y repertorio para continuar.
 
-El catálogo alterna tres familias visuales, dos programas por familia: el taller de cerámica para lectura o concentración tranquila, el cobertizo del puerto para una pausa, y el salón nocturno de la entrega002 para desconectar. Cambian el escenario, la microhistoria, el objeto focal, la proyección del espectador y la paleta; no se trata de recolorear la misma habitación. Los cinco ejes quedan registrados en cada objeto `scene` y en el manifiesto de la entrega.
+El control combina SHA-256, identidad de escena, conjunto de obras sin orden y comparación perceptual de imágenes decodificadas. Compara también las carpetas históricas sin registro y las recodificaciones con metadatos distintos. No es una evaluación artística ni garantiza alcance o monetización.
 
-Las dos nuevas escenas están en `automatizacion/assets/atelier/` y `automatizacion/assets/boathouse/`. Sus plantillas de 12 segundos solo animan lluvia en máscaras exteriores revisadas. No se atribuye movimiento a los animales ni a la luz de esas dos escenas. Se conservan la imagen, la miniatura, `lluvia.ass`, `scene-12s.mp4` y su `manifest.json` de revisión.
+Una escena nueva requiere imagen, miniatura1280×720, plantilla H.2641920×1080/24fps de12s y su manifiesto de revisión. Los hashes y los controles de periodicidad se verifican antes de usarla. La imagen principal y su miniatura se preparan expresamente; no hay un generador autónomo de ilustraciones configurado.
 
-Cada programa incluye su escena. Se reutilizan los activos del catálogo en posteriores ejecuciones: esta automatización no genera una ilustración inédita por slot. Para añadir una escena hay que aportar su imagen y miniatura, un `scene_template` H.264 de 1920×1080, 24 fps y 12 segundos, y un `scene_manifest` con la periodicidad RAW y el cierre codificado revisados. El productor verifica los hashes de los tres activos y el resultado de la revisión antes de renderizar música. Las coordenadas del salón002 no se aplican a otras imágenes.
+Las plantillas de taller y embarcadero solo animan lluvia en máscaras exteriores. No se atribuye movimiento a sus animales. Los informes guardan la comparación relativa y los límites absolutos de cuantización, junto con el control RAW de periodicidad.
 
-Las plantillas nuevas pueden reconstruirse mediante:
+## Música y comprobaciones
+
+Las partituras Mutopia y las transcripciones para separar voces tienen hashes fijados en `fuentes.json`. Las fuentes de Evin Robertson están marcadas como dominio público. El piano VSCO2CE usa muestras CC0 y conserva su licencia y manifiesto. Un render nuevo de Satie no se describe como composición original ni ejecución humana.
+
+Se comprueban notas y duraciones completas, sonoridad, pico verdadero, saturación, unión circular, formato y duración. Ambos MP4 se decodifican íntegramente antes de entregar. El manifiesto registra programa, escena, fuentes, parámetros, capítulos y huellas. Estos controles técnicos no se presentan como escucha humana.
+
+Pruebas:
 
 ```bash
-python automatizacion/produccion/crear_templates.py --scene all
+python -m unittest discover -s automatizacion/produccion -p 'test*.py' -v
 ```
 
-El informe conserva el fallo de la comparación relativa cuando la imagen está casi inmóvil. La aceptación requiere además una fuente RAW periódica, límites absolutos de cuantización global y por región, y P99 codificado de como máximo un nivel de 8 bits. La regresión del salto geométrico original sigue rechazándose en las pruebas.
-
-Los ficheros visuales deben permanecer dentro del repositorio y la miniatura debe ser1280×720 y menor de2MiB. Los archivos de30min se destinan a GitHub Releases, no a aumentar indefinidamente los objetos Git/LFS del repositorio.
-
-## Fuentes e integridad
-
-`fuentes.json` identifica cada partitura original, su transcripción derivada para separar las tres voces MIDI y sus SHA-256. Las tres transcripciones Mutopia de Evin Robertson están marcadas como dominio público; los comentarios de la fuente excluyen las traducciones modernas de la edición Dover. Los sonidos individuales de VSCO2CE se publican bajoCC0. Se conserva la licencia y el manifiesto de30muestras. No se promete dominio público universal para todos los activos ni ausencia de reclamaciones automáticas.
-
-La nueva Gymnopédie2 se compiló con LilyPond2.24.4 desde la fuente fijada. Contiene371notas y195negras(65compases). Las otras partituras contienen455notas/234negras y326notas/180negras. Antes de renderizar se comprueban los hashes y la duración completa del MIDI.
-
-## Controles
-
-El productor mide LUFS/pico verdadero, comprueba ausencia de saturación y compara el salto real de la unión circular con el ruido adyacente. Verifica duración exacta y formato de ambos MP4 y **decodifica íntegramente** los dos antes de entregar el bundle. La validación es técnica; no se afirma una escucha humana.
-
-```bash
-python -m unittest discover -s automatizacion/produccion -p test_produccion.py -v
-```
-
-Las diez pruebas cubren rotación, reintentos deterministas, slots inválidos, confinamiento e integridad de activos, tres familias visuales con diferencias sustantivas, descripciones ajustadas a los movimientos implementados, el rechazo del salto geométrico original y el empaquetado de fuentes y capítulos. Este último detectó un fallo real de copia de fuentes en la primera prueba integral y se corrigió.
+Incluyen historial completo, recodificación PNG/JPEG con SHA e ID distintos, imágenes sin índice, escenas genuinamente distintas, colores planos, programa reordenado, banco agotado, integridad de fuentes y plantillas y el anterior salto geométrico de animación.

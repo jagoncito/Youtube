@@ -1,13 +1,13 @@
 {
-  "version": 2,
-  "scope": "Three curated scene families and six music programmes; each run renders a seeded digital interpretation. Visual assets are reused from this reviewed catalogue.",
+  "version": 3,
+  "scope": "Finite reviewed catalogue. Only unpublished original scenes and unused unordered musical programmes may be produced. No fallback to cosmetic variants.",
   "scene": {
     "id": "rainy-room-002",
-    "image": "videos/002-jagoncito-satie/imagen.png",
-    "thumbnail": "videos/002-jagoncito-satie/miniatura.jpg",
-    "animator": "videos/002-jagoncito-satie/produccion/animar_escena.py",
+    "image": "videos/001/imagen.png",
+    "thumbnail": "videos/001/miniatura.jpg",
+    "animator": "videos/001/produccion/animar_escena.py",
     "scene_template": null,
-    "art_reused": true,
+    "art_reused": false,
     "description": "A warm window seat shelters Jagoncito, a sleepy kitten and a tiny mouse from the rainy forest outside.",
     "animation": "Gentle rain, warm firelight and very subtle kitten breathing accompany the piano.",
     "axes": {
@@ -32,7 +32,7 @@
         "image": "automatizacion/assets/atelier/imagen.png",
         "thumbnail": "automatizacion/assets/atelier/miniatura.jpg",
         "scene_template": "automatizacion/assets/atelier/scene-12s.mp4",
-        "art_reused": true,
+        "art_reused": false,
         "description": "Clay bowls and an open sketchbook rest on a sheltered workbench above a rain-soaked forest. Jagoncito has found a quiet corner while a kitten sleeps beneath the stool.",
         "animation": "Delicate rain moves outdoors beyond the pottery workshop.",
         "axes": {
@@ -58,7 +58,7 @@
         "image": "automatizacion/assets/boathouse/imagen.png",
         "thumbnail": "automatizacion/assets/boathouse/miniatura.jpg",
         "scene_template": "automatizacion/assets/boathouse/scene-12s.mp4",
-        "art_reused": true,
+        "art_reused": false,
         "description": "A model sailboat, a compass and an open notebook wait on a sheltered boathouse workbench as rain passes across the harbour. Jagoncito and his small companions keep the quiet repair work company.",
         "animation": "Fine rain moves across the distant harbour opening.",
         "axes": {
@@ -81,11 +81,11 @@
       "title": "Unwind with Jagoncito | Gentle Satie Piano on a Rainy Night",
       "scene": {
         "id": "rainy-room-002",
-        "image": "videos/002-jagoncito-satie/imagen.png",
-        "thumbnail": "videos/002-jagoncito-satie/miniatura.jpg",
-        "animator": "videos/002-jagoncito-satie/produccion/animar_escena.py",
+        "image": "videos/001/imagen.png",
+        "thumbnail": "videos/001/miniatura.jpg",
+        "animator": "videos/001/produccion/animar_escena.py",
         "scene_template": null,
-        "art_reused": true,
+        "art_reused": false,
         "description": "A warm window seat shelters Jagoncito, a sleepy kitten and a tiny mouse from the rainy forest outside.",
         "animation": "Gentle rain, warm firelight and very subtle kitten breathing accompany the piano.",
         "axes": {
@@ -110,7 +110,7 @@
         "image": "automatizacion/assets/atelier/imagen.png",
         "thumbnail": "automatizacion/assets/atelier/miniatura.jpg",
         "scene_template": "automatizacion/assets/atelier/scene-12s.mp4",
-        "art_reused": true,
+        "art_reused": false,
         "description": "Clay bowls and an open sketchbook rest on a sheltered workbench above a rain-soaked forest. Jagoncito has found a quiet corner while a kitten sleeps beneath the stool.",
         "animation": "Delicate rain moves outdoors beyond the pottery workshop.",
         "axes": {
@@ -136,7 +136,7 @@
         "image": "automatizacion/assets/boathouse/imagen.png",
         "thumbnail": "automatizacion/assets/boathouse/miniatura.jpg",
         "scene_template": "automatizacion/assets/boathouse/scene-12s.mp4",
-        "art_reused": true,
+        "art_reused": false,
         "description": "A model sailboat, a compass and an open notebook wait on a sheltered boathouse workbench as rain passes across the harbour. Jagoncito and his small companions keep the quiet repair work company.",
         "animation": "Fine rain moves across the distant harbour opening.",
         "axes": {
@@ -159,11 +159,11 @@
       "title": "Slow Down with Jagoncito | A Warm Room and Satie Piano",
       "scene": {
         "id": "rainy-room-002",
-        "image": "videos/002-jagoncito-satie/imagen.png",
-        "thumbnail": "videos/002-jagoncito-satie/miniatura.jpg",
-        "animator": "videos/002-jagoncito-satie/produccion/animar_escena.py",
+        "image": "videos/001/imagen.png",
+        "thumbnail": "videos/001/miniatura.jpg",
+        "animator": "videos/001/produccion/animar_escena.py",
         "scene_template": null,
-        "art_reused": true,
+        "art_reused": false,
         "description": "A warm window seat shelters Jagoncito, a sleepy kitten and a tiny mouse from the rainy forest outside.",
         "animation": "Gentle rain, warm firelight and very subtle kitten breathing accompany the piano.",
         "axes": {
@@ -175,5 +175,11 @@
         }
       }
     }
-  ]
+  ],
+  "novelty_policy": {
+    "require_new_scene": true,
+    "require_new_unordered_programme": true,
+    "on_exhaustion": "needs_new_assets",
+    "external_creative_generation": false
+  }
 }

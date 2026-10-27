@@ -14,10 +14,14 @@ Se revisaron las128secciones de la compilación entregada el27/10/2026. Los info
 - Variar escenario, composición, objeto focal, perspectiva y microhistoria, conservando la identidad de Jagoncito. El taller de cerámica y el cobertizo del puerto cambian la estructura de la sala nocturna; las miniaturas se componen por separado (6–7,49,62,84,108,125).
 - Jagoncito conserva piel azul y ojos ámbar, con pequeños compañeros y postura animal. La firma sigue reconocible dentro de la escena; se evita convertir todas las miniaturas en la misma cara en una esquina.
 - Registrar programa, escena, fuentes, semilla, hashes y controles. La semilla por sí sola no prueba novedad editorial: la selección de repertorio y de escenas proviene del catálogo mantenido, no de investigación autónoma en segundo plano (69,77,104,109–111).
-- Numerar cada entrega y conservar las anteriores. Publicar primero todos los archivos en un borrador de Release y hacerlo visible solo cuando esté completo; mantener un índice legible.
+- Numerar cada entrega y conservar las anteriores. Guardar los archivos reales en la carpeta numerada; verificar los objetos Git LFS y el commit antes de declarar la entrega terminada. Mantener un índice legible.
 
 ## Alcance de la automatización
 
 El banco inicial contiene tres obras de Satie y escenas preparadas. No es un compositor, investigador o ilustrador con autonomía ilimitada: ejecuta programas curados, con interpretaciones y archivos nuevos. El banco debe ampliarse editorialmente para mantener diferencias sustantivas a largo plazo. No se afirma que seis entregas diarias sean una frecuencia óptima para YouTube.
 
 El siguiente aprendizaje depende de resultados reales de publicación y de la valoración auditiva del creador. Comparar cohortes y fuentes equivalentes, observar escucha y tiempo de reproducción además de CTR, y probar una sola hipótesis de packaging cuando haya muestra. El CSV histórico ya recibido es una base válida para avanzar; actualizar Studio no es un requisito de producción (128).
+
+## Corrección posterior solicitada por el creador
+
+El historial mantiene las tres entregas existentes sin disfrazar sus reutilizaciones. La siguiente producción exige escena inédita, comparación perceptual de imágenes, programa no reordenado y un vídeo que no exista en el historial. El banco agotado es un bloqueo real (`needs_new_assets`), no una excusa para generar otra variante. El canal requiere trabajo editorial para ampliar ese banco; el calendario por sí solo no crea conceptos nuevos.

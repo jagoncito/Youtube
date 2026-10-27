@@ -1,68 +1,122 @@
 {
-  "status": "success",
   "number": 2,
+  "status": "success",
   "slot": "2026-10-27T08:00:00Z",
   "tag": "jagoncito-20261027-0800Z",
   "title": "Unwind with Jagoncito | Gentle Satie Piano on a Rainy Night",
-  "url": "https://github.com/jagoncito/Youtube/releases/tag/jagoncito-20261027-0800Z",
+  "folder": "videos/002",
+  "card_path": "videos/002/README.md",
+  "url": "https://github.com/jagoncito/Youtube/tree/main/videos/002",
+  "manifest": "videos/002/manifest.json",
   "assets": {
+    "README.md": {
+      "path": "README.md",
+      "bytes": 1029,
+      "sha256": "f95ba6ed336f72125df1c8706051ba7834a4296eaec35b1b2a8c68d9b5c67690"
+    },
     "audio-bucle-6min.wav": {
+      "path": "audio-bucle-6min.wav",
       "bytes": 63504044,
-      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-0800Z/audio-bucle-6min.wav"
+      "sha256": "5d5b4b8473630415c8408d91737d578c12cf039371e90af7b504823c78ce0591"
     },
     "bucle-6min.mp4": {
+      "path": "bucle-6min.mp4",
       "bytes": 68927593,
-      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-0800Z/bucle-6min.mp4"
+      "sha256": "57125fedf0dea623c15302ed3dc44c5513a210ff57556f327344c8d090ffdce3"
     },
-    "fuentes-y-validacion.zip": {
-      "bytes": 13186,
-      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-0800Z/fuentes-y-validacion.zip"
+    "fuentes/VSCO-CC0-LICENSE.txt": {
+      "path": "fuentes/VSCO-CC0-LICENSE.txt",
+      "bytes": 6555,
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+    },
+    "fuentes/fuentes.json": {
+      "path": "fuentes/fuentes.json",
+      "bytes": 2020,
+      "sha256": "8e771ee1586529fd99a94c2e15cfe91d0bb21ae74e893e6a04cee8a9a1b3e131"
+    },
+    "fuentes/gymnopedie-1.ly": {
+      "path": "fuentes/gymnopedie-1.ly",
+      "bytes": 5588,
+      "sha256": "420a52244e9fbe106dd33ba2cac84414fd66e0d01c6d472205bad39678d4ce04"
+    },
+    "fuentes/gymnopedie-1.midi": {
+      "path": "fuentes/gymnopedie-1.midi",
+      "bytes": 4191,
+      "sha256": "c50ea7524f3fe31bbd0460216e52fffb9898c881c06daec16b5591b85d7b6b2e"
+    },
+    "fuentes/gymnopedie-2.ly": {
+      "path": "fuentes/gymnopedie-2.ly",
+      "bytes": 4902,
+      "sha256": "54182340c4be942ea2ebbe2fcefd0734bfb29d02bd76672fd3751c8600c27d8c"
+    },
+    "fuentes/gymnopedie-2.midi": {
+      "path": "fuentes/gymnopedie-2.midi",
+      "bytes": 3446,
+      "sha256": "2437430975da834e80feb2271fe8ceb044c285836c0bb5f8672e218889deaa81"
+    },
+    "fuentes/instrumento-vsco-fuentes.json": {
+      "path": "fuentes/instrumento-vsco-fuentes.json",
+      "bytes": 11079,
+      "sha256": "9473bc51f2370db87b3e39eda2537bef05288d1e70fd485df9c903c9d28ee055"
+    },
+    "fuentes/manifest-original.json": {
+      "path": "fuentes/manifest-original.json",
+      "bytes": 4898,
+      "sha256": "bb32c18d6ced688d3d224ec3ea7e1be98de62a42b871df782401ef53a7c5be58"
     },
     "imagen.png": {
+      "path": "imagen.png",
       "bytes": 2767670,
-      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-0800Z/imagen.png"
-    },
-    "manifest.json": {
-      "bytes": 4898,
-      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-0800Z/manifest.json"
+      "sha256": "ef376ad030349ee8c38ab995754887986d6e75c0f2afab6442a7395a4857f3b9"
     },
     "miniatura.jpg": {
+      "path": "miniatura.jpg",
       "bytes": 504981,
-      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-0800Z/miniatura.jpg"
+      "sha256": "24df8f6af884c7bd7f089e35559fd1f5d9542d37af8105beff072c277996306d"
     },
     "publicacion.txt": {
+      "path": "publicacion.txt",
       "bytes": 1523,
-      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-0800Z/publicacion.txt"
-    },
-    "README.md": {
-      "bytes": 803,
-      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-0800Z/README.md"
+      "sha256": "56c9b5677cdf212f2ee4e11b8699fec2a3e746cbe72f63d6679db9baf9f13381"
     },
     "video-30min.mp4": {
+      "path": "video-30min.mp4",
       "bytes": 344635985,
-      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-0800Z/video-30min.mp4"
+      "sha256": "493f15f9d758869e89fbe717d37f67e53d6371861afe6252fdac0e5d420da9a8"
+    },
+    "manifest.json": {
+      "path": "manifest.json",
+      "bytes": 5129,
+      "sha256": "b68ed4a610a1922e0fb12fd591bb5fe67e260ed30212aee6066bad2c3a06d92a"
     }
   },
-  "published_at": "2026-10-27T12:18:18Z",
-  "card_path": "videos/video-0002/README.md",
-  "plan_id": "wind-down-12",
+  "creative_identity": {
+    "scene_sha256": "ef376ad030349ee8c38ab995754887986d6e75c0f2afab6442a7395a4857f3b9",
+    "program": [
+      1,
+      2
+    ],
+    "scene_id": "rainy-room-002"
+  },
   "validation": {
     "bucle-6min.mp4": {
       "duration_seconds": 360,
-      "complete_decode_exit_code": 0,
       "width": 1920,
       "height": 1080,
       "fps": 24,
-      "bytes": 68927593
+      "complete_decode_exit_code": 0,
+      "validation_origin": "Original full decode; media unchanged and SHA-256 verified during migration."
     },
     "video-30min.mp4": {
       "duration_seconds": 1800,
-      "complete_decode_exit_code": 0,
       "width": 1920,
       "height": 1080,
       "fps": 24,
-      "bytes": 344635985
+      "complete_decode_exit_code": 0,
+      "validation_origin": "Original full decode; media unchanged and SHA-256 verified during migration."
     }
   },
+  "published_at": "2026-10-27T12:18:18Z",
+  "historical_note": "Variante musical del 001: conserva su imagen y animación, con las Gymnopédies n.º 1 y n.º 2. Se mantiene como entrega histórica; no se considera una escena nueva.",
   "published_to_youtube": false
 }

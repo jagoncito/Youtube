@@ -1,0 +1,233 @@
+{
+  "schema_version": 2,
+  "number": 1,
+  "slot": "2026-10-15T13:00:00Z",
+  "title": "A Rainy Night with Jagoncito | Satie Gymnopédies · 30 Minutes",
+  "plan_id": "original-13",
+  "works": [
+    1,
+    3
+  ],
+  "scene_id": "rainy-room-002",
+  "creative_identity": {
+    "scene_sha256": "ef376ad030349ee8c38ab995754887986d6e75c0f2afab6442a7395a4857f3b9",
+    "program": [
+      1,
+      3
+    ],
+    "scene_id": "rainy-room-002"
+  },
+  "audio": {
+    "title": "Erik Satie — Gymnopédies n.º 1 y n.º 3",
+    "complete_works": 2,
+    "sample_rate": 44100,
+    "channels": 2,
+    "pcm_bits": 16,
+    "duration_seconds": 360,
+    "bytes": 63504044,
+    "sha256": "614daaa12892b872fe85d928a33ff84fb5abc6ee4677f1aa373885e18ef2f568",
+    "chapters": [
+      {
+        "title": "Erik Satie — Gymnopédie n.º 1",
+        "start_seconds": 0,
+        "duration_seconds": 190,
+        "mean_quarter_bpm": 76.139,
+        "minimum_quarter_bpm": 63.668,
+        "maximum_quarter_bpm": 78.56,
+        "score_seconds": 184.4,
+        "notes": 455,
+        "bars": 78,
+        "quarters": 234,
+        "midi": "gymnopedie-1.midi",
+        "pitch_range_midi": [
+          33,
+          81
+        ],
+        "notes_by_role": {
+          "melody": 128,
+          "harmony": 239,
+          "bass": 88
+        }
+      },
+      {
+        "title": "Erik Satie — Gymnopédie n.º 3",
+        "start_seconds": 190,
+        "duration_seconds": 170,
+        "mean_quarter_bpm": 65.693,
+        "minimum_quarter_bpm": 55.204,
+        "maximum_quarter_bpm": 67.898,
+        "score_seconds": 164.4,
+        "notes": 326,
+        "bars": 60,
+        "quarters": 180,
+        "midi": "gymnopedie-3.midi",
+        "pitch_range_midi": [
+          31,
+          81
+        ],
+        "notes_by_role": {
+          "melody": 91,
+          "harmony": 174,
+          "bass": 61
+        }
+      }
+    ],
+    "music": "Interpretaciones virtuales nuevas; notas, silencios y repeticiones completos de ambas partituras.",
+    "ambience": "Lluvia sintética filtrada, creada con ruido; sin grabaciones externas ni truenos.",
+    "ambience_rms_relative_to_music_db": -27.0,
+    "integrated_lufs": -21.0,
+    "true_peak_dbtp": -2.68,
+    "loudness_range_lu": 5.2,
+    "linear_master_gain_db": 18.67,
+    "pcm_peak_dbfs": -2.682,
+    "clipped_samples": 0,
+    "loop_boundary_delta_pcm16": [
+      31,
+      41
+    ],
+    "loop_seam_max_sample_step_dbfs": -36.576,
+    "rights": "Satie (1888), transcripciones Mutopia de dominio público; muestras VSCO2 CC0, lluvia original.",
+    "listening_review": "Revisión técnica automatizada. No se afirma escucha humana o valoración auditiva subjetiva.",
+    "no_commercial_work_recording_used": true
+  },
+  "video_checks": {
+    "bucle-6min.mp4": {
+      "duration_seconds": 360,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "complete_decode_exit_code": 0,
+      "validation_origin": "Original full decode; media unchanged and SHA-256 verified during migration."
+    },
+    "video-30min.mp4": {
+      "duration_seconds": 1800,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "complete_decode_exit_code": 0,
+      "validation_origin": "Original full decode; media unchanged and SHA-256 verified during migration."
+    }
+  },
+  "files": {
+    "README.md": {
+      "bytes": 948,
+      "sha256": "36c3bf70aa0da0e4be5a37d73d6be7d57e9aa4659b7eb1a06cd7fe5c00b59493"
+    },
+    "audio-bucle-6min.wav": {
+      "bytes": 63504044,
+      "sha256": "614daaa12892b872fe85d928a33ff84fb5abc6ee4677f1aa373885e18ef2f568"
+    },
+    "bucle-6min.mp4": {
+      "bytes": 68944579,
+      "sha256": "2f94e80a187d701e9e4dbc4e8ce134b82d73b1775f66d911f4c722319df2a7c7"
+    },
+    "imagen.png": {
+      "bytes": 2767670,
+      "sha256": "ef376ad030349ee8c38ab995754887986d6e75c0f2afab6442a7395a4857f3b9"
+    },
+    "miniatura.jpg": {
+      "bytes": 504981,
+      "sha256": "24df8f6af884c7bd7f089e35559fd1f5d9542d37af8105beff072c277996306d"
+    },
+    "produccion/LEEME-AUDIO.md": {
+      "bytes": 6142,
+      "sha256": "bfaa448875d48f80a47052822f0332242672cf78de23802189abd0717703489a"
+    },
+    "produccion/LEEME-VIDEO.md": {
+      "bytes": 4051,
+      "sha256": "05235cd3646262f65e9873160073bfa9159e1e69ac119d19ce4f57bdfc2909fd"
+    },
+    "produccion/VSCO-CC0-LICENSE.txt": {
+      "bytes": 6555,
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+    },
+    "produccion/animar_escena.py": {
+      "bytes": 4970,
+      "sha256": "c1ba4c384f72c4a1d838b75959a8b0522d13610f4c82765ba901f86515814e0a"
+    },
+    "produccion/audio-manifiesto.json": {
+      "bytes": 2121,
+      "sha256": "33d744190fa0d1db2ecc48ebf90959ad41bcbf9b1c1bba3f4f9e09b8c2476ea3"
+    },
+    "produccion/fuentes-partituras.json": {
+      "bytes": 1781,
+      "sha256": "7e72ea85a222f78b6ea00c9e332ec3260e6d507d0337c97d28719290c3cceaab"
+    },
+    "produccion/gymnopedie-1-render.ly": {
+      "bytes": 5251,
+      "sha256": "9977b55c9595cb746ebb21815ba1d181a0de04cff5b8b6187ad8adb848121863"
+    },
+    "produccion/gymnopedie-1.ly": {
+      "bytes": 5588,
+      "sha256": "420a52244e9fbe106dd33ba2cac84414fd66e0d01c6d472205bad39678d4ce04"
+    },
+    "produccion/gymnopedie-1.midi": {
+      "bytes": 4191,
+      "sha256": "c50ea7524f3fe31bbd0460216e52fffb9898c881c06daec16b5591b85d7b6b2e"
+    },
+    "produccion/gymnopedie-3-render.ly": {
+      "bytes": 4473,
+      "sha256": "5eb0277952c7b6b0108723a9879d5bb7a10ca536f89a6d6f228005767f7fb374"
+    },
+    "produccion/gymnopedie-3.ly": {
+      "bytes": 4797,
+      "sha256": "d0b774aee7df39627d57b66c1269ec3a10e89f9fe3d271df9f4d5e3c082d9001"
+    },
+    "produccion/gymnopedie-3.midi": {
+      "bytes": 3073,
+      "sha256": "87314570b0f19a7251b7278e759dc847486feaa74b4250fc9441e14ed493ce7f"
+    },
+    "produccion/instrumento-vsco-fuentes.json": {
+      "bytes": 11079,
+      "sha256": "9473bc51f2370db87b3e39eda2537bef05288d1e70fd485df9c903c9d28ee055"
+    },
+    "produccion/lluvia.ass": {
+      "bytes": 25687,
+      "sha256": "df501aca9320c1eab84eb0e5ba932a2bb42e2a32ab66b0451df80fdcd62bde56"
+    },
+    "produccion/montar_videos.py": {
+      "bytes": 1906,
+      "sha256": "9396ede7d80a589298cb346fba8bcdea99c4db08c853e1ac66e9ad82347050fe"
+    },
+    "produccion/renderizar_audio.py": {
+      "bytes": 14077,
+      "sha256": "d69973233b7ae183de5f8bdecc34a092b6735192b3c7425914145de8cfd56dc4"
+    },
+    "produccion/requirements.txt": {
+      "bytes": 39,
+      "sha256": "2ef563a32786d319bf4ef5b5e06dfb66efd0efe05a84149523dc62cd403f8d75"
+    },
+    "produccion/validacion-animacion.json": {
+      "bytes": 695,
+      "sha256": "ae7cf73385321c3648c1f03b18ef24ba9a3599d4e9922753bf38bb11ef2b6e1b"
+    },
+    "produccion/validacion-audio.json": {
+      "bytes": 1206,
+      "sha256": "9a76ff4f0fb924feabd6b8c0b0f38a94452517f980d4c274f98a4b0a1ee9ec8d"
+    },
+    "produccion/validacion-entrega.json": {
+      "bytes": 2042,
+      "sha256": "cdb07ef384852f304ec349418a36ab867aeaeffd643a7824d56cef00c73911ba"
+    },
+    "produccion/validacion-video30.json": {
+      "bytes": 1750,
+      "sha256": "155147c56ef6459f45bf8e4bb42fee2dd86d7bfaabe7c0f6cd6b6e115d4f7bcf"
+    },
+    "publicacion.txt": {
+      "bytes": 4076,
+      "sha256": "b5f3e6737c76dc5b16b2f3514431837081bdfead9a90b7eb9c973ef08966d2a8"
+    },
+    "video-30min.mp4": {
+      "bytes": 344719906,
+      "sha256": "9280c11b8b50d21f1630b19570f5ab23cc97490a4135d0618d9fd19ed69fe78f"
+    }
+  },
+  "historical_note": "Vídeo original: habitación nocturna, con las Gymnopédies n.º 1 y n.º 3.",
+  "migration": {
+    "migrated_at": "2026-10-27T12:54:56.601403+00:00",
+    "media_unchanged": true,
+    "checksums_verified": true,
+    "format_probe_passed": true
+  },
+  "published_to_youtube": false
+}

@@ -31,3 +31,11 @@ La entrega anterior de Chopin fue una prueba técnica. El creador señaló falta
 El creador ha autorizado preparar y subir una entrega a GitHub cada cuatro horas. Se conserva la numeración de esta colaboración: el Satie existente es el Vídeo001. Los siguientes son002,003… con carpetas e índice. No publicar automáticamente en YouTube.
 
 La compilación de128estudios ya está disponible como referencia privada. Sus criterios operativos, con el peso y los límites de la evidencia, se recogen en `automatizacion/CRITERIOS.md`. La identidad de Jagoncito debe reconocerse sin repetir el mismo retrato lateral en todas las escenas. Cambiar estructura visual, repertorio e intención, además de realizar controles técnicos y registrar el alcance real del catálogo.
+
+## Corrección de estructura y originalidad
+
+El creador exige archivos reales en carpetas001,002,003, sin fichas que aparenten nuevas entregas. El original es001. Se conserva002 como variante musical que reutiliza sus visuales;003 tiene otra escena pero reordena el repertorio de002. Esas excepciones históricas no son un modelo de producción futura.
+
+Cada siguiente vídeo requiere una propuesta visual inédita y diferencias musicales sustantivas. No repetir imágenes, animaciones o vídeos; no contar una recodificación, una semilla, un título o el orden de las mismas piezas como novedad suficiente. La mejora se fundamenta en intención, repertorio, experiencia audiovisual, packaging y resultados reales; publicar más no demuestra mayor calidad ni alcance.
+
+La automatización debe bloquear la publicación si falta material original. La necesidad de ampliar el banco se comunica como tal; no se sustituye por clones. Los MP4 y WAV se almacenan en la carpeta numerada usando Git LFS. No crear una segunda carpeta puente para un vídeo ya existente.
