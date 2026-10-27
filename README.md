@@ -11,7 +11,7 @@ Cada entrega se identifica como **Vídeo 001, Vídeo 002, Vídeo 003…** y tien
 
 <!-- JAGONCITO:ENTREGAS:START -->
 
-- [Vídeo 001 — Una noche de lluvia con Jagoncito](videos/video-0001/README.md)
+- [Vídeo 001 — A Rainy Night with Jagoncito \| Satie Gymnopédies · 30 Minutes](videos/video-0001/README.md)
 
 <!-- JAGONCITO:ENTREGAS:END -->
 

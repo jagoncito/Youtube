@@ -1,7 +1,7 @@
-# Vídeos por orden
+# Entregas automáticas
 
-| Número | Título | Carpeta |
-| --- | --- | --- |
-| 001 | A Rainy Night with Jagoncito — Satie Gymnopédies | [Abrir Vídeo001](../videos/video-0001/README.md) |
+Cada fila corresponde a un paquete completo subido a GitHub Releases.
 
-Las siguientes entregas añadirán su número y los enlaces de descarga aquí automáticamente.
+| Número | Vídeo | Carpeta | Archivos |
+| --- | --- | --- | --- |
+| 001 | A Rainy Night with Jagoncito \| Satie Gymnopédies · 30 Minutes | [Abrir carpeta](../videos/video-0001/README.md) | [Descargar](https://github.com/jagoncito/Youtube/tree/main/videos/video-0001) |
