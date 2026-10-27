@@ -1,33 +1,17 @@
 # Jagoncito — vídeos
 
-Cada carpeta contiene sus **archivos reales**: vídeo de 30 minutos, base de 6 minutos, WAV, imagen, miniatura, texto de publicación y fuentes.
+Cada carpeta contiene sus archivos reales: vídeo, audio WAV, imagen, miniatura, texto de publicación y fuentes. No hay una producción automática programada.
 
-<!-- JAGONCITO:ENTREGAS:START -->
-
-- [001 — Original: Satie 1 y 3](videos/001/)
-- [002 — Variante musical: Satie 1 y 2, misma escena que 001](videos/002/)
-- [003 — Taller de cerámica: Satie 2 y 1](videos/003/)
-
-<!-- JAGONCITO:ENTREGAS:END -->
-
-## Qué se conserva
-
-| Carpeta | Música | Imagen |
+| Carpeta | Música | Escena |
 | --- | --- | --- |
-| [001](videos/001/) | Gymnopédies 1 y 3 | Habitación nocturna original |
-| [002](videos/002/) | Gymnopédies 1 y 2 | Misma imagen y animación que 001; variante histórica |
-| [003](videos/003/) | Gymnopédies 2 y 1 | Taller de cerámica; mismas obras que 002 en otro orden |
+| [001](videos/001/) | Gymnopédies 1 y 3 de Satie | Habitación nocturna original |
+| [002](videos/002/) | Gymnopédies 1 y 2 de Satie | Variante histórica con la misma escena que 001 |
+| [003](videos/003/) | Gymnopédies 2 y 1 de Satie | Taller de cerámica; repertorio de 002 reordenado |
 
-Los medios existentes se han conservado sin volver a renderizarlos. Las reutilizaciones de 002 y 003 se declaran como tales; no se presentan como tres propuestas enteramente distintas.
+Los MP4 incorporan su audio. El WAV independiente corresponde a la base de seis minutos. Abre un archivo y pulsa Download para descargarlo.
 
-## Descargar
+Los medios grandes usan Git LFS. Al clonar: `git lfs install --local` y `git lfs pull`.
 
-Entra en `001`, `002` o `003`, abre el MP4 o el WAV y pulsa **Download**. Ambos MP4 incorporan el audio. El WAV independiente dura 6 minutos.
+[Guía del canal](GUIA_DEL_CANAL.md). La siguiente entrega se preparará cuando el creador la solicite, con el número004.
 
-Los MP4 y WAV se conservan mediante Git LFS por su tamaño. Al clonar el repositorio: `git lfs install` y `git lfs pull`.
-
-## Siguientes entregas
-
-La producción comprueba el historial completo antes de crear otra entrega. Rechaza imágenes ya usadas, recodificaciones o retoques muy similares, vídeos duplicados y los mismos programas musicales reordenados. Si falta material inédito, registra `needs_new_assets` y no publica una variante ni consume otro número.
-
-[Estado y programación](automatizacion/README.md) · [Guía del canal](GUIA_DEL_CANAL.md) · [Criterio editorial](automatizacion/CRITERIOS.md)
+[Prompt para el vídeo004 — El invierno de Vivaldi](prompts/004-vivaldi-invierno.md). El prompt está preparado; el vídeo004 todavía no se ha producido.

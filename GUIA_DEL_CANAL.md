@@ -26,16 +26,10 @@ Guardar qué cambió y por qué. Tras publicar en YouTube, evaluar con datos suf
 
 La entrega anterior de Chopin fue una prueba técnica. El creador señaló falta de identidad de Jagoncito y de vida en la escena; esta observación motiva su sustitución por la entrega Satie. No se han aportado resultados de publicación en YouTube para ninguna de estas dos entregas.
 
-## Actualización del 27 de octubre de 2026
+## Estado actual
 
-El creador ha autorizado preparar y subir una entrega a GitHub cada cuatro horas. Se conserva la numeración de esta colaboración: el Satie existente es el Vídeo001. Los siguientes son002,003… con carpetas e índice. No publicar automáticamente en YouTube.
+La programación automática ha sido cancelada por el creador. Cada vídeo se prepara únicamente cuando lo pide. Se conservan tres entregas con archivos reales en videos/001, videos/002 y videos/003. La siguiente será004.
 
-La compilación de 128estudios ya está disponible como referencia privada. Sus criterios operativos, con el peso y los límites de la evidencia, se recogen en `automatizacion/CRITERIOS.md`. La identidad de Jagoncito debe reconocerse sin repetir el mismo retrato lateral en todas las escenas. Cambiar estructura visual, repertorio e intención, además de realizar controles técnicos y registrar el alcance real del catálogo.
+Cada nueva entrega necesita imágenes y propuesta audiovisual inéditas, música trabajada y créditos verificables. No contar una recodificación, una semilla o el orden de las mismas piezas como novedad suficiente. Los controles técnicos no equivalen a una valoración auditiva.
 
-## Corrección de estructura y originalidad
-
-El creador exige archivos reales en carpetas 001, 002, 003, sin fichas que aparenten nuevas entregas. El original es 001. Se conserva 002 como variante musical que reutiliza sus visuales;003 tiene otra escena pero reordena el repertorio de 002. Esas excepciones históricas no son un modelo de producción futura.
-
-Cada siguiente vídeo requiere una propuesta visual inédita y diferencias musicales sustantivas. No repetir imágenes, animaciones o vídeos; no contar una recodificación, una semilla, un título o el orden de las mismas piezas como novedad suficiente. La mejora se fundamenta en intención, repertorio, experiencia audiovisual, packaging y resultados reales; publicar más no demuestra mayor calidad ni alcance.
-
-La automatización debe bloquear la publicación si falta material original. La necesidad de ampliar el banco se comunica como tal; no se sustituye por clones. Los MP4 y WAV se almacenan en la carpeta numerada usando Git LFS. No crear una segunda carpeta puente para un vídeo ya existente.
+Consultar los128informes disponibles en la conversación como referencia, distinguiendo sus recomendaciones y afirmaciones de los datos verificados. No publicar el documento original ni las exportaciones privadas de Studio.
