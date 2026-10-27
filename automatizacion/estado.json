@@ -6,8 +6,10 @@
   "schedule_utc": "0 */4 * * *",
   "interval_hours": 4,
   "published_to_youtube": false,
-  "status": "success",
+  "status": "migration_paused",
   "recovered": true,
   "completed_at": "2026-10-27T12:18:18.852505Z",
-  "release_url": "https://github.com/jagoncito/Youtube/releases/tag/jagoncito-20261027-0800Z"
+  "release_url": "https://github.com/jagoncito/Youtube/releases/tag/jagoncito-20261027-0800Z",
+  "reason": "Reorganizando tres entregas con archivos directos y bloqueando variantes repetidas.",
+  "updated_at": "2026-10-27T12:42:46.423589+00:00"
 }

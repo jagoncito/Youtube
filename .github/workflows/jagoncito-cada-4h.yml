@@ -9,13 +9,6 @@ on:
         description: 'Turno UTC opcional: YYYY-MM-DDTHH:00:00Z (00/04/08/12/16/20)'
         required: false
         type: string
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/jagoncito-cada-4h.yml'
-      - 'automatizacion/ejecutar.py'
-      - 'automatizacion/produccion/**'
-      - 'automatizacion/assets/**'
 
 permissions:
   contents: write
@@ -26,6 +19,7 @@ concurrency:
 
 jobs:
   crear-y-subir:
+    if: ${{ false }} # Pausa temporal durante la migración
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     env:
