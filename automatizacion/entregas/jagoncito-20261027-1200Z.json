@@ -1,8 +1,68 @@
 {
+  "status": "success",
   "number": 3,
-  "status": "pending",
   "slot": "2026-10-27T12:00:00Z",
   "tag": "jagoncito-20261027-1200Z",
-  "title": "Producción pendiente",
+  "title": "Quiet Focus in Jagoncito’s Workshop | Satie Piano & Rain",
+  "url": "https://github.com/jagoncito/Youtube/releases/tag/jagoncito-20261027-1200Z",
+  "assets": {
+    "audio-bucle-6min.wav": {
+      "bytes": 63504044,
+      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-1200Z/audio-bucle-6min.wav"
+    },
+    "bucle-6min.mp4": {
+      "bytes": 62033102,
+      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-1200Z/bucle-6min.mp4"
+    },
+    "fuentes-y-validacion.zip": {
+      "bytes": 13176,
+      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-1200Z/fuentes-y-validacion.zip"
+    },
+    "imagen.png": {
+      "bytes": 3278329,
+      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-1200Z/imagen.png"
+    },
+    "manifest.json": {
+      "bytes": 4856,
+      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-1200Z/manifest.json"
+    },
+    "miniatura.jpg": {
+      "bytes": 536088,
+      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-1200Z/miniatura.jpg"
+    },
+    "publicacion.txt": {
+      "bytes": 1562,
+      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-1200Z/publicacion.txt"
+    },
+    "README.md": {
+      "bytes": 800,
+      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-1200Z/README.md"
+    },
+    "video-30min.mp4": {
+      "bytes": 310162610,
+      "url": "https://github.com/jagoncito/Youtube/releases/download/jagoncito-20261027-1200Z/video-30min.mp4"
+    }
+  },
+  "published_at": "2026-10-27T12:13:41Z",
+  "card_path": "videos/video-0003/README.md",
+  "plan_id": "reading-21",
+  "validation": {
+    "bucle-6min.mp4": {
+      "duration_seconds": 360,
+      "complete_decode_exit_code": 0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "bytes": 62033102
+    },
+    "video-30min.mp4": {
+      "duration_seconds": 1800,
+      "complete_decode_exit_code": 0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "bytes": 310162610
+    }
+  },
   "published_to_youtube": false
 }

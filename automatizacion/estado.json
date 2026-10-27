@@ -6,6 +6,7 @@
   "schedule_utc": "0 */4 * * *",
   "interval_hours": 4,
   "published_to_youtube": false,
-  "status": "running",
-  "started_at": "2026-10-27T12:10:43.205804Z"
+  "status": "success",
+  "completed_at": "2026-10-27T12:13:42.188680Z",
+  "release_url": "https://github.com/jagoncito/Youtube/releases/tag/jagoncito-20261027-1200Z"
 }
