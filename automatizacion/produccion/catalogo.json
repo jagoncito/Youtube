@@ -1,0 +1,179 @@
+{
+  "version": 2,
+  "scope": "Three curated scene families and six music programmes; each run renders a seeded digital interpretation. Visual assets are reused from this reviewed catalogue.",
+  "scene": {
+    "id": "rainy-room-002",
+    "image": "videos/002-jagoncito-satie/imagen.png",
+    "thumbnail": "videos/002-jagoncito-satie/miniatura.jpg",
+    "animator": "videos/002-jagoncito-satie/produccion/animar_escena.py",
+    "scene_template": null,
+    "art_reused": true,
+    "description": "A warm window seat shelters Jagoncito, a sleepy kitten and a tiny mouse from the rainy forest outside.",
+    "animation": "Gentle rain, warm firelight and very subtle kitten breathing accompany the piano.",
+    "axes": {
+      "scenario": "woodland window-seat music room at night",
+      "microstory": "companions settle with a warm cup while rain crosses the forest",
+      "focal_object": "warm cup, knitted blanket and sleeping companions",
+      "viewer_projection": "winding down in a sheltered room",
+      "palette": "deep midnight blue, candle gold and rust velvet"
+    }
+  },
+  "plans": [
+    {
+      "id": "reading-13",
+      "intent": "reading",
+      "works": [
+        1,
+        3
+      ],
+      "title": "Quiet Reading in Jagoncito’s Pottery Workshop | Satie Piano",
+      "scene": {
+        "id": "atelier",
+        "image": "automatizacion/assets/atelier/imagen.png",
+        "thumbnail": "automatizacion/assets/atelier/miniatura.jpg",
+        "scene_template": "automatizacion/assets/atelier/scene-12s.mp4",
+        "art_reused": true,
+        "description": "Clay bowls and an open sketchbook rest on a sheltered workbench above a rain-soaked forest. Jagoncito has found a quiet corner while a kitten sleeps beneath the stool.",
+        "animation": "Delicate rain moves outdoors beyond the pottery workshop.",
+        "axes": {
+          "scenario": "sheltered woodland pottery workshop",
+          "microstory": "an open sketchbook rests among freshly worked bowls",
+          "focal_object": "ceramic vessels and botanical sketchbook",
+          "viewer_projection": "a quiet reading pause at the craft bench",
+          "palette": "moss green, terracotta and pale rainlit forest"
+        },
+        "scene_manifest": "automatizacion/assets/atelier/manifest.json"
+      }
+    },
+    {
+      "id": "focus-31",
+      "intent": "a quiet break",
+      "works": [
+        3,
+        1
+      ],
+      "title": "A Quiet Harbor Break with Jagoncito | Satie Piano & Rain",
+      "scene": {
+        "id": "boathouse",
+        "image": "automatizacion/assets/boathouse/imagen.png",
+        "thumbnail": "automatizacion/assets/boathouse/miniatura.jpg",
+        "scene_template": "automatizacion/assets/boathouse/scene-12s.mp4",
+        "art_reused": true,
+        "description": "A model sailboat, a compass and an open notebook wait on a sheltered boathouse workbench as rain passes across the harbour. Jagoncito and his small companions keep the quiet repair work company.",
+        "animation": "Fine rain moves across the distant harbour opening.",
+        "axes": {
+          "scenario": "sheltered harbour boathouse",
+          "microstory": "a model sailboat rests on the repair table as rain crosses the harbour",
+          "focal_object": "wooden model sailboat and navigation charts",
+          "viewer_projection": "an unhurried harbour break beside a restoration project",
+          "palette": "weathered teak, warm brass and cool misty harbour blue"
+        },
+        "scene_manifest": "automatizacion/assets/boathouse/manifest.json"
+      }
+    },
+    {
+      "id": "wind-down-12",
+      "intent": "winding down",
+      "works": [
+        1,
+        2
+      ],
+      "title": "Unwind with Jagoncito | Gentle Satie Piano on a Rainy Night",
+      "scene": {
+        "id": "rainy-room-002",
+        "image": "videos/002-jagoncito-satie/imagen.png",
+        "thumbnail": "videos/002-jagoncito-satie/miniatura.jpg",
+        "animator": "videos/002-jagoncito-satie/produccion/animar_escena.py",
+        "scene_template": null,
+        "art_reused": true,
+        "description": "A warm window seat shelters Jagoncito, a sleepy kitten and a tiny mouse from the rainy forest outside.",
+        "animation": "Gentle rain, warm firelight and very subtle kitten breathing accompany the piano.",
+        "axes": {
+          "scenario": "woodland window-seat music room at night",
+          "microstory": "companions settle with a warm cup while rain crosses the forest",
+          "focal_object": "warm cup, knitted blanket and sleeping companions",
+          "viewer_projection": "winding down in a sheltered room",
+          "palette": "deep midnight blue, candle gold and rust velvet"
+        }
+      }
+    },
+    {
+      "id": "reading-21",
+      "intent": "quiet focus",
+      "works": [
+        2,
+        1
+      ],
+      "title": "Quiet Focus in Jagoncito’s Workshop | Satie Piano & Rain",
+      "scene": {
+        "id": "atelier",
+        "image": "automatizacion/assets/atelier/imagen.png",
+        "thumbnail": "automatizacion/assets/atelier/miniatura.jpg",
+        "scene_template": "automatizacion/assets/atelier/scene-12s.mp4",
+        "art_reused": true,
+        "description": "Clay bowls and an open sketchbook rest on a sheltered workbench above a rain-soaked forest. Jagoncito has found a quiet corner while a kitten sleeps beneath the stool.",
+        "animation": "Delicate rain moves outdoors beyond the pottery workshop.",
+        "axes": {
+          "scenario": "sheltered woodland pottery workshop",
+          "microstory": "an open sketchbook rests among freshly worked bowls",
+          "focal_object": "ceramic vessels and botanical sketchbook",
+          "viewer_projection": "a quiet reading pause at the craft bench",
+          "palette": "moss green, terracotta and pale rainlit forest"
+        },
+        "scene_manifest": "automatizacion/assets/atelier/manifest.json"
+      }
+    },
+    {
+      "id": "quiet-break-23",
+      "intent": "relaxation",
+      "works": [
+        2,
+        3
+      ],
+      "title": "Rest by Jagoncito’s Model Boat | Gentle Satie Piano & Rain",
+      "scene": {
+        "id": "boathouse",
+        "image": "automatizacion/assets/boathouse/imagen.png",
+        "thumbnail": "automatizacion/assets/boathouse/miniatura.jpg",
+        "scene_template": "automatizacion/assets/boathouse/scene-12s.mp4",
+        "art_reused": true,
+        "description": "A model sailboat, a compass and an open notebook wait on a sheltered boathouse workbench as rain passes across the harbour. Jagoncito and his small companions keep the quiet repair work company.",
+        "animation": "Fine rain moves across the distant harbour opening.",
+        "axes": {
+          "scenario": "sheltered harbour boathouse",
+          "microstory": "a model sailboat rests on the repair table as rain crosses the harbour",
+          "focal_object": "wooden model sailboat and navigation charts",
+          "viewer_projection": "an unhurried harbour break beside a restoration project",
+          "palette": "weathered teak, warm brass and cool misty harbour blue"
+        },
+        "scene_manifest": "automatizacion/assets/boathouse/manifest.json"
+      }
+    },
+    {
+      "id": "wind-down-32",
+      "intent": "winding down",
+      "works": [
+        3,
+        2
+      ],
+      "title": "Slow Down with Jagoncito | A Warm Room and Satie Piano",
+      "scene": {
+        "id": "rainy-room-002",
+        "image": "videos/002-jagoncito-satie/imagen.png",
+        "thumbnail": "videos/002-jagoncito-satie/miniatura.jpg",
+        "animator": "videos/002-jagoncito-satie/produccion/animar_escena.py",
+        "scene_template": null,
+        "art_reused": true,
+        "description": "A warm window seat shelters Jagoncito, a sleepy kitten and a tiny mouse from the rainy forest outside.",
+        "animation": "Gentle rain, warm firelight and very subtle kitten breathing accompany the piano.",
+        "axes": {
+          "scenario": "woodland window-seat music room at night",
+          "microstory": "companions settle with a warm cup while rain crosses the forest",
+          "focal_object": "warm cup, knitted blanket and sleeping companions",
+          "viewer_projection": "winding down in a sheltered room",
+          "palette": "deep midnight blue, candle gold and rust velvet"
+        }
+      }
+    }
+  ]
+}

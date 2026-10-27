@@ -1,0 +1,16 @@
+{
+  "number": 1,
+  "status": "success",
+  "title": "A Rainy Night with Jagoncito | Satie Gymnopédies · 30 Minutes",
+  "slot": "2026-10-15T13:00:00Z",
+  "created_at": "2026-10-15T13:13:00Z",
+  "url": "https://github.com/jagoncito/Youtube/tree/main/videos/video-0001",
+  "card_path": "videos/video-0001/README.md",
+  "legacy": true,
+  "assets": {
+    "video-30min.mp4": "https://github.com/jagoncito/Youtube/blob/main/videos/002-jagoncito-satie/video-30min.mp4",
+    "bucle-6min.mp4": "https://github.com/jagoncito/Youtube/blob/main/videos/002-jagoncito-satie/bucle-6min.mp4",
+    "audio-bucle-6min.wav": "https://github.com/jagoncito/Youtube/blob/main/videos/002-jagoncito-satie/audio-bucle-6min.wav",
+    "miniatura.jpg": "https://github.com/jagoncito/Youtube/blob/main/videos/002-jagoncito-satie/miniatura.jpg"
+  }
+}

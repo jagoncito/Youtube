@@ -25,3 +25,9 @@ Estudiar el material y los datos disponibles, distinguir hechos de hipótesis y 
 Guardar qué cambió y por qué. Tras publicar en YouTube, evaluar con datos suficientes y edades comparables: impresiones, CTR, retención real, tiempo de reproducción y espectadores que vuelven. No publicar exportaciones privadas de Studio en GitHub. No atribuir a una miniatura o una obra efectos que los datos no demuestran.
 
 La entrega anterior de Chopin fue una prueba técnica. El creador señaló falta de identidad de Jagoncito y de vida en la escena; esta observación motiva su sustitución por la entrega Satie. No se han aportado resultados de publicación en YouTube para ninguna de estas dos entregas.
+
+## Actualización del 27 de octubre de 2026
+
+El creador ha autorizado preparar y subir una entrega a GitHub cada cuatro horas. Se conserva la numeración de esta colaboración: el Satie existente es el Vídeo001. Los siguientes son002,003… con carpetas e índice. No publicar automáticamente en YouTube.
+
+La compilación de128estudios ya está disponible como referencia privada. Sus criterios operativos, con el peso y los límites de la evidencia, se recogen en `automatizacion/CRITERIOS.md`. La identidad de Jagoncito debe reconocerse sin repetir el mismo retrato lateral en todas las escenas. Cambiar estructura visual, repertorio e intención, además de realizar controles técnicos y registrar el alcance real del catálogo.

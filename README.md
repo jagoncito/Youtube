@@ -1,13 +1,20 @@
-# Jagoncito — Cozy · Chill · Relax
+# Jagoncito — vídeos por orden
 
-La entrega actual es **[Una noche de lluvia con Jagoncito](videos/002-jagoncito-satie/)**: el pequeño dragón azulado, un gatete y un ratón en una habitación cálida, con lluvia animada, luz de chimenea y piano de Satie.
+Cada entrega se identifica como **Vídeo 001, Vídeo 002, Vídeo 003…** y tiene su propia carpeta con título, miniatura y enlaces de descarga.
 
-- [Vídeo de 30 minutos](videos/002-jagoncito-satie/video-30min.mp4).
-- [Base de 6 minutos para bucle](videos/002-jagoncito-satie/bucle-6min.mp4).
-- [Único audio WAV, 6 minutos](videos/002-jagoncito-satie/audio-bucle-6min.wav).
-- [Título, descripción, capítulos y etiquetas](videos/002-jagoncito-satie/publicacion.txt).
-- [Guía de identidad y producción del canal](GUIA_DEL_CANAL.md).
+- [Índice de todos los vídeos](automatizacion/ENTREGAS.md)
+- [Estado de la producción](automatizacion/estado.json)
+- [Programación cada cuatro horas](automatizacion/README.md)
+- [Guía del canal](GUIA_DEL_CANAL.md) y [criterios aplicados de los estudios](automatizacion/CRITERIOS.md)
 
-Ambos vídeos ya incorporan el audio. El archivo de 30 minutos usa Git LFS: en la web, abrir el archivo y pulsar Download; al clonar, disponer de Git LFS y ejecutar `git lfs pull`.
+## Vídeos
 
-Esta entrega sustituye la prueba anterior de Chopin. El repositorio no incluye exportaciones privadas de YouTube Studio. Subir los archivos a GitHub no los publica en YouTube.
+<!-- JAGONCITO:ENTREGAS:START -->
+
+- [Vídeo 001 — Una noche de lluvia con Jagoncito](videos/video-0001/README.md)
+
+<!-- JAGONCITO:ENTREGAS:END -->
+
+Los MP4 incorporan su audio. El WAV independiente corresponde a la base de seis minutos. Las nuevas entregas guardan los archivos grandes en GitHub Releases y los enlazan desde su carpeta, para que se puedan descargar sin cargar todo el historial Git.
+
+La programación prepara los archivos en GitHub. La publicación en YouTube sigue siendo una acción independiente. Los informes originales y las exportaciones privadas de Studio no se incluyen en el repositorio.

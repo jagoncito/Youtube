@@ -1,0 +1,9 @@
+{
+  "status": "pending_first_run",
+  "interval_hours": 4,
+  "schedule_utc": "0 */4 * * *",
+  "timezone_for_readers": "Europe/Madrid",
+  "next_number": 2,
+  "workflow_url": "https://github.com/jagoncito/Youtube/actions/workflows/jagoncito-cada-4h.yml",
+  "published_to_youtube": false
+}
