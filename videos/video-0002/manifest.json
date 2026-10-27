@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "slot": "2026-10-27T08:00:00Z",
+  "plan_id": "wind-down-12",
+  "title": "Unwind with Jagoncito | Gentle Satie Piano on a Rainy Night",
+  "seed": 1254657723,
+  "intent": "winding down",
+  "catalogue_version": 2,
+  "art_reused": true,
+  "scene_id": "rainy-room-002",
+  "scene_axes": {
+    "scenario": "woodland window-seat music room at night",
+    "microstory": "companions settle with a warm cup while rain crosses the forest",
+    "focal_object": "warm cup, knitted blanket and sleeping companions",
+    "viewer_projection": "winding down in a sheltered room",
+    "palette": "deep midnight blue, candle gold and rust velvet"
+  },
+  "production": "New seeded digital interpretation from a finite curated catalogue.",
+  "audio": {
+    "duration_seconds": 360,
+    "chapters": [
+      {
+        "number": 1,
+        "title": "Erik Satie — Gymnopédie No. 1",
+        "start_seconds": 0,
+        "duration_seconds": 186,
+        "mean_quarter_bpm": 77.827,
+        "minimum_quarter_bpm": 64.537,
+        "maximum_quarter_bpm": 80.179,
+        "score_seconds": 180.4,
+        "notes": 455,
+        "bars": 78,
+        "quarters": 234,
+        "midi": "gymnopedie-1.midi",
+        "pitch_range_midi": [
+          33,
+          81
+        ],
+        "notes_by_role": {
+          "melody": 128,
+          "harmony": 239,
+          "bass": 88
+        }
+      },
+      {
+        "number": 2,
+        "title": "Erik Satie — Gymnopédie No. 2",
+        "start_seconds": 186,
+        "duration_seconds": 174,
+        "mean_quarter_bpm": 69.477,
+        "minimum_quarter_bpm": 57.857,
+        "maximum_quarter_bpm": 71.8,
+        "score_seconds": 168.4,
+        "notes": 371,
+        "bars": 65,
+        "quarters": 195,
+        "midi": "gymnopedie-2.midi",
+        "pitch_range_midi": [
+          34,
+          84
+        ],
+        "notes_by_role": {
+          "melody": 78,
+          "harmony": 228,
+          "bass": 65
+        }
+      }
+    ],
+    "notes": 826,
+    "integrated_lufs": -21.0,
+    "true_peak_dbtp": -2.36,
+    "clipped_samples": 0,
+    "loop_delta_pcm16": [
+      21,
+      46
+    ],
+    "loop_reference_p99_pcm16": [
+      215.02999999999884,
+      259.0
+    ],
+    "waveform_sha256": "5d5b4b8473630415c8408d91737d578c12cf039371e90af7b504823c78ce0591",
+    "rain_relative_rms_db": -27
+  },
+  "video_checks": {
+    "bucle-6min.mp4": {
+      "duration_seconds": 360,
+      "complete_decode_exit_code": 0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "bytes": 68927593
+    },
+    "video-30min.mp4": {
+      "duration_seconds": 1800,
+      "complete_decode_exit_code": 0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "bytes": 344635985
+    }
+  },
+  "files": {
+    "README.md": {
+      "bytes": 803,
+      "sha256": "bcf4507d05d71632a6ba9b4cc142564a176b9423c037276abe5144ee67a6884c"
+    },
+    "audio-bucle-6min.wav": {
+      "bytes": 63504044,
+      "sha256": "5d5b4b8473630415c8408d91737d578c12cf039371e90af7b504823c78ce0591"
+    },
+    "bucle-6min.mp4": {
+      "bytes": 68927593,
+      "sha256": "57125fedf0dea623c15302ed3dc44c5513a210ff57556f327344c8d090ffdce3"
+    },
+    "fuentes/VSCO-CC0-LICENSE.txt": {
+      "bytes": 6555,
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+    },
+    "fuentes/fuentes.json": {
+      "bytes": 2020,
+      "sha256": "8e771ee1586529fd99a94c2e15cfe91d0bb21ae74e893e6a04cee8a9a1b3e131"
+    },
+    "fuentes/gymnopedie-1.ly": {
+      "bytes": 5588,
+      "sha256": "420a52244e9fbe106dd33ba2cac84414fd66e0d01c6d472205bad39678d4ce04"
+    },
+    "fuentes/gymnopedie-1.midi": {
+      "bytes": 4191,
+      "sha256": "c50ea7524f3fe31bbd0460216e52fffb9898c881c06daec16b5591b85d7b6b2e"
+    },
+    "fuentes/gymnopedie-2.ly": {
+      "bytes": 4902,
+      "sha256": "54182340c4be942ea2ebbe2fcefd0734bfb29d02bd76672fd3751c8600c27d8c"
+    },
+    "fuentes/gymnopedie-2.midi": {
+      "bytes": 3446,
+      "sha256": "2437430975da834e80feb2271fe8ceb044c285836c0bb5f8672e218889deaa81"
+    },
+    "fuentes/instrumento-vsco-fuentes.json": {
+      "bytes": 11079,
+      "sha256": "9473bc51f2370db87b3e39eda2537bef05288d1e70fd485df9c903c9d28ee055"
+    },
+    "imagen.png": {
+      "bytes": 2767670,
+      "sha256": "ef376ad030349ee8c38ab995754887986d6e75c0f2afab6442a7395a4857f3b9"
+    },
+    "miniatura.jpg": {
+      "bytes": 504981,
+      "sha256": "24df8f6af884c7bd7f089e35559fd1f5d9542d37af8105beff072c277996306d"
+    },
+    "publicacion.txt": {
+      "bytes": 1523,
+      "sha256": "56c9b5677cdf212f2ee4e11b8699fec2a3e746cbe72f63d6679db9baf9f13381"
+    },
+    "video-30min.mp4": {
+      "bytes": 344635985,
+      "sha256": "493f15f9d758869e89fbe717d37f67e53d6371861afe6252fdac0e5d420da9a8"
+    }
+  },
+  "subjective_listening_claim": false,
+  "published_to_youtube": false,
+  "producer_code_sha256": "c8c0ca2e7e9d3a3e03f2506b544d83e69a687cbcabc13c1240cd4f9ef882562b"
+}

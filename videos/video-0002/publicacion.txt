@@ -1,0 +1,29 @@
+TÍTULO
+Unwind with Jagoncito | Gentle Satie Piano on a Rainy Night
+
+DESCRIPCIÓN
+A warm window seat shelters Jagoncito, a sleepy kitten and a tiny mouse from the rainy forest outside.
+
+Soft Satie piano for winding down, accompanied by a very light layer of rain. Gentle rain, warm firelight and very subtle kitten breathing accompany the piano.
+
+Erik Satie’s Gymnopédies No. 1 and 2, played completely in a newly rendered digital interpretation. This 30-minute session repeats a six-minute musical programme five times.
+
+00:00 Gymnopédie No. 1
+03:06 Gymnopédie No. 2
+06:00 Gymnopédie No. 1
+09:06 Gymnopédie No. 2
+12:00 Gymnopédie No. 1
+15:06 Gymnopédie No. 2
+18:00 Gymnopédie No. 1
+21:06 Gymnopédie No. 2
+24:00 Gymnopédie No. 1
+27:06 Gymnopédie No. 2
+
+Composition: Erik Satie (1888). Public-domain score transcriptions: Evin Robertson / Mutopia Project. Piano samples: VSCO 2 Community Edition, Simon Dalzell / Ivy Audio and Versilian Studios / Sam Gossner, CC0 1.0. Rain is synthesized. No commercial recording of the works is used.
+
+https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SatieE/gymnopedie_1/gymnopedie_1.ly
+https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SatieE/gymnopedie_2/gymnopedie_2.ly
+https://github.com/sgossner/VSCO-2-CE/tree/440300901dfe9275fd84e0b7763af1f8443ae62e
+
+ETIQUETAS
+Jagoncito, Erik Satie, Gymnopedies, classical piano, soft piano, gentle rain, piano for reading, quiet focus
