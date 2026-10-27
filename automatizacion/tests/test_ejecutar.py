@@ -1,4 +1,5 @@
 import datetime as dt
+import hashlib
 import importlib.util
 import json
 from pathlib import Path
@@ -24,21 +25,27 @@ class FakeGitHub(MODULE.Runner):
         self.calls = []
         self.fail_upload = False
         self.fail_auth = False
+        self.hide_drafts_by_tag = True
+        self.asset_bytes = {}
 
     def gh(self, *args, check=True):
         self.calls.append(args)
         if self.fail_auth:
             response = result(1, stderr='gh: Resource not accessible (HTTP 403)')
         elif args[0] == 'api':
-            endpoint = args[1]
+            endpoint = next(arg for arg in args if str(arg).startswith('repos/'))
             if '/releases/tags/' in endpoint:
                 release = self.releases.get(endpoint.rsplit('/', 1)[1])
+                if release and release['draft'] and self.hide_drafts_by_tag:
+                    release = None
                 response = result(stdout=json.dumps(release)) if release else result(1, stderr='gh: Not Found (HTTP 404)')
+            elif '/releases?per_page=' in endpoint:
+                response = result(stdout=json.dumps([list(self.releases.values())]))
             else:
                 response = result(stdout='jagoncito/Youtube\n')
         elif args[:2] == ('release', 'create'):
             tag = args[2]
-            self.releases[tag] = dict(draft=True, name=args[args.index('--title') + 1],
+            self.releases[tag] = dict(draft=True, tag_name=tag, name=args[args.index('--title') + 1],
                                       html_url=f'https://github.com/jagoncito/Youtube/releases/tag/{tag}', assets=[])
             response = result()
         elif args[:2] == ('release', 'edit'):
@@ -53,13 +60,17 @@ class FakeGitHub(MODULE.Runner):
                 response = result(1, stderr='Transient storage failure (HTTP 500)')
             else:
                 paths = [Path(p) for p in args[3:args.index('--repo')]]
+                self.asset_bytes[args[2]] = {p.name: p.read_bytes() for p in paths}
                 self.releases[args[2]]['assets'] = [dict(name=p.name, size=p.stat().st_size,
+                    digest='sha256:' + hashlib.sha256(p.read_bytes()).hexdigest(),
                     browser_download_url=f'https://github.com/example/{p.name}') for p in paths]
                 response = result()
         elif args[:2] == ('release', 'download'):
             directory = Path(args[args.index('--dir') + 1])
-            (directory / 'publicacion.txt').write_text('Publication recovered from the release')
-            (directory / 'manifest.json').write_text('{}')
+            for i, value in enumerate(args):
+                if value == '--pattern':
+                    name = args[i + 1]
+                    (directory / name).write_bytes(self.asset_bytes[args[2]][name])
             response = result()
         else:
             raise AssertionError(f'Unexpected GitHub call: {args}')
@@ -161,6 +172,23 @@ class ProductionTests(unittest.TestCase):
         self.assertEqual(self.productions, 0)
         self.assertFalse(any(call[:2] == ('release', 'create') for call in self.runner.calls))
 
+    def test_sync_refreshes_main_with_head_only_fetch_configuration(self):
+        peer = Path(self.temp.name) / 'peer'
+        subprocess.run(['git', 'clone', '--branch', 'main', str(self.remote), str(peer)],
+                       check=True, capture_output=True)
+        peer_runner = MODULE.Runner(peer)
+        peer_runner.git('config', 'user.name', 'Peer')
+        peer_runner.git('config', 'user.email', 'peer@example.invalid')
+        (peer / 'upstream.txt').write_text('A newer remote commit')
+        peer_runner.git('add', 'upstream.txt')
+        peer_runner.git('commit', '-m', 'Upstream change')
+        peer_runner.git('push', 'origin', 'main')
+        self.runner.git('config', 'remote.origin.fetch', '+HEAD:refs/remotes/origin/HEAD')
+        self.publisher.sync()
+        self.assertEqual((self.root / 'upstream.txt').read_text(), 'A newer remote commit')
+        self.assertEqual(self.runner.git('rev-parse', 'HEAD').stdout,
+                         peer_runner.git('rev-parse', 'HEAD').stdout)
+
     def test_failed_checksum_does_not_create_a_release(self):
         def tampered(date, folder, cache):
             self.produce(date, folder, cache)
@@ -182,7 +210,49 @@ class ProductionTests(unittest.TestCase):
         self.assertEqual(recovered['number'], 2)
         self.assertEqual(self.productions, 1)
         self.assertEqual((self.root / 'videos/video-0002/publicacion.txt').read_text(),
-                         'Publication recovered from the release')
+                         'Fixture asset publicacion.txt')
+
+    def test_complete_draft_hidden_from_by_tag_recovers_without_production(self):
+        first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
+        tag = first['tag']
+        self.runner.releases[tag]['draft'] = True
+        record = self.root / 'automatizacion/entregas' / f'{tag}.json'
+        item = json.loads(record.read_text())
+        item['status'] = 'failure'
+        MODULE.json_write(record, item)
+        self.commit()
+        uploads_before = sum(call[:2] == ('release', 'upload') for call in self.runner.calls)
+        recovered = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
+        self.assertEqual((recovered['number'], self.productions), (2, 1))
+        self.assertFalse(self.runner.releases[tag]['draft'])
+        self.assertEqual(sum(call[:2] == ('release', 'upload') for call in self.runner.calls), uploads_before)
+        self.assertTrue(json.loads((self.root / 'automatizacion/estado.json').read_text())['recovered'])
+        self.assertTrue(any('--paginate' in call for call in self.runner.calls))
+
+    def test_complete_draft_without_remote_digests_downloads_and_hashes_assets(self):
+        first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
+        tag = first['tag']
+        self.runner.releases[tag]['draft'] = True
+        for asset in self.runner.releases[tag]['assets']:
+            asset.pop('digest')
+        self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
+        self.assertEqual(self.productions, 1)
+        self.assertFalse(self.runner.releases[tag]['draft'])
+        downloads = [call for call in self.runner.calls if call[:2] == ('release', 'download')]
+        self.assertTrue(any('video-30min.mp4' in call and '--clobber' in call for call in downloads))
+
+    def test_complete_draft_with_mismatched_remote_digest_is_not_published(self):
+        first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
+        tag = first['tag']
+        self.runner.releases[tag]['draft'] = True
+        asset = next(x for x in self.runner.releases[tag]['assets'] if x['name'] == 'video-30min.mp4')
+        asset['digest'] = 'sha256:' + '0' * 64
+        with self.assertRaisesRegex(ValueError, 'checksum'):
+            self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
+        self.assertEqual(self.productions, 1)
+        self.assertTrue(self.runner.releases[tag]['draft'])
+        state = json.loads((self.root / 'automatizacion/estado.json').read_text())
+        self.assertIn('checksum', state['error_message'])
 
 
 class SlotTests(unittest.TestCase):

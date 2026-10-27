@@ -83,23 +83,27 @@ def verify_bundle(folder, slot):
     if not REQUIRED.issubset({p.name for p in folder.iterdir() if p.is_file()}):
         raise ValueError('Incomplete production bundle')
     manifest = json.loads((folder / 'manifest.json').read_text())
-    if manifest['slot'] != slot:
-        raise ValueError('Bundle slot mismatch')
-    if not (REQUIRED - {'manifest.json'}).issubset(manifest['files']):
-        raise ValueError('Required assets are missing from the checksum manifest')
+    verify_manifest(manifest, slot)
     for name, meta in manifest['files'].items():
         path = (folder / name).resolve()
         if not path.is_relative_to(folder.resolve()) or not path.is_file():
             raise ValueError('Unsafe or missing manifest file')
         if path.stat().st_size != meta['bytes'] or file_hash(path) != meta['sha256']:
             raise ValueError('Bundle checksum mismatch')
+    return manifest
+
+
+def verify_manifest(manifest, slot):
+    if not isinstance(manifest, dict) or manifest.get('slot') != slot:
+        raise ValueError('Bundle slot mismatch')
+    if not (REQUIRED - {'manifest.json'}).issubset(manifest['files']):
+        raise ValueError('Required assets are missing from the checksum manifest')
     for name, duration in [('bucle-6min.mp4', 360), ('video-30min.mp4', 1800)]:
         result = manifest['video_checks'][name]
         if result['complete_decode_exit_code'] != 0 or result['duration_seconds'] != duration:
             raise ValueError('Production validation did not pass')
     if manifest['audio']['clipped_samples'] != 0:
         raise ValueError('Audio validation did not pass')
-    return manifest
 
 
 class Publisher:
@@ -114,18 +118,33 @@ class Publisher:
     def release(self, tag):
         response = self.runner.gh('api', f'repos/{self.repository}/releases/tags/{tag}', check=False)
         if response.returncode == 0:
-            return json.loads(response.stdout)
+            release = json.loads(response.stdout)
+            if not isinstance(release, dict) or not isinstance(release.get('assets'), list):
+                raise ValueError('GitHub returned an invalid release response')
+            return release
         if re.search(r'\bHTTP 404\b', response.stderr):
             # A missing release is only accepted after the repository itself is
             # readable. This avoids treating an auth failure as a missing tag.
             self.runner.gh('api', f'repos/{self.repository}', '--jq', '.full_name')
+            # A draft can exist before its Git tag does. The by-tag endpoint
+            # consequently returns404 for a perfectly valid uploaded draft.
+            pages = json.loads(self.runner.gh('api', '--paginate', '--slurp',
+                f'repos/{self.repository}/releases?per_page=100').stdout)
+            if not isinstance(pages, list) or any(not isinstance(page, list) for page in pages):
+                raise ValueError('GitHub returned an invalid release list')
+            for page in pages:
+                for release in page:
+                    if isinstance(release, dict) and release.get('tag_name') == tag:
+                        if not isinstance(release.get('assets'), list):
+                            raise ValueError('GitHub returned an invalid draft response')
+                        return release
             return None
         raise CommandError('GitHub release lookup', response)
 
     def sync(self):
         if self.runner.git('status', '--porcelain').stdout.strip():
             raise ValueError('Refusing to update status over a dirty checkout')
-        self.runner.git('fetch', 'origin', 'main')
+        self.runner.git('fetch', 'origin', 'refs/heads/main:refs/remotes/origin/main')
         self.runner.git('merge', '--ff-only', 'origin/main')
 
     def entries(self):
@@ -239,13 +258,75 @@ class Publisher:
                     for name in ['manifest.json', 'publicacion.txt']}
 
     def persist_failure(self, base, reservation, error):
+        message = str(error) if isinstance(error, (CommandError, ValueError)) else type(error).__name__
+        message = re.sub(r'[\r\n\t]+', ' ', message)
+        message = re.sub(r'(?:gh[pousr]_|github_pat_)[A-Za-z0-9_]+', '[redacted]', message)[:300]
         failure = dict(base, status='failure', failed_at=iso(dt.datetime.now(dt.timezone.utc)),
                        error_type=type(error).__name__,
+                       error_message=message,
                        error='The scheduled production failed; inspect the Actions run log.')
         try:
             self.commit_status(failure, entry=dict(reservation, status='failure'))
         except Exception:
             print('Unable to persist failure status; inspect the Actions run.', file=sys.stderr)
+
+    def recover_complete_draft(self, date, release):
+        """Validate already-uploaded assets, without spending minutes rendering again."""
+        assets = {item['name']: item for item in release.get('assets', [])}
+        archive_name = 'fuentes-y-validacion.zip'
+        if not (REQUIRED | {archive_name}).issubset(assets):
+            return None
+        tag = tag_for(date)
+        with tempfile.TemporaryDirectory(prefix='jagoncito-recover-') as temporary:
+            folder = Path(temporary)
+            self.runner.gh('release', 'download', tag, '--repo', self.repository,
+                '--pattern', 'manifest.json', '--pattern', 'publicacion.txt',
+                '--pattern', archive_name, '--dir', folder)
+            manifest = json.loads((folder / 'manifest.json').read_text())
+            verify_manifest(manifest, iso(date))
+            # Source files are verified against the same manifest. Never extract
+            # arbitrary archive paths or execute anything from an uploaded zip.
+            with zipfile.ZipFile(folder / archive_name) as source:
+                if source.read('manifest.json') != (folder / 'manifest.json').read_bytes():
+                    raise ValueError('Recovery source manifest mismatch')
+                for name, meta in manifest['files'].items():
+                    if '/' in name:
+                        target = (folder / name).resolve()
+                        if not name.startswith('fuentes/') or not target.is_relative_to(folder.resolve()):
+                            raise ValueError('Unsafe recovery source path')
+                        data = source.read(name)
+                        if len(data) != meta['bytes'] or hashlib.sha256(data).hexdigest() != meta['sha256']:
+                            raise ValueError('Recovery source checksum mismatch')
+                        target.parent.mkdir(parents=True, exist_ok=True)
+                        target.write_bytes(data)
+            missing_digest = False
+            for name in REQUIRED - {'manifest.json'}:
+                meta = manifest['files'][name]
+                remote = assets[name]
+                if remote.get('size') != meta['bytes']:
+                    raise ValueError('Recovery asset size mismatch')
+                digest = remote.get('digest')
+                if digest and digest != 'sha256:' + meta['sha256']:
+                    raise ValueError('Recovery asset checksum mismatch')
+                missing_digest |= not bool(digest)
+            for name in ['manifest.json', 'publicacion.txt', archive_name]:
+                path = folder / name
+                if path.stat().st_size != assets[name].get('size'):
+                    raise ValueError('Recovery downloaded asset size mismatch')
+                if assets[name].get('digest') and assets[name]['digest'] != 'sha256:' + file_hash(path):
+                    raise ValueError('Recovery downloaded asset checksum mismatch')
+            if missing_digest:
+                # Older assets may lack GitHub's sha256 digest. Download and
+                # hash every required asset rather than trusting only its size.
+                command = ['release', 'download', tag, '--repo', self.repository, '--clobber']
+                for name in sorted(REQUIRED):
+                    command += ['--pattern', name]
+                self.runner.gh(*command, '--dir', folder)
+                verify_bundle(folder, iso(date))
+            elif file_hash(folder / 'publicacion.txt') != manifest['files']['publicacion.txt']['sha256']:
+                raise ValueError('Recovery publication checksum mismatch')
+            return manifest, {name: (folder / name).read_text()
+                              for name in ['manifest.json', 'publicacion.txt']}
 
     def execute(self, date, cache, produce):
         tag = tag_for(date)
@@ -270,9 +351,23 @@ class Publisher:
             self.commit_status(dict(base, status='success', recovered=True), entry=entry,
                                card_files=self.recover_card_files(tag))
             return entry
+        reservation = dict(reservation, status='pending')
         self.commit_status(dict(base, status='running', started_at=iso(dt.datetime.now(dt.timezone.utc))),
                            entry=reservation)
         try:
+            recovered = self.recover_complete_draft(date, release) if release else None
+            if recovered is not None:
+                manifest, card_files = recovered
+                self.runner.gh('release', 'edit', tag, '--repo', self.repository, '--draft=false')
+                published = self.release(tag)
+                if published is None or published.get('draft'):
+                    raise ValueError('Recovered release was not published')
+                entry = self.published_entry(date, published, number, manifest)
+                self.commit_status(dict(base, status='success', recovered=True,
+                    completed_at=iso(dt.datetime.now(dt.timezone.utc)), release_url=entry['url']),
+                    entry=entry, card_files=card_files)
+                print(entry['url'])
+                return entry
             with tempfile.TemporaryDirectory(prefix='jagoncito-publish-') as temporary:
                 folder = Path(temporary) / 'bundle'
                 produce(date, folder, cache)
@@ -297,6 +392,8 @@ class Publisher:
                 upload = [str(folder / name) for name in sorted(REQUIRED)] + [str(archive)]
                 self.runner.gh('release', 'upload', tag, *upload, '--repo', self.repository, '--clobber')
                 uploaded = self.release(tag)
+                if uploaded is None:
+                    raise ValueError('Uploaded draft could not be found for verification')
                 remote = {x['name']: x for x in uploaded.get('assets', [])}
                 for item in upload:
                     path = Path(item)
@@ -307,7 +404,7 @@ class Publisher:
                         raise ValueError('Release asset checksum verification failed')
                 self.runner.gh('release', 'edit', tag, '--repo', self.repository, '--draft=false')
                 published = self.release(tag)
-                if published['draft']:
+                if published is None or published.get('draft'):
                     raise ValueError('Release is still a draft')
                 entry = self.published_entry(date, published, number, manifest)
                 card_files = {name: (folder / name).read_text()
