@@ -2,7 +2,7 @@
 
 ## Organización
 
-Los vídeos se guardan directamente en `videos/001`, `videos/002`, `videos/003` y así sucesivamente. Cada carpeta contiene el MP4 de30minutos, el MP4 de6minutos para bucle, un solo WAV de6minutos, imagen, miniatura, textos y fuentes. Los MP4/WAV se suben mediante Git LFS; una carpeta no se considera terminada hasta que sus objetos y su commit estén subidos.
+Los vídeos se guardan directamente en `videos/001`, `videos/002`, `videos/003` y así sucesivamente. Cada carpeta contiene el MP4 de 30 minutos, el MP4 de 6 minutos para bucle, un solo WAV de 6 minutos, imagen, miniatura, textos y fuentes. Los MP4/WAV se suben mediante Git LFS; una carpeta no se considera terminada hasta que sus objetos y su commit estén subidos.
 
 Los registros técnicos están en `entregas/`; no representan vídeos adicionales. `estado.json` identifica la última actividad. La portada del repositorio y `ENTREGAS.md` muestran el orden.
 
@@ -21,11 +21,11 @@ Si no existe una escena y un programa inéditos compatibles, se guarda **`needs_
 
 ## Calendario y alcance real
 
-El calendario configurado revisa la cola cada4horas (`0 */4 * * *`, UTC); GitHub puede retrasar el inicio. Las modificaciones de código no generan un vídeo por sí solas. También se permite una ejecución manual desde Actions.
+El calendario configurado revisa la cola cada 4 horas (`0 */4 * * *`, UTC); GitHub puede retrasar el inicio. Las modificaciones de código no generan un vídeo por sí solas. También se permite una ejecución manual desde Actions.
 
-La publicación se realiza únicamente cuando hay un plan que supera los controles. El banco actual es finito: después de001–003 queda un programa y escena inéditos —embarcadero con las Gymnopédies2y3—. Tras utilizarlos se necesita ampliar el material; el sistema se bloqueará en lugar de volver a usar una imagen. No hay un generador de ilustraciones con IA autónomo configurado en segundo plano. La preparación editorial de nuevas escenas y repertorio se realiza de forma expresa.
+La publicación se realiza únicamente cuando hay un plan que supera los controles. El banco actual es finito: después de001–003 queda un programa y escena inéditos —embarcadero con las Gymnopédies 2 y 3—. Tras utilizarlos se necesita ampliar el material; el sistema se bloqueará en lugar de volver a usar una imagen. No hay un generador de ilustraciones con IA autónomo configurado en segundo plano. La preparación editorial de nuevas escenas y repertorio se realiza de forma expresa.
 
-La programación prepara archivos en GitHub; no publica en YouTube. El documento original de128informes y los datos privados de Studio se mantienen fuera del repositorio.
+La programación prepara archivos en GitHub; no publica en YouTube. El documento original de 128informes y los datos privados de Studio se mantienen fuera del repositorio.
 
 ## Controles
 
@@ -38,7 +38,7 @@ La programación prepara archivos en GitHub; no publica en YouTube. El documento
 
 ## Uso
 
-El workflow requiere Python3.12, FFmpeg, Git LFS y las dependencias fijadas. GitHub proporciona su token de trabajo; no se copian credenciales del chat.
+El workflow requiere Python 3.12, FFmpeg, Git LFS y las dependencias fijadas. GitHub proporciona su token de trabajo; no se copian credenciales del chat.
 
 Pruebas:
 
