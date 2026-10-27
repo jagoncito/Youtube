@@ -1,0 +1,3363 @@
+{
+  "repository": "https://github.com/sgossner/VSCO-2-CE",
+  "sample_commit": "440300901dfe9275fd84e0b7763af1f8443ae62e",
+  "mapping_commit": "6dd651d55dde97fd4028699be9d4481f26917891",
+  "license": "CC0-1.0",
+  "mapping_modification": "default_path uses forward slashes for POSIX portability; original bytes identified by SHA256",
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/LICENSE",
+      "bytes": 6555,
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/README.md",
+      "bytes": 751,
+      "sha256": "8fbf399338661e6c76585ad9e75eb10324f823935168e0567553293a83f200a0"
+    },
+    {
+      "path": "SViolinVib.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/SViolinVib.sfz",
+      "bytes": 3366,
+      "sha256": "a2ca3611463547ac9371aa9d13a693af9cd10804f9232d2c602d65937387a992"
+    },
+    {
+      "path": "SViolinSpic.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/SViolinSpic.sfz",
+      "bytes": 6754,
+      "sha256": "d427568b0998f193be2145182d732ccf8507a75d8f933c1a47393e41107cd9c1"
+    },
+    {
+      "path": "ViolinEnsSusVib.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/ViolinEnsSusVib.sfz",
+      "bytes": 2538,
+      "sha256": "4591e212cccf1cbcff0c78cf8429a8221bb0820b70cb7c8dd6685f470ace4eaa"
+    },
+    {
+      "path": "ViolinEnsSpic.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/ViolinEnsSpic.sfz",
+      "bytes": 5085,
+      "sha256": "3616554873bf3e0b6c6af0a4a593d519219d0774ab03af323daf9e70a098a847"
+    },
+    {
+      "path": "ViolinEnsPizz.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/ViolinEnsPizz.sfz",
+      "bytes": 5069,
+      "sha256": "c94b1129e5a8c7e7f7a8e556f6d7c491dbe88875cc2080a0fd2794eb77f5b733"
+    },
+    {
+      "path": "ViolaEnsSusVib.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/ViolaEnsSusVib.sfz",
+      "bytes": 3063,
+      "sha256": "d62dc6b6bfa83d4ebe49a44f6f1337d0621a32d7f10c699e26fc98720a640871"
+    },
+    {
+      "path": "ViolaEnsSpic.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/ViolaEnsSpic.sfz",
+      "bytes": 5514,
+      "sha256": "54d8e42e321e1fb594da144cae450c1c34820abc50fd91976c156f4d8200167a"
+    },
+    {
+      "path": "ViolaEnsPizz.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/ViolaEnsPizz.sfz",
+      "bytes": 5374,
+      "sha256": "c175ad0189d09e0e26670796da7d28adba5a569ac0edc1ef96fc6f11268db4a9"
+    },
+    {
+      "path": "CelloEnsSusVib.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/CelloEnsSusVib.sfz",
+      "bytes": 2933,
+      "sha256": "276352639dda425dd12a4fdb3acdf545867fdb0ff4f89876319f4ec3cf12a19f"
+    },
+    {
+      "path": "CelloEnsSpic.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/CelloEnsSpic.sfz",
+      "bytes": 5584,
+      "sha256": "00d1374a186802d63ed19173d16b48f30d5acd04f180a9439da2c24bf0029535"
+    },
+    {
+      "path": "CelloEnsPizz.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/CelloEnsPizz.sfz",
+      "bytes": 5637,
+      "sha256": "84e586f7518b99c11da5efddb321a9ea4b9edc4149b96f3e9621f4c7e9fc3cca"
+    },
+    {
+      "path": "ContrabassSusNV.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/ContrabassSusNV.sfz",
+      "bytes": 3296,
+      "sha256": "137172b02f0357f059816bd0ab197c38a5c06659cfc6e64fec11b35abac54fbb"
+    },
+    {
+      "path": "ContrabassSpic.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/ContrabassSpic.sfz",
+      "bytes": 4914,
+      "sha256": "319e22c472c6954a7cfc03633af38bd8e88dc45fca7ff951fcfab838a75f3dce"
+    },
+    {
+      "path": "OrganQuiet.sfz",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/6dd651d55dde97fd4028699be9d4481f26917891/OrganQuiet.sfz",
+      "bytes": 2504,
+      "sha256": "5f3b8ab5d81ec4b69e8faea9a4d468e6968abeb7b4a7dba94b48da6e48dabe15"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_122_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_122_rr1.wav",
+      "bytes": 2037594,
+      "sha256": "daad4df8c2cd9444a6ff04269149ea92dace2326c481cc6a07da67d7a2e5e76d"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_125_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_125_rr1.wav",
+      "bytes": 2052106,
+      "sha256": "f92037a1ad643c330b22257484e591a3712532e577ce10d0eb9dda2b45a63d41"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_128_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_128_rr1.wav",
+      "bytes": 2144350,
+      "sha256": "0a85d53636f262c91730a808ef2c38ae0a8d2bd9fe1b39795526a77e062de29e"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_131_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_131_rr1.wav",
+      "bytes": 2041310,
+      "sha256": "f19bf401923e49178fd88a0bc3076de35a5ef5af3ca1afb75f721ae9fd6214cc"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_134_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_134_rr1.wav",
+      "bytes": 2202602,
+      "sha256": "5906348057006cfa5451a2cb3f02b8cd639d89f9ddf3cc98df3102f5c942cd5a"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_137_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_137_rr1.wav",
+      "bytes": 2289266,
+      "sha256": "eb92c50999e9a117939de73e74b263730b66eadbdb868f67b9bd89681ed8f113"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_140_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_140_rr1.wav",
+      "bytes": 2139942,
+      "sha256": "3afa6caad64d5ef3c527b8bc4c22b7a0c55bc5dfaa6701c8b2b98c53de5876ae"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_143_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_143_rr1.wav",
+      "bytes": 2181262,
+      "sha256": "c39ec6c7e26dee6a3661e54a96c4a2a04bce08130864244458a7db1b627b3c93"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_146_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_146_rr1.wav",
+      "bytes": 2140890,
+      "sha256": "55b246625c8a2fe71c271d2335ba6cc5f12d3cd48cc691aa047197b7f825084f"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_149_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_149_rr1.wav",
+      "bytes": 2257726,
+      "sha256": "fa2784dca7e6ef639be46a2d9f129f480755b678c9cce145d257bb59839a77a9"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_152_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_152_rr1.wav",
+      "bytes": 2163146,
+      "sha256": "7ad4206bebfaffe36d3c506e55670abf4a5bed9c72d52a8eea44fe5a20c62b9a"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_155_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_155_rr1.wav",
+      "bytes": 2141122,
+      "sha256": "97df359ea6827d9b751cf85de91fb460d8c95871cb98dff0441494bc35ca1cb1"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_158_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_158_rr1.wav",
+      "bytes": 2143034,
+      "sha256": "14f3a97253046b883e9689d9fb5420b9eb69e7b65564e2396b5098f245b0cd10"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_161_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_161_rr1.wav",
+      "bytes": 2149910,
+      "sha256": "f7547dc90d06e1329420f3e9db4b11d0cb616878357949884dd411ce693fc508"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_164_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_164_rr1.wav",
+      "bytes": 2127098,
+      "sha256": "e7e1996aaf564294f3c0476592b3055fc00e6e6d19348172ea604170a1b07076"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_167_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_167_rr1.wav",
+      "bytes": 2168318,
+      "sha256": "9b23b50db700b4b881ddac02ca8d99922d745c3cd9fcc31022b0fa48a2eec31c"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_170_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_170_rr1.wav",
+      "bytes": 2165234,
+      "sha256": "16c3916dbf17c878d4430fd4c5fe7b15aeb4fd0c568f651d05149b22e72c8bc8"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_173_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_173_rr1.wav",
+      "bytes": 2120150,
+      "sha256": "ce6f6f9e7bfde82ce2feaa5fc3f76137b917934f54835fb43e2ca4fd62bde9c9"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_176_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_176_rr1.wav",
+      "bytes": 2069298,
+      "sha256": "7dc91dd5dfec81db6e17bea27ef6da160fe46b250353e96754157fcb7bc805b0"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_179_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_179_rr1.wav",
+      "bytes": 2016978,
+      "sha256": "105b97482af93c91e29cef8e1816091b0542ffa52997327f47c8097a05fa5a2b"
+    },
+    {
+      "path": "Keys/Organ/Quiet/NT5_Man3Quiet_182_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Organ/Quiet/NT5_Man3Quiet_182_rr1.wav",
+      "bytes": 2115962,
+      "sha256": "178b87af471722aec4fbb7c22408e9509727d2dccd7ec927ebdec9b0d5d537ec"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_A2_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_A2_v1_RR1.wav",
+      "bytes": 763418,
+      "sha256": "3ef328e9c07e58797bb65831edef89b1fc946013a736826b6e380776c91b1f83"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_A2_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_A2_v1_RR2.wav",
+      "bytes": 714926,
+      "sha256": "819d73e9b58d28c3d3888ed566fa9802b3cb6bf5cdd314931ddeafa529ba1408"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_A2_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_A2_v2_RR1.wav",
+      "bytes": 748484,
+      "sha256": "187df4d1d5621877d32cbfb3d174dcacb85aa59caf3359d9ce398bec4f7ccf56"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_A2_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_A2_v2_RR2.wav",
+      "bytes": 757718,
+      "sha256": "b297e7396e6b5a327a069c8eaa378a2a1c7ce4dd3da7ba3fbc5f3c66c07e16d1"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_B1_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_B1_v1_RR1.wav",
+      "bytes": 890366,
+      "sha256": "33bbfc9664e8536e8931fba5c53ab4e06abeb6f75fc3b6186bcdb159d6000604"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_B1_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_B1_v1_RR2.wav",
+      "bytes": 1005728,
+      "sha256": "197600ab555da6f29b368b898a089f7b8d79f9a6b7388ff3fe86560ad9ca6186"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_B1_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_B1_v2_RR1.wav",
+      "bytes": 1058144,
+      "sha256": "d5898f41739b4929530aa7d4a3f1660ee2bb6096b375c1f034eb6d26cbb10623"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_B1_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_B1_v2_RR2.wav",
+      "bytes": 851390,
+      "sha256": "675a55fce6f23a97281704024ed01e69cc8699fd3458fe76f22ba19b91c20348"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_B3_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_B3_v1_RR1.wav",
+      "bytes": 637034,
+      "sha256": "ded9d0b8a7651e21883c937fc4cce2199f0d973ca683fac5d61582093b0f00fa"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_B3_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_B3_v1_RR2.wav",
+      "bytes": 462368,
+      "sha256": "20cc1931f37d67a3d7dd7fbc920fff45005bacd0bb306dbeff69ce8a8dac5e0a"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_B3_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_B3_v2_RR1.wav",
+      "bytes": 528038,
+      "sha256": "016e6cc084ae4e60eb52b0a60ffada2314211f1eb5bcc95c6a73b64ac0afbde8"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_B3_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_B3_v2_RR2.wav",
+      "bytes": 498176,
+      "sha256": "16a123fc950e385698dac06fa3835bceee305f9038a3098f202341d51341d135"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_C1_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_C1_v1_RR1.wav",
+      "bytes": 829634,
+      "sha256": "9032689650e38cb7a967616d15f3434bd52865637200e785bf89c3a1a88b29ce"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_C1_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_C1_v1_RR2.wav",
+      "bytes": 858296,
+      "sha256": "894bd93d7dded6eb60788b8ebf2fc45e9b542c579995d00b518d67727c2d82e5"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_C1_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_C1_v2_RR1.wav",
+      "bytes": 981176,
+      "sha256": "eb757d0688c447d609e9583c3943b9b51f5dee3c8b309ef6e03cac0c36910f15"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_C1_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_C1_v2_RR2.wav",
+      "bytes": 886544,
+      "sha256": "c2485a37f8e62af3ef7b530a6e6e9892a5887b36c675072a3b201db39793da73"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_C3_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_C3_v1_RR1.wav",
+      "bytes": 704396,
+      "sha256": "63353870ad00cebe9882b96abcceae12480d37b78b62ded6228fb638871e8a81"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_C3_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_C3_v1_RR2.wav",
+      "bytes": 668192,
+      "sha256": "87abaf14ffe66902002c378a504147861102b67af5f562bb5594835c3d647c33"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_C3_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_C3_v2_RR1.wav",
+      "bytes": 762122,
+      "sha256": "fbc86686ef092e92e473dce4d1ff5f1e351dcc76ed2d94b0d336c1346f314e59"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_C3_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_C3_v2_RR2.wav",
+      "bytes": 717008,
+      "sha256": "7287080f6071252812a8b88bf21c32e0985b0a584eccc4487fb282ec1211195c"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_D2_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_D2_v1_RR1.wav",
+      "bytes": 723014,
+      "sha256": "434925e6b7d154cfa7c17e89ccc8e4a126e01a970cabee22fe09a9fb0e462bb6"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_D2_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_D2_v1_RR2.wav",
+      "bytes": 769676,
+      "sha256": "f23062710e77ca46c33fe453874f8730e80b1f7f7a769bcafdf7bcd0b6254460"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_D2_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_D2_v2_RR1.wav",
+      "bytes": 770222,
+      "sha256": "5f80f5fd2f8f3f2cc33b8e7cdba1c5984b5a8158d6d34cd03fe48ae46b335461"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_D2_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_D2_v2_RR2.wav",
+      "bytes": 686930,
+      "sha256": "2b25fcdf1958fabbd54f1f64b620df12af5436d074da6b5030c5f0b2dad4a250"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_D4_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_D4_v1_RR1.wav",
+      "bytes": 246806,
+      "sha256": "e1950b741b2aca0a3f2f71b41bb3d5ddefe33a1d93f24a11b3962a64a0bbef06"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_D4_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_D4_v1_RR2.wav",
+      "bytes": 443942,
+      "sha256": "960c7551e554cf3d2d9ef1cb5f1a7150ee3cdb508ac34c8dc212d81c6e0e7078"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_D4_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_D4_v2_RR1.wav",
+      "bytes": 345608,
+      "sha256": "286d0e59972bb575c54a7be68865874908e93ed3e928637905308f5b6d0a531f"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_D4_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_D4_v2_RR2.wav",
+      "bytes": 264272,
+      "sha256": "a2138c49ee8bbb6ec7b4b6d5fe11b7cf6dab668385c284f92969d369a4f1a03d"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_E1_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_E1_v1_RR1.wav",
+      "bytes": 842720,
+      "sha256": "9fed783345f57619ccc7ac1eff282c4e5ec6ff30b7b935ee96da204efb6b6c59"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_E1_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_E1_v1_RR2.wav",
+      "bytes": 688292,
+      "sha256": "49103857fc6279932a03af6b09a2432be3b7f120de7a66307ad1cbd3266fa72d"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_E1_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_E1_v2_RR1.wav",
+      "bytes": 826130,
+      "sha256": "e5dc2a92063c0d2262336239a227e686c4977b6f8aaf65a2dda13c71ffe982df"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_E1_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_E1_v2_RR2.wav",
+      "bytes": 1005260,
+      "sha256": "8ae271ce5c337de9996193e66de415dc8ae322eb86bcafdcc78bbe4ec4acf4db"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_E3_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_E3_v1_RR1.wav",
+      "bytes": 512792,
+      "sha256": "f0ef78c07d2468a5f762aae1bb23806e0439f5372d872b68fa8967943808f1da"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_E3_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_E3_v1_RR2.wav",
+      "bytes": 550814,
+      "sha256": "816d282efedc9dcdd67374e2ae7c92433f4dba379150962995e1ed4496eb1fcb"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_E3_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_E3_v2_RR1.wav",
+      "bytes": 613436,
+      "sha256": "ad072009df18f24c4ae0b2fd4b8cbf803a1ba1d195fcae5ea8c882111e9555b3"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_E3_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_E3_v2_RR2.wav",
+      "bytes": 642656,
+      "sha256": "4a3c3ba79d27560a86eb239a281f4cdc87687e79091b7a0c5439b635043e6a53"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_F2_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_F2_v1_RR1.wav",
+      "bytes": 662600,
+      "sha256": "ff44e135372083b7c7989fc741c2ebc97bf91f11c5ba7d3c99bcf2c967f6c4e8"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_F2_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_F2_v1_RR2.wav",
+      "bytes": 446198,
+      "sha256": "f8a1804d48d1b0dfc48ec63e8f8de07834ed1efc83fa9a25584bc295235cc196"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_F2_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_F2_v2_RR1.wav",
+      "bytes": 479312,
+      "sha256": "eb5b95b1f7b22370ad00713db544f2eb3cae6b70a29fcaf673c54d485e73c8a3"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_F2_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_F2_v2_RR2.wav",
+      "bytes": 537716,
+      "sha256": "2114b5d349fad4c99ae5cc12080dc0fb838490fb9f79b707446d9a5e59826859"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_F4_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_F4_v1_RR1.wav",
+      "bytes": 231038,
+      "sha256": "0bb67ae171aa7f8a5a1caa6072ec9b5a858622881ad4efc42fb609d7f6015505"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_F4_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_F4_v1_RR2.wav",
+      "bytes": 241640,
+      "sha256": "ab8363414cd632add810a88b62f7e2d1f3a3cb1817b83212c6354e2f98c4ddca"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_F4_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_F4_v2_RR1.wav",
+      "bytes": 267632,
+      "sha256": "a0d172b71a6f33890ba5212485e9a23dcc8982bf8ba78b1031c97f3cd419c2a3"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_F4_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_F4_v2_RR2.wav",
+      "bytes": 346466,
+      "sha256": "1906061298d316ab7796101b089325218e9b44e8cfb7f0447b24ad85ec24616a"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_G1_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_G1_v1_RR1.wav",
+      "bytes": 852008,
+      "sha256": "4bfeddd80e7dd07d71f627d16b7458231c6b14118b8b8b3fe039ba8b73d88236"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_G1_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_G1_v1_RR2.wav",
+      "bytes": 718130,
+      "sha256": "5adede63f128d450b1f63a5cc306a5fc8405b6cedee0de90b589df8a9830dfc6"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_G1_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_G1_v2_RR1.wav",
+      "bytes": 884180,
+      "sha256": "a12366cff3dd68c4a1622bd504161caa9ed18d23f9d03ed413936a0829188cf1"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_G1_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_G1_v2_RR2.wav",
+      "bytes": 977798,
+      "sha256": "0d56d33e6665fd25f7d2aa7e97cc918fe26ab81a956cfefcadd6e17a4f116193"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_G3_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_G3_v1_RR1.wav",
+      "bytes": 746396,
+      "sha256": "e97f815fbeea50ad5dab06ac6f6f435e7df8981556a38a9a69194900ff2c2b5b"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_G3_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_G3_v1_RR2.wav",
+      "bytes": 719588,
+      "sha256": "bf3df3868e78d086238c9cbee6721a9c92c3d311d789db863daf9540077c713a"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_G3_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_G3_v2_RR1.wav",
+      "bytes": 720596,
+      "sha256": "6c2baf71b5fd733bc8c86e7eed625f3eefae85dedd7952f0d1e9fd812c75347a"
+    },
+    {
+      "path": "Strings/Cello Section/pizzT/pizzT_G3_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_G3_v2_RR2.wav",
+      "bytes": 762104,
+      "sha256": "7d8f5c99d87f2adb23156322e0e13cbff594495c7850d041cdd2ea2b9a535d6a"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_A2_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_A2_v1_RR1.wav",
+      "bytes": 421418,
+      "sha256": "9d7cde1e9785f468091783946954c390556b72f1e80098f69b0cab38fd64ed08"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_A2_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_A2_v1_RR2.wav",
+      "bytes": 356546,
+      "sha256": "d465597ad9b4ca4ae97b7a510e21fed0376de99654708251c065eea8e1a27fd6"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_A2_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_A2_v2_RR1.wav",
+      "bytes": 893588,
+      "sha256": "a0f0d6a225e5a31debd902b518b96987b322e064bd38c29f891196c06ed4b7be"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_A2_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_A2_v2_RR2.wav",
+      "bytes": 871292,
+      "sha256": "ddec2ced000c1e948a32c9d4d1dc8625ff52c60fd37df89948aace604c736df2"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_B1_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_B1_v1_RR1.wav",
+      "bytes": 460220,
+      "sha256": "f0c46e179f8b76c07097ff6ae1fe7582b05865cdbb6ff3bba9bec51c68fcb99f"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_B1_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_B1_v1_RR2.wav",
+      "bytes": 503720,
+      "sha256": "43e7f6f85ca9786063853f2d285918937e446cc076be032db1fbbf4434ff24e2"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_B1_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_B1_v2_RR1.wav",
+      "bytes": 476396,
+      "sha256": "3883a65c6d301bf6f61b21d5ec6e27f9740ba219b5b022a9e5f3a67c62aeaa2a"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_B1_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_B1_v2_RR2.wav",
+      "bytes": 527474,
+      "sha256": "d59af5e67b221405d69294434f72b2e3523cbf88f378bc888136839a5f4eff7a"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_B3_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_B3_v1_RR1.wav",
+      "bytes": 404822,
+      "sha256": "0d2f987a793e93bd956d9dffce46ef557a6f6de1d82f699fe8b1f0697b4116f1"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_B3_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_B3_v1_RR2.wav",
+      "bytes": 368342,
+      "sha256": "2645d091325cb9ab6e5e5bd041db4804899e757f02b57a6f002ae23b8a2574d0"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_B3_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_B3_v2_RR1.wav",
+      "bytes": 606824,
+      "sha256": "94323b0e1489234b9d01733571404302de5b04b583f817d4ff9497fd1e6b92eb"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_B3_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_B3_v2_RR2.wav",
+      "bytes": 595766,
+      "sha256": "3df455a0d305a203508d6ad3a98761b7e160ff825dd96709f2c43534585679b8"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_C1_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_C1_v1_RR1.wav",
+      "bytes": 825956,
+      "sha256": "3c583eb33a74d04a51a12a933bc9c6b8cf5af0d828f14d374791d8a5c98a06d5"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_C1_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_C1_v1_RR2.wav",
+      "bytes": 851288,
+      "sha256": "61d4f046df040b0ed911b170e5709e5c098483434012996805f4e36928150678"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_C1_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_C1_v2_RR1.wav",
+      "bytes": 853964,
+      "sha256": "92de035cdbfab6e41f94115b2c23716a9e93554a4c23c1cc4b946f7492d9c927"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_C1_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_C1_v2_RR2.wav",
+      "bytes": 926798,
+      "sha256": "3ddc16dc8f2a95c80388e20ebaa2e5a418bc66255927dd8b2b92cc0e4976f045"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_C3_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_C3_v1_RR1.wav",
+      "bytes": 399308,
+      "sha256": "c8975c2759af1875a70cd645b3d455ff32b12683af3d6c4827439afb62960936"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_C3_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_C3_v1_RR2.wav",
+      "bytes": 443348,
+      "sha256": "6ff73a0d8c6c3435b7aca8fd9216a38c2a0a9c9ac59ba5e85821e39bab8cd48b"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_C3_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_C3_v2_RR1.wav",
+      "bytes": 536360,
+      "sha256": "278a14177cd3ffffc5418e403d9583af22778a8ce8fc548f88ea707e044a62d4"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_C3_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_C3_v2_RR2.wav",
+      "bytes": 764744,
+      "sha256": "8ac75e28eaeaf48e92c536bf16b01eaa6b21172a0072cf96650a0e80cb443438"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_D2_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_D2_v1_RR1.wav",
+      "bytes": 394016,
+      "sha256": "6fe41bb3cf9212480ce2e856b5da3971267f75d64b629e90224cc9c6deeb1cb2"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_D2_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_D2_v1_RR2.wav",
+      "bytes": 371936,
+      "sha256": "2bbe3fe396003bb294b9051d2d5f206d850bca129a748e9328b16dc893d7bdc3"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_D2_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_D2_v2_RR1.wav",
+      "bytes": 896108,
+      "sha256": "c647723304b5f4b2d3af02739017e38bc4e85244c15355ebd6f8443c1445b5ab"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_D2_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_D2_v2_RR2.wav",
+      "bytes": 783068,
+      "sha256": "798af63a9273d686805c94427fe977c13362ba3263357ba5f1ec7db38efc628e"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_D4_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_D4_v1_RR1.wav",
+      "bytes": 344240,
+      "sha256": "0a6c8cc03852ced0e13eef2b9290b3ab6b9bd96be6a8aea50af09c86301e89b7"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_D4_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_D4_v1_RR2.wav",
+      "bytes": 410558,
+      "sha256": "0c6da46539bb4e17b8225a5a49df3d45bfcb6985ce277c0f88eebd44f441c004"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_D4_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_D4_v2_RR1.wav",
+      "bytes": 437876,
+      "sha256": "bbfcd62bd98a45a5f5f323e2c35d22c05aeb715b25c3e3cda87b6811c3753e73"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_D4_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_D4_v2_RR2.wav",
+      "bytes": 401546,
+      "sha256": "faf9b8c4e4746adc95984488a99ac314d3ea22d0fe7e26f8bf5811c351cde42f"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_E1_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_E1_v1_RR1.wav",
+      "bytes": 302264,
+      "sha256": "c826628be6c5270374fd6ccda92dcc3c1da98aaadcde324839d5e83ba16483b0"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_E1_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_E1_v1_RR2.wav",
+      "bytes": 359180,
+      "sha256": "526af2294def3dcaf27ca20156579074995f65fca22604a48bf08efe3aead497"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_E1_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_E1_v2_RR1.wav",
+      "bytes": 459140,
+      "sha256": "c7fec3551d21e326c2478ce9073cf8239485de835042c01e34c85fd692bf1ff4"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_E1_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_E1_v2_RR2.wav",
+      "bytes": 494612,
+      "sha256": "3ef89c9e64a719046cc77dd06af6cda941d0dace8556e24d6bf3ae12fc00a735"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_E3_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_E3_v1_RR1.wav",
+      "bytes": 358880,
+      "sha256": "d0892cccc8140bc6edfada3852f43f11b626f0bc43fb124189444a4208486a5d"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_E3_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_E3_v1_RR2.wav",
+      "bytes": 309428,
+      "sha256": "4056eaa1bf6ef6dc306143358a83a2e0f7106e8480abd4fbf16593096d08c329"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_E3_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_E3_v2_RR1.wav",
+      "bytes": 480080,
+      "sha256": "1daf39c60a6c83dfa941418a2ab51328f79ae738fe7c3e302e8395774eac8681"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_E3_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_E3_v2_RR2.wav",
+      "bytes": 600680,
+      "sha256": "38ba726d9c4d30870b84e06caad28fc39f84458dee439ccb016df4bbdc743809"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_F2_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_F2_v1_RR1.wav",
+      "bytes": 286550,
+      "sha256": "3ca1e1707f47e375f525f2862deba0fef9bd75e95299d029612560a9382a8aee"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_F2_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_F2_v1_RR2.wav",
+      "bytes": 297674,
+      "sha256": "5dec541489fa59fe92e3ed2eecf0a001a123f9303e835cb137e2025f84cfaabc"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_F2_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_F2_v2_RR1.wav",
+      "bytes": 339830,
+      "sha256": "840ea94753ece4334d62da823cd74a83c3fc8ff28166ff8a71f589d75fc6e591"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_F2_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_F2_v2_RR2.wav",
+      "bytes": 399308,
+      "sha256": "f00536e596eadd7b61f944f812e7d08683ee0d7ddfedac6573516657585dfbbe"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_F4_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_F4_v1_RR1.wav",
+      "bytes": 207674,
+      "sha256": "bba1a88682ff245f5a32bc7757f2351b15ff1b2d806c87e640fcff18c3006a48"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_F4_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_F4_v1_RR2.wav",
+      "bytes": 233954,
+      "sha256": "12c8fe9eedecfdf739f7f57a45e4f1fd93b9a52fb3f9fb3a5ca6bb4b001e044f"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_F4_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_F4_v2_RR1.wav",
+      "bytes": 204488,
+      "sha256": "bae94c2ee8f140997542b60d0aaea722b63dfec6700ca1a783b46ae7466bc4f1"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_F4_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_F4_v2_RR2.wav",
+      "bytes": 356792,
+      "sha256": "b54fbb9f59fe043210fff288508f966f6e8aaf65309a920856fd39702e97788f"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_G1_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_G1_v1_RR1.wav",
+      "bytes": 567434,
+      "sha256": "62ad206529cfa2ea5630042f2d23f6442afd1f008435a2c5e79f1b8bc924d3ec"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_G1_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_G1_v1_RR2.wav",
+      "bytes": 495434,
+      "sha256": "455fac92edf6c972c06b9c4e2c99987274bc3c2ccf4b1ea937ab914dea45e891"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_G1_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_G1_v2_RR1.wav",
+      "bytes": 856028,
+      "sha256": "7f536c013e9e24c0cde3577416bf27111b741fd331a0d041ff75e53eaa6102fa"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_G1_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_G1_v2_RR2.wav",
+      "bytes": 755624,
+      "sha256": "cfdd4fae88dd559359ef65836663cf8d324f2f1f4bd81e2bc6f4e751251244c5"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_G3_v1_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_G3_v1_RR1.wav",
+      "bytes": 359354,
+      "sha256": "aac27cd80015ace78dc9024ddce88932ca6b725dc13c8b7ee11fd30ce26a1bb8"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_G3_v1_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_G3_v1_RR2.wav",
+      "bytes": 392348,
+      "sha256": "2261707d07ba63532b3d3d3f1d920bce41fd3cbd85ede7500cda498988d4b29e"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_G3_v2_RR1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_G3_v2_RR1.wav",
+      "bytes": 400208,
+      "sha256": "adedb635e08e72f6e06e31dc1355edca528de2753f06eea271ec004e6a3b44f5"
+    },
+    {
+      "path": "Strings/Cello Section/spic/spic_G3_v2_RR2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/spic/spic_G3_v2_RR2.wav",
+      "bytes": 515834,
+      "sha256": "56f59a67ac8ec56ce37b0de04ecb8bc1b86570660e55553a6e70a79cc81dee9e"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_A2_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_A2_v1_1.wav",
+      "bytes": 2336738,
+      "sha256": "c97a003184fdcb153d6b6c0bae8d82a90592a1b04b06bd7caaeda8b9776d5284"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_A2_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_A2_v3_1.wav",
+      "bytes": 3082676,
+      "sha256": "b7f226f19b9616abe5fa4a27ef50116667e19eb0127f30eacfa6d1a83e9149f0"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_B1_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_B1_v1_1.wav",
+      "bytes": 2372492,
+      "sha256": "4f95c087c4b8d87ee591e9d39c3c9caf085c6f1b9125eac3ca9e4e637da628ee"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_B1_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_B1_v3_1.wav",
+      "bytes": 3372962,
+      "sha256": "8331a0e13f41243efab111f9b5e9185524c27ee48631269acecafc954ab7eaa8"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_B3_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_B3_v1_1.wav",
+      "bytes": 1690082,
+      "sha256": "bd25d66c1c4e73f5827bf3b931244e51ec8388594d8004529a762be81258097f"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_B3_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_B3_v3_1.wav",
+      "bytes": 2865086,
+      "sha256": "1c8b571516ac503df871bbea74756dfc3813b4bc10a76921d231afb0175cdbf1"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_C1_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_C1_v1_1.wav",
+      "bytes": 2347376,
+      "sha256": "abdcea431f384e135c469b0f3e4ac2a437f282f521dc5bcbe22abc221536e8de"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_C1_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_C1_v3_1.wav",
+      "bytes": 3335948,
+      "sha256": "19195ab85ab71626bd11e7100febdaeeba1c237ff5887b934fd0ffd8dfad82cb"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_C3_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_C3_v1_1.wav",
+      "bytes": 2444174,
+      "sha256": "a614ee7ca821b44660236e47b89620cf914ec6ad27a99bc0d9764f47dbe512e1"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_C3_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_C3_v3_1.wav",
+      "bytes": 3019394,
+      "sha256": "51e884d54eea3bf4ba7ee35289a09f15ddb6a52cd849248d01bf18477ccbd07b"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_D2_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_D2_v1_1.wav",
+      "bytes": 2550956,
+      "sha256": "e8640dec9febc6e39fcf06b19d2c95a85d5ff8c38f13c9879e69f551eaf38ab8"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_D2_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_D2_v3_1.wav",
+      "bytes": 3291368,
+      "sha256": "fc946615cd6550570c8f05d61c0d59b9079bf9daba8bf25be7943487fea5a7ae"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_D4_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_D4_v1_1.wav",
+      "bytes": 2153228,
+      "sha256": "b4aa3a7fec1f0e783fa560f493868c17045feb271738e3d6834d1b00594b1c38"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_D4_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_D4_v3_1.wav",
+      "bytes": 2801210,
+      "sha256": "2ea7f580738dbcf143b9c9f72703071aa7a8f6bfa33cdd2c2e5da961df1805bb"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_E1_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_E1_v1_1.wav",
+      "bytes": 2468348,
+      "sha256": "de31a61b02d4e1d5a79b8bc432b0f35fe2e434290ad34402cc0f2dd7dc278cde"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_E1_v1_2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_E1_v1_2.wav",
+      "bytes": 2439512,
+      "sha256": "3f8c250028d5364fc9c5584ad204d7a1d4c8c02ae41e90ad482e7b0d7d1bc674"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_E1_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_E1_v3_1.wav",
+      "bytes": 3080426,
+      "sha256": "ee190b95be4f2416b9f41d248d255a4d7067b722f9b21482b30bc9872a9bb0d1"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_E3_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_E3_v1_1.wav",
+      "bytes": 2456672,
+      "sha256": "d2f961e30bf64021cf4acbd88e0e7a1fd1840943ae78c62a711bcce3d109216e"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_E3_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_E3_v3_1.wav",
+      "bytes": 3278270,
+      "sha256": "24a7ffdc23087026c4ef2d421441253c71490df9cf0757e93ffb14b4e61481ef"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_F2_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_F2_v1_1.wav",
+      "bytes": 2186012,
+      "sha256": "162054eab4ba118924f8f8986cf1b17ccfd65211d1945743ffbae30b4953f901"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_F2_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_F2_v3_1.wav",
+      "bytes": 3062696,
+      "sha256": "d965197faf2e6ab8675f1d65505e5ba934a5ab769412d314bad94133e18f24d0"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_F4_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_F4_v1_1.wav",
+      "bytes": 1922948,
+      "sha256": "a9888547b4b684c7649a882e693d61964848f18401a18e4646a8449b40c08bad"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_F4_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_F4_v3_1.wav",
+      "bytes": 2726342,
+      "sha256": "24ea4a0f892cb60c4a52d6a5b1ef8281e4e9a9f78b5f938e078da7cbbfd5ba19"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_G1_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_G1_v1_1.wav",
+      "bytes": 2161700,
+      "sha256": "9e5d24e8e28d6c7f650f9bb2b33d43c13e341a8bd33124c64e23881378b181ba"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_G1_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_G1_v3_1.wav",
+      "bytes": 3370496,
+      "sha256": "e4c61d4ab855ec20ddb69ff608a1c066ff8a779ddd08d1dfe1d534d3a4563ad0"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_G3_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_G3_v1_1.wav",
+      "bytes": 2431598,
+      "sha256": "8d658346b8d2054fd534b3222b5d7a23196d22a83a68c3a04ffb76b21853a3db"
+    },
+    {
+      "path": "Strings/Cello Section/susvib/susvib_G3_v3_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_G3_v3_1.wav",
+      "bytes": 3335768,
+      "sha256": "17df597c259a849870aa25e9fbfa6093371851f83ba7b9deb9cb9e1ec11463a7"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_A#0_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_A%230_v1_rr1.wav",
+      "bytes": 194664,
+      "sha256": "39d13610eb3aa3f40e510b0b4821422e16dbe942719a4f1516424951f481e68e"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_A#0_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_A%230_v1_rr2.wav",
+      "bytes": 231328,
+      "sha256": "70bff5a8cad019cb82f5fe9ab36aaf8a14d394344c64f83180e455fd850299d3"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_A#0_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_A%230_v3_rr1.wav",
+      "bytes": 260456,
+      "sha256": "34280d744690957c3668e650f9c5d86a3d5a71a524c42742b34c8ec7ffb8c6eb"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_A#0_v3_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_A%230_v3_rr2.wav",
+      "bytes": 311856,
+      "sha256": "b5f819e0869d215a7e9336c8203e637cebc93b73af8d48931e5f5b8d64f766e9"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_A1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_A1_v1_rr1.wav",
+      "bytes": 421292,
+      "sha256": "32111c59f0e40962564221f9f9f003466c369fe18051f4ffaad3d8cd205ee23d"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_A1_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_A1_v1_rr2.wav",
+      "bytes": 401520,
+      "sha256": "a3e24b931102aa3ca280c67a072c01426fd9a68f832905593f110e734771d692"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_B2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_B2_v1_rr1.wav",
+      "bytes": 278964,
+      "sha256": "8d3be1969f10820373ed4853d81604d3f3cb074a77ef0b3381d2016251d7e890"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_B2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_B2_v1_rr2.wav",
+      "bytes": 263652,
+      "sha256": "4fe5711c6c86cc6ff5d7612d7cceb17434486d465ad354aabe75df480094290f"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_C#2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_C%232_v1_rr1.wav",
+      "bytes": 250516,
+      "sha256": "22fc17a5c7d55805fe689b329b08eaaf47ea0134d7e144f25c93594b6713b692"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_C#2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_C%232_v1_rr2.wav",
+      "bytes": 334136,
+      "sha256": "150c71a4864330269e2263b6a2447dc1146c8fa5482cc5fa278f047107b8f8ac"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_C1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_C1_v1_rr1.wav",
+      "bytes": 284716,
+      "sha256": "8a6f149e558e3fe2459c0d2acb640a0e6c2186ea2618372c4d5cd67fb3fd3332"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_C1_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_C1_v1_rr2.wav",
+      "bytes": 212816,
+      "sha256": "b43d452a585bcb4157233ce039bd8321c67532372871bf8ae9bdd9792984bfba"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_C1_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_C1_v3_rr1.wav",
+      "bytes": 239208,
+      "sha256": "4bca4ab782cdbddeb75069135a4a8b0e4bc4f3570a5033b7f0729b5285719ae2"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_C1_v3_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_C1_v3_rr2.wav",
+      "bytes": 238012,
+      "sha256": "de2dafcc37ed8ea565836a64d919c6860e1a57779b6f4bbefc5d557dc0254739"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_D1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_D1_v1_rr1.wav",
+      "bytes": 268532,
+      "sha256": "2a529cacb20e87c4787be25d2516d73b9740f0ad7eecd150dbc66954280d9b93"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_D1_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_D1_v1_rr2.wav",
+      "bytes": 280840,
+      "sha256": "2a08c752b6f2a3ff7adc0d53daa6aa36f2036cdfc430115f33b640dae70728c9"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_D1_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_D1_v3_rr1.wav",
+      "bytes": 305376,
+      "sha256": "39b0d060f6781ed356f4b9153b1fcd96ad79b8548164ece0be5314fb8e48d21b"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_D1_v3_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_D1_v3_rr2.wav",
+      "bytes": 271904,
+      "sha256": "f6d56d8a3b58d8ebc2c2f32724e89f7e5c4b513c78af4461ed51f2c8dab37191"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_E0_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_E0_v1_rr1.wav",
+      "bytes": 327036,
+      "sha256": "5a3e8c3d036507382040514d7f577ff40f37cdbc9b1b69e10c8673066a20d2ca"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_E0_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_E0_v1_rr2.wav",
+      "bytes": 426464,
+      "sha256": "020a9bef474c9c1841b09f30ce061e86fbd5190041dc44f77e3890718a4d34a5"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_E0_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_E0_v3_rr1.wav",
+      "bytes": 579300,
+      "sha256": "c15c0e4c51a0c7da1f23c84ab103203125cc069a59a077cd77af035975fa856c"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_E0_v3_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_E0_v3_rr2.wav",
+      "bytes": 559292,
+      "sha256": "a5a0ae323c7eab3dc9a89a667c9fb55fb82bfb279957372cb7c7754c50563535"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_E1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_E1_v1_rr1.wav",
+      "bytes": 246588,
+      "sha256": "870196e13eb76affd55e386b0a1e5d12f2db9a4d6750cd24c0aabff082607ee4"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_E1_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_E1_v1_rr2.wav",
+      "bytes": 227528,
+      "sha256": "bb4d709a57d2e81a1161fd9d4590bf43835d2605b9ba55a8a61cd7c5d0dbe0f3"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_E1_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_E1_v3_rr1.wav",
+      "bytes": 381272,
+      "sha256": "08209aecd7ab8d6de7f3f4a442f12b108327f6c95ceb7fdff2657e149de03040"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_E1_v3_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_E1_v3_rr2.wav",
+      "bytes": 290536,
+      "sha256": "9cc0f8272f00ee56c5bc85caccca76099d91f86ac6063d615cb5e283bfd84b4e"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_E2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_E2_v1_rr1.wav",
+      "bytes": 264448,
+      "sha256": "747c4e51164d6582c9e253d3fa37aea939be691e95f1573f66b660137c0adcf5"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_E2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_E2_v1_rr2.wav",
+      "bytes": 313948,
+      "sha256": "24b455de876987fcce1d09d7ec4766ed761eb7878614715090fefc69f4ee52ce"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_F#0_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_F%230_v1_rr1.wav",
+      "bytes": 241572,
+      "sha256": "17c2f1ad53b7a8884422820e5acb3c1562d8b00fdac2ae91f78fd4a60086927c"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_F#0_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_F%230_v1_rr2.wav",
+      "bytes": 276620,
+      "sha256": "4465678e19dad22a20754166290a263abf6398ce8b66826568537743fc81f89d"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_F#0_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_F%230_v3_rr1.wav",
+      "bytes": 358708,
+      "sha256": "738f8354b1c08fb9036ae2de9a2f3c65ef4762a955a97b72b1213eec3fa9b4e4"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_F#0_v3_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_F%230_v3_rr2.wav",
+      "bytes": 439972,
+      "sha256": "daf065a9d93cd7b991e7c7327415a260cf70cfeff7fc91ad0c6f34b35ed8ac7e"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_F#1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_F%231_v1_rr1.wav",
+      "bytes": 262040,
+      "sha256": "e410c1f3115cf0f8d5b2f75f4ccae558bc43460b6832c63807505d186df4d428"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_F#1_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_F%231_v1_rr2.wav",
+      "bytes": 266076,
+      "sha256": "6520b1971de211c1e0ef86492b180c3d41fdf90eacd45fd962c86f92f8d178ef"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_G#1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_G%231_v1_rr1.wav",
+      "bytes": 433108,
+      "sha256": "5d8548ca2673b10dd78b7c644f0a488f4170e333b528630af757b34abd41f814"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_G#1_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_G%231_v1_rr2.wav",
+      "bytes": 358092,
+      "sha256": "038b6f1027e2a1d5c94570544125412672910c5bad3d8d3b8317882d258ae30a"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_G#2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_G%232_v1_rr1.wav",
+      "bytes": 315092,
+      "sha256": "ec3aa1973906ddad82d83ed5e54a32299c3f413147d97c16f6602340bc9af2f2"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_G#2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_G%232_v1_rr2.wav",
+      "bytes": 353536,
+      "sha256": "5b3cbd541d44e63f3a29f1d8e4dcf76ca77cb87c49526ffeb59e44bbc94e10f6"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_G0_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_G0_v1_rr1.wav",
+      "bytes": 211852,
+      "sha256": "eb98fd107d5a34730061c72f2efb1889103c2a33d1848f8be9c0b26b4fccf96d"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_G0_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_G0_v1_rr2.wav",
+      "bytes": 212112,
+      "sha256": "f035ce46cbf1753b8e4e466b5a619f9bd9ccb04cab822022d18e132b37c25799"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_G0_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_G0_v3_rr1.wav",
+      "bytes": 282048,
+      "sha256": "239a927ce98a3135e8325d91ef1ee462b5217587fb745c8f64a7951398d0fe79"
+    },
+    {
+      "path": "Strings/Solo Contrabass/Spic/BKCtbss_Spic_G0_v3_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Spic/BKCtbss_Spic_G0_v3_rr2.wav",
+      "bytes": 289524,
+      "sha256": "496b393a6e4e74ea04000fe84885a064870c62efccf8d5cf04d5dd2fe1df13d0"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_A#0_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_A%230_v1_rr1.wav",
+      "bytes": 1861432,
+      "sha256": "b3800588b7aeff8f0c81998bdc4bfe47b3fc3e621f166de3df68f614a9f53afd"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_A#0_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_A%230_v3_rr1.wav",
+      "bytes": 1786876,
+      "sha256": "3a8ba2d2cf631a9b4732a1ca717a7059d20b71a9db576ae4fa5346d024cd17e8"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_A1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_A1_v1_rr1.wav",
+      "bytes": 1249496,
+      "sha256": "06057880075d08c3f5a9df78bb7ec07f4cd41bd26e09a69f7a2e92cc66f308d9"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_A1_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_A1_v3_rr1.wav",
+      "bytes": 2383056,
+      "sha256": "993b0f67c4050225d3d45cdc50c3362ec6026956b765a946498419541aa6e8c4"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_B2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_B2_v1_rr1.wav",
+      "bytes": 1596108,
+      "sha256": "75e9119ac1c1e0d60fdd28ae88c3628a40a21d4ef91731cbd890b0cd29b08ce0"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_B2_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_B2_v3_rr1.wav",
+      "bytes": 1375120,
+      "sha256": "e38aaa840cef00b48cb12fe3ae20098890a4a22d58741c860c633c65f9537f1f"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_C#2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_C%232_v1_rr1.wav",
+      "bytes": 1162724,
+      "sha256": "2bbc1f013bf4725dc45dde12d1a83c71bf6681920824932059799c1d4c7e1a4b"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_C#2_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_C%232_v3_rr1.wav",
+      "bytes": 1752396,
+      "sha256": "b2e8f4ca464b44e3f73a0f8a360ad369d546fb2d2f03e369235fc403f543b1f0"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_C1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_C1_v1_rr1.wav",
+      "bytes": 1458252,
+      "sha256": "c930941735e707b109878f4734110412ebe26b983c2b3e300510175aedf5e61c"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_C1_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_C1_v3_rr1.wav",
+      "bytes": 1843084,
+      "sha256": "220043ee46c072d1aef3e8c16f4531d0e3e4d7369dfbbf0869c75b11663cb792"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_D1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_D1_v1_rr1.wav",
+      "bytes": 2548840,
+      "sha256": "d07634bec7bb0d736375bfb0c514f3d7586d9a625c4f56f4936556e247b33812"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_D1_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_D1_v3_rr1.wav",
+      "bytes": 3209708,
+      "sha256": "da9f42632d703a139d051b4c0de3f8c5fbcece5242f06e397e910c2e3f57c1a9"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_E0_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_E0_v1_rr1.wav",
+      "bytes": 2852456,
+      "sha256": "b510c6c2eb4fb0acba5eaaaa703ebe19025cad3749f645c41f883e4217b338fa"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_E0_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_E0_v3_rr1.wav",
+      "bytes": 2341236,
+      "sha256": "a40e0ee5f4bd31ed6c097b382ce916140e2175b34969f32b0f3162051bdc268f"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_E1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_E1_v1_rr1.wav",
+      "bytes": 2824612,
+      "sha256": "90428ce30d89c2eab94187a2d2c589758bc7027b8f0c8d3e2cce165972f60e21"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_E1_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_E1_v3_rr1.wav",
+      "bytes": 2356332,
+      "sha256": "1f122393a2b0e771d3e9d17b122c1f4f0a5872c342d46743103250946b7dda55"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_E2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_E2_v1_rr1.wav",
+      "bytes": 1356572,
+      "sha256": "1b9d36042135c2eda513881612fb550a1b2669caddf70a7a514caeb4725fbbf2"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_E2_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_E2_v3_rr1.wav",
+      "bytes": 1277060,
+      "sha256": "fb300e271ef6ebf42b9e049a180209a4ab80c9b8f750c32a22257838bb82f7ab"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_F#0_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_F%230_v1_rr1.wav",
+      "bytes": 2224156,
+      "sha256": "416f46ccdf1c27cc15767c1f1053a2246a690e8e1b150fc8f08da4548e7f2ca4"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_F#0_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_F%230_v3_rr1.wav",
+      "bytes": 2295924,
+      "sha256": "a6e1d3a1a3ba9b5025c4c67d916409bca8b4931518778fff6ae4aeef32c1fa2e"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_F#1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_F%231_v1_rr1.wav",
+      "bytes": 1322048,
+      "sha256": "a678ba2e2399b7da502628962575e904127d5f5a2a68a6ab6c4237c7281dee4b"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_F#1_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_F%231_v3_rr1.wav",
+      "bytes": 1619688,
+      "sha256": "165cce5739a5a80c33336a2f667fc1a7ed5541bba74dfae7e3f122a70b0a0418"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_G#1_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_G%231_v1_rr1.wav",
+      "bytes": 1342128,
+      "sha256": "c7adf9c807d5425e3ce88246a5ad716fdfa573b6b1185540052a5b5cf8118ac8"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_G#1_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_G%231_v3_rr1.wav",
+      "bytes": 1722468,
+      "sha256": "f61ea9d3b6b11720752dc1d94101cdd49a9dafcb444527657c89e9312bc98842"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_G#2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_G%232_v1_rr1.wav",
+      "bytes": 1630016,
+      "sha256": "cfa576d12284ab9fad6e6f300cd2bd682a80b331673105c1b5d208f04230460d"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_G#2_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_G%232_v3_rr1.wav",
+      "bytes": 1585864,
+      "sha256": "7043a9ce6142a2fd6b9882778f15618ed2d10ebea408edd617d160afec83f8da"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_G0_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_G0_v1_rr1.wav",
+      "bytes": 1881520,
+      "sha256": "d363b0e026cae6e86dcb60e353672fbec2f1bab9e8ee4c95903d9fa83fd47606"
+    },
+    {
+      "path": "Strings/Solo Contrabass/SusNV/BKCtbss_SusNV_G0_v3_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/SusNV/BKCtbss_SusNV_G0_v3_rr1.wav",
+      "bytes": 1934328,
+      "sha256": "129f188021438e2c103d709a550db59ba9aba9eb771a1763fdb2f57b188040fe"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A3_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_A3_f.wav",
+      "bytes": 2864482,
+      "sha256": "76934f3a85e4ba3b6518132c2fe6effa340c33fbb02f94e88c60b00073dc722f"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A3_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_A3_p.wav",
+      "bytes": 2911130,
+      "sha256": "8daa4ca0eba8a834814435047e36b47826e730a7796c325966323f53debc9e46"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A4_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_A4_f.wav",
+      "bytes": 2488526,
+      "sha256": "19e5374658351508a9e2c929e871a43caff41e62d5e3363ead6f88428a9ab863"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A4_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_A4_p.wav",
+      "bytes": 2612122,
+      "sha256": "0d05607b46b78690893006d5aa7923ac304c7fb497df1e96536dc88ac5ac487f"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A5_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_A5_f.wav",
+      "bytes": 1986834,
+      "sha256": "0558d79d23db55c710e664e6283b62619f5a582ce261a5c082700a0d01536627"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A5_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_A5_p.wav",
+      "bytes": 2562122,
+      "sha256": "204834bfb91ee62d53d3b2c9e9d37928617f643922f434323508a15a70ee591c"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A6_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_A6_f.wav",
+      "bytes": 2052254,
+      "sha256": "37f6cc2f12b1b443a77d3ee370178da4a002a2ac3b6529663cc7ee002728ddcf"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A6_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_A6_p.wav",
+      "bytes": 2614110,
+      "sha256": "0f212759660b2fb0d645b2089adbf4222eebc829927c1e002caa434ecd804f0b"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C4_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_C4_f.wav",
+      "bytes": 2334170,
+      "sha256": "4169605b51a72454f11bc2c34efc66c1d9993fd2b7d5f097a025ef9d3a2dbdfa"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C4_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_C4_p.wav",
+      "bytes": 3096650,
+      "sha256": "592ebf4404ccafc7164c13cc543911ba9a2fe5f5e70dbb200807e2ae37b25035"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C5_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_C5_f.wav",
+      "bytes": 2497990,
+      "sha256": "af72f852ef2892233699851dacf5f8d97d446822d8eb4ce9e0ec27d5a721b118"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C5_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_C5_p.wav",
+      "bytes": 2498790,
+      "sha256": "77a2133b5f97e1ec0edb759c0c552fc3efa7caf4ce1e0a4aa22625cf4c9da130"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C6_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_C6_f.wav",
+      "bytes": 2162774,
+      "sha256": "7ec8e0c2dde75282a4aaacccc713c84faa3e84daa9cf43df45ffc0e209964d46"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C6_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_C6_p.wav",
+      "bytes": 2358906,
+      "sha256": "48039f28964328d0b8235b8d61e39b06f8d22f836a6940fa036fe7004fc58e6c"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C7_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_C7_f.wav",
+      "bytes": 2176486,
+      "sha256": "f8223aed62911ef3f6937111bf3cdcc36fc25a636d4f99480b97029c4d28f393"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C7_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_C7_p.wav",
+      "bytes": 2274706,
+      "sha256": "02b077cecc5002156fb439c5e0edfb75dbed94a97502a0252e57a76930415889"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E4_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_E4_f.wav",
+      "bytes": 2416566,
+      "sha256": "418512905f3294a23cf999f0587bf8e04d60192fe317ea8c80c150a85670eda2"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E4_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_E4_p.wav",
+      "bytes": 2600174,
+      "sha256": "57c5aec0678a5d582d87ab33cd2f8954fea26ffd04c932eb6753d6a78e08736b"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E5_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_E5_f.wav",
+      "bytes": 2365174,
+      "sha256": "5c278e263fd59650190fc58294945cd291906eb1abd8293f728a96a878d1d478"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E5_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_E5_p.wav",
+      "bytes": 2517094,
+      "sha256": "c60c3bcfc64ea00ebf8d97b16f2876c892393839a017a945c5e557359b6369a4"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E6_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_E6_f.wav",
+      "bytes": 2363554,
+      "sha256": "8d1712f5659274a83aa90807132084559633e4817027c8a5b5f40826b3d9bc84"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E6_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_E6_p.wav",
+      "bytes": 2514702,
+      "sha256": "f1f0f8062eda1af6147852bf61b39e6b8734d4b0236737810c9d660297a34f0c"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G3_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G3_f.wav",
+      "bytes": 2936890,
+      "sha256": "80bae3776b0ccd3d4774f47429e829c7764f5fe6061ff844a8affc6ac68b7899"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G3_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G3_p.wav",
+      "bytes": 2788822,
+      "sha256": "c52d8ef3e2882984c09da1b7c7ef40b82e997bc78cfdd380fe167bbcb94b03de"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G4_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G4_f.wav",
+      "bytes": 2366050,
+      "sha256": "14e3ea3d5172722d4d2686bae5da3d603800a7a474fa295d98275a9410913822"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G4_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G4_p.wav",
+      "bytes": 2594066,
+      "sha256": "ad1ba8442a6b40919093c9c831a8171c7030f7e651fbe075ab87764665deef88"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G5_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G5_f.wav",
+      "bytes": 2222106,
+      "sha256": "b5bb27541d6187e6eeb20baf50625ca35fc9d44c7f113936a9369bc7ce490a68"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G5_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G5_p.wav",
+      "bytes": 2596714,
+      "sha256": "537df6072b0922a0231a6b3fad117e84bcaaa3e60ca68c665776a83c9bd9062d"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G6_f.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G6_f.wav",
+      "bytes": 2164026,
+      "sha256": "68c49e55565810ea822866e3d39e51c1a5ad53cfa1a67bc25836ca7feac3fe0c"
+    },
+    {
+      "path": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G6_p.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G6_p.wav",
+      "bytes": 2417222,
+      "sha256": "eb40e796d0e40ff4a729fd93dc9436ac08b30de308a8191e944351fee49aef9d"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A2_v1_rr1.wav",
+      "bytes": 212172,
+      "sha256": "5317473e0c3acd60eac63cf641e3947dcd3ab8f99b8fa5d4c7b1e7806f33cbae"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A2_v1_rr2.wav",
+      "bytes": 147868,
+      "sha256": "ef40155b657e6b13bf73e3035b51c146fea267abf5e8ba5378a82c58b6385303"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A2_v2_rr1.wav",
+      "bytes": 292356,
+      "sha256": "4d7f9520bbde4f43324554b53bf147d2b5ea1a8c1234a7375793420f8a29f1d6"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A2_v2_rr2.wav",
+      "bytes": 334496,
+      "sha256": "d3579f437be1f0c713a0407fada47f75e26b18da1f4984a365356382bc6618f9"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A3_v1_rr1.wav",
+      "bytes": 181484,
+      "sha256": "1f21dc936b765b7e9e0ceb65949f3b22205a61a43af21cb7a0307aabcb654cbb"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A3_v1_rr2.wav",
+      "bytes": 163712,
+      "sha256": "6cfe01a4c8f753c13a7be78be6cfd14b0d21c0a8956d41cd462ca5c936d7215e"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A3_v2_rr1.wav",
+      "bytes": 245852,
+      "sha256": "cda80f0f3d2deebc97d313581f810cb1b42b516cd26d617252e62e12ea205a1b"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A3_v2_rr2.wav",
+      "bytes": 315832,
+      "sha256": "7b1025869c74c8a937ecbed90636f25c2adcfe94d3751879a4b9177a07b19fd4"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A4_v1_rr1.wav",
+      "bytes": 243708,
+      "sha256": "13477c70ee092b81f2537a6624546b1eea1ffaba0cbe0a93797003ba6d862bc6"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A4_v1_rr2.wav",
+      "bytes": 235924,
+      "sha256": "9fa515ac27ad4354826560feec06502ae993ffc5bb41ed922c34e792d5eca1c8"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A4_v2_rr1.wav",
+      "bytes": 244532,
+      "sha256": "6c506b5fccacbbbadb70993ff00d77c68a185af79febb35dc7101eb616046650"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A4_v2_rr2.wav",
+      "bytes": 342108,
+      "sha256": "c7a1418539041e1428f6aff88f66aa184e9dfff61857b725acdefff4993c1435"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A5_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A5_v1_rr1.wav",
+      "bytes": 190168,
+      "sha256": "b45eef0c35bfd1a213f23d5f992b8569e5dc4e12814c05e2bb0e5f61ec79b8f6"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A5_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A5_v1_rr2.wav",
+      "bytes": 159720,
+      "sha256": "b2eb0ffbf6133f352d7479562cde60174f21a4adb43d7c32d35f01b70c2bb120"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A5_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A5_v2_rr1.wav",
+      "bytes": 239996,
+      "sha256": "c5e2925c08a55dd4329c74bc9f0b832dac4e405d04da7a19fd790bff71f02162"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_A5_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_A5_v2_rr2.wav",
+      "bytes": 169368,
+      "sha256": "ed2da319deea36dc872cfb3c09828d51fc0ba02bf4626a8bc43b8075e59cfd14"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C3_v1_rr1.wav",
+      "bytes": 147328,
+      "sha256": "9ed4ccbf955d179b4b1791e09cc4e18caf79934d769880ac55530a927426a3d9"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C3_v1_rr2.wav",
+      "bytes": 143016,
+      "sha256": "83e0736736771534a986994e66fe0712df677db0a4c049d341fbc6457e906672"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C3_v2_rr1.wav",
+      "bytes": 201628,
+      "sha256": "004ab9c49db15533ee5f47d626138a5af3f044f19131827a0911ec3648c0e68e"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C3_v2_rr2.wav",
+      "bytes": 208516,
+      "sha256": "0910dd0f25c3455cd8164de1037d35053164fe7b0b640be219fef281a415b2c7"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C4_v1_rr1.wav",
+      "bytes": 150832,
+      "sha256": "6d75b28586d150dce0f9cd4ccf649dbc125afaf43762a2f5676f3d916289963e"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C4_v1_rr2.wav",
+      "bytes": 158924,
+      "sha256": "b24d6b61e64d27aa6ccddbb56e9c64aea2ed504078d0f2b9e13ef8bec3c923a8"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C4_v2_rr1.wav",
+      "bytes": 211868,
+      "sha256": "0071c0e2cf8ee18b6502f392015dc89ed39a6320f8a430779a50c48b1cb37f42"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C4_v2_rr2.wav",
+      "bytes": 209452,
+      "sha256": "bde86277c2a400799bd7bd15500b10a8f9249d9fdf7929a9499977fe39d0e625"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C5_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C5_v1_rr1.wav",
+      "bytes": 221532,
+      "sha256": "72e3baa8e22c1797dbda56f4665c7808a44e6f2561bddfbb10a5171e19752015"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C5_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C5_v1_rr2.wav",
+      "bytes": 165968,
+      "sha256": "a7d040d9a36369aa9c1f3a9ced12c4f30deeca81eaa67230abfc940cc86b4094"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C5_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C5_v2_rr1.wav",
+      "bytes": 217828,
+      "sha256": "28788d5a97438d739403627aea0f8aa42fa6582d75c4e8f4f2431cfae1cd4738"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C5_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C5_v2_rr2.wav",
+      "bytes": 226964,
+      "sha256": "2c9a17f8848c55c3fd94ac8b742e5e552a9815b417ccf2ff0696accd0c566c35"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C6_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C6_v1_rr1.wav",
+      "bytes": 216652,
+      "sha256": "5322bc5235a2c1433a2fb00e0dea8f33620bfa37ebad3198398f119eaa8c0fbf"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C6_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C6_v1_rr2.wav",
+      "bytes": 191664,
+      "sha256": "348a34eb4a954ad56554a1e03d5d2e78d1420b76099f914af99f4eba65517345"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C6_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C6_v2_rr1.wav",
+      "bytes": 196924,
+      "sha256": "4e854001e15c23bb42e1f9dd8ca276e54d279423c6dd94db9bab6385cd9641c2"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_C6_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_C6_v2_rr2.wav",
+      "bytes": 206584,
+      "sha256": "46796f4235be0817e2106b9e20ec626092db29808937e0c957eb325da8893905"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E3_v1_rr1.wav",
+      "bytes": 225092,
+      "sha256": "a6b5f0bff98ac81134f6ac53e3d639944e3d5d4d008e9757d56951b58163b239"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E3_v1_rr2.wav",
+      "bytes": 220480,
+      "sha256": "293f6dfd8be16c2319ef704c5841cd7bb60d218411ee15b76a7ab33089489e34"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E3_v2_rr1.wav",
+      "bytes": 290760,
+      "sha256": "b4a9d9a85016a0ee4db54256d3a7384288823821b866df4bd1cd226a05cf2396"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E3_v2_rr2.wav",
+      "bytes": 215624,
+      "sha256": "31ec1ba3c100ff966464f532baab9303e3cfe58c27367fba912ec01a5967de90"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E4_v1_rr1.wav",
+      "bytes": 291860,
+      "sha256": "635445fb882ea6988a9a17fdfb4b1f461316a882475e48877e2dae9c3f57a2ab"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E4_v1_rr2.wav",
+      "bytes": 297672,
+      "sha256": "b55073fdcc7c410e735f0d20692b2e3ba1bd4a7e76bb4c1be8950e8716cea75d"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E4_v2_rr1.wav",
+      "bytes": 326208,
+      "sha256": "365e59e228e7af42d9277381d16bbd088983d99190e746da6ae81f9b10cb48fe"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E4_v2_rr2.wav",
+      "bytes": 353820,
+      "sha256": "02a5a5b7a5f88258059d2b4af2596eb974060968a5c8033b4d53465e8f43daa8"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E5_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E5_v1_rr1.wav",
+      "bytes": 235416,
+      "sha256": "0b1887a463b3a0506fe2193ba5d6086849a603cd30dc761f5c77ff6bce658338"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E5_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E5_v1_rr2.wav",
+      "bytes": 236520,
+      "sha256": "6d6c9490e5ebc4f1eb0b548b3ff48659628b094d784d2fe9d570c0b4923c9bdc"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E5_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E5_v2_rr1.wav",
+      "bytes": 204612,
+      "sha256": "3c440d43b09b1a152fdf9308f4773ec8c55cea05b97ed06e50dbce1a9d2a2256"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_E5_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_E5_v2_rr2.wav",
+      "bytes": 173228,
+      "sha256": "76a1aff68c93f1d0607b348536967de3fb5baa2775bbc9527172ee5a99eaed73"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G2_v1_rr1.wav",
+      "bytes": 161360,
+      "sha256": "0826f0c0c1b6cd850deefdcd3376a16c1ad2cb19a0ee81b71141529dcdbbf5b8"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G2_v1_rr2.wav",
+      "bytes": 209040,
+      "sha256": "12b59cd786b629aba2fbae9138ad60b2cbff9491d5eb1523be8c060f8f0d18f3"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G2_v2_rr1.wav",
+      "bytes": 391880,
+      "sha256": "3bcd4edde6d9c9882ad16d3ba8d1999b6190581cb4af77df6b0d6606d7b4a60e"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G2_v2_rr2.wav",
+      "bytes": 368676,
+      "sha256": "72b722d23d17719c85602d152bdc1b80894f3564f6b53262c953d4ec3a7d5985"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G3_v1_rr1.wav",
+      "bytes": 262440,
+      "sha256": "b9c82d49a3575fa514586b89de6f10c735dcb8a2e1c3b1408aa0715298479365"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G3_v1_rr2.wav",
+      "bytes": 178892,
+      "sha256": "b7ea30516346a214f22a9ed07e17e3e1ad1044513dc035fe2a44b3d8b8137878"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G3_v2_rr1.wav",
+      "bytes": 207440,
+      "sha256": "af5163b8b919a07cb85abeb1fbb2f1f124889f9b0417e4f41571f6d7588f5665"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G3_v2_rr2.wav",
+      "bytes": 196268,
+      "sha256": "bada8ff79015d7d9129e205925331d3663b592e194ced971cf44c499c1cc0b7f"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G4_v1_rr1.wav",
+      "bytes": 220868,
+      "sha256": "4859b51dc4a991898f637454a63f81a80f3b45c141cd5feba9dd3a0f06e6330d"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G4_v1_rr2.wav",
+      "bytes": 199328,
+      "sha256": "804a09eb742a8eeec6a66173ca107de11686b9b6f2dd4669569c63f90a1bf8e5"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G4_v2_rr1.wav",
+      "bytes": 226544,
+      "sha256": "acfee187b8d0e781aaae2c2f68250c42e1d8f410a595673502fb96f1469a789e"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G4_v2_rr2.wav",
+      "bytes": 243868,
+      "sha256": "fe962a6aa6e8c01de0e5d9cf2e498d3f2f9be66f944152ca8e4e73726d71c512"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G5_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G5_v1_rr1.wav",
+      "bytes": 144376,
+      "sha256": "3deba0200c7d0fbb5428b4771ba675223d05f193cce70ac19fe536769e30d538"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G5_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G5_v1_rr2.wav",
+      "bytes": 180720,
+      "sha256": "0d58953ef25096583d6553b4ad69ed118e3d238297cacd63445e06f2df0f7d00"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G5_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G5_v2_rr1.wav",
+      "bytes": 163952,
+      "sha256": "f83bc69d68304da0f24d042ce01f5e8c9f824cc70fe19eea8b11e8fc6131df99"
+    },
+    {
+      "path": "Strings/Solo Violin/spic/LLVln_spic_G5_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Violin/spic/LLVln_spic_G5_v2_rr2.wav",
+      "bytes": 212520,
+      "sha256": "5b6a703c73566b5f3f18656902369e4434bd223dc01cb6abd2ba373361ea1db7"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_A3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_A3_v1_rr1.wav",
+      "bytes": 180950,
+      "sha256": "b90bbeee2427b90f8a9bd91e755d4b0265f6ef33d9dda8dacc696c72effc50cc"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_A3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_A3_v1_rr2.wav",
+      "bytes": 169790,
+      "sha256": "af663d1ffacd36e638bdc2742b21f3fcfbbcbb748b73e63363528b85089bd691"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_A3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_A3_v2_rr1.wav",
+      "bytes": 254342,
+      "sha256": "146807f0308ced113c5c568a96d646267702d79e2d250e299da3af5f41f471ca"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_A3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_A3_v2_rr2.wav",
+      "bytes": 252530,
+      "sha256": "4479415dba05d82d32eb8c50d777b8dbd7cabd828f032688026f8c39c7aafb73"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_B2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_B2_v1_rr1.wav",
+      "bytes": 486998,
+      "sha256": "3114d2e9350a71196602d4fa7887b7cb4e4d8b3a01c4ee8d43394f22272a49e2"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_B2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_B2_v1_rr2.wav",
+      "bytes": 328820,
+      "sha256": "82af1a63240d194f0a9047797bc9afe666bf93c08c2e7e40ba1e23b754d3425b"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_B2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_B2_v2_rr1.wav",
+      "bytes": 663686,
+      "sha256": "5d4d547b983ddef69962a6b26e7d99fdc6850335b32ecac110a2af5ca74afd47"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_B2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_B2_v2_rr2.wav",
+      "bytes": 569942,
+      "sha256": "f8c6399a37dc6af9bbd72f43aa26c4abc60e3b15f1a554822dc3647e8207cda0"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_B4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_B4_v1_rr1.wav",
+      "bytes": 74750,
+      "sha256": "13c6173490b9eb89acc9892ae3b920495744045369a33ecc7f2ccb3b5581aa99"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_B4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_B4_v1_rr2.wav",
+      "bytes": 90494,
+      "sha256": "12fdc327d5755e49e8ebaae13264552f1838802ee1183bbb5b1074e8f17056cd"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_B4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_B4_v2_rr1.wav",
+      "bytes": 132410,
+      "sha256": "8c18fa998cba0600086bf9e47170db92333fe7f5edaf52109796e6acda179b84"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_B4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_B4_v2_rr2.wav",
+      "bytes": 121232,
+      "sha256": "0f75d9a604540cd789fd80fa7d7e54d062407d2b2153fbedb549f2584760dcb6"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_C2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_C2_v1_rr1.wav",
+      "bytes": 601340,
+      "sha256": "7c1486574972c944e0fd795869eb3dc5cc2678abc260a40fbeaa62a6759b07ba"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_C2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_C2_v1_rr2.wav",
+      "bytes": 567884,
+      "sha256": "20b30bc1c439a504bef2bb50168fbd9a3ad90c81733f9315cdb40f8031f29d97"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_C2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_C2_v2_rr1.wav",
+      "bytes": 631802,
+      "sha256": "429885f184be27c2cd73859c38ff215330b2774a2b069ad592e3cf36a4344245"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_C2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_C2_v2_rr2.wav",
+      "bytes": 890594,
+      "sha256": "a6418135dd35419f0bc341951eff51ed3a955d89073e0cf3da466ba0f16500e6"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_C4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_C4_v1_rr1.wav",
+      "bytes": 230726,
+      "sha256": "ae794a92443243816ff91a9a2ed0f9010ea3a6ffcbf011c6c6cb91b8c8597d1b"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_C4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_C4_v1_rr2.wav",
+      "bytes": 226922,
+      "sha256": "3443ba56275c2b160dac32a2e7a49aa68651a0d1846d9ced94c76e695f9625fe"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_C4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_C4_v2_rr1.wav",
+      "bytes": 225626,
+      "sha256": "ebb1b1a698604b3e95964f30b50eedba4831bf35cd5440e4d87f4e65f6d7c391"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_C4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_C4_v2_rr2.wav",
+      "bytes": 244472,
+      "sha256": "1af4eccc5d550e25ccb0e025c501cfabefa155cfc6223ca41f5ee7b097504d40"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_D3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_D3_v1_rr1.wav",
+      "bytes": 464972,
+      "sha256": "411baec47dcad3627ec9f774e8a78c0a6c39ff8ec7a16fec9bbd4039b85ad765"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_D3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_D3_v1_rr2.wav",
+      "bytes": 197036,
+      "sha256": "e1d253bec46fe74fdca4be3f5283bf13d99d56ccfd2dde98ecada5a131647e95"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_D3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_D3_v2_rr1.wav",
+      "bytes": 728720,
+      "sha256": "6ca64317cb7708942ac6375a3fbb0e6152a92d6c70206bfaeea8abd7e50992ea"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_D3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_D3_v2_rr2.wav",
+      "bytes": 688850,
+      "sha256": "b30faad1302ef73eb527ba9323fff37bdfa8453072abd33cf2e78c198c700c5f"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_D5_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_D5_v1_rr1.wav",
+      "bytes": 105980,
+      "sha256": "5b129fe18cc33a3fa9a1999d3a7461975179356c3d3345fa66ebb3815e3ea4dc"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_D5_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_D5_v1_rr2.wav",
+      "bytes": 112166,
+      "sha256": "7bfe0b5391e8f3cda890bc0d66f8914151824ae00cc35a74f5fce3cc264c558e"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_E2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_E2_v1_rr1.wav",
+      "bytes": 120776,
+      "sha256": "bd8ef240cf0c1e8db5fe1ab5dba119346127a0cdcbc6fc4299517daf3aeab01e"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_E2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_E2_v1_rr2.wav",
+      "bytes": 219314,
+      "sha256": "2da89a78806c57209e709ada2821a7f0055e42d3f22dc9f6cf4b7fb24f78ff1c"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_E2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_E2_v2_rr1.wav",
+      "bytes": 264506,
+      "sha256": "790ed29cf4f16ca6c5dad815db0aca303bda30d545eb2fd64f48525af821dd23"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_E2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_E2_v2_rr2.wav",
+      "bytes": 375290,
+      "sha256": "e4d4815320428c2fa30c2d18fba6588a09f8ca566180f6b9f073cc7e73604247"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_E4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_E4_v1_rr1.wav",
+      "bytes": 177002,
+      "sha256": "bca9df94ff9c05e4028ee345181acc0d42880da7661d2b9b96af32a0d9609972"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_E4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_E4_v1_rr2.wav",
+      "bytes": 180950,
+      "sha256": "57e5ea4b7fde710f630f2ee98c6afea75bb8a40b9c51faef7f16fc63ed2ae8d8"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_E4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_E4_v2_rr1.wav",
+      "bytes": 305114,
+      "sha256": "860cead1a1fe5d4119fad6a868d7d8531f5ae245c514172dbd3388b75fd42ece"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_E4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_E4_v2_rr2.wav",
+      "bytes": 469490,
+      "sha256": "d89ab3a5d8d385c2fcdb4691fcbb63056145bf890429753b14744849cbb75d18"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_F3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_F3_v1_rr1.wav",
+      "bytes": 299774,
+      "sha256": "7ff4e7d2c5d311577ec4ee301248dc25464a5f971b3c31436134ebe8e8134c38"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_F3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_F3_v1_rr2.wav",
+      "bytes": 149690,
+      "sha256": "d00fbddf0426cff8d2d1865d321b34af94e5e792c6492def965929710fe2bd38"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_F3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_F3_v2_rr1.wav",
+      "bytes": 286154,
+      "sha256": "fe2602711f7d9773e497e0d2fbf82c33da867fc77c2e570a0d2ed09a49ab8b5f"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_F3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_F3_v2_rr2.wav",
+      "bytes": 300176,
+      "sha256": "41874ac58c46f7420feb9e0e4d913e63648c73869b7f26856d9608718f346b30"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_G2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_G2_v1_rr1.wav",
+      "bytes": 239990,
+      "sha256": "ca80be7af88078d7f241020bb31a4cb0da4856e9bdd7d0b9d3a61f7549024855"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_G2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_G2_v1_rr2.wav",
+      "bytes": 233522,
+      "sha256": "31b601bd3217bea300d72a6f08c28019eb739f60cdc85de6d2278e2318279418"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_G2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_G2_v2_rr1.wav",
+      "bytes": 780344,
+      "sha256": "bca57d39f5bd58fd9399ef3933f6a556b8ee48bb06d4b68bd361ebd6db12998a"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_G2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_G2_v2_rr2.wav",
+      "bytes": 726512,
+      "sha256": "09de88b0bf743424217420d9efe49a368b8ff18d2d4a80a031820b586af9fec1"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_G4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_G4_v1_rr1.wav",
+      "bytes": 123878,
+      "sha256": "0968449c4f94eb59d39d72ef1d80935dc9c9e2e8089f678abb5b693f6d14ec98"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_G4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_G4_v1_rr2.wav",
+      "bytes": 130316,
+      "sha256": "b01205abe0bf09574fae9138c7a98e5361990ba71abe5ced1ced7e1ec1f258b3"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_G4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_G4_v2_rr1.wav",
+      "bytes": 283118,
+      "sha256": "93605065f172f147da8d932e3220563229520a5be1c5cd1b4f5527bed3b3e25b"
+    },
+    {
+      "path": "Strings/Viola Section/pizz/ViolaEns_pizz_G4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/pizz/ViolaEns_pizz_G4_v2_rr2.wav",
+      "bytes": 135260,
+      "sha256": "c11b38173dd90d8cf72a3b160594b8f8857c76a4e44978f0f525caa82e4887c4"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_A3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_A3_v1_rr1.wav",
+      "bytes": 172336,
+      "sha256": "5a9ae72ce5801d3b95f8d6715fdaab8cc39ffe1d2e7166b104085e3488ba05d6"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_A3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_A3_v1_rr2.wav",
+      "bytes": 168272,
+      "sha256": "df96886916772c378da692b7654981fd14808b19e70ccc39631021c64547f2ae"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_A3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_A3_v2_rr1.wav",
+      "bytes": 213020,
+      "sha256": "f6baadc442ac3ae31076ff746ed2415f347e7260600ef05069ce7894cb147884"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_A3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_A3_v2_rr2.wav",
+      "bytes": 200880,
+      "sha256": "e55ce26b701a574ef0800814abf1fa031cebaddaeed46961828a560b8dcdba13"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_B2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_B2_v1_rr1.wav",
+      "bytes": 204768,
+      "sha256": "385801a97a43b54fb1421721714057542cb05db89eda126a8f296984b4fc7803"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_B2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_B2_v1_rr2.wav",
+      "bytes": 206688,
+      "sha256": "4aa4c63406127fcf560967b4b95ad7ceba5ea5849458f5983fada0cb3d9d0b7e"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_B2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_B2_v2_rr1.wav",
+      "bytes": 381464,
+      "sha256": "1d9b8a9047d11b06750c24bb783c8925ac300135235a94ce64c6c78934eb712f"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_B2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_B2_v2_rr2.wav",
+      "bytes": 348488,
+      "sha256": "e69d80890f3b724b0981a80bd55a3f3b2811c7164b78479905481a07dfe61d07"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_B4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_B4_v1_rr1.wav",
+      "bytes": 138912,
+      "sha256": "a772731bb91aaf43ea9345ac9c16e4c2ed4e12f06e9fddb316156a010f90c136"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_B4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_B4_v1_rr2.wav",
+      "bytes": 161560,
+      "sha256": "cdd23250950121e98f9d2d7af8e42980a0404484ec2c43e8d40c0c476184c225"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_B4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_B4_v2_rr1.wav",
+      "bytes": 193496,
+      "sha256": "a633475a3e6d11d81cf80e8d9e3a0f9d80239a808ea5dc9c0e09c421df70fbda"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_B4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_B4_v2_rr2.wav",
+      "bytes": 185408,
+      "sha256": "18008084b4d1079a242193eaad619e3d20fec8b0439fa4f667263d0f2620676d"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_C2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_C2_v1_rr1.wav",
+      "bytes": 480592,
+      "sha256": "cc3a55b3f75540945cfc28663b8c96a80f07ee27d64934762aa0ecad4d67a243"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_C2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_C2_v1_rr2.wav",
+      "bytes": 458248,
+      "sha256": "e4e72060d79072583a2edcebef9a4c3246bc5e1fdacfb1274d81efa170d0d55c"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_C2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_C2_v2_rr1.wav",
+      "bytes": 497616,
+      "sha256": "ca9f0a63b8ddeabd604ab9a572ea8fd87b35b27d5a940d9b6a7dfcde2092dd79"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_C2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_C2_v2_rr2.wav",
+      "bytes": 547260,
+      "sha256": "247d254386effbd36e7ddbf00f677c4ae211a81b5f19f2d93a66a5fc2117cf89"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_C4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_C4_v1_rr1.wav",
+      "bytes": 157472,
+      "sha256": "fa031c44b043313f858e1d732f0afda1ac791e5e44f9951daa9380308f799a7d"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_C4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_C4_v1_rr2.wav",
+      "bytes": 136124,
+      "sha256": "bc7e09a954f123131779644fbcccffe75749a6f6a7aac85917b7b40cb0a11182"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_C4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_C4_v2_rr1.wav",
+      "bytes": 208272,
+      "sha256": "3b4c0644c38ec7d13e03e3de88bce2dad899eb3c94a6251ec2acc8e6531687a5"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_C4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_C4_v2_rr2.wav",
+      "bytes": 208164,
+      "sha256": "8a928fa6f67590c0a9c849997d2449ef3cbd40668f2d75ef3e2d315ace4dd645"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_D3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_D3_v1_rr1.wav",
+      "bytes": 185208,
+      "sha256": "f4ac6ccac34a62b862bc57d24939771c05800a2aaa06b8222eb822c88bfd9cc2"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_D3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_D3_v1_rr2.wav",
+      "bytes": 196864,
+      "sha256": "faec676a30463e622d00d2d15620f1c51b78223a845e0a802b8afb7511550712"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_D3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_D3_v2_rr1.wav",
+      "bytes": 229276,
+      "sha256": "7eab07c87ffc99ffed8ce111ff297e6bde95350136cf93db706d4f658c96570c"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_D3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_D3_v2_rr2.wav",
+      "bytes": 272300,
+      "sha256": "c500f1199fb2182adab4a7d67a0a687b02f0748736f0df973fbf4b7b93d801da"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_D5_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_D5_v1_rr1.wav",
+      "bytes": 112036,
+      "sha256": "879d118103f749ff23190ee371b9535d99473f66d56864e0ab5aaf9713946020"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_D5_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_D5_v1_rr2.wav",
+      "bytes": 98968,
+      "sha256": "950a6a6441563b5a274648f5f7477cb8749023c15f64e61d263f29c519703244"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_D5_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_D5_v2_rr1.wav",
+      "bytes": 111808,
+      "sha256": "b4dfbd83b650796046d5b0f05e01ef1ccc564bd9f01523997fb7965de2c697f0"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_D5_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_D5_v2_rr2.wav",
+      "bytes": 105384,
+      "sha256": "85899fe74927489b33967c5dea07f2e8d60e57306ef6f39502deb92f34062f77"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_E2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_E2_v1_rr1.wav",
+      "bytes": 144364,
+      "sha256": "19e736bd6d84c1721150609962682563d6270ff2de0e83d67543ec11b4a64dc3"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_E2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_E2_v1_rr2.wav",
+      "bytes": 149048,
+      "sha256": "15fdfc563aff711d792d52f0c11b9dec747f0917c695a476f3858c29d11e6ca6"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_E2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_E2_v2_rr1.wav",
+      "bytes": 271708,
+      "sha256": "bb1336173a9640ffc6cc18ca4a18b7eeeb8d9128978e3ab337a863ac35a04d3b"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_E2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_E2_v2_rr2.wav",
+      "bytes": 214036,
+      "sha256": "3613f4aa65b65e32d8dea63cdcc1c508a67086f7509e017a14f2be19086240ed"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_E4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_E4_v1_rr1.wav",
+      "bytes": 148856,
+      "sha256": "6a7f24f39802854516349ac188574ced8204a300dcf2d3ba5681a85eab5311f7"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_E4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_E4_v1_rr2.wav",
+      "bytes": 184864,
+      "sha256": "a3c2aedce1a6c34560410e098fa9a6ac389c2606919f8b2cb6c4eecdfd0f8191"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_E4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_E4_v2_rr1.wav",
+      "bytes": 216696,
+      "sha256": "d66d31214f831ea6649d6b3584459a2ba855ed8eed8adeecbec7e7db99e882a0"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_E4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_E4_v2_rr2.wav",
+      "bytes": 213756,
+      "sha256": "4faae262fc6d26d394e4ac4f06b892d3bdd3791802e246d3caebc80840c3900f"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_F3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_F3_v1_rr1.wav",
+      "bytes": 125928,
+      "sha256": "d7af73aacb19298f6dc2ea29c9c925d1384056dc63d065c51ec2cab23fc0396b"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_F3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_F3_v1_rr2.wav",
+      "bytes": 127564,
+      "sha256": "751ec557a953b3a97d89ed7f819318c5416227d18ec2c2e3854478eb4ddbfbfb"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_F3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_F3_v2_rr1.wav",
+      "bytes": 157156,
+      "sha256": "96f7e921c5c929d225d63a3615afa2aacd5c2901fc66ec79b26ddd56d832efb9"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_F3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_F3_v2_rr2.wav",
+      "bytes": 139780,
+      "sha256": "fd32cf80809378517941a24eac6bf9fefebd0a87405cbfac37eaf1b943c0f28f"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_G2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_G2_v1_rr1.wav",
+      "bytes": 196048,
+      "sha256": "d70fe8d86a36ae346e12ddaeac16027c4341f918175f9f553098a31501e67c5d"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_G2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_G2_v1_rr2.wav",
+      "bytes": 137708,
+      "sha256": "0c634882e1940f733bb73369a7eabba5455b8cc02879b596c26b1042628373a6"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_G2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_G2_v2_rr1.wav",
+      "bytes": 211020,
+      "sha256": "ebd5f73e697f3d68e263429c9ca62337bb20982316b959487c4f4c9efa44a5cf"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_G2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_G2_v2_rr2.wav",
+      "bytes": 248216,
+      "sha256": "c07030e1279a1d9affd9718491f280dc7b5d81a5022577e87080b8b659393e79"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_G4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_G4_v1_rr1.wav",
+      "bytes": 177596,
+      "sha256": "af42d7d5b077b9e59b05fb901db1119b7f79b93a84ba34b55a6c5dbbdd33e098"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_G4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_G4_v1_rr2.wav",
+      "bytes": 157560,
+      "sha256": "215bfc8955a962ab7bde641d73f6170ff718c470737e1df82efc1d560a429265"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_G4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_G4_v2_rr1.wav",
+      "bytes": 136532,
+      "sha256": "67a6c39d014e1f630159a59e515d4c3552826114e64b1fc12e36f79cc87a5118"
+    },
+    {
+      "path": "Strings/Viola Section/spic/Violas_spic_G4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/spic/Violas_spic_G4_v2_rr2.wav",
+      "bytes": 139408,
+      "sha256": "2c5c48463c5c8f9398daa5c33a0a6cb46db44ac38b4c7f8409a42b6fb6079d0b"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_A3_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_A3_v1_1.wav",
+      "bytes": 2491352,
+      "sha256": "7cea6482a8f67536e3108f01b688d54d198e5820ffcd0ac5a49652d38f6ec065"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_A3_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_A3_v2_1.wav",
+      "bytes": 2861282,
+      "sha256": "35984c7bfffe781d8e33bee045f66427a827794ff5c53c3d3bb82baeee3272dd"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_B2_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_B2_v1_1.wav",
+      "bytes": 2861510,
+      "sha256": "ad96d747c5125adec8f069c49091ee3ba937efd4a5b909d3c4938f17e3c8513d"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_B2_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_B2_v2_1.wav",
+      "bytes": 3268364,
+      "sha256": "edc77038a83f47cf49296c0009fdac23cb5ade3133a2beabd0d2d1f591ccf3cb"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_B4_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_B4_v1_1.wav",
+      "bytes": 2203118,
+      "sha256": "abb1fe57a4a3175e1e243ceba0c0c0052ec5af5c3061e4f446266b9c832d6d02"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_B4_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_B4_v2_1.wav",
+      "bytes": 2893766,
+      "sha256": "cac7c5f73d9f7974156ef52c7b5202428271d8fcf9ceb11936e694c199be2f31"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_C2_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_C2_v1_1.wav",
+      "bytes": 2642360,
+      "sha256": "8b4e0e0985d245ac9ddc39cdd06cec5bd74fa80056c074736d6eb38fdccfe636"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_C2_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_C2_v2_1.wav",
+      "bytes": 3318188,
+      "sha256": "09db4ed2c8eda02d1f6a27258a2292b56e65e94ecc0337265bbbac5d9978dc92"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_C4_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_C4_v1_1.wav",
+      "bytes": 2289656,
+      "sha256": "144ec7666be1b3b4da50937db4b1fc3675ca34bc2e871264707d83b8a0d526e6"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_C4_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_C4_v2_1.wav",
+      "bytes": 2954936,
+      "sha256": "81e1ef9109a1434974092c0165ffee44918b2553fd4afeeee42b91b8007ad263"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_D2_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_D2_v1_1.wav",
+      "bytes": 2359898,
+      "sha256": "49b09bcaec177f67382644913da5ca5582fe1d1d74a9f097edb6e0b5db43d35f"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_D2_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_D2_v2_1.wav",
+      "bytes": 3049772,
+      "sha256": "d3bf192cc03925a4da5ee626763287f85aad1dc498578abf612a97eb548736eb"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_D3_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_D3_v1_1.wav",
+      "bytes": 2789648,
+      "sha256": "61ab4cfc0ea90c683433a7c50b3bb4fa86a81c9d4854589562707d54ed028349"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_D3_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_D3_v2_1.wav",
+      "bytes": 3596756,
+      "sha256": "f941028c5d5e854b4391669056f0f639799f80ac7c8da3939c7788b1a394d16c"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_D5_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_D5_v1_1.wav",
+      "bytes": 2087798,
+      "sha256": "801bcea9c53c2521900cbbbe70ff2fe4f66a1c182f26744f608144905ec5f880"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_D5_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_D5_v2_1.wav",
+      "bytes": 2638244,
+      "sha256": "d3c5d05da8f90533aa7587649f18f4e68147aa7abc7a5559d8741089bea32239"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_E2_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_E2_v1_1.wav",
+      "bytes": 2520044,
+      "sha256": "5c4c636583ce43b694583e8cbf7a14d1f3efcb0e871fe7dedff8a6b354c432bf"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_E2_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_E2_v2_1.wav",
+      "bytes": 3027656,
+      "sha256": "bb31bed6936b5c855fceb94d829e2d3a0492f9af4ad7a2cee57e783719710ceb"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_E4_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_E4_v1_1.wav",
+      "bytes": 2044358,
+      "sha256": "b70d7b94014a9fc40f0e8cc12542fa85e0304386fe411ef4305b55b7f194afcb"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_E4_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_E4_v2_1.wav",
+      "bytes": 2559086,
+      "sha256": "29899afd4513761c3f1e3a4cc56f5c11cdb4de2b204f9f1467946327362e4bd7"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_F3_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_F3_v1_1.wav",
+      "bytes": 2487818,
+      "sha256": "7a37f00ecb58fcaa5c32427a5ffb30950787b40c247409a8e18cfe0880955fd8"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_F3_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_F3_v2_1.wav",
+      "bytes": 3471944,
+      "sha256": "d281171e60b852451deecce57a6f5e9b623eea9632916336324c52c4ada6c750"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_G2_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_G2_v1_1.wav",
+      "bytes": 2001644,
+      "sha256": "557c2e033951015c30765bf18266bce0dd0412e3ca646dd1a225c32422c60662"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_G2_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_G2_v2_1.wav",
+      "bytes": 3637364,
+      "sha256": "e3552ebd2d1ac5d089cd2424d31ea88be8d887643311cb23abf5b416838ce2ba"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_G4_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_G4_v1_1.wav",
+      "bytes": 2542586,
+      "sha256": "624a70ef842744cb7847a07fba3115ace5689746a107da91f237bf2534d42b03"
+    },
+    {
+      "path": "Strings/Viola Section/susvib/ViolaEns_susvib_G4_v2_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_G4_v2_1.wav",
+      "bytes": 3103628,
+      "sha256": "b09b8338945b814b9ce6dd8980a49323d10e55f89f1c4dcf6d58b04cd672d99c"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_A2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_A2_v1_rr1.wav",
+      "bytes": 220926,
+      "sha256": "056e2e28e989446da8cdda21f62211a7a30699ea03f4ea074045e85c708a0ea8"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_A2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_A2_v1_rr2.wav",
+      "bytes": 247290,
+      "sha256": "3f795534c596db359e7675f99b877a3b05bf8475e0a392cc1dc258e16c75e282"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_A2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_A2_v2_rr1.wav",
+      "bytes": 187354,
+      "sha256": "75a9bbd0120e03affffe89dd711e5a088507917362e0a197019ff9eff8101340"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_A2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_A2_v2_rr2.wav",
+      "bytes": 315758,
+      "sha256": "da100ff90d5c4568b9d1787627ecf2114fc08f140f2d8481e547572ff5404a42"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_A3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_A3_v1_rr1.wav",
+      "bytes": 163490,
+      "sha256": "6807c9f8a2b8851e866e1f9bb92e9809982693e3593882673d0fe6dedf9b7a96"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_A3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_A3_v1_rr2.wav",
+      "bytes": 180382,
+      "sha256": "aa4d92ddd001ca80737ffcd3aa6a10f6e1b27192bb47a184c05f183475343385"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_A3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_A3_v2_rr1.wav",
+      "bytes": 194010,
+      "sha256": "631720219cbd7b11718b393bdacf04eb512ef5071f9e5d0d73d74b3f17179ec2"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_A3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_A3_v2_rr2.wav",
+      "bytes": 205482,
+      "sha256": "aa6e4d7c84536837e6b9b19203b701a83263b2f4005fc44bd0959321e80c91a5"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_B2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_B2_v1_rr1.wav",
+      "bytes": 124886,
+      "sha256": "6c6e279b3013700f7b0d47042b58679c5d4788637860f6a4788ee6ae7fa25940"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_B2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_B2_v1_rr2.wav",
+      "bytes": 116098,
+      "sha256": "f01036c3a58c277e487070603c81658ff07e9e1ca8bdfa0e22dd1c9f65c2b432"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_B2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_B2_v2_rr1.wav",
+      "bytes": 180134,
+      "sha256": "71aaf7c111d427e76d91a58efc4cf661880cae85ec91123f8f57d421fe36cd06"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_B2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_B2_v2_rr2.wav",
+      "bytes": 292378,
+      "sha256": "4b9b81daa260704f90fb5883263a9fdbe4cb3c74389346b0592ef85f479d5e1c"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_B4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_B4_v1_rr1.wav",
+      "bytes": 88054,
+      "sha256": "69296888a511f280644945ac4aa2890ed90913308a12e7e1f5b7a1cabeffbd6a"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_B4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_B4_v1_rr2.wav",
+      "bytes": 92066,
+      "sha256": "f737d67995a452003352e9d85eb1357c99354b7e040a44cb6c4ac5b57a0d1d20"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_B4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_B4_v2_rr1.wav",
+      "bytes": 106362,
+      "sha256": "ec6f6320f9403a5e0bbb1d0c534abe667a6a2093654343a389b26cf083d513d2"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_B4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_B4_v2_rr2.wav",
+      "bytes": 126302,
+      "sha256": "a316a9761252799f7d5aa64987076432e57b2b4ba31a572e390c4f294ff114f2"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_C4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_C4_v1_rr1.wav",
+      "bytes": 105914,
+      "sha256": "7002bd5b93f26bb773ff77e349fbb3b5aa059404889706ddda9673da7488886c"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_C4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_C4_v1_rr2.wav",
+      "bytes": 122922,
+      "sha256": "738c073c13a365f5dcc75f07ef5c540eb15c228e493dc406b9467168af894421"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_C4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_C4_v2_rr1.wav",
+      "bytes": 184590,
+      "sha256": "909eb79fc2c9076909680fa3c2dabdbbd15870f674a883ddab33bbcd0dac965a"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_C4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_C4_v2_rr2.wav",
+      "bytes": 197238,
+      "sha256": "f7ca78a98e4d7dae1ad0a1e1d7f20d9696aedb22751748a3b28f5c4ec2df7de2"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_D3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_D3_v1_rr1.wav",
+      "bytes": 280306,
+      "sha256": "fb8819b3626d141393a6bd25daaba728dade39b9f611e6ec449d9018fb3f699c"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_D3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_D3_v1_rr2.wav",
+      "bytes": 375514,
+      "sha256": "82cca3cf7e1d9893cedc42b23c5ee4cfcfce1f9d764936e5f72977857c998e13"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_D3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_D3_v2_rr1.wav",
+      "bytes": 391226,
+      "sha256": "772b8e3bf0f0143cd9aa73dbf64607a41776c0f124c62ef3fecb835f3510ce6a"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_D3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_D3_v2_rr2.wav",
+      "bytes": 410238,
+      "sha256": "386de13448544594429d903be5603ff6b302b2582a6734ec0d754c3cbf284efd"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_D5_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_D5_v1_rr1.wav",
+      "bytes": 122870,
+      "sha256": "47e1b6e331e8fd51f820f3676ecbd046b194a240334009d891fe183b32613ab7"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_D5_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_D5_v1_rr2.wav",
+      "bytes": 77634,
+      "sha256": "e9ac949d9d0e90cd98e00b6ace9e66ea42352920b6de744ae8ae1816cd0e20ee"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_D5_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_D5_v2_rr1.wav",
+      "bytes": 113286,
+      "sha256": "50445c5f94fe25272ed98dd03d5af1c34b555f24aa2a7803653aa3b51ed929fc"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_D5_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_D5_v2_rr2.wav",
+      "bytes": 125806,
+      "sha256": "cbb872a715f93bba14d7913000015e89aefd477e3c1a7535c8e864e8fa6c0583"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_E4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_E4_v1_rr1.wav",
+      "bytes": 109318,
+      "sha256": "415fce1c81bcaad3a0eac27d328f0c9c0963f7a639823faba9f430bf6d8d5f81"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_E4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_E4_v1_rr2.wav",
+      "bytes": 150326,
+      "sha256": "93ca0b47eb68569f71ab6c9506f776014d05fc5d88763eec64e7b2704a623231"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_E4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_E4_v2_rr1.wav",
+      "bytes": 146742,
+      "sha256": "1e1dcef99c3961a601ed0c8336fbf4819fd432ab783445fe4f44fc488e598993"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_E4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_E4_v2_rr2.wav",
+      "bytes": 167882,
+      "sha256": "7d30e264bdb4884d9d6fe1e6a36e87ada920fa9c630576208510e27f3b2cd22b"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_F#3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_F%233_v1_rr1.wav",
+      "bytes": 197422,
+      "sha256": "a4b60e0fe3090df0282dfd78eb74ac0a4977d8029ed69dd1d67d736e76d33362"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_F#3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_F%233_v1_rr2.wav",
+      "bytes": 135562,
+      "sha256": "bfbdce2c919c8959ec11b49224736af943253b31427577ff6e073f0a20f90b74"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_F#3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_F%233_v2_rr1.wav",
+      "bytes": 157066,
+      "sha256": "2c6093daad3f6f7a977ac9775660b57227429651d35d489d6f98e617067e8ea6"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_F#3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_F%233_v2_rr2.wav",
+      "bytes": 176738,
+      "sha256": "fef269022693eef0b318c1db1a03658f1063ee4d7e3b3bb25e29add97bad6cdc"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_G2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_G2_v1_rr1.wav",
+      "bytes": 409242,
+      "sha256": "7e424e4d35016be590f352eb9961e9175d6ecfceb31c010dd9f38d5905e518f6"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_G2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_G2_v1_rr2.wav",
+      "bytes": 459646,
+      "sha256": "80df42a5f496d3f41a13345239baa41ab454bf000c95272eb1690e1a2905a3a7"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_G2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_G2_v2_rr1.wav",
+      "bytes": 532010,
+      "sha256": "8de544d9df9ced1fc296d8c4589d354112339802f722361f8625a604ccfd556b"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_G2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_G2_v2_rr2.wav",
+      "bytes": 437694,
+      "sha256": "85f4cdeff82491f0c6d1b881f5403aa178ac08b538498ba5179fd2c9c7004157"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_G4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_G4_v1_rr1.wav",
+      "bytes": 148766,
+      "sha256": "5e3c5dad3385efc081975f7fc76b7574699d836fe01a714afffa2ef1054f8ef8"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_G4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_G4_v1_rr2.wav",
+      "bytes": 82618,
+      "sha256": "2071d0fc7be9b89ad20f646e02acfe6c8fb9aa93f105cfd224c496669adf0ebe"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_G4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_G4_v2_rr1.wav",
+      "bytes": 184102,
+      "sha256": "46d42acdbfe83337f6c6775e03fa99ac99275fd357bdd2d4fa73702c4c7be542"
+    },
+    {
+      "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_G4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Pizz/VlnEns_Pizz_G4_v2_rr2.wav",
+      "bytes": 170178,
+      "sha256": "ac6f949c0f4882274371c49aecc29cf2e91c7e8d741c559dee60107bd25829ab"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_A2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_A2_v1_rr1.wav",
+      "bytes": 327090,
+      "sha256": "6f2e19935c0a9d57df4a28ba99e700aacc01fbfa605855851c142f36a1bf0c8f"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_A2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_A2_v1_rr2.wav",
+      "bytes": 339302,
+      "sha256": "686c2300b47a54df419a0d69ec2e914b3c61f9b5e461ef73f5515bc06b60676d"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_A2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_A2_v2_rr1.wav",
+      "bytes": 347066,
+      "sha256": "e90695e2a2a3d6ba9a043c8cfa9317fb6a9e6273f50e1fabdd40f55c4b137eba"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_A2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_A2_v2_rr2.wav",
+      "bytes": 272346,
+      "sha256": "72f7fac30e46c9ce76a5386f621b6783b9c998e724f708108e7db693193750e7"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_A3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_A3_v1_rr1.wav",
+      "bytes": 167582,
+      "sha256": "63ac2de6113b1f12822ea84a30a49c4a326e89027139b8a5e0369542ce6f74ad"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_A3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_A3_v1_rr2.wav",
+      "bytes": 158622,
+      "sha256": "bbbd7d67ea45c17958828efe4c3a5059d85e67be80bbdb637031bcce01bc412c"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_A3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_A3_v2_rr1.wav",
+      "bytes": 213126,
+      "sha256": "ce5d025e7c2ac71e220a3f6487c5a2ce431a150e808c93276570f19536568a5e"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_A3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_A3_v2_rr2.wav",
+      "bytes": 246210,
+      "sha256": "f64465f4248514f785abab573a3b1440ee016b525f6550612c0fcb189e67ba47"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_B2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_B2_v1_rr1.wav",
+      "bytes": 115554,
+      "sha256": "1fce12df9044e8d1d297d1da19f4e51c46bdbdf980523063bb338cd06b6ecc1f"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_B2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_B2_v1_rr2.wav",
+      "bytes": 131774,
+      "sha256": "1afaa65435782188b63357bfa355cc79a93d63f7255da427523ac4562d71ed1d"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_B2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_B2_v2_rr1.wav",
+      "bytes": 160826,
+      "sha256": "ee4aa779919171e33053b71c02691f026fd0b13c299da86f84c066e52ce3a4ec"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_B2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_B2_v2_rr2.wav",
+      "bytes": 172390,
+      "sha256": "a67bd97acd98c3e22c70b1ec2ff9090ab4355ddc76bae87dcdf1a4adf1c2208f"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_B4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_B4_v1_rr1.wav",
+      "bytes": 182342,
+      "sha256": "353576c3522c85181ecb77fb116580553f4b49c0851afc6bb4ae1eb655b743a4"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_B4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_B4_v1_rr2.wav",
+      "bytes": 153682,
+      "sha256": "18321d0b6be58012b9b3fc50f3a334d37deeb67ad33c853ea58c3567ccf6444d"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_B4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_B4_v2_rr1.wav",
+      "bytes": 199926,
+      "sha256": "d1495f4eaff7b3e4bd8d86b886dc81ccb52b113fb93630e8f68792ed452dc822"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_B4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_B4_v2_rr2.wav",
+      "bytes": 168810,
+      "sha256": "94f256b01d2c37eb429336d32385d8b05072e4e896f387731178d2a33a7a9b78"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_C4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_C4_v1_rr1.wav",
+      "bytes": 130390,
+      "sha256": "b734950875dff1dd7cda7c4721901516560b99f5655c3ffd40b6dc43c16e9c2f"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_C4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_C4_v1_rr2.wav",
+      "bytes": 110434,
+      "sha256": "ba73270a400a25b78ff59b5ad15cd9ba1dc2b010f32ef8913a223518bc327cc0"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_C4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_C4_v2_rr1.wav",
+      "bytes": 167454,
+      "sha256": "a14e9795677e0c418f1e18f7b640bc27b8cb3aef4cfef766e18caf38549ffe56"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_C4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_C4_v2_rr2.wav",
+      "bytes": 124626,
+      "sha256": "a6dbe1a0118aceb93665afb4d8bf1fab249d0842c75801745bf9d3526bddcf73"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_D3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_D3_v1_rr1.wav",
+      "bytes": 212730,
+      "sha256": "d94e088560784d6ecd6a927e8101d7e460e6d79168ab9eb52842c58891fae8da"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_D3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_D3_v1_rr2.wav",
+      "bytes": 251726,
+      "sha256": "bb8a8c6661e060c3fddf5d66880c6789c16139747caaa121133f2a03a27fe605"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_D3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_D3_v2_rr1.wav",
+      "bytes": 311850,
+      "sha256": "36105c7bc208181a10b41a468aab1e8ca4f31a9eae43834dd90d8d533a48e650"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_D3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_D3_v2_rr2.wav",
+      "bytes": 290746,
+      "sha256": "d456becd26000dce6e7b9551f4d2b0ce6160f823d49a21d1580a26ad260d5a71"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_D5_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_D5_v1_rr1.wav",
+      "bytes": 107654,
+      "sha256": "32775e9472faeb816701b633949ce7870a405b7ef24ff6ec28023eb441f2b9c6"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_D5_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_D5_v1_rr2.wav",
+      "bytes": 124034,
+      "sha256": "806aa46d43684b33e0e608c439ecf5f6d25617558b17ab8789d40ea7947f5053"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_D5_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_D5_v2_rr1.wav",
+      "bytes": 136734,
+      "sha256": "959a93165a9271657b4bc97c75eded62deab37b03128f71f0f1f4c8903e50b84"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_D5_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_D5_v2_rr2.wav",
+      "bytes": 124686,
+      "sha256": "703d7eda8a0e6502a95eee3a1f3bbdcdea28a74211762a0a409525482b44009d"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_E4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_E4_v1_rr1.wav",
+      "bytes": 87666,
+      "sha256": "67314bb58fcf351654874664f253257c66d5d4e0ef5a3f36d7249c472faf85d3"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_E4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_E4_v1_rr2.wav",
+      "bytes": 183402,
+      "sha256": "28ddf685682bda79004708c2edf7d60df4a9830b2962e2356b6f6e2efec53b38"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_E4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_E4_v2_rr1.wav",
+      "bytes": 106314,
+      "sha256": "db063e7e21abb2d3271d0e96068601fbb48a91f2f0bfde8dea773ce1a6bacfb0"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_E4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_E4_v2_rr2.wav",
+      "bytes": 134190,
+      "sha256": "4acf30d89e77aedaa2c69d0ae8a475abe98539134c8b72985f860658daa8630d"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_F#3_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_F%233_v1_rr1.wav",
+      "bytes": 126294,
+      "sha256": "ea4dca06c96de2c0f5fd88c4dcd75ecc505898b648b2847810bf1a0817333de8"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_F#3_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_F%233_v1_rr2.wav",
+      "bytes": 112254,
+      "sha256": "ce6cb6f8fe7be4d70e602e38f5cf3dd85390ef7d0e9522d76ed5c62ae5176c31"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_F#3_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_F%233_v2_rr1.wav",
+      "bytes": 166870,
+      "sha256": "b24b5f833660b73c9ea8beade5faa73989a7016916cf5f1bece93bdb4938b221"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_F#3_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_F%233_v2_rr2.wav",
+      "bytes": 192442,
+      "sha256": "c310364866ff7e0c15a442bf23ba2d4b2bc874682d35a44817d1b00d19e215a7"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_G2_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_G2_v1_rr1.wav",
+      "bytes": 544838,
+      "sha256": "3b0784e5d90da698df7b02cfb312b87ff0090ed503f85c125dc7017683c0a447"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_G2_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_G2_v1_rr2.wav",
+      "bytes": 565874,
+      "sha256": "79b19927e7189fa0a51bca73d4f7f02d50da99861a28b70c05a6d91343736f97"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_G2_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_G2_v2_rr1.wav",
+      "bytes": 435542,
+      "sha256": "a6bee065f0a171d3fabc42b218e941f66916a6de53a55809da724eeefeae2653"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_G2_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_G2_v2_rr2.wav",
+      "bytes": 428774,
+      "sha256": "287b66d9a215ce5ea1787a8b691f61d58a482eef0320eea9cf792a6f1ff8f7e8"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_G4_v1_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_G4_v1_rr1.wav",
+      "bytes": 193166,
+      "sha256": "ae748a8421f32e0e490fbf298b6bc32ec5534c2210ba2d6d9f65fd77726e1107"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_G4_v1_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_G4_v1_rr2.wav",
+      "bytes": 221382,
+      "sha256": "17fed4ff1985b556e9153fe0b00c6e8650b84f7249ff720d58dc1aa770212dde"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_G4_v2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_G4_v2_rr1.wav",
+      "bytes": 162898,
+      "sha256": "3345451be62b9bdfbbf6bb03f22f410484abb75585992336d530215fc4df7141"
+    },
+    {
+      "path": "Strings/Violin Section/Spic/VlnEns_Spic_G4_v2_rr2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/Spic/VlnEns_Spic_G4_v2_rr2.wav",
+      "bytes": 154078,
+      "sha256": "f41d60066c6d0fa7d21308e97f237a34d6ac2765e477cc330ffb7e8821e4cc3c"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_A2_v1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_A2_v1.wav",
+      "bytes": 1979216,
+      "sha256": "5b3ff9f991642a6dc2fdad56a7d94f581077d2c4082cc1ed89156737716ff22c"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_A2_v2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_A2_v2.wav",
+      "bytes": 2231504,
+      "sha256": "db6bad06c78577a105f6c2a5dc5c7ac0643c36e6904742411f0506dd9d6fa84b"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_A3_v1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_A3_v1.wav",
+      "bytes": 1890316,
+      "sha256": "72817a53dfd2eb61eca94658c14e1cab6017629ca2f27bab8e394c6675bfaad7"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_A3_v2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_A3_v2.wav",
+      "bytes": 1671704,
+      "sha256": "3fc4a9e22037643fce11e755da72c61c664893f83e637c24a7b5c2d3824ab986"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_B2_v1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_B2_v1.wav",
+      "bytes": 2314360,
+      "sha256": "1a873970a86da78ed8c9aa068303958496c34eee6fa94fcab39d499dbdfb7826"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_B2_v2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_B2_v2.wav",
+      "bytes": 2373380,
+      "sha256": "a822fd195e60881afac5e0801d8d494b782a8f6787a08f3c711f5e00290b3fb6"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_B4_v1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_B4_v1.wav",
+      "bytes": 2056964,
+      "sha256": "ec4cea41ac77f251bf5f4158fe9cbeeae13755e3785106e505808de18fdddc0d"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_B4_v2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_B4_v2.wav",
+      "bytes": 1923744,
+      "sha256": "bdb85532f47e4ebd681f9617a415116e7e5aeb786dce2eeab5ab9b93c1b31644"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_C4_v1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_C4_v1.wav",
+      "bytes": 2063320,
+      "sha256": "c07edd5b2119fa1da2207aba996961b50dd616f69bbcf2300ab271bc6c16239f"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_C4_v2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_C4_v2.wav",
+      "bytes": 2017512,
+      "sha256": "5857387b40c412f756ef281c1171247664432a4e5078c98142d595d15cd92ef9"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_D3_v1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_D3_v1.wav",
+      "bytes": 2061808,
+      "sha256": "583e660bc5daa4e094aef5fc014fbb92751040be8741ed7a16847306a1fe0a99"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_D3_v2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_D3_v2.wav",
+      "bytes": 2457908,
+      "sha256": "77893dbf1ea1be8c40ad756d16b916298e6b1b0742495e9853e020375592357c"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_D5_v1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_D5_v1.wav",
+      "bytes": 2116352,
+      "sha256": "f8d870457826c94270b9c3ead8e8ec02cb7e6c4a3481cded055641b7fab7df62"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_D5_v2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_D5_v2.wav",
+      "bytes": 1976276,
+      "sha256": "0c2ca9de723bed0a0968e32126b934f778cd678b367a29e7fde91004daf84daf"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_E4_v1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_E4_v1.wav",
+      "bytes": 2315540,
+      "sha256": "787fb4bcfb47d5c88ee1573c8db15f32d345386301be4a8eea6a825847413ae2"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_E4_v2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_E4_v2.wav",
+      "bytes": 1702620,
+      "sha256": "030c09a631ebbc7304fc0b47bb5c346cd646e7451d9fdc531870f2534c60d9e9"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_F#3_v1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_F%233_v1.wav",
+      "bytes": 1585612,
+      "sha256": "8dc13d197373f0d1fe1b0744de57796800bde372906d3667398c55d473a383ea"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_F#3_v2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_F%233_v2.wav",
+      "bytes": 1720800,
+      "sha256": "d7bc6b4c259b9543de4fe66228ee107205b8f539c8d7c1de71f5781d45a14fc7"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_G2_v1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_G2_v1.wav",
+      "bytes": 2341712,
+      "sha256": "feb96c5064fbef43087c495d61a9cab9f70ff1be5b22905147c1f86d5f89547c"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_G2_v2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_G2_v2.wav",
+      "bytes": 2681324,
+      "sha256": "c0b06a23f0245c042f0609dc0db704adc14bfc9ea8a34cb5c97d80096715a0e6"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_G4_v1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_G4_v1.wav",
+      "bytes": 2330236,
+      "sha256": "ed2a89cf254432d2af073699fa43ebfa16cfbc5552c7fc964a184fc434eaaa39"
+    },
+    {
+      "path": "Strings/Violin Section/susVib/VlnEns_susVib_G4_v2.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_G4_v2.wav",
+      "bytes": 2150136,
+      "sha256": "a1d6d5a0397541692e2f88a0cd9820eabe90407784ee631aa3bfa74772637a65"
+    }
+  ],
+  "sample_git_objects_verified": 544,
+  "renderer": {
+    "repository": "https://github.com/sfztools/sfizz",
+    "commit": "f5c6e29f23b8057867c08e88f5f6ac6738baa30b",
+    "license": "BSD-2-Clause"
+  }
+}

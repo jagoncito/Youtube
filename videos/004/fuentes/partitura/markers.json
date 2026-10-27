@@ -1,0 +1,344 @@
+[
+  {
+    "movement": 1,
+    "part": "solo",
+    "quarter": 0.0,
+    "source_text": "\"Allegro non molto\""
+  },
+  {
+    "movement": 1,
+    "part": "violin1",
+    "quarter": 0.0,
+    "source_text": "\"Allegro non molto\""
+  },
+  {
+    "movement": 1,
+    "part": "violin2",
+    "quarter": 0.0,
+    "source_text": "\"Allegro non molto\""
+  },
+  {
+    "movement": 1,
+    "part": "viola",
+    "quarter": 0.0,
+    "source_text": "\"Allegro non molto\""
+  },
+  {
+    "movement": 1,
+    "part": "cello",
+    "quarter": 0.0,
+    "source_text": "\"Allegro non molto\""
+  },
+  {
+    "movement": 1,
+    "part": "solo",
+    "quarter": 44.0,
+    "source_text": "\"Solo\""
+  },
+  {
+    "movement": 1,
+    "part": "solo",
+    "quarter": 44.0,
+    "source_text": "(#<procedure line-markup (a b c)> ((#<procedure translate-markup (a b c d)> (1 . 0) \"Orrido Vento\")))"
+  },
+  {
+    "movement": 1,
+    "part": "solo",
+    "quarter": 72.0,
+    "source_text": "\"Tutti\""
+  },
+  {
+    "movement": 1,
+    "part": "solo",
+    "quarter": 86.25,
+    "source_text": "\"Correre, e Batter li Piedi per il freddo\""
+  },
+  {
+    "movement": 1,
+    "part": "violin1",
+    "quarter": 86.25,
+    "source_text": "\"Correre e batter li piedi ogni momento\""
+  },
+  {
+    "movement": 1,
+    "part": "violin2",
+    "quarter": 86.25,
+    "source_text": "\"Correr e batter piedi per il freddo\""
+  },
+  {
+    "movement": 1,
+    "part": "viola",
+    "quarter": 88.0,
+    "source_text": "\"Correr e Batter dè piedi ogni momento\""
+  },
+  {
+    "movement": 1,
+    "part": "cello",
+    "quarter": 88.0,
+    "source_text": "\"Batter dè piedi per il freddo\""
+  },
+  {
+    "movement": 1,
+    "part": "solo",
+    "quarter": 102.0,
+    "source_text": "\"Solo\""
+  },
+  {
+    "movement": 1,
+    "part": "cello",
+    "quarter": 130.0,
+    "source_text": "\"Venti\""
+  },
+  {
+    "movement": 1,
+    "part": "violin1",
+    "quarter": 184.0,
+    "source_text": "\"Piano\""
+  },
+  {
+    "movement": 1,
+    "part": "violin1",
+    "quarter": 184.0,
+    "source_text": "(#<procedure line-markup (a b c)> ((#<procedure translate-markup (a b c d)> (1 . 0) \"Batter li denti\")))"
+  },
+  {
+    "movement": 1,
+    "part": "violin2",
+    "quarter": 184.0,
+    "source_text": "\"Piano\""
+  },
+  {
+    "movement": 1,
+    "part": "viola",
+    "quarter": 184.0,
+    "source_text": "\"Piano\""
+  },
+  {
+    "movement": 1,
+    "part": "violin1",
+    "quarter": 220.0,
+    "source_text": "\"Forte\""
+  },
+  {
+    "movement": 1,
+    "part": "violin2",
+    "quarter": 220.0,
+    "source_text": "\"Forte\""
+  },
+  {
+    "movement": 1,
+    "part": "viola",
+    "quarter": 222.0,
+    "source_text": "\"Forte\""
+  },
+  {
+    "movement": 1,
+    "part": "cello",
+    "quarter": 222.0,
+    "source_text": "\"Forte\""
+  },
+  {
+    "movement": 2,
+    "part": "solo",
+    "quarter": 0.0,
+    "source_text": "\"Largo - Solo\""
+  },
+  {
+    "movement": 2,
+    "part": "violin1",
+    "quarter": 0.0,
+    "source_text": "\"Largo e Pizziccati forte\""
+  },
+  {
+    "movement": 2,
+    "part": "violin1",
+    "quarter": 0.0,
+    "source_text": "\"La Pioggia\""
+  },
+  {
+    "movement": 2,
+    "part": "violin2",
+    "quarter": 0.0,
+    "source_text": "\"Largo Pizziccati Forte\""
+  },
+  {
+    "movement": 2,
+    "part": "violin2",
+    "quarter": 0.0,
+    "source_text": "\"La Pioggia\""
+  },
+  {
+    "movement": 2,
+    "part": "viola",
+    "quarter": 0.0,
+    "source_text": "\"Pianissimo con l'arco\""
+  },
+  {
+    "movement": 2,
+    "part": "cello",
+    "quarter": 0.0,
+    "source_text": "\"Largo - Sepre Piano\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 0.0,
+    "source_text": "\"Allegro - Solo\""
+  },
+  {
+    "movement": 3,
+    "part": "violin1",
+    "quarter": 0.0,
+    "source_text": "\"Allegro\""
+  },
+  {
+    "movement": 3,
+    "part": "violin2",
+    "quarter": 0.0,
+    "source_text": "\"Allegro\""
+  },
+  {
+    "movement": 3,
+    "part": "viola",
+    "quarter": 0.0,
+    "source_text": "\"Allegro\""
+  },
+  {
+    "movement": 3,
+    "part": "cello",
+    "quarter": 0.0,
+    "source_text": "\"Allegro - Arcate lunghe, e Tasto Solo\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 36.0,
+    "source_text": "\"Tutti\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 36.0,
+    "source_text": "(#<procedure line-markup (a b c)> ((#<procedure translate-markup (a b c d)> (1 . 0) \"Caminar piano, e con tinore\")))"
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 61.5,
+    "source_text": "\"Solo\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 70.5,
+    "source_text": "\"Tutti\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 70.5,
+    "source_text": "\"Cader à terra\""
+  },
+  {
+    "movement": 3,
+    "part": "violin1",
+    "quarter": 70.5,
+    "source_text": "\"Cader à terra\""
+  },
+  {
+    "movement": 3,
+    "part": "violin2",
+    "quarter": 70.5,
+    "source_text": "\"Cader à terra\""
+  },
+  {
+    "movement": 3,
+    "part": "cello",
+    "quarter": 70.5,
+    "source_text": "\"Tutti\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 75.0,
+    "source_text": "\"Solo\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 75.0,
+    "source_text": "\"Correr forte\""
+  },
+  {
+    "movement": 3,
+    "part": "violin2",
+    "quarter": 75.0,
+    "source_text": "\"Giaccio\""
+  },
+  {
+    "movement": 3,
+    "part": "violin1",
+    "quarter": 90.0,
+    "source_text": "\"Piano\""
+  },
+  {
+    "movement": 3,
+    "part": "violin2",
+    "quarter": 90.0,
+    "source_text": "\"Piano\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 138.0,
+    "source_text": "\"Solo\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 150.0,
+    "source_text": "\"Lento Tutti\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 150.0,
+    "source_text": "(#<procedure line-markup (a b c)> ((#<procedure translate-markup (a b c d)> (1 . 0) \"Il Vento Sirocco\")))"
+  },
+  {
+    "movement": 3,
+    "part": "violin1",
+    "quarter": 150.0,
+    "source_text": "(#<procedure line-markup (a b c)> ((#<procedure translate-markup (a b c d)> (1 . 0) \"Vento Sirocco\")))"
+  },
+  {
+    "movement": 3,
+    "part": "violin2",
+    "quarter": 150.0,
+    "source_text": "\"Vento Sirocco\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 178.5,
+    "source_text": "\"Solo\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 178.5,
+    "source_text": "(#<procedure line-markup (a b c)> ((#<procedure translate-markup (a b c d)> (1 . 0) \"Il Vento Borea e tutti li Venti\")))"
+  },
+  {
+    "movement": 3,
+    "part": "cello",
+    "quarter": 184.5,
+    "source_text": "\"Venti\""
+  },
+  {
+    "movement": 3,
+    "part": "solo",
+    "quarter": 204.0,
+    "source_text": "\"Tutti\""
+  }
+]

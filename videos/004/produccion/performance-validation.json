@@ -1,0 +1,296 @@
+{
+  "status": "passed",
+  "source_note_ids_preserved": 6802,
+  "source_notes": 6802,
+  "performance_events": 7902,
+  "movements": [
+    {
+      "movement": 1,
+      "source_notes": 3255,
+      "notes_by_part": {
+        "solo": 1027,
+        "violin1": 649,
+        "violin2": 633,
+        "viola": 469,
+        "cello": 477
+      },
+      "articulation_counts": {
+        "realized_trills": 67,
+        "spiccato": 2216,
+        "sustain": 1039,
+        "continuo": 477
+      }
+    },
+    {
+      "movement": 2,
+      "source_notes": 851,
+      "notes_by_part": {
+        "solo": 151,
+        "violin1": 273,
+        "violin2": 273,
+        "viola": 17,
+        "cello": 137
+      },
+      "articulation_counts": {
+        "sustain": 305,
+        "realized_trills": 4,
+        "pizzicato": 546,
+        "continuo": 137
+      }
+    },
+    {
+      "movement": 3,
+      "source_notes": 2696,
+      "notes_by_part": {
+        "solo": 982,
+        "violin1": 532,
+        "violin2": 508,
+        "viola": 400,
+        "cello": 274
+      },
+      "articulation_counts": {
+        "sustain": 1052,
+        "spiccato": 1644,
+        "continuo": 272
+      }
+    }
+  ],
+  "source_files": {
+    "score.midi": "d7f8581467b0bcfe931ac301f917d41dea0cff8d209020e480978ec6fd840115",
+    "score-1.midi": "228cb16f7d47f015a77f99160f360dbf35bcbae1a3a17cc9530af4b79d712bf0",
+    "score-2.midi": "a413bb4b299f035d23ee8562295f4c3a4359df4d177c56c4c725ac24fa464511",
+    "source-events.json": "431a4b479587962c4c3160e7b1f99f4c72ca222e30c301fd2b4e99cbdf348ccd"
+  },
+  "duration": 550.9583333333334,
+  "movement_timings": [
+    {
+      "index": 1,
+      "title": "I. Allegro non molto",
+      "start": 0.75,
+      "music_end": 215.51284,
+      "notated_quarters": 252,
+      "music_duration": 214.76284,
+      "tail_and_breath": 3.528827,
+      "tempo_points_quarter_bpm": [
+        [
+          0,
+          68
+        ],
+        [
+          12,
+          69
+        ],
+        [
+          40,
+          71
+        ],
+        [
+          44,
+          72
+        ],
+        [
+          68,
+          71
+        ],
+        [
+          72,
+          70
+        ],
+        [
+          86,
+          72
+        ],
+        [
+          102,
+          73
+        ],
+        [
+          150,
+          72
+        ],
+        [
+          156,
+          69
+        ],
+        [
+          184,
+          69
+        ],
+        [
+          216,
+          70
+        ],
+        [
+          220,
+          74
+        ],
+        [
+          244,
+          71
+        ],
+        [
+          248,
+          58
+        ],
+        [
+          252,
+          48
+        ]
+      ],
+      "nominal_quarter_bpm": 70
+    },
+    {
+      "index": 2,
+      "title": "II. Largo",
+      "start": 219.041667,
+      "music_end": 336.913206,
+      "notated_quarters": 72,
+      "music_duration": 117.871539,
+      "tail_and_breath": 3.503461,
+      "tempo_points_quarter_bpm": [
+        [
+          0,
+          37.5
+        ],
+        [
+          8,
+          38.5
+        ],
+        [
+          16,
+          37.5
+        ],
+        [
+          24,
+          38.5
+        ],
+        [
+          30,
+          36.8
+        ],
+        [
+          32,
+          37.8
+        ],
+        [
+          44,
+          38.4
+        ],
+        [
+          52,
+          38.2
+        ],
+        [
+          60,
+          36.5
+        ],
+        [
+          62,
+          35.5
+        ],
+        [
+          68,
+          31
+        ],
+        [
+          72,
+          24
+        ]
+      ],
+      "nominal_quarter_bpm": 38
+    },
+    {
+      "index": 3,
+      "title": "III. Allegro",
+      "start": 340.416667,
+      "music_end": 546.94955,
+      "notated_quarters": 229.5,
+      "music_duration": 206.532883,
+      "tail_and_breath": 3.508783,
+      "tempo_points_quarter_bpm": [
+        [
+          0,
+          70.5
+        ],
+        [
+          30,
+          71
+        ],
+        [
+          36,
+          73
+        ],
+        [
+          57,
+          71
+        ],
+        [
+          61.5,
+          73
+        ],
+        [
+          70.5,
+          73
+        ],
+        [
+          75,
+          74
+        ],
+        [
+          126,
+          73
+        ],
+        [
+          138,
+          71
+        ],
+        [
+          148.5,
+          69
+        ],
+        [
+          149.9999,
+          69
+        ],
+        [
+          150,
+          44
+        ],
+        [
+          174,
+          44
+        ],
+        [
+          178.4999,
+          43
+        ],
+        [
+          178.5,
+          74
+        ],
+        [
+          204,
+          75
+        ],
+        [
+          222,
+          73
+        ],
+        [
+          225,
+          64
+        ],
+        [
+          228,
+          50
+        ],
+        [
+          229.5,
+          42
+        ]
+      ],
+      "nominal_quarter_bpm": 72
+    }
+  ],
+  "scope": "Pitch anchor, part and coverage audit against compiled source. This is not a subjective listening assessment."
+}

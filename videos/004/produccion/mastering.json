@@ -1,0 +1,16 @@
+{
+  "sample_rate": 44100,
+  "channels": 2,
+  "wav_subtype": "PCM_24",
+  "frames": 24297262,
+  "duration_seconds": 550.9583219954649,
+  "peak_before_gain": 0.0897536650300026,
+  "master_gain_db": 19.138956165342137,
+  "target_true_peak_dbfs": -1.8,
+  "compression": false,
+  "tempo_changed": false,
+  "room": "Original deterministic stereo chamber IR, RT60 1.45s, diffusion wet gain 0.14 and early reflections",
+  "subsonic_highpass_hz": 35,
+  "final_200ms": "Sub-audible room tail fades to zero; musical notes unchanged",
+  "subjective_listening_performed": false
+}

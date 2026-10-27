@@ -1,0 +1,337 @@
+{
+  "duration": 550.9583219954649,
+  "sample_rate": 44100,
+  "channels": 2,
+  "format": "IEEE_FLOAT_32",
+  "stems": [
+    {
+      "instrument": "CelloEnsSpic.sfz",
+      "regions": 52,
+      "preloaded_samples": 52,
+      "peak": 0.03474925830960274,
+      "rms": 0.0021498046357578513,
+      "release_seconds": 0.15,
+      "attack_seconds": 0.001,
+      "crossfaded_sustain_regions": [],
+      "part": "cello",
+      "articulation": "spiccato",
+      "events": 582,
+      "mix": {
+        "gain_db": -6.5,
+        "pan": 0,
+        "width": 0.35
+      },
+      "seconds": 2.6890006339999672
+    },
+    {
+      "instrument": "CelloEnsSusVib.sfz",
+      "regions": 27,
+      "preloaded_samples": 27,
+      "peak": 0.08709202706813812,
+      "rms": 0.008568778223634062,
+      "release_seconds": 0.32,
+      "attack_seconds": 0.009,
+      "crossfaded_sustain_regions": [
+        {
+          "sample": "susvib_E1_v1_2.wav",
+          "longest_note_seconds": 8.601029,
+          "loop_start_seconds": 3.5,
+          "loop_end_seconds": 5.5,
+          "crossfade_seconds": 0.12
+        },
+        {
+          "sample": "susvib_B1_v3_1.wav",
+          "longest_note_seconds": 33.144256,
+          "loop_start_seconds": 3.5,
+          "loop_end_seconds": 5.5,
+          "crossfade_seconds": 0.12
+        },
+        {
+          "sample": "susvib_F2_v3_1.wav",
+          "longest_note_seconds": 25.061336,
+          "loop_start_seconds": 3.5,
+          "loop_end_seconds": 5.5,
+          "crossfade_seconds": 0.12
+        },
+        {
+          "sample": "susvib_G1_v3_1.wav",
+          "longest_note_seconds": 14.536987,
+          "loop_start_seconds": 3.5,
+          "loop_end_seconds": 5.5,
+          "crossfade_seconds": 0.12
+        }
+      ],
+      "part": "cello",
+      "articulation": "sustain",
+      "events": 306,
+      "mix": {
+        "gain_db": -6.5,
+        "pan": 0,
+        "width": 0.35
+      },
+      "seconds": 4.063284625000961
+    },
+    {
+      "instrument": "OrganQuiet.sfz",
+      "regions": 21,
+      "preloaded_samples": 21,
+      "peak": 0.006514653563499451,
+      "rms": 0.0008164707551571003,
+      "release_seconds": 0.32,
+      "attack_seconds": 0.009,
+      "crossfaded_sustain_regions": [
+        {
+          "sample": "NT5_Man3Quiet_125_rr1.wav",
+          "longest_note_seconds": 8.156009,
+          "loop_start_seconds": 3.5,
+          "loop_end_seconds": 5.5,
+          "crossfade_seconds": 0.12
+        }
+      ],
+      "part": "continuo",
+      "articulation": "sustain",
+      "events": 886,
+      "mix": {
+        "gain_db": -22.0,
+        "pan": 0,
+        "width": 0.35
+      },
+      "seconds": 5.2116193440015195
+    },
+    {
+      "instrument": "SViolinSpic.sfz",
+      "regions": 60,
+      "preloaded_samples": 60,
+      "peak": 0.09164479374885559,
+      "rms": 0.0055448260617455775,
+      "release_seconds": 0.15,
+      "attack_seconds": 0.001,
+      "crossfaded_sustain_regions": [],
+      "part": "solo",
+      "articulation": "spiccato",
+      "events": 1530,
+      "mix": {
+        "gain_db": -1.5,
+        "pan": -0.12,
+        "width": 0.3
+      },
+      "seconds": 4.428332636998675
+    },
+    {
+      "instrument": "SViolinVib.sfz",
+      "regions": 30,
+      "preloaded_samples": 30,
+      "peak": 0.10337769240140915,
+      "rms": 0.006656459141370115,
+      "release_seconds": 0.22,
+      "attack_seconds": 0.006,
+      "crossfaded_sustain_regions": [],
+      "part": "solo",
+      "articulation": "sustain",
+      "events": 844,
+      "mix": {
+        "gain_db": -1.5,
+        "pan": -0.12,
+        "width": 0.3
+      },
+      "seconds": 4.625089629000286
+    },
+    {
+      "instrument": "ViolaEnsSpic.sfz",
+      "regions": 48,
+      "preloaded_samples": 48,
+      "peak": 0.09215196967124939,
+      "rms": 0.0028300772510966186,
+      "release_seconds": 0.15,
+      "attack_seconds": 0.001,
+      "crossfaded_sustain_regions": [],
+      "part": "viola",
+      "articulation": "spiccato",
+      "events": 626,
+      "mix": {
+        "gain_db": -10.0,
+        "pan": 0.18,
+        "width": 0.4
+      },
+      "seconds": 2.1959987679983897
+    },
+    {
+      "instrument": "ViolaEnsSusVib.sfz",
+      "regions": 26,
+      "preloaded_samples": 26,
+      "peak": 0.0906439870595932,
+      "rms": 0.006683575651865216,
+      "release_seconds": 0.32,
+      "attack_seconds": 0.009,
+      "crossfaded_sustain_regions": [
+        {
+          "sample": "ViolaEns_susvib_A3_v1_1.wav",
+          "longest_note_seconds": 17.044948,
+          "loop_start_seconds": 3.5,
+          "loop_end_seconds": 5.5,
+          "crossfade_seconds": 0.12
+        },
+        {
+          "sample": "ViolaEns_susvib_B2_v1_1.wav",
+          "longest_note_seconds": 35.03841,
+          "loop_start_seconds": 3.5,
+          "loop_end_seconds": 5.5,
+          "crossfade_seconds": 0.12
+        },
+        {
+          "sample": "ViolaEns_susvib_F3_v1_1.wav",
+          "longest_note_seconds": 26.583575,
+          "loop_start_seconds": 3.5,
+          "loop_end_seconds": 5.5,
+          "crossfade_seconds": 0.12
+        }
+      ],
+      "part": "viola",
+      "articulation": "sustain",
+      "events": 260,
+      "mix": {
+        "gain_db": -10.0,
+        "pan": 0.18,
+        "width": 0.4
+      },
+      "seconds": 2.6101781659999688
+    },
+    {
+      "instrument": "ViolinEnsPizz.sfz",
+      "regions": 44,
+      "preloaded_samples": 44,
+      "peak": 0.055895011872053146,
+      "rms": 0.002240272505408654,
+      "release_seconds": 0.25,
+      "attack_seconds": 0.001,
+      "crossfaded_sustain_regions": [],
+      "part": "violin1",
+      "articulation": "pizzicato",
+      "events": 273,
+      "mix": {
+        "gain_db": -8.0,
+        "pan": -0.45,
+        "width": 0.45
+      },
+      "seconds": 1.948487327001203
+    },
+    {
+      "instrument": "ViolinEnsSpic.sfz",
+      "regions": 44,
+      "preloaded_samples": 44,
+      "peak": 0.06746338307857513,
+      "rms": 0.0026026611486591224,
+      "release_seconds": 0.15,
+      "attack_seconds": 0.001,
+      "crossfaded_sustain_regions": [],
+      "part": "violin1",
+      "articulation": "spiccato",
+      "events": 673,
+      "mix": {
+        "gain_db": -8.0,
+        "pan": -0.45,
+        "width": 0.45
+      },
+      "seconds": 2.3758491959997627
+    },
+    {
+      "instrument": "ViolinEnsSusVib.sfz",
+      "regions": 22,
+      "preloaded_samples": 22,
+      "peak": 0.03574027493596077,
+      "rms": 0.0017821371143241997,
+      "release_seconds": 0.32,
+      "attack_seconds": 0.009,
+      "crossfaded_sustain_regions": [
+        {
+          "sample": "VlnEns_susVib_F#3_v2.wav",
+          "longest_note_seconds": 12.01025,
+          "loop_start_seconds": 3.5,
+          "loop_end_seconds": 5.5,
+          "crossfade_seconds": 0.12
+        }
+      ],
+      "part": "violin1",
+      "articulation": "sustain",
+      "events": 508,
+      "mix": {
+        "gain_db": -8.0,
+        "pan": -0.45,
+        "width": 0.45
+      },
+      "seconds": 3.2458559410006274
+    },
+    {
+      "instrument": "ViolinEnsPizz.sfz",
+      "regions": 44,
+      "preloaded_samples": 44,
+      "peak": 0.06041526421904564,
+      "rms": 0.00222705736663392,
+      "release_seconds": 0.25,
+      "attack_seconds": 0.001,
+      "crossfaded_sustain_regions": [],
+      "part": "violin2",
+      "articulation": "pizzicato",
+      "events": 273,
+      "mix": {
+        "gain_db": -8.5,
+        "pan": 0.3,
+        "width": 0.45
+      },
+      "seconds": 2.147684689000016
+    },
+    {
+      "instrument": "ViolinEnsSpic.sfz",
+      "regions": 44,
+      "preloaded_samples": 44,
+      "peak": 0.061729513108730316,
+      "rms": 0.0029083496741255602,
+      "release_seconds": 0.15,
+      "attack_seconds": 0.001,
+      "crossfaded_sustain_regions": [],
+      "part": "violin2",
+      "articulation": "spiccato",
+      "events": 670,
+      "mix": {
+        "gain_db": -8.5,
+        "pan": 0.3,
+        "width": 0.45
+      },
+      "seconds": 2.2592311820008035
+    },
+    {
+      "instrument": "ViolinEnsSusVib.sfz",
+      "regions": 22,
+      "preloaded_samples": 22,
+      "peak": 0.03911813348531723,
+      "rms": 0.0015948655750981553,
+      "release_seconds": 0.32,
+      "attack_seconds": 0.009,
+      "crossfaded_sustain_regions": [
+        {
+          "sample": "VlnEns_susVib_F#3_v2.wav",
+          "longest_note_seconds": 12.01025,
+          "loop_start_seconds": 3.5,
+          "loop_end_seconds": 5.5,
+          "crossfade_seconds": 0.12
+        }
+      ],
+      "part": "violin2",
+      "articulation": "sustain",
+      "events": 471,
+      "mix": {
+        "gain_db": -8.5,
+        "pan": 0.3,
+        "width": 0.45
+      },
+      "seconds": 2.763920616998803
+    }
+  ],
+  "peak": 0.08777602016925812,
+  "rms": 0.007645769914767051,
+  "subjective_listening": false,
+  "engine": "sfizz",
+  "note": "Original SFZ sample tuning and keymaps preserved; release and attack envelopes adjusted for articulation.",
+  "resampling_quality_parameter": 8,
+  "resampling_mode": "offline sinc"
+}

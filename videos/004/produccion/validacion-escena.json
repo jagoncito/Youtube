@@ -1,0 +1,17 @@
+{
+  "file": "escena-60s.mp4",
+  "complete_video_decode": "passed",
+  "frames": 1440,
+  "width": 1920,
+  "height": 1080,
+  "duration_seconds": 60.0,
+  "loop_boundary_gray_MAE_0_255": 0.019122298806905746,
+  "ordinary_adjacent_gray_MAE_median": 0.010968364775180817,
+  "boundary_criterion": "boundary <= max(0.15, 4*ordinary adjacent MAE)",
+  "loop_boundary_passed": true,
+  "outdoor_change_15s_gray_MAE": 0.04947727173566818,
+  "sheltered_character_region_change_15s_gray_MAE": 0.11438596248626709,
+  "environment_motion_present": true,
+  "characters_animated": false,
+  "subjective_audio_review": false
+}

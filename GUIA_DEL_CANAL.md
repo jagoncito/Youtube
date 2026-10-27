@@ -28,7 +28,7 @@ La entrega anterior de Chopin fue una prueba técnica. El creador señaló falta
 
 ## Estado actual
 
-La programación automática ha sido cancelada por el creador. Cada vídeo se prepara únicamente cuando lo pide. Se conservan tres entregas con archivos reales en videos/001, videos/002 y videos/003. La siguiente será004.
+La programación automática ha sido cancelada por el creador. Cada vídeo se prepara únicamente cuando lo pide. Hay cuatro entregas con archivos reales en videos/001–004. La004 contiene El invierno de Vivaldi completo, con nueva escena y nueva interpretación digital; sus versiones base y larga pertenecen a la misma entrega.
 
 Cada nueva entrega necesita imágenes y propuesta audiovisual inéditas, música trabajada y créditos verificables. No contar una recodificación, una semilla o el orden de las mismas piezas como novedad suficiente. Los controles técnicos no equivalen a una valoración auditiva.
 

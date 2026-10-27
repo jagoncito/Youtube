@@ -1,0 +1,553 @@
+{
+  "scope": "Technical validation; no subjective audition performed",
+  "wav": {
+    "frames": 24297262,
+    "sample_rate": 44100,
+    "channels": 2,
+    "subtype": "PCM_24",
+    "duration": 550.9583219954649,
+    "sample_peak": 0.8118215799331665,
+    "clipped_samples": 0,
+    "dc": [
+      -5.7195089762689134e-08,
+      -5.7428182451785876e-08
+    ],
+    "last_100ms_peak": 1.1920928955078125e-07,
+    "ebur128": {
+      "integrated_lufs": -19.26,
+      "true_peak_dbtp": -1.8,
+      "loudness_range_lu": 9.2,
+      "gating_threshold_lufs": -29.54,
+      "method": "FFmpeg loudnorm input analysis; processed null output discarded."
+    }
+  },
+  "videos": {
+    "vivaldi-winter-concerto.mp4": {
+      "duration": 551.041667,
+      "full_decode": "passed",
+      "audio_cycles": [
+        {
+          "cycle": 1,
+          "correlation": 0.9999091727071677,
+          "snr_db": 37.36671506178274
+        }
+      ],
+      "video_stream": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/24000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 13225000,
+        "duration": "551.041667",
+        "bit_rate": "2358736",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "13225",
+        "extradata_size": 48,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.19.101 libx264"
+        }
+      },
+      "audio_stream": {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "44100",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/44100",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 24297248,
+        "duration": "550.958005",
+        "bit_rate": "254521",
+        "nb_frames": "23729",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      },
+      "embedded_chapters": {
+        "chapters": [
+          {
+            "id": 0,
+            "time_base": "1/1000",
+            "start": 0,
+            "start_time": "0.000000",
+            "end": 219042,
+            "end_time": "219.042000",
+            "tags": {
+              "title": "I. Allegro non molto"
+            }
+          },
+          {
+            "id": 1,
+            "time_base": "1/1000",
+            "start": 219042,
+            "start_time": "219.042000",
+            "end": 340417,
+            "end_time": "340.417000",
+            "tags": {
+              "title": "II. Largo"
+            }
+          },
+          {
+            "id": 2,
+            "time_base": "1/1000",
+            "start": 340417,
+            "start_time": "340.417000",
+            "end": 550958,
+            "end_time": "550.958000",
+            "tags": {
+              "title": "III. Allegro"
+            }
+          }
+        ]
+      }
+    },
+    "vivaldi-winter-extended.mp4": {
+      "duration": 1652.958333,
+      "full_decode": "passed",
+      "audio_cycles": [
+        {
+          "cycle": 1,
+          "correlation": 0.9999091727071677,
+          "snr_db": 37.36671506178274
+        },
+        {
+          "cycle": 2,
+          "correlation": 0.9999083359851696,
+          "snr_db": 37.32657205501703
+        },
+        {
+          "cycle": 3,
+          "correlation": 0.9999050033118115,
+          "snr_db": 37.17242028969628
+        }
+      ],
+      "video_stream": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/24000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 39671000,
+        "duration": "1652.958333",
+        "bit_rate": "2341342",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "39671",
+        "extradata_size": 48,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.19.101 libx264"
+        }
+      },
+      "audio_stream": {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "44100",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/44100",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 72891788,
+        "duration": "1652.875011",
+        "bit_rate": "254243",
+        "nb_frames": "71185",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      },
+      "embedded_chapters": {
+        "chapters": [
+          {
+            "id": 0,
+            "time_base": "1/1000",
+            "start": 0,
+            "start_time": "0.000000",
+            "end": 219042,
+            "end_time": "219.042000",
+            "tags": {
+              "title": "I. Allegro non molto (cycle 1)"
+            }
+          },
+          {
+            "id": 1,
+            "time_base": "1/1000",
+            "start": 219042,
+            "start_time": "219.042000",
+            "end": 340417,
+            "end_time": "340.417000",
+            "tags": {
+              "title": "II. Largo (cycle 1)"
+            }
+          },
+          {
+            "id": 2,
+            "time_base": "1/1000",
+            "start": 340417,
+            "start_time": "340.417000",
+            "end": 550958,
+            "end_time": "550.958000",
+            "tags": {
+              "title": "III. Allegro (cycle 1)"
+            }
+          },
+          {
+            "id": 3,
+            "time_base": "1/1000",
+            "start": 550958,
+            "start_time": "550.958000",
+            "end": 770000,
+            "end_time": "770.000000",
+            "tags": {
+              "title": "I. Allegro non molto (cycle 2)"
+            }
+          },
+          {
+            "id": 4,
+            "time_base": "1/1000",
+            "start": 770000,
+            "start_time": "770.000000",
+            "end": 891375,
+            "end_time": "891.375000",
+            "tags": {
+              "title": "II. Largo (cycle 2)"
+            }
+          },
+          {
+            "id": 5,
+            "time_base": "1/1000",
+            "start": 891375,
+            "start_time": "891.375000",
+            "end": 1101917,
+            "end_time": "1101.917000",
+            "tags": {
+              "title": "III. Allegro (cycle 2)"
+            }
+          },
+          {
+            "id": 6,
+            "time_base": "1/1000",
+            "start": 1101917,
+            "start_time": "1101.917000",
+            "end": 1320958,
+            "end_time": "1320.958000",
+            "tags": {
+              "title": "I. Allegro non molto (cycle 3)"
+            }
+          },
+          {
+            "id": 7,
+            "time_base": "1/1000",
+            "start": 1320958,
+            "start_time": "1320.958000",
+            "end": 1442333,
+            "end_time": "1442.333000",
+            "tags": {
+              "title": "II. Largo (cycle 3)"
+            }
+          },
+          {
+            "id": 8,
+            "time_base": "1/1000",
+            "start": 1442333,
+            "start_time": "1442.333000",
+            "end": 1652875,
+            "end_time": "1652.875000",
+            "tags": {
+              "title": "III. Allegro (cycle 3)"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sha256": {
+    "README.md": "ff8c099689a01cefc9c27a3d498700d1cb0d53462d45e6d7fbd4cf918b4f36d5",
+    "fuentes/LICENCIAS-Y-PROCEDENCIA.md": "6b62bf854fd21547d74ad9171932d6594f8f49c558a95b83ee37c579771d25c2",
+    "fuentes/instrumentos/instrument-sources.json": "ebe251b60ff4f744da03b1741053955316c1b9117cc5dc1d123e97dbf68a0364",
+    "fuentes/instrumentos/original-sfz/CelloEnsPizz.sfz": "84e586f7518b99c11da5efddb321a9ea4b9edc4149b96f3e9621f4c7e9fc3cca",
+    "fuentes/instrumentos/original-sfz/CelloEnsSpic.sfz": "00d1374a186802d63ed19173d16b48f30d5acd04f180a9439da2c24bf0029535",
+    "fuentes/instrumentos/original-sfz/CelloEnsSusVib.sfz": "276352639dda425dd12a4fdb3acdf545867fdb0ff4f89876319f4ec3cf12a19f",
+    "fuentes/instrumentos/original-sfz/ContrabassSpic.sfz": "319e22c472c6954a7cfc03633af38bd8e88dc45fca7ff951fcfab838a75f3dce",
+    "fuentes/instrumentos/original-sfz/ContrabassSusNV.sfz": "137172b02f0357f059816bd0ab197c38a5c06659cfc6e64fec11b35abac54fbb",
+    "fuentes/instrumentos/original-sfz/OrganQuiet.sfz": "5f3b8ab5d81ec4b69e8faea9a4d468e6968abeb7b4a7dba94b48da6e48dabe15",
+    "fuentes/instrumentos/original-sfz/SViolinSpic.sfz": "d427568b0998f193be2145182d732ccf8507a75d8f933c1a47393e41107cd9c1",
+    "fuentes/instrumentos/original-sfz/SViolinVib.sfz": "a2ca3611463547ac9371aa9d13a693af9cd10804f9232d2c602d65937387a992",
+    "fuentes/instrumentos/original-sfz/ViolaEnsPizz.sfz": "c175ad0189d09e0e26670796da7d28adba5a569ac0edc1ef96fc6f11268db4a9",
+    "fuentes/instrumentos/original-sfz/ViolaEnsSpic.sfz": "54d8e42e321e1fb594da144cae450c1c34820abc50fd91976c156f4d8200167a",
+    "fuentes/instrumentos/original-sfz/ViolaEnsSusVib.sfz": "d62dc6b6bfa83d4ebe49a44f6f1337d0621a32d7f10c699e26fc98720a640871",
+    "fuentes/instrumentos/original-sfz/ViolinEnsPizz.sfz": "c94b1129e5a8c7e7f7a8e556f6d7c491dbe88875cc2080a0fd2794eb77f5b733",
+    "fuentes/instrumentos/original-sfz/ViolinEnsSpic.sfz": "3616554873bf3e0b6c6af0a4a593d519219d0774ab03af323daf9e70a098a847",
+    "fuentes/instrumentos/original-sfz/ViolinEnsSusVib.sfz": "4591e212cccf1cbcff0c78cf8429a8221bb0820b70cb7c8dd6685f470ace4eaa",
+    "fuentes/interpretacion-digital.midi": "521d72206388d90328b708c4cb4f04a21a349ae94e790a971f728d6a8f83d487",
+    "fuentes/licencias/CC-BY-SA-3.0.txt": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f",
+    "fuentes/licencias/SFIZZ-AUTHORS.md": "34dfe10779d54393e07f1b5416d9816d9fb4e147d2d11c438342ca2dbed243de",
+    "fuentes/licencias/SFIZZ-BSD-2-Clause.txt": "21b2105196b4e6a769cebc2534f66852c8efad3e28dbd3bbd1cc3058fba89e7d",
+    "fuentes/licencias/VSCO-CC0.txt": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+    "fuentes/licencias/VSCO-SFZ-CC0.txt": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+    "fuentes/partitura/CC-BY-SA-3.0.txt": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f",
+    "fuentes/partitura/FUENTES-Y-LICENCIAS.md": "a0a2e15385a0af96f2ec1a04e5c160b43cb7f3b8920995e4031e9c6186357ebf",
+    "fuentes/partitura/adapted/Makefile": "d295bee9a341d688ec87459d96a5a9d3d1ae26d7ceac283dd0b3689ff1c5ae70",
+    "fuentes/partitura/adapted/export-articulations.ly": "1adee1baaefab8580f3119c5dc231944c4efc6b85f09c972a05bfb5080ac46a7",
+    "fuentes/partitura/adapted/export-markers.ly": "e3e683e7082016c21d45f36d1869e4cd69616291aa6a2624b6222c8da5b31a01",
+    "fuentes/partitura/adapted/winter-cello.ly": "70a28f300179a0aee60a643392f52380f66bd7aa9ada9e854e324b5e6115f910",
+    "fuentes/partitura/adapted/winter-header.ly": "7b727fa8cc6947fcfaa48f11727143a6955791005d18b90b1b5762e6cb0f9592",
+    "fuentes/partitura/adapted/winter-score.ly": "8c2d362a0d4371f57851fde7b20db84b5296cc53bdc4ca8864ea2196f09aa76c",
+    "fuentes/partitura/adapted/winter-solo.ly": "6617c142b557b80b4611e993f0aea1be45ac437cee4ba22350d0185b0df42656",
+    "fuentes/partitura/adapted/winter-sonnet.ly": "ed840bdd2d335c2082c350d6e8ad17a6945a0b90f11040d7eca17527d94e8287",
+    "fuentes/partitura/adapted/winter-viola.ly": "cbd3378f930b627c62a39ac77ca832f19f5768370f58885dc5ede9da0369912c",
+    "fuentes/partitura/adapted/winter-violin1.ly": "c24a93aa742f5145e9780e49f3e0aeadd97f61b5a7d021c226b9d411f6c8d374",
+    "fuentes/partitura/adapted/winter-violin2.ly": "b8690ac39694ef4a56ecf8d62e8c17c0468f000f2fdcd3c26b760fd79e13cca9",
+    "fuentes/partitura/adapted/winter1.ly": "622d8fe9184ef1b31851339d37bdf74181377f4a4aa93fa98c68da4085929762",
+    "fuentes/partitura/adapted/winter1a.ly": "866de081fa8d4a8038e8bd9470ef3bf1d674f770b252eb510bf4ddc057ea54da",
+    "fuentes/partitura/adapted/winter1b.ly": "c3e77c2f30c6bc7dd54ee3ee398c9d8d6d2d0d23313bd7e38064970242d113e2",
+    "fuentes/partitura/adapted/winter1c.ly": "34e925c5d68cece519b9bad8f62101761628208463d4d846335b936599192316",
+    "fuentes/partitura/adapted/winter1d.ly": "25af2d39b90bda327141eb04d5a4ebdcd07d1cc90bbe13188d3df9406369a54b",
+    "fuentes/partitura/adapted/winter1f.ly": "b94723f0707eae9bed9c378fe86a8eb07d760967800c6c578a22b419d0ed3091",
+    "fuentes/partitura/adapted/winter2.ly": "0e62819d1f6ec5bde86da54c25ea850190d9cf9c5bd97d5317e5bfe85562f04b",
+    "fuentes/partitura/adapted/winter2a.ly": "7467e44ce36b458266ce3015c827311f811577bf8d70da04aa1e5e4a545a1ffb",
+    "fuentes/partitura/adapted/winter2b.ly": "c5367bc82b090bac30b4068178d069fba06496e5a4ff5dae362e9a7858c395ed",
+    "fuentes/partitura/adapted/winter2c.ly": "09be1b6da381e5cff06e63b7dd0d6343ad1b690c89c13f46c45ec4e35ff6a45f",
+    "fuentes/partitura/adapted/winter2d.ly": "28a07edb66714c073b3ba79c443206f9cd5212a9cd5f89a8c0e94fd109c26ec0",
+    "fuentes/partitura/adapted/winter2f.ly": "1958a9fad479d20f2b9ab382bec9c12e942738ebf1ecda9ab90f04da3a8c359f",
+    "fuentes/partitura/adapted/winter3.ly": "4fcbbfd55c8c263596657618d7091483c0c5c64114b297d1f1baa7f1b488a19f",
+    "fuentes/partitura/adapted/winter3a.ly": "4a498e85b522907bba8d9a75558929b119faa9b9dc83febb40961af4473b7493",
+    "fuentes/partitura/adapted/winter3b.ly": "ff107e573f9825c455886a92560ab2fa1cbd591c21ad4dfd86d2adbb1d9a2668",
+    "fuentes/partitura/adapted/winter3c.ly": "14e3360e71b7209ef2a45368e41039a2dc4cdb1b1a3e4f592898e1b16a9b3914",
+    "fuentes/partitura/adapted/winter3d.ly": "294ac0c96f96c540f163baa9af10e6736830a65ea538e180a2b8b58fa7d676ec",
+    "fuentes/partitura/adapted/winter3f.ly": "c8898d2e3459105f12373c536fc396358ce95d25c83bdebddd82cf38793642c5",
+    "fuentes/partitura/export_articulations.py": "284bfb5185b1dd96da8a77ef43faf5bdd9e23024a598bdccf0f66148563ff256",
+    "fuentes/partitura/export_markers.py": "073e00501994a8289262b46eceaab1a8175d5a9716568d3febf718ddc4a99f33",
+    "fuentes/partitura/lily.stderr.log": "9b59f7ba3dce0ec281cd657c18dc02a3eab823d651b82d8612471c455068ff1b",
+    "fuentes/partitura/markers.json": "3318387d867fce08098a75ea528c868178e645a50f05d3a4ad0f4af5b14087ae",
+    "fuentes/partitura/original/Makefile": "d295bee9a341d688ec87459d96a5a9d3d1ae26d7ceac283dd0b3689ff1c5ae70",
+    "fuentes/partitura/original/winter-cello.ly": "3de50ecdf58b2290ad8e1b86e94a1934b2a5d68d8b1e00b4b0fc4c6df7a69418",
+    "fuentes/partitura/original/winter-header.ly": "7e80f15240a211b96bfc06c8d376cad194bf0c3c0e29086bd0c462e9bd6e861a",
+    "fuentes/partitura/original/winter-score.ly": "8b5792d5b4e0b922a6461428e86a4b665e9c153bf7949964cf5925ad578e0d55",
+    "fuentes/partitura/original/winter-solo.ly": "5f4a33856f82ec78b9b2bc755a4789acc2ca54f967df6f193e56c049fd2a066b",
+    "fuentes/partitura/original/winter-sonnet.ly": "ae24d96d4750837298ebfab842e80e35d97644d7503137651240749689cf5675",
+    "fuentes/partitura/original/winter-viola.ly": "ca9f5a0800f26c8cbce8f1888e4d12fe1bbcb1636f653f0bd1e0e486d00afb1c",
+    "fuentes/partitura/original/winter-violin1.ly": "89400ee68c0dead7c64c2054846de52a3d42b2a885e2b39ffde8e28663222d7a",
+    "fuentes/partitura/original/winter-violin2.ly": "64dc9c4dcffd7915341886eed522e46ce7440de74644b3af16a8f9b9b98b5a88",
+    "fuentes/partitura/original/winter1.ly": "3ec0129cecb4f39d35b50b38a846f5439be82aa612d4c96254b3277b7913a635",
+    "fuentes/partitura/original/winter1a.ly": "8f2dbad33bfc556f45080f3e177c30d4a2f6438e852dbcc956156d412d2a9a5e",
+    "fuentes/partitura/original/winter1b.ly": "461f4f6c70329c51acb8a21452139232d3325e04b0903b0a89a939cc07a9bcb6",
+    "fuentes/partitura/original/winter1c.ly": "e34dd6a536b5fb89ac93eac37b77a1c82cf46f99b7f9335ef2ece351f666c770",
+    "fuentes/partitura/original/winter1d.ly": "30107522fd9b40978b154cd9903e8c2406938bb89d9b9e948d1bc4af852f5f06",
+    "fuentes/partitura/original/winter1f.ly": "c9dabb222199bb97026f3be34eafc2b2f9161898d3351413a710d3db6caf16ff",
+    "fuentes/partitura/original/winter2.ly": "16bd9c371af689659540838844c850ffceb6baf365d0b6c15ad9c18feb4ffe96",
+    "fuentes/partitura/original/winter2a.ly": "8d243bab883c1215300749ba8874c4e1545e0bc80cec769f83ecbfe0b475e2d4",
+    "fuentes/partitura/original/winter2b.ly": "1b6df5083f68e81db8df0003ac736798fc4bb2cdde3e1b2e5e73e0be52ff74ff",
+    "fuentes/partitura/original/winter2c.ly": "4eae60ad45f93b4724f6fcdebd71d25c3941a89b2a30f82983e56cac1466238b",
+    "fuentes/partitura/original/winter2d.ly": "a1c31471ff108d75544487d956b6275aab4fd46b6082cadfa7cd062eb63ec6ed",
+    "fuentes/partitura/original/winter2f.ly": "7cf5381a897d200c2240dd232b300c303c8e24b5e561b1e9d0f421de386a5088",
+    "fuentes/partitura/original/winter3.ly": "f028c2d90186b1da9dab524c1ff55999507b1a572faae92f575e5e417078ad61",
+    "fuentes/partitura/original/winter3a.ly": "18ff85577bc1ba12def123feaeea43af1d777e1d99982a9fc39a57db777cf624",
+    "fuentes/partitura/original/winter3b.ly": "cc692c1540b25cf5675cd29d5e4cd4ac66caa3faeb6c77c0b8533083f0d886ad",
+    "fuentes/partitura/original/winter3c.ly": "36213d2c40fa31f8414fcb5dc727270a9b3911569997429983cc9b210d06126e",
+    "fuentes/partitura/original/winter3d.ly": "2b46a370d21720c4fbb067d6ca77342b4757c51a613b946a4e000449b61d3d7b",
+    "fuentes/partitura/original/winter3f.ly": "792e51a31f78123375743092ad2e0c33cd54df6e73f93a0ba17625f3192fb1e2",
+    "fuentes/partitura/partitura.pdf": "22bfd2f7a4ba49a12662b35807a0b69cfe387854a3b3cf7f51611b1e487fa5f4",
+    "fuentes/partitura/pdf.stderr.log": "f469853c487090be8d7d514639ce1b032d35c88ede982b242056e8f7ba729a4a",
+    "fuentes/partitura/score-1.midi": "228cb16f7d47f015a77f99160f360dbf35bcbae1a3a17cc9530af4b79d712bf0",
+    "fuentes/partitura/score-2.midi": "a413bb4b299f035d23ee8562295f4c3a4359df4d177c56c4c725ac24fa464511",
+    "fuentes/partitura/score-validation.json": "4bd38addfca011b2a377fab8d70e94c9bb2374e8cc037b61b3a01172ab19a1ed",
+    "fuentes/partitura/score.midi": "d7f8581467b0bcfe931ac301f917d41dea0cff8d209020e480978ec6fd840115",
+    "fuentes/partitura/source-events.json": "431a4b479587962c4c3160e7b1f99f4c72ca222e30c301fd2b4e99cbdf348ccd",
+    "fuentes/partitura/validate_score.py": "e078e5e9ca333d21ea9f58cacdb2f420b37e5f2ea23a7a82a93d93f2a00c5ebe",
+    "imagen.png": "c113409b8cb1a00e0e146e45531227c20e5331c0a93dddf5739f0435d0382eac",
+    "miniatura.jpg": "15493396e8a019ddb169be2d94ad519b212b0eaedc4a02989298db4e4bb3e17d",
+    "montaje.json": "dad5eb8e68a83241b9c66abc9578b3620b2d3a4621bfa51ea6068a4639c91ea9",
+    "produccion/README.md": "c1faa85a7e66d8c897ae89f9626ccc860f35a187b0df79415b5e08118cbcd38d",
+    "produccion/animar_invierno.py": "78f0f63b7160b21cfe20dded51611d656b7b441a1eb125a1a2d3da954c226223",
+    "produccion/build_sfizz.sh": "cee84482b1c906c5d637af530e0678fbde30428f334ecc8adbe71c282906a3bc",
+    "produccion/capitulos.json": "812d91bfdf9b2793d7a7b30f67c8cddb9b7284925af5c4143a38a59136ae3629",
+    "produccion/create_performance.py": "73ad33a91d26fc5584c774cf4847053bfcbd4d48cdbdf326b52a0824088b0744",
+    "produccion/decisiones-editoriales.md": "2cac21ab78931fa8dbbb3c6778e75b45d6e5f953b8ea40993a9754aa3ac0d1c6",
+    "produccion/download_instruments.py": "fa298edadcc8e6f867a65256d6dcad9807b86e34833fedfd80efc851fe7aa5c6",
+    "produccion/escena-config.json": "06cb6ef7668ddf7bcb4b0fdaf7cb563fc765a6502cbcce2548876c31c987b207",
+    "produccion/master_audio.py": "421beca040588a35231191c842a50df3703bff45e9bc5f7e2fdd20eb7d01b99a",
+    "produccion/mastering.json": "962bcd40feaccfcc5883e91cd9c35a1e1309d5f7cf594fc29f73198922553d7a",
+    "produccion/montar_invierno.py": "05f8e309e664d6688e412039427185b63822cd69251f2d0268072645d6aa2784",
+    "produccion/nieve-reflejos.ass": "1049ce836993cd138fb5e66de4604ee9495b0352db08fbb86a6e99de43ec3c4c",
+    "produccion/performance-validation.json": "30052e95858f5b6c6fc8a68cc2a891d1d137af898f146e15340834aa27a65990",
+    "produccion/performance.json": "6422abc50ed5f165aeacf5da5970076623dfc44e8015eeb6c47e86d90ec2d916",
+    "produccion/render-report.json": "f9dc533db59d63fceeadedb97cd6afbaa8eddcc534cfe495b999e4bd5abd6f1d",
+    "produccion/render_sfizz.py": "f21e0c0cb2937a5d29b2311bb666bbd8b1b6ff45a108d9ff0ab7ae9a426427db",
+    "produccion/requirements.txt": "5d2ab6844db73467d5cff627d41775f0eb2bf0bbb9d09a64ae15c99ef583182f",
+    "produccion/source-notes.json": "f4b1c87164996c6a47a373d2835a2ce1617af95006695ccf9f958a333bc16dc6",
+    "produccion/validacion-escena.json": "9461a21dd84f24ef37d2acf6c68e89e0db6a000f937118f57f27e3bd83b31d67",
+    "produccion/validar_escena.py": "b3ee2805eb609d51e75e17df38ca4a8d5a733fe53b7a32c6d3bfed499a964126",
+    "produccion/verificar_entrega.py": "d20af27fc67eefa839bbfdd0405d14d353302eed38d0b7bca23fea859ab1bd85",
+    "publicacion.txt": "7113711db227b07d579d754d9e7644ce76338456b4c1c73a15ec998f6101c299",
+    "vivaldi-winter-concerto.mp4": "68c4f2c01f52d299d66a1e719a2e41c7d9c5f4864c73f585c0ff5ab22e3d8a3f",
+    "vivaldi-winter-extended.mp4": "19e53b73af99bb6573ab5fcb65c4e31d2d9490075b09f825c6c8023e718896c1",
+    "vivaldi-winter.wav": "dbba32a16a995c19ed8a38ef4d29e20e54a6ec85a83a0f60e2f5bd67e7967393"
+  }
+}

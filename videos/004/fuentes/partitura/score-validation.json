@@ -1,0 +1,409 @@
+{
+  "source_repository": "https://github.com/MutopiaProject/MutopiaProject",
+  "source_commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+  "source_directory": "ftp/VivaldiA/O8/winter/winter-lys",
+  "license": "CC-BY-SA-3.0",
+  "source_fidelity_validation": "pass",
+  "musical_status": "All three complete notated movements and all five instrumental parts; no abridgment, no score repeats in this transcription. MIDI tempos are editorial and need musical reinterpretation. Not an independent critical-edition or facsimile comparison.",
+  "movements": [
+    {
+      "movement": 1,
+      "meter": [
+        4,
+        4
+      ],
+      "measures": 63,
+      "quarter_beats": 252,
+      "editorial_midi_seconds": 107.99989199999997,
+      "parts": [
+        {
+          "part": "solo",
+          "notation_notes": 1034,
+          "tie_events": 7,
+          "midi_note_on": 1027,
+          "midi_note_off": 1027,
+          "end_quarter": 252,
+          "first_onset_quarter": 12.0,
+          "last_note_off_quarter": 252.0,
+          "pitch_min": 58,
+          "pitch_max": 91,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "violin1",
+          "notation_notes": 649,
+          "tie_events": 0,
+          "midi_note_on": 649,
+          "midi_note_off": 649,
+          "end_quarter": 252,
+          "first_onset_quarter": 12.0,
+          "last_note_off_quarter": 252.0,
+          "pitch_min": 64,
+          "pitch_max": 84,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "violin2",
+          "notation_notes": 633,
+          "tie_events": 0,
+          "midi_note_on": 633,
+          "midi_note_off": 633,
+          "end_quarter": 252,
+          "first_onset_quarter": 8.0,
+          "last_note_off_quarter": 252.0,
+          "pitch_min": 63,
+          "pitch_max": 80,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "viola",
+          "notation_notes": 469,
+          "tie_events": 0,
+          "midi_note_on": 469,
+          "midi_note_off": 469,
+          "end_quarter": 252,
+          "first_onset_quarter": 4.0,
+          "last_note_off_quarter": 252.0,
+          "pitch_min": 55,
+          "pitch_max": 72,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "cello",
+          "notation_notes": 477,
+          "tie_events": 0,
+          "midi_note_on": 477,
+          "midi_note_off": 477,
+          "end_quarter": 252,
+          "first_onset_quarter": 0.0,
+          "last_note_off_quarter": 252.0,
+          "pitch_min": 36,
+          "pitch_max": 60,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        }
+      ]
+    },
+    {
+      "movement": 2,
+      "meter": [
+        4,
+        4
+      ],
+      "measures": 18,
+      "quarter_beats": 72,
+      "editorial_midi_seconds": 93.912984,
+      "parts": [
+        {
+          "part": "solo",
+          "notation_notes": 156,
+          "tie_events": 5,
+          "midi_note_on": 151,
+          "midi_note_off": 151,
+          "end_quarter": 72,
+          "first_onset_quarter": 0.0,
+          "last_note_off_quarter": 72.0,
+          "pitch_min": 65,
+          "pitch_max": 86,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "violin1",
+          "notation_notes": 273,
+          "tie_events": 0,
+          "midi_note_on": 273,
+          "midi_note_off": 273,
+          "end_quarter": 72,
+          "first_onset_quarter": 0.0,
+          "last_note_off_quarter": 72.0,
+          "pitch_min": 67,
+          "pitch_max": 84,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "violin2",
+          "notation_notes": 273,
+          "tie_events": 0,
+          "midi_note_on": 273,
+          "midi_note_off": 273,
+          "end_quarter": 72,
+          "first_onset_quarter": 0.0,
+          "last_note_off_quarter": 72.0,
+          "pitch_min": 63,
+          "pitch_max": 82,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "viola",
+          "notation_notes": 29,
+          "tie_events": 12,
+          "midi_note_on": 17,
+          "midi_note_off": 17,
+          "end_quarter": 72,
+          "first_onset_quarter": 0.0,
+          "last_note_off_quarter": 72.0,
+          "pitch_min": 58,
+          "pitch_max": 74,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "cello",
+          "notation_notes": 137,
+          "tie_events": 0,
+          "midi_note_on": 137,
+          "midi_note_off": 137,
+          "end_quarter": 72,
+          "first_onset_quarter": 0.0,
+          "last_note_off_quarter": 72.0,
+          "pitch_min": 39,
+          "pitch_max": 51,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        }
+      ]
+    },
+    {
+      "movement": 3,
+      "meter": [
+        3,
+        8
+      ],
+      "measures": 153,
+      "quarter_beats": 229.5,
+      "editorial_midi_seconds": 183.60000000000002,
+      "parts": [
+        {
+          "part": "solo",
+          "notation_notes": 982,
+          "tie_events": 0,
+          "midi_note_on": 982,
+          "midi_note_off": 982,
+          "end_quarter": 229.5,
+          "first_onset_quarter": 0.0,
+          "last_note_off_quarter": 229.5,
+          "pitch_min": 55,
+          "pitch_max": 91,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "violin1",
+          "notation_notes": 541,
+          "tie_events": 9,
+          "midi_note_on": 532,
+          "midi_note_off": 532,
+          "end_quarter": 229.5,
+          "first_onset_quarter": 30.0,
+          "last_note_off_quarter": 229.5,
+          "pitch_min": 55,
+          "pitch_max": 84,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "violin2",
+          "notation_notes": 517,
+          "tie_events": 9,
+          "midi_note_on": 508,
+          "midi_note_off": 508,
+          "end_quarter": 229.5,
+          "first_onset_quarter": 31.5,
+          "last_note_off_quarter": 229.5,
+          "pitch_min": 55,
+          "pitch_max": 84,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "viola",
+          "notation_notes": 408,
+          "tie_events": 8,
+          "midi_note_on": 400,
+          "midi_note_off": 400,
+          "end_quarter": 229.5,
+          "first_onset_quarter": 30.0,
+          "last_note_off_quarter": 229.5,
+          "pitch_min": 48,
+          "pitch_max": 74,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        },
+        {
+          "part": "cello",
+          "notation_notes": 344,
+          "tie_events": 70,
+          "midi_note_on": 274,
+          "midi_note_off": 274,
+          "end_quarter": 229.5,
+          "first_onset_quarter": 0.0,
+          "last_note_off_quarter": 229.5,
+          "pitch_min": 36,
+          "pitch_max": 65,
+          "source_onset_subset": true,
+          "omitted_onsets_all_tied_continuations": true,
+          "no_hanging_or_unmatched_notes": true
+        }
+      ]
+    }
+  ],
+  "files": {
+    "original/Makefile": {
+      "bytes": 2105,
+      "sha256": "d295bee9a341d688ec87459d96a5a9d3d1ae26d7ceac283dd0b3689ff1c5ae70"
+    },
+    "original/winter-cello.ly": {
+      "bytes": 1504,
+      "sha256": "3de50ecdf58b2290ad8e1b86e94a1934b2a5d68d8b1e00b4b0fc4c6df7a69418"
+    },
+    "original/winter-header.ly": {
+      "bytes": 1503,
+      "sha256": "7e80f15240a211b96bfc06c8d376cad194bf0c3c0e29086bd0c462e9bd6e861a"
+    },
+    "original/winter-score.ly": {
+      "bytes": 4741,
+      "sha256": "8b5792d5b4e0b922a6461428e86a4b665e9c153bf7949964cf5925ad578e0d55"
+    },
+    "original/winter-solo.ly": {
+      "bytes": 1864,
+      "sha256": "5f4a33856f82ec78b9b2bc755a4789acc2ca54f967df6f193e56c049fd2a066b"
+    },
+    "original/winter-sonnet.ly": {
+      "bytes": 2387,
+      "sha256": "ae24d96d4750837298ebfab842e80e35d97644d7503137651240749689cf5675"
+    },
+    "original/winter-viola.ly": {
+      "bytes": 1394,
+      "sha256": "ca9f5a0800f26c8cbce8f1888e4d12fe1bbcb1636f653f0bd1e0e486d00afb1c"
+    },
+    "original/winter-violin1.ly": {
+      "bytes": 1433,
+      "sha256": "89400ee68c0dead7c64c2054846de52a3d42b2a885e2b39ffde8e28663222d7a"
+    },
+    "original/winter-violin2.ly": {
+      "bytes": 1442,
+      "sha256": "64dc9c4dcffd7915341886eed522e46ce7440de74644b3af16a8f9b9b98b5a88"
+    },
+    "original/winter1.ly": {
+      "bytes": 6089,
+      "sha256": "3ec0129cecb4f39d35b50b38a846f5439be82aa612d4c96254b3277b7913a635"
+    },
+    "original/winter1a.ly": {
+      "bytes": 3646,
+      "sha256": "8f2dbad33bfc556f45080f3e177c30d4a2f6438e852dbcc956156d412d2a9a5e"
+    },
+    "original/winter1b.ly": {
+      "bytes": 3335,
+      "sha256": "461f4f6c70329c51acb8a21452139232d3325e04b0903b0a89a939cc07a9bcb6"
+    },
+    "original/winter1c.ly": {
+      "bytes": 2926,
+      "sha256": "e34dd6a536b5fb89ac93eac37b77a1c82cf46f99b7f9335ef2ece351f666c770"
+    },
+    "original/winter1d.ly": {
+      "bytes": 3172,
+      "sha256": "30107522fd9b40978b154cd9903e8c2406938bb89d9b9e948d1bc4af852f5f06"
+    },
+    "original/winter1f.ly": {
+      "bytes": 644,
+      "sha256": "c9dabb222199bb97026f3be34eafc2b2f9161898d3351413a710d3db6caf16ff"
+    },
+    "original/winter2.ly": {
+      "bytes": 903,
+      "sha256": "16bd9c371af689659540838844c850ffceb6baf365d0b6c15ad9c18feb4ffe96"
+    },
+    "original/winter2a.ly": {
+      "bytes": 995,
+      "sha256": "8d243bab883c1215300749ba8874c4e1545e0bc80cec769f83ecbfe0b475e2d4"
+    },
+    "original/winter2b.ly": {
+      "bytes": 1008,
+      "sha256": "1b6df5083f68e81db8df0003ac736798fc4bb2cdde3e1b2e5e73e0be52ff74ff"
+    },
+    "original/winter2c.ly": {
+      "bytes": 339,
+      "sha256": "4eae60ad45f93b4724f6fcdebd71d25c3941a89b2a30f82983e56cac1466238b"
+    },
+    "original/winter2d.ly": {
+      "bytes": 739,
+      "sha256": "a1c31471ff108d75544487d956b6275aab4fd46b6082cadfa7cd062eb63ec6ed"
+    },
+    "original/winter2f.ly": {
+      "bytes": 272,
+      "sha256": "7cf5381a897d200c2240dd232b300c303c8e24b5e561b1e9d0f421de386a5088"
+    },
+    "original/winter3.ly": {
+      "bytes": 5247,
+      "sha256": "f028c2d90186b1da9dab524c1ff55999507b1a572faae92f575e5e417078ad61"
+    },
+    "original/winter3a.ly": {
+      "bytes": 2934,
+      "sha256": "18ff85577bc1ba12def123feaeea43af1d777e1d99982a9fc39a57db777cf624"
+    },
+    "original/winter3b.ly": {
+      "bytes": 2969,
+      "sha256": "cc692c1540b25cf5675cd29d5e4cd4ac66caa3faeb6c77c0b8533083f0d886ad"
+    },
+    "original/winter3c.ly": {
+      "bytes": 2516,
+      "sha256": "36213d2c40fa31f8414fcb5dc727270a9b3911569997429983cc9b210d06126e"
+    },
+    "original/winter3d.ly": {
+      "bytes": 2217,
+      "sha256": "2b46a370d21720c4fbb067d6ca77342b4757c51a613b946a4e000449b61d3d7b"
+    },
+    "original/winter3f.ly": {
+      "bytes": 709,
+      "sha256": "792e51a31f78123375743092ad2e0c33cd54df6e73f93a0ba17625f3192fb1e2"
+    },
+    "score.midi": {
+      "bytes": 26592,
+      "sha256": "d7f8581467b0bcfe931ac301f917d41dea0cff8d209020e480978ec6fd840115"
+    },
+    "score-1.midi": {
+      "bytes": 7376,
+      "sha256": "228cb16f7d47f015a77f99160f360dbf35bcbae1a3a17cc9530af4b79d712bf0"
+    },
+    "score-2.midi": {
+      "bytes": 22693,
+      "sha256": "a413bb4b299f035d23ee8562295f4c3a4359df4d177c56c4c725ac24fa464511"
+    },
+    "partitura.pdf": {
+      "bytes": 2553748,
+      "sha256": "22bfd2f7a4ba49a12662b35807a0b69cfe387854a3b3cf7f51611b1e487fa5f4"
+    },
+    "source-events.json": {
+      "bytes": 1271493,
+      "sha256": "431a4b479587962c4c3160e7b1f99f4c72ca222e30c301fd2b4e99cbdf348ccd"
+    },
+    "markers.json": {
+      "bytes": 6784,
+      "sha256": "3318387d867fce08098a75ea528c868178e645a50f05d3a4ad0f4af5b14087ae"
+    },
+    "CC-BY-SA-3.0.txt": {
+      "bytes": 22240,
+      "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f"
+    }
+  }
+}

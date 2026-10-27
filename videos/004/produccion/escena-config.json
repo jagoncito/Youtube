@@ -1,0 +1,15 @@
+{
+  "period_seconds": 60,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "effects": [
+    "soft outdoor snow",
+    "local lantern light",
+    "minute stream highlights"
+  ],
+  "characters_animated": false,
+  "snow_exclusion": "x<880 and y<865 in the 1920x1080 frame",
+  "source_artwork": "imagen.png",
+  "new_effects_seed": 297004
+}

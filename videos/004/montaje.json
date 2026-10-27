@@ -1,0 +1,13 @@
+{
+  "base_seconds": 550.9583219954649,
+  "long_seconds": 1652.8749659863947,
+  "complete_concerto_repetitions": 3,
+  "visual_cycle_seconds": 60,
+  "tempos_changed_to_fit_duration": false,
+  "audio_crossfade": false,
+  "join": "Musical decay and inter-cycle pause preserved from base WAV; no movement overlap.",
+  "files": [
+    "vivaldi-winter-concerto.mp4",
+    "vivaldi-winter-extended.mp4"
+  ]
+}
