@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "source_note_anchors": 1806,
+  "preserved_source_ids": 1806,
+  "performance_note_events": 1826,
+  "source_notes_by_staff": {
+    "left": 904,
+    "right": 902
+  },
+  "grace_note_anchors": 30,
+  "ornament_realizations": [
+    {
+      "kind": "turn",
+      "source_id": "right:21",
+      "quarter": 19.75,
+      "pitches": [
+        77,
+        75,
+        74,
+        75
+      ],
+      "lower_accidental": "printed natural"
+    },
+    {
+      "kind": "prall",
+      "source_id": "right:191",
+      "quarter": 47.0,
+      "principal": 80,
+      "upper": 82
+    },
+    {
+      "kind": "prall",
+      "source_id": "right:347",
+      "quarter": 100.75,
+      "principal": 83,
+      "upper": 85
+    },
+    {
+      "kind": "prall",
+      "source_id": "right:387",
+      "quarter": 107.0,
+      "principal": 74,
+      "upper": 76
+    },
+    {
+      "kind": "trill_lead_in",
+      "source_id": "right:556",
+      "quarter": 151.5,
+      "end_quarter": 152,
+      "note": "The following printed fioritura is retained in full."
+    },
+    {
+      "kind": "prall",
+      "source_id": "right:644",
+      "quarter": 161.0,
+      "principal": 80,
+      "upper": 82
+    },
+    {
+      "kind": "prall",
+      "source_id": "right:696",
+      "quarter": 167.0,
+      "principal": 80,
+      "upper": 82
+    }
+  ],
+  "printed_pedal_marks": 224,
+  "editorial_pedal_refresh_quarters": [
+    3.0,
+    6.0,
+    9.0,
+    78.0,
+    81.0,
+    138.0,
+    141.0,
+    147.0,
+    153.0,
+    180.0,
+    225.0
+  ],
+  "same_key_finger_gates_cleaned": 62,
+  "final_pedal_value": 0,
+  "minimum_velocity": 28,
+  "maximum_velocity": 90,
+  "music_start": 0.6,
+  "notated_music_end": 345.82676149704037,
+  "duration": 347.0833333333333,
+  "source_sha256": {
+    "partitura.midi": "9b235557883a99fd5d690f137e53cce74e01709cb3b467fafae8c1fb61e3bdbd",
+    "source-events.json": "7e80e5fe2b65526df851b662b8c8c35c4f8191a87300dbb62c2aeb0c369f274a",
+    "mapped-midi-notes.json": "03802aff5859bfd59e55938e6380cd2de868b811b9976170d9e7e8615032af67"
+  },
+  "scope": "Coverage/voicing/pedal checks against the chosen digital score. No subjective audition or independent historical-edition collation."
+}

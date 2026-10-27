@@ -1,0 +1,617 @@
+{
+  "schema": "jagoncito-delivery/2",
+  "number": 5,
+  "title": "Chopin: Nocturne Op. 27 No. 2 | Jagoncito’s Spring Garden",
+  "manual_delivery": true,
+  "scheduled_tasks_created": false,
+  "work": {
+    "composer": "Frédéric Chopin",
+    "title": "Nocturne in D-flat major",
+    "catalogue": "Op. 27 No. 2",
+    "complete_work": true,
+    "bars": 77,
+    "notated_quarter_beats": 231,
+    "continuous_works": 1
+  },
+  "audio": {
+    "base_seconds": 347.0833333333333,
+    "long_seconds": 1735.4166666666665,
+    "complete_work_repetitions": 5,
+    "same_performance_repeated": true,
+    "sample_rate": 48000,
+    "channels": 2,
+    "standalone_format": "WAV PCM_24",
+    "standalone_audio_files": 1,
+    "instrument": "Salamander Grand Piano v3 / Yamaha C5",
+    "velocity_layers": 16,
+    "integrated_lufs": -20.31,
+    "true_peak_dbtp": -1.8,
+    "loudness_range_lu": 8.8,
+    "subjective_audition_performed": false
+  },
+  "mp4_container_seconds": {
+    "chopin-nocturne-op27-2.mp4": 347.166667,
+    "chopin-nocturne-op27-2-extended.mp4": 1735.5
+  },
+  "creative_identity": {
+    "scene_id": "005-spring-wisteria-lily-pond",
+    "new_artwork": true,
+    "new_thumbnail": true,
+    "new_scene_animation": true,
+    "scenario": "Walled spring garden after rain, wisteria pergola, lily pond and wet limestone",
+    "composition": "Pond centered, diagonal rim; characters at right",
+    "focal": "Lily pond, petal and small blue-lavender dragon with amber eyes",
+    "perspective": "Slightly elevated oblique exterior view",
+    "microstory": "Jagoncito watches a petal beside a resting ginger kitten at sunset",
+    "characters_animated": false,
+    "original_painted_petal_animated": false,
+    "environmental_motion": [
+      "small interior water/reflection undulation",
+      "two newly animated drifting petals",
+      "four faint water highlights"
+    ]
+  },
+  "rights": {
+    "composition": "Historic composition; territorial public-domain status distinct from edition and new master",
+    "score_transcription": "Scott Horne and Keith OHara / Mutopia-2012/02/12-486, CC-BY-SA-3.0",
+    "piano_samples": "Salamander Grand Piano v3, Alexander Holm, CC-BY-3.0",
+    "piano_retuning": "Markus Fiedler",
+    "sfz_reconstruction": "kinwie / sfzinstruments",
+    "new_performance_and_videos": "CC-BY-SA-3.0",
+    "credits": "fuentes/LICENCIAS-Y-PROCEDENCIA.md"
+  },
+  "limitations": [
+    "Discrete sampled piano with transposition between sampled keys and 16 velocity layers, not continuous physical modeling.",
+    "Damper uses sustain/release CC64; no continuous half-pedal modeling claimed.",
+    "Score fidelity checked against chosen transcription, not independently collated against historical facsimile.",
+    "Technical measurements and visual inspection do not establish subjective listening quality."
+  ],
+  "validation": {
+    "complete_video_decode": "passed, both MP4s",
+    "aac_pcm_cycle_comparison": "passed, base cycle plus all 5 extended cycles",
+    "source_note_anchors_preserved": 1806,
+    "performance_note_events": 1826,
+    "midi_note_pairing": "passed",
+    "midi_final_damper": 0,
+    "visual_loop_boundary": "passed",
+    "previous_delivery_files_unchanged": 184,
+    "reports": [
+      "produccion/validacion-entrega.json",
+      "produccion/validacion-escena.json",
+      "produccion/performance-validation.json",
+      "produccion/audio-validation.json",
+      "fuentes/partitura/score-validation.json"
+    ],
+    "readback_method": "After pushing, download all 005 media from GitHub LFS in a fresh clone and compare every delivered file to this inventory."
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3267,
+      "sha256": "83adc2c9655511b8ca1b98f2e58f6b26dcc1f44e631ff367976cf398beb2ab49",
+      "git_lfs": false
+    },
+    {
+      "path": "chopin-nocturne-op27-2-extended.mp4",
+      "bytes": 791161680,
+      "sha256": "50e009f68152dbe05f064fb42f39d3d66e82a9c14de453bbcb17069b711a638a",
+      "git_lfs": true
+    },
+    {
+      "path": "chopin-nocturne-op27-2.mp4",
+      "bytes": 158644692,
+      "sha256": "58a42e0c0e60d036d7ce50e0aaa3c18a7cd3401de4d7c470fb0f770cf7e9fd5a",
+      "git_lfs": true
+    },
+    {
+      "path": "chopin-nocturne-op27-2.wav",
+      "bytes": 99960044,
+      "sha256": "3de8da7ec36ca8d6b22954d4d50ecb5b4f600b13d1b0cf013199d1a03397f1a3",
+      "git_lfs": true
+    },
+    {
+      "path": "fuentes/LICENCIAS-Y-PROCEDENCIA.md",
+      "bytes": 4803,
+      "sha256": "f535ab3e964c9aa4b365a37ce7f877a0bd5037ce83169525d918f1a4bc7604c5",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/FUENTES-PIANO.md",
+      "bytes": 5937,
+      "sha256": "3d8b9c57f72bd7ce51cbdf595b024b2be6768bf7f8e33bdfce51bb52553c85ba",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/instrument-sources.json",
+      "bytes": 247698,
+      "sha256": "144523561ac938c5061f1c3cbc9291c1be74a3a782285c13872a663eee631700",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/hammer.txt",
+      "bytes": 4497,
+      "sha256": "8258e15e6058f88a3a3b1ef9a587411dd327c01b11486183caad3b8f1fe96297",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/notes.txt",
+      "bytes": 1306,
+      "sha256": "6d8a8b978a442e582b6b7fa31b2afa76e033efcdf2f70c811a0d7a09060f5471",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/pedal.txt",
+      "bytes": 502,
+      "sha256": "ac027c0c658d9a74f74644013f141e7d8c524a35dab38d44ddb9b8a8c8b790c5",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/region.txt",
+      "bytes": 3787,
+      "sha256": "f6341fe2e2a5417f4e7f3499a7dfdf0a4327a58bd6f12201d63d63ed7d557193",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/str_res.txt",
+      "bytes": 6484,
+      "sha256": "1dc2c4d84668140eab1f206f0116aec5deefc818ae48d04374277d09a680f8f8",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/tune_nat.txt",
+      "bytes": 539,
+      "sha256": "85d40bf0956baceb99ec739b5270ea2d5957b73845e397a5d99ab10a08297337",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/tune_ret.txt",
+      "bytes": 576,
+      "sha256": "e19f23ad8e94dee71a4deda6b1f8aef85e8f79720a9dbcd165b189cbae8b9d50",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_01.txt",
+      "bytes": 621,
+      "sha256": "89a44c1dbfa579e230fbc596a1ec45f12d3221ba6ecf5a1d409dcd2aa0c6dbeb",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_02.txt",
+      "bytes": 620,
+      "sha256": "34078b907fc8cf0be93aa8de28084c0008654da5fee96a100ae90684b5107848",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_03.txt",
+      "bytes": 624,
+      "sha256": "88690274780cd64185977ed0eefbab3f71ec7a0a1475728312b983815045d1cb",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_04.txt",
+      "bytes": 622,
+      "sha256": "6512f0f95577a5bf94dd1ff373f3dcda95af0ebdd3f1966da6516395f906514b",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_05.txt",
+      "bytes": 622,
+      "sha256": "76eef30708b4d4d8df5f78bd326da3a74bbd8a7ba5e2070e7baee6d06317d779",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_06.txt",
+      "bytes": 622,
+      "sha256": "b1fddc8e11a778771095593e8ce39730c58b850cb01ee87ab34c770bb76bb77e",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_07.txt",
+      "bytes": 620,
+      "sha256": "00798045ef7302f426e06d3dc6e3acef8c349ac54d70074be68dabd083013fa8",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_08.txt",
+      "bytes": 621,
+      "sha256": "078cd53266fcca6421e830b3c176ad94b03c08d25247701cb7d2f534c0bf4ec7",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_09.txt",
+      "bytes": 621,
+      "sha256": "eed3917e6bb92f921543360607d3a24189e223d818a02164e1b9916430a70e1d",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_10.txt",
+      "bytes": 622,
+      "sha256": "a1f0ff3b7c975cc4bf2bfbf2a4d0fc594c181c97d354f5c9e838d6898e73ed4f",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_11.txt",
+      "bytes": 622,
+      "sha256": "ac0e7ddda1871a6b89a410f2fb4d6317120996cc14b670f1bab496a5f79800c6",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_12.txt",
+      "bytes": 622,
+      "sha256": "9814c0f9e44583b834b2a2b0a5a14c59d0dd1c7ce1bbc58eda697ea07c429d9d",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_13.txt",
+      "bytes": 622,
+      "sha256": "4c71135aa3cc3e42c8c7b4980d0a9a66bbcd2f8eea31314f85fd3afaaf6ead26",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_14.txt",
+      "bytes": 624,
+      "sha256": "f004d41dc10c69b11691fecacb6a2e4dafda0a7fec88a055290aa06f97f71090",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_15.txt",
+      "bytes": 622,
+      "sha256": "ed0979ed6da8bd248d8b1fe5822a052aa3086d6ac2d2ae99a918ff8238cd72c5",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_16.txt",
+      "bytes": 623,
+      "sha256": "0338becd5b2c87467c5ca6c1328d421bb56c7713d3352a17a3885088b531a7d7",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/LICENSE",
+      "bytes": 19467,
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/README.md",
+      "bytes": 4980,
+      "sha256": "be275b843d10a22e614e5f52bd414fe2cbdcbfd6165894b1dcca738e8cbf391a",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Salamander Grand Piano V3.sfz",
+      "bytes": 2113,
+      "sha256": "c8b282f03fdb2d9e6be24a99df0d97a05e7ece718d1a14e0b882c518161f7837",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/gitattributes.source.txt",
+      "bytes": 252,
+      "sha256": "8dd0ba349a4d7ecf6d137925451f0fcaf0e0874c7da68334ffdc420a46f1442f",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/piano-capability-test.json",
+      "bytes": 460,
+      "sha256": "14b70bfa5b5ea5b7a3ca039fba3375b81209c3a5772cc52399c292d72c0973d6",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/render-helper-test.json",
+      "bytes": 896,
+      "sha256": "7b003e0768c691795cdba65087fd24d54904e270310ce4cf8777f8b562106df1",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/sample-format-validation.json",
+      "bytes": 298,
+      "sha256": "2aaacb2ae5d99b660122ecceac83028cb7f5a46d3d27b4cc711d442a3231e557",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/interpretacion-digital.midi",
+      "bytes": 15332,
+      "sha256": "58ff00025c3ba83d88e4574a5565cae3e2fe84557a537ce7f1ed299c1593fbed",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/licencias/CC-BY-SA-3.0.txt",
+      "bytes": 22240,
+      "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/licencias/SFIZZ-AUTHORS.md",
+      "bytes": 364,
+      "sha256": "34dfe10779d54393e07f1b5416d9816d9fb4e147d2d11c438342ca2dbed243de",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/licencias/SFIZZ-BSD-2-Clause.txt",
+      "bytes": 1359,
+      "sha256": "21b2105196b4e6a769cebc2534f66852c8efad3e28dbd3bbd1cc3058fba89e7d",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/CC-BY-SA-3.0.txt",
+      "bytes": 22240,
+      "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/FUENTES.md",
+      "bytes": 7065,
+      "sha256": "a3705489cbc37c57b01d38e3cde5a1b2e2252bc7fce3b1c0c2b92df3170a0fa4",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/README.md",
+      "bytes": 1445,
+      "sha256": "5a46f566457b3c79a7fe81744fbfb2261f8f57fe4de3ee69796df2b7fce7a418",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/adapted/chopin-nocturne-8.ly",
+      "bytes": 27967,
+      "sha256": "54a898dc80b00fd3646875026ded9d7ce296ccfab7014ad9ba30ea8db97caa09",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/adapted/export-events.ly",
+      "bytes": 28493,
+      "sha256": "a08251ddc421f342f673677dc2d43a8637f50d0ca63d989cdaad4a5de53dae3d",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/convert.log",
+      "bytes": 1017,
+      "sha256": "9e560809a6684f847940546a41aeb04765d200603a1a138fda03a06f1b5c6b7d",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/events.stderr.log",
+      "bytes": 377,
+      "sha256": "91529141f59ddc7bda8c624188a12950b94da8420cb932cc0e349a1a48a7edb6",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/export_events.py",
+      "bytes": 2602,
+      "sha256": "b1eb29b4f85f1346c94f54e4ebd29e8a4f75b8814111d274c96d5a270a64856b",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/lily.stderr.log",
+      "bytes": 471,
+      "sha256": "8d1812fc3d4691102564ec1ffd4f6fb47a0726359753061aa68e595d092586dd",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/lily.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/mapped-midi-notes.json",
+      "bytes": 554113,
+      "sha256": "03802aff5859bfd59e55938e6380cd2de868b811b9976170d9e7e8615032af67",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/original/chopin-nocturne-8.ly",
+      "bytes": 28079,
+      "sha256": "60c9308bdfb60897a94abdf0ec449e82914559b53c2d36001ba0a628224e97ee",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/parse_events.py",
+      "bytes": 1155,
+      "sha256": "e57ab5cdeee1284cf99b6e4770b969342fe9a0c5976a361a75ac90e200abcaff",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/partitura.midi",
+      "bytes": 15710,
+      "sha256": "9b235557883a99fd5d690f137e53cce74e01709cb3b467fafae8c1fb61e3bdbd",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/partitura.pdf",
+      "bytes": 1053699,
+      "sha256": "b6d0e862f2c876b7c20648492881de3e7a95b231e68923b974154d932b4855b0",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/score-validation.json",
+      "bytes": 21747,
+      "sha256": "406826feeba7f8b91b5408f5c4abec3915c07f9e5c272b8b4b625edd9621bafc",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/source-events.json",
+      "bytes": 485547,
+      "sha256": "7e80e5fe2b65526df851b662b8c8c35c4f8191a87300dbb62c2aeb0c369f274a",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/validate_score.py",
+      "bytes": 4805,
+      "sha256": "4ef0fc0d94fab81ab967386ebd039705280fd6b3f236e6a44b5777dc13c0d7a5",
+      "git_lfs": false
+    },
+    {
+      "path": "imagen.png",
+      "bytes": 3296241,
+      "sha256": "da2e022806ec7de888b0d67d2b7d764accb884f35dcff743e37ee89e42022ca2",
+      "git_lfs": false
+    },
+    {
+      "path": "miniatura.jpg",
+      "bytes": 568740,
+      "sha256": "a93576b78ba75dada2d10bcefab9d93bd709dac5f29fa5830d083a1dba0c33a2",
+      "git_lfs": false
+    },
+    {
+      "path": "montaje.json",
+      "bytes": 1302,
+      "sha256": "7fdec49a12dff2504550a7d46fec42b84bfa5eb8d7c32cd62d717f82b6a98610",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/LEEME-INTERPRETACION.md",
+      "bytes": 4356,
+      "sha256": "61833c2ba8b89b4b8dbdc6ad4abdadbe02afd4d5b2e1ecc097a0ee0f329a1823",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/README-VIDEO.md",
+      "bytes": 2593,
+      "sha256": "4f4813214e194e682c2c49be08eb4be28717ce2c25a54280413f04417ff954f9",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/README.md",
+      "bytes": 6294,
+      "sha256": "2dd2f57b3a37234249c4c97539a3fd87be0d6575aaf46dfe311c31a6bc911e23",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/animar_jardin.py",
+      "bytes": 4750,
+      "sha256": "32b1675fbe4b96c9998541e3122bca55e67028d62fbb521a7f52d70bda7cf10d",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/audio-validation.json",
+      "bytes": 1811,
+      "sha256": "05620cc7acff4e471be063cdc0a1b0f4154dbb19aef19db56593f10236648806",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/build_sfizz.sh",
+      "bytes": 908,
+      "sha256": "cee84482b1c906c5d637af530e0678fbde30428f334ecc8adbe71c282906a3bc",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/create_performance.py",
+      "bytes": 13358,
+      "sha256": "0c1f7624b9b87768208daa9d61db70ae9e20d8abf998d60a63681a103cfa9962",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/decisiones-editoriales.md",
+      "bytes": 2657,
+      "sha256": "01c2b10bdfd93ef1265a7974c53c2f45a7d60dba5c4f37be18070317f8462568",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/download_piano.py",
+      "bytes": 1665,
+      "sha256": "1db7cd780d095393911e7cb0bc59b7db18635d368fcfa59bb375cf0ecfcb0797",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/escena-config.json",
+      "bytes": 517,
+      "sha256": "d82c4187b5ab3cb8e2f7a94cede6e57c175788e868d55251047aa46e048ac40a",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/jardin-petalos.ass",
+      "bytes": 7226,
+      "sha256": "5cc457b47f72286a50f0f86ba16d899e9950ae24b301596a7824b6e284c31836",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/master_piano.py",
+      "bytes": 5617,
+      "sha256": "aeac1f59372ef67f90e2bd7a9c504fecf1934f7f2ed3c34cbf81889bd2471af8",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/mastering.json",
+      "bytes": 4045,
+      "sha256": "2857dfda445cb298cc355f24df0156afa3e4af2e2c99a01cfa7e1c36a07cf0f4",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/montar_jardin.py",
+      "bytes": 2953,
+      "sha256": "0edb9d2755112ccbb47d05de5e88015ee2e1030dcb471f519f848fa32877fa0e",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/performance-validation.json",
+      "bytes": 2176,
+      "sha256": "9fa0a4fcd26761b475146acf8d2ee473d358f83c0d9e1941c4f8983bb1dc4d98",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/performance.json",
+      "bytes": 563569,
+      "sha256": "70055d93c61d5953403f0fee03d226c360627d19e1355454a55e20fb1f536d22",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/render-report.json",
+      "bytes": 1118,
+      "sha256": "2ec1b8dd56d1311f23f7a8463aa7b2c2969ccbc58b9af6231428e2d7c4a25c67",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/render_piano.py",
+      "bytes": 5184,
+      "sha256": "471fe8a605b2990bfab5ebc852974cf39b7949b4dd11cc98b6dc716d7b02d1d2",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/requirements.txt",
+      "bytes": 57,
+      "sha256": "5d2ab6844db73467d5cff627d41775f0eb2bf0bbb9d09a64ae15c99ef583182f",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/validacion-entrega.json",
+      "bytes": 20085,
+      "sha256": "94eba512a426a6eb4dd9957247374fc464dbef76695d748318d21674542c92db",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/validacion-escena.json",
+      "bytes": 638,
+      "sha256": "3ece1da4357c7b192746056dde4764195caf6881f24b17bed498dc3f6b54e229",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/validar_jardin.py",
+      "bytes": 2269,
+      "sha256": "78a780ec5be7e14e3dee5fb88212eefddce758b4efc32cae29d5447fd08e6018",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/validar_piano.py",
+      "bytes": 3403,
+      "sha256": "91df65c1af942d0db6868adde757736db575a4daafe948304ae97deb4b0164fb",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/validate_audio.py",
+      "bytes": 2902,
+      "sha256": "cdca934d44fd137a2cf6b70efd9b2d22fff3d39088e19028f9b480835791bc28",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/verificar_entrega.py",
+      "bytes": 5971,
+      "sha256": "580fec41dcc3368de943efbf10b743b55a02d5334708c424356eb2c88a243e58",
+      "git_lfs": false
+    },
+    {
+      "path": "publicacion.txt",
+      "bytes": 4330,
+      "sha256": "2ce0116607450311dd2c7ed7cb5667671aafce5eb457ecf1e405e9b5fc08d5b6",
+      "git_lfs": false
+    }
+  ]
+}

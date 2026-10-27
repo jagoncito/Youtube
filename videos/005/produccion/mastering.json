@@ -1,0 +1,180 @@
+{
+  "sample_rate": 48000,
+  "channels": 2,
+  "wav_subtype": "PCM_24",
+  "frames": 16660000,
+  "duration": 347.0833333333333,
+  "input_channel_rms": [
+    0.010347728125545677,
+    0.014584996944303657
+  ],
+  "input_right_minus_left_db": 2.981226657081881,
+  "whole_program_balance_correction_each_side_db": 1.1924906628327523,
+  "stereo_side_factor": 0.78,
+  "subsonic_highpass_hz": 20,
+  "room": "Original deterministic stereo mathematical chamber; RT60 1.20 s, diffusion gain .075 and quiet early reflections",
+  "target_true_peak_dbtp": -1.8,
+  "master_gain_db": 16.105781286647307,
+  "compression": false,
+  "limiter": false,
+  "tail_last_second_rms_before_final_sub_audible_fade": 1.4715591739172192e-05,
+  "tail_last_second_dbfs": -96.64444538975134,
+  "tail_final_200ms_peak_before_fade": 1.3493266123987269e-05,
+  "final_fade_seconds": 0.2,
+  "input_buffer_duration_seconds": 347.0833333333333,
+  "last_key_off_seconds": 345.749223,
+  "last_pedal_off_seconds": 345.846761,
+  "first_stable_below_minus80dbfs_seconds": 345.94677083333335,
+  "stable_confirmation_seconds": 0.5,
+  "breath_after_confirmation_seconds": 0.6,
+  "only_post_music_quiet_buffer_trimmed_seconds": 0.0,
+  "final_channel_rms": [
+    0.06868227555015188,
+    0.07371183112170757
+  ],
+  "stereo_correlation": 0.32989162105589326,
+  "ten_second_rms_dbfs": [
+    {
+      "start": 0.0,
+      "rms_dbfs": -26.164977241251385
+    },
+    {
+      "start": 10.0,
+      "rms_dbfs": -25.151053190543568
+    },
+    {
+      "start": 20.0,
+      "rms_dbfs": -24.76066397546451
+    },
+    {
+      "start": 30.0,
+      "rms_dbfs": -23.86477037409286
+    },
+    {
+      "start": 40.0,
+      "rms_dbfs": -22.343989156491524
+    },
+    {
+      "start": 50.0,
+      "rms_dbfs": -21.614815748737808
+    },
+    {
+      "start": 60.0,
+      "rms_dbfs": -20.287002478462707
+    },
+    {
+      "start": 70.0,
+      "rms_dbfs": -21.348340730270618
+    },
+    {
+      "start": 80.0,
+      "rms_dbfs": -22.128749166445747
+    },
+    {
+      "start": 90.0,
+      "rms_dbfs": -28.132208667472458
+    },
+    {
+      "start": 100.0,
+      "rms_dbfs": -25.527751351746595
+    },
+    {
+      "start": 110.0,
+      "rms_dbfs": -24.83497917863207
+    },
+    {
+      "start": 120.0,
+      "rms_dbfs": -25.023834579401473
+    },
+    {
+      "start": 130.0,
+      "rms_dbfs": -23.475143860265966
+    },
+    {
+      "start": 140.0,
+      "rms_dbfs": -23.760262637853472
+    },
+    {
+      "start": 150.0,
+      "rms_dbfs": -22.006215058791664
+    },
+    {
+      "start": 160.0,
+      "rms_dbfs": -20.230617955975532
+    },
+    {
+      "start": 170.0,
+      "rms_dbfs": -20.134121538705276
+    },
+    {
+      "start": 180.0,
+      "rms_dbfs": -20.417142161599564
+    },
+    {
+      "start": 190.0,
+      "rms_dbfs": -23.636432248989262
+    },
+    {
+      "start": 200.0,
+      "rms_dbfs": -23.0404833239546
+    },
+    {
+      "start": 210.0,
+      "rms_dbfs": -20.262697249961107
+    },
+    {
+      "start": 220.0,
+      "rms_dbfs": -21.359344666624132
+    },
+    {
+      "start": 230.0,
+      "rms_dbfs": -19.68408473601359
+    },
+    {
+      "start": 240.0,
+      "rms_dbfs": -19.18110152035205
+    },
+    {
+      "start": 250.0,
+      "rms_dbfs": -20.096963512010532
+    },
+    {
+      "start": 260.0,
+      "rms_dbfs": -24.625213423047697
+    },
+    {
+      "start": 270.0,
+      "rms_dbfs": -26.200830114207424
+    },
+    {
+      "start": 280.0,
+      "rms_dbfs": -28.296012132540508
+    },
+    {
+      "start": 290.0,
+      "rms_dbfs": -27.336012422273733
+    },
+    {
+      "start": 300.0,
+      "rms_dbfs": -26.181224598663274
+    },
+    {
+      "start": 310.0,
+      "rms_dbfs": -27.31703773614777
+    },
+    {
+      "start": 320.0,
+      "rms_dbfs": -29.27771793767517
+    },
+    {
+      "start": 330.0,
+      "rms_dbfs": -33.79970430293545
+    },
+    {
+      "start": 340.0,
+      "rms_dbfs": -56.40914807553753
+    }
+  ],
+  "subjective_listening_performed": false,
+  "note": "Only a whole-program stereo correction and master gain; pianist voicing resides in note velocities. No tempo changes."
+}

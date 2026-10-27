@@ -1,0 +1,21 @@
+{
+  "period_seconds": 60,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "effects": [
+    "soft interior-pond reflection displacement",
+    "two newly drawn drifting water petals",
+    "minute water glints"
+  ],
+  "characters_animated": false,
+  "pre_existing_near_dragon_petal_animated": false,
+  "water_effect_rectangle": [
+    160,
+    470,
+    1080,
+    420
+  ],
+  "mask": "65/255 max alpha; superellipse centre local540,210 radii475,145",
+  "source_artwork": "exec-0b21130b-386b-4f0d-91e9-57f8b3f40afd.png"
+}

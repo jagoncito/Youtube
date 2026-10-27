@@ -1,0 +1,70 @@
+{
+  "full_wav_read": "passed",
+  "midi_reimport_note_pairing": "passed",
+  "midi_final_damper": 0,
+  "source_note_anchors": 1806,
+  "rendered_note_events": 1826,
+  "frames": 16660000,
+  "sample_rate": 48000,
+  "channels": 2,
+  "duration": 347.0833333333333,
+  "clipped_samples": 0,
+  "sample_peak_dbfs": -1.8055258989334106,
+  "final_100ms_peak": 4.410743713378906e-06,
+  "dc_offset": [
+    -5.743107160314077e-08,
+    -5.7368204087054744e-08
+  ],
+  "sections": [
+    {
+      "section": "opening",
+      "start": 0.6,
+      "end": 39.21971363835125,
+      "rms_dbfs": -24.84959776130065,
+      "peak_dbfs": -6.872043609619141
+    },
+    {
+      "section": "first development",
+      "start": 39.21971363835125,
+      "end": 108.30603689399986,
+      "rms_dbfs": -22.413951494771666,
+      "peak_dbfs": -4.677447319030762
+    },
+    {
+      "section": "return",
+      "start": 108.30603689399986,
+      "end": 142.54793096629948,
+      "rms_dbfs": -24.5065690499756,
+      "peak_dbfs": -7.3088836669921875
+    },
+    {
+      "section": "modulating section",
+      "start": 142.54793096629948,
+      "end": 191.89089601868375,
+      "rms_dbfs": -20.998742752603675,
+      "peak_dbfs": -2.626033067703247
+    },
+    {
+      "section": "climax",
+      "start": 204.6473108509355,
+      "end": 260.5105449831982,
+      "rms_dbfs": -20.27924582569538,
+      "peak_dbfs": -1.8055258989334106
+    },
+    {
+      "section": "dolcissimo/coda",
+      "start": 260.5105449831982,
+      "end": 338.36523175332616,
+      "rms_dbfs": -27.329724742910617,
+      "peak_dbfs": -4.873030662536621
+    },
+    {
+      "section": "final chord",
+      "start": 338.36523175332616,
+      "end": 345.82676149704037,
+      "rms_dbfs": -40.14862694442138,
+      "peak_dbfs": -15.93665599822998
+    }
+  ],
+  "subjective_audition": false
+}

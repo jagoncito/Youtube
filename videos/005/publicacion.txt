@@ -1,0 +1,55 @@
+VIDEO 005 — JAGONCITO
+MAIN FILE: chopin-nocturne-op27-2-extended.mp4
+BASE FILE: chopin-nocturne-op27-2.mp4
+STANDALONE AUDIO: chopin-nocturne-op27-2.wav (one complete performance, stereo 48 kHz / 24-bit PCM)
+THUMBNAIL: miniatura.jpg
+
+TITLE
+Chopin: Nocturne Op. 27 No. 2 | Jagoncito’s Spring Garden
+
+DESCRIPTION
+The rain has passed, leaving a lily pond and warm evening light on the garden stones. Beneath the wisteria, Jagoncito watches a petal beside the water while a kitten rests nearby.
+
+Chopin’s Nocturne in D-flat major, Op. 27 No. 2, accompanies this spring evening in a new digital grand-piano interpretation. Its flowing melody and arpeggios build into more expressive passages before returning to stillness.
+
+The complete 5:47 performance is repeated 5 times for a 28:55 session. Each repeat uses the same newly rendered interpretation, with its full ending and natural decay preserved. No part of the work is cut, and its tempo has not been changed to reach a fixed video length.
+
+The garden is newly created for this video, with softly moving water reflections and two drifting petals. Jagoncito and the kitten remain still. The soundtrack contains the piano performance only, with no rain or water sound effects.
+
+REPEAT STARTS
+0:00 Nocturne Op. 27 No. 2
+5:47 Nocturne Op. 27 No. 2 — repeat 2
+11:34 Nocturne Op. 27 No. 2 — repeat 3
+17:21 Nocturne Op. 27 No. 2 — repeat 4
+23:08 Nocturne Op. 27 No. 2 — repeat 5
+
+MUSIC & CREDITS
+Frédéric Chopin (1810–1849): Nocturne in D-flat major, Op. 27 No. 2.
+Score transcription: Scott Horne and Keith OHara / Mutopia Project, Mutopia-2012/02/12-486. Historical edition identified by the transcribers: Claude Debussy, 1915.
+Score license: CC BY-SA 3.0 — https://creativecommons.org/licenses/by-sa/3.0/
+Score source: https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/ChopinFF/O27/chopin-nocturne-8/chopin-nocturne-8.ly
+Piano samples: Salamander Grand Piano v3 (Yamaha C5), Alexander Holm. Retuned mapping by Markus Fiedler; SFZ reconstruction by kinwie / sfzinstruments. CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/
+Piano source: https://github.com/sfzinstruments/SalamanderGrandPiano/tree/3382bf9496bba2486f5ab0de55a264d1dfc38404
+New digital performance, expressive editing and audiovisual adaptation for Jagoncito, shared under CC BY-SA 3.0. Changes include timing, dynamics, voicing, ornaments, pedal, mixing and new visuals. No finished third-party performance recording was used.
+Visuals: new AI-generated artwork and dedicated thumbnail, with original environmental animation.
+
+#Chopin #Nocturne #Jagoncito
+
+TAGS
+Chopin, Chopin Nocturne, Nocturne Op 27 No 2, Nocturne in D flat major, classical piano, grand piano, romantic piano, spring garden, wisteria garden, lily pond, Jagoncito, digital piano performance
+
+BASE VERSION — OPTIONAL TITLE
+Chopin: Nocturne Op. 27 No. 2 — Complete | Jagoncito
+
+BASE VERSION — DESCRIPTION CHANGE
+Keep the same scene description and credits. Replace the repetition paragraph with:
+“One complete new digital performance of Chopin’s Nocturne in D-flat major, Op. 27 No. 2. Duration: 5:47.”
+Replace REPEAT STARTS with TRACKLIST:
+0:00 Nocturne in D-flat major, Op. 27 No. 2
+This is one continuous work; no separate movements or invented chapters.
+
+CREATOR NOTES (not part of the public description)
+The exact PCM duration is 347.083333333 s, and 5 complete cycles are 1735.416666667 s. H.264 stream copying retains two extra final video frames: the MP4 containers are 347.166667 s and 1735.500000 s. The public times above follow the actual audio timeline and are rounded to the nearest second.
+The original composition, score transcription and piano samples have separate rights. This adaptation is CC BY-SA 3.0; preserve the credits, license and change notice. The piano library is CC BY 3.0. Do not call the whole package CC0 or universally public domain; no Content ID guarantee is made.
+Technical coverage, signal, pedal and decoding checks do not replace subjective listening. No subjective audition has been performed here.
+The 128 reports and Studio exports remain private. Evaluate impressions, CTR by source, retention, watch time and returning viewers after publication at comparable ages; no growth result is claimed for this new delivery.

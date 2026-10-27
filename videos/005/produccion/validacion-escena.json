@@ -1,0 +1,20 @@
+{
+  "file": "escena-60s.mp4",
+  "full_decode": "passed",
+  "frames": 1440,
+  "width": 1920,
+  "height": 1080,
+  "duration_seconds": 60.0,
+  "codec": "h264",
+  "profile": "High",
+  "pixel_format": "yuv420p",
+  "loop_boundary_gray_mae": 0.02726273238658905,
+  "adjacent_gray_mae_median": 0.011117862537503242,
+  "boundary_criterion": "boundary <= max(0.15, 4*ordinary adjacent MAE)",
+  "loop_boundary_passed": true,
+  "water_change_15s_gray_mae": 2.985285758972168,
+  "character_region_change_15s_gray_mae": 0.0026666666381061077,
+  "environment_motion_present": true,
+  "characters_animated": false,
+  "auditory_review_performed": false
+}

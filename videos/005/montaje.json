@@ -1,0 +1,39 @@
+{
+  "base_seconds": 347.0833333333333,
+  "long_seconds": 1735.4166666666665,
+  "complete_work_repetitions": 5,
+  "sample_rate": 48000,
+  "standalone_wav_channels": 2,
+  "visual_cycle_seconds": 60,
+  "tempos_changed_to_fit_duration": false,
+  "same_new_performance_repeated": true,
+  "audio_crossfade": false,
+  "join": "Complete release and room tail from the source WAV preserved, followed by its lead-in; no overlap/cut of musical notes.",
+  "container_note": "Stream-copied H.264 B pictures can retain up to two extra final video frames; exact audio duration checked separately.",
+  "files": [
+    "chopin-nocturne-op27-2.mp4",
+    "chopin-nocturne-op27-2-extended.mp4"
+  ],
+  "public_chapters": [
+    {
+      "start_seconds": 0.0,
+      "title": "Nocturne in D-flat major, Op. 27 No. 2"
+    },
+    {
+      "start_seconds": 347.0833333333333,
+      "title": "Nocturne in D-flat major, Op. 27 No. 2 \u2014 repeat 2"
+    },
+    {
+      "start_seconds": 694.1666666666666,
+      "title": "Nocturne in D-flat major, Op. 27 No. 2 \u2014 repeat 3"
+    },
+    {
+      "start_seconds": 1041.25,
+      "title": "Nocturne in D-flat major, Op. 27 No. 2 \u2014 repeat 4"
+    },
+    {
+      "start_seconds": 1388.3333333333333,
+      "title": "Nocturne in D-flat major, Op. 27 No. 2 \u2014 repeat 5"
+    }
+  ]
+}

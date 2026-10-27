@@ -1,0 +1,15 @@
+{
+  "library": "Salamander Grand Piano v3 / Yamaha C5",
+  "sample_rate": 48000,
+  "loaded_regions": 1121,
+  "loaded_sample_files": 641,
+  "peak": 0.3115386962890625,
+  "rms": 0.011422854981348924,
+  "finite": true,
+  "subjective_listening": false,
+  "sustain_tail_rms": 0.001542601821374683,
+  "damped_tail_rms": 9.246094189506205e-06,
+  "left_rms": 0.007657305858039669,
+  "right_rms": 0.014224236318561614,
+  "sustain_tail_advantage_db": 44.44591053088321
+}
