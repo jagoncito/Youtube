@@ -16,3 +16,5 @@ Los medios grandes usan Git LFS. Al clonar: `git lfs install --local` y `git lfs
 [Guía del canal](GUIA_DEL_CANAL.md). Cada nueva entrega se prepara cuando el creador la solicita.
 
 [004 — archivos, duraciones, créditos y comprobaciones](videos/004/). [Encargo original](prompts/004-vivaldi-invierno.md).
+
+[Prompt preparado para 005 — Chopin, Nocturno op. 27 n.º 2](prompts/005-chopin-nocturno-op27-2.md). El vídeo 005 todavía no se ha producido.
