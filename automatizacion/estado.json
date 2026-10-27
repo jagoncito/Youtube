@@ -1,13 +1,11 @@
 {
-  "slot": "2026-10-27T08:00:00Z",
-  "tag": "jagoncito-20261027-0800Z",
-  "number": 2,
-  "run_url": "https://github.com/jagoncito/Youtube/actions/runs/40497342037",
+  "slot": "2026-10-27T12:00:00Z",
+  "tag": "jagoncito-20261027-1200Z",
+  "number": 3,
+  "run_url": "https://github.com/jagoncito/Youtube/actions/runs/40501569763",
   "schedule_utc": "0 */4 * * *",
   "interval_hours": 4,
   "published_to_youtube": false,
-  "status": "failure",
-  "failed_at": "2026-10-27T11:40:24.991241Z",
-  "error_type": "AttributeError",
-  "error": "The scheduled production failed; inspect the Actions run log."
+  "status": "running",
+  "started_at": "2026-10-27T12:10:43.205804Z"
 }
