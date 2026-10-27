@@ -22,6 +22,8 @@ El Vídeo 001 existente conserva su número. El siguiente número se reserva al 
 
 Si una operación falla, el trabajo termina con error y procura registrar `failure`. Un borrador incompleto no se presenta como entrega terminada. La ejecución siguiente del mismo turno puede recuperar el borrador; los estados de autenticación fallida no se confunden con una Release inexistente.
 
+Si una corrección llega después de cambiar el turno, la ejecución automática recupera primero una entrega antigua cuyos archivos ya estén completos y verificados. Conserva su número y evita volver a renderizarla. Después procesa el turno actual. Un borrador antiguo incompleto no provoca un render adicional no solicitado; puede reintentarse indicando su turno en la ejecución manual.
+
 Los commits de estado y fichas no coinciden con los filtros `push` del workflow, así que no disparan producción recursiva. Hay una sola ejecución de producción concurrente. Git no se fuerza ni se reescribe; se actualiza mediante avance rápido antes de guardar estados.
 
 ## Alcance creativo

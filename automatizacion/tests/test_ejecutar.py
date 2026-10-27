@@ -241,6 +241,39 @@ class ProductionTests(unittest.TestCase):
         downloads = [call for call in self.runner.calls if call[:2] == ('release', 'download')]
         self.assertTrue(any('video-30min.mp4' in call and '--clobber' in call for call in downloads))
 
+    def test_next_slot_recovers_prior_complete_draft_without_rerendering(self):
+        first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
+        tag = first['tag']
+        self.runner.releases[tag]['draft'] = True
+        record = self.root / 'automatizacion/entregas' / f'{tag}.json'
+        item = json.loads(record.read_text())
+        item['status'] = 'failure'
+        MODULE.json_write(record, item)
+        self.commit()
+        target = self.date + dt.timedelta(hours=4)
+        recovered = MODULE.recover_prior_completed_delivery(
+            self.publisher, target, Path('/tmp/cache'), self.produce)
+        self.assertEqual((recovered['number'], self.productions), (2, 1))
+        self.assertFalse(self.runner.releases[tag]['draft'])
+        self.assertNotIn(MODULE.tag_for(target), self.runner.releases)
+
+    def test_next_slot_does_not_rebuild_an_incomplete_old_draft(self):
+        first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
+        tag = first['tag']
+        self.runner.releases[tag]['draft'] = True
+        self.runner.releases[tag]['assets'] = [asset for asset in self.runner.releases[tag]['assets']
+                                              if asset['name'] != 'video-30min.mp4']
+        record = self.root / 'automatizacion/entregas' / f'{tag}.json'
+        item = json.loads(record.read_text())
+        item['status'] = 'failure'
+        MODULE.json_write(record, item)
+        self.commit()
+        recovered = MODULE.recover_prior_completed_delivery(
+            self.publisher, self.date + dt.timedelta(hours=4), Path('/tmp/cache'), self.produce)
+        self.assertIsNone(recovered)
+        self.assertEqual(self.productions, 1)
+        self.assertTrue(self.runner.releases[tag]['draft'])
+
     def test_complete_draft_with_mismatched_remote_digest_is_not_published(self):
         first = self.publisher.execute(self.date, Path('/tmp/cache'), self.produce)
         tag = first['tag']

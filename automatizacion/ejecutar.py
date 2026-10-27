@@ -418,6 +418,37 @@ class Publisher:
             raise
 
 
+def recover_prior_completed_delivery(publisher, date, cache, produce):
+    """Finish one old uploaded delivery before processing the current slot.
+
+    A code fix can arrive after the four-hour boundary. Recover completed
+    uploads from that earlier slot without rerendering or consuming a new ID.
+    Incomplete old drafts remain available for an explicit retry.
+    """
+    publisher.sync()
+    candidates = sorted(publisher.entries(), key=lambda item: int(item.get('number', 0)))
+    for item in candidates:
+        if item.get('status') not in ('failure', 'pending'):
+            continue
+        try:
+            previous = utc_slot(item['slot'])
+        except (KeyError, ValueError, TypeError):
+            continue
+        if previous >= date or item.get('tag') != tag_for(previous):
+            continue
+        release = publisher.release(tag_for(previous))
+        if release is None:
+            continue
+        names = {asset['name'] for asset in release.get('assets', [])}
+        needed = REQUIRED | ({'fuentes-y-validacion.zip'} if release.get('draft') else set())
+        if not needed.issubset(names):
+            continue
+        recovered = publisher.execute(previous, cache, produce)
+        print(f'Recovered previous delivery: Video {recovered["number"]:03d}')
+        return recovered
+    return None
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--slot')
@@ -430,7 +461,11 @@ def main():
     def produce(date, folder, cache):
         subprocess.run([sys.executable, str(root / 'automatizacion/produccion/crear_entrega.py'),
                         '--slot', iso(date), '--output', str(folder), '--cache', str(cache)], check=True, cwd=root)
-    Publisher(root, args.repository).execute(utc_slot(args.slot), args.cache, produce)
+    publisher = Publisher(root, args.repository)
+    date = utc_slot(args.slot)
+    if args.slot is None:
+        recover_prior_completed_delivery(publisher, date, args.cache, produce)
+    publisher.execute(date, args.cache, produce)
 
 if __name__ == '__main__':
     main()
