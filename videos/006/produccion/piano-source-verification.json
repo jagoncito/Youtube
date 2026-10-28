@@ -1,0 +1,13 @@
+{
+  "instrument": "Salamander Grand Piano v3",
+  "commit": "3382bf9496bba2486f5ab0de55a264d1dfc38404",
+  "manifest": "/workspace/Youtube/videos/005/fuentes/instrumento/instrument-sources.json",
+  "files_expected": 668,
+  "files_verified": 668,
+  "sample_files": 641,
+  "total_bytes_read": 748451483,
+  "missing": [],
+  "mismatches": [],
+  "sha256_and_git_blob_verified": true,
+  "scope": "Data integrity only; no subjective audition."
+}

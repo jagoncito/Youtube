@@ -1,0 +1,70 @@
+{
+  "full_wav_read": "passed",
+  "midi_reimport_note_pairing": "passed",
+  "midi_final_damper": 0,
+  "source_note_anchors": 1494,
+  "rendered_note_events": 1494,
+  "frames": 15700000,
+  "sample_rate": 48000,
+  "channels": 2,
+  "duration": 327.0833333333333,
+  "clipped_samples": 0,
+  "sample_peak_dbfs": -1.8072891235351562,
+  "final_100ms_peak": 2.86102294921875e-06,
+  "dc_offset": [
+    -5.8067148658120705e-08,
+    -5.8004408125664775e-08
+  ],
+  "score_sections_for_signal_check_only": [
+    {
+      "source_text": "Andante tres expressif",
+      "start": 0.6,
+      "end": 63.61559299467564,
+      "rms_dbfs": -26.708537694817103,
+      "peak_dbfs": -6.271734237670898
+    },
+    {
+      "source_text": "Tempo rubato",
+      "start": 63.61559299467564,
+      "end": 117.91351773987132,
+      "rms_dbfs": -23.709842151620094,
+      "peak_dbfs": -3.616635322570801
+    },
+    {
+      "source_text": "Un poco mosso",
+      "start": 117.91351773987132,
+      "end": 155.81246549702388,
+      "rms_dbfs": -23.155387220563032,
+      "peak_dbfs": -5.238615989685059
+    },
+    {
+      "source_text": "En animant",
+      "start": 155.81246549702388,
+      "end": 176.9783718691655,
+      "rms_dbfs": -20.631628187454226,
+      "peak_dbfs": -1.8072891235351562
+    },
+    {
+      "source_text": "Calmato",
+      "start": 176.9783718691655,
+      "end": 211.59083361883776,
+      "rms_dbfs": -24.149504737868863,
+      "peak_dbfs": -7.553885459899902
+    },
+    {
+      "source_text": "A Tempo I",
+      "start": 211.59083361883776,
+      "end": 282.2548047907603,
+      "rms_dbfs": -29.237233409590992,
+      "peak_dbfs": -8.4291410446167
+    },
+    {
+      "source_text": "Morendo",
+      "start": 282.2548047907603,
+      "end": 325.5458674537631,
+      "rms_dbfs": -34.6351809852724,
+      "peak_dbfs": -15.740673065185547
+    }
+  ],
+  "subjective_audition": false
+}

@@ -1,0 +1,215 @@
+{
+  "status": "passed",
+  "source_note_anchors": 1494,
+  "preserved_source_ids": 1494,
+  "performance_note_events": 1494,
+  "notes_added": 0,
+  "notes_by_persistent_voice": {
+    "red": 533,
+    "blue": 751,
+    "green": 117,
+    "grey": 93
+  },
+  "grace_note_anchors": 1,
+  "written_arpeggio_realizations": [
+    {
+      "quarter": 108.0,
+      "bar": 25,
+      "voices": [
+        "blue",
+        "red"
+      ],
+      "pitches_low_to_high": [
+        65,
+        68,
+        73,
+        77,
+        80,
+        85,
+        92
+      ],
+      "span_seconds": 0.12,
+      "source_ids": [
+        "lower:234",
+        "lower:235",
+        "lower:237",
+        "lower:236",
+        "upper:288",
+        "upper:289",
+        "upper:290"
+      ]
+    },
+    {
+      "quarter": 111.0,
+      "bar": 25,
+      "voices": [
+        "blue",
+        "red"
+      ],
+      "pitches_low_to_high": [
+        64,
+        68,
+        70,
+        73,
+        76,
+        80,
+        85,
+        92
+      ],
+      "span_seconds": 0.12,
+      "source_ids": [
+        "lower:238",
+        "lower:239",
+        "lower:242",
+        "lower:240",
+        "lower:241",
+        "upper:291",
+        "upper:292",
+        "upper:293"
+      ]
+    },
+    {
+      "quarter": 112.5,
+      "bar": 26,
+      "voices": [
+        "blue",
+        "red"
+      ],
+      "pitches_low_to_high": [
+        63,
+        66,
+        68,
+        73,
+        75,
+        80,
+        85,
+        92
+      ],
+      "span_seconds": 0.12,
+      "source_ids": [
+        "lower:243",
+        "lower:244",
+        "lower:247",
+        "lower:245",
+        "lower:246",
+        "upper:294",
+        "upper:295",
+        "upper:296"
+      ]
+    },
+    {
+      "quarter": 115.5,
+      "bar": 26,
+      "voices": [
+        "blue",
+        "red"
+      ],
+      "pitches_low_to_high": [
+        56,
+        63,
+        66,
+        68,
+        72,
+        75,
+        80
+      ],
+      "span_seconds": 0.12,
+      "source_ids": [
+        "lower:248",
+        "lower:249",
+        "lower:251",
+        "upper:297",
+        "lower:250",
+        "upper:298",
+        "upper:299"
+      ]
+    },
+    {
+      "quarter": 246.0,
+      "bar": 55,
+      "voices": [
+        "blue"
+      ],
+      "pitches_low_to_high": [
+        60,
+        63,
+        65,
+        68,
+        72
+      ],
+      "span_seconds": 0.095,
+      "source_ids": [
+        "lower:606",
+        "lower:607",
+        "lower:610",
+        "lower:608",
+        "lower:609"
+      ]
+    },
+    {
+      "quarter": 255.0,
+      "bar": 57,
+      "voices": [
+        "blue"
+      ],
+      "pitches_low_to_high": [
+        54,
+        58,
+        61,
+        63
+      ],
+      "span_seconds": 0.095,
+      "source_ids": [
+        "lower:627",
+        "lower:628",
+        "lower:630",
+        "lower:629"
+      ]
+    },
+    {
+      "quarter": 319.5,
+      "bar": 72,
+      "voices": [
+        "blue",
+        "green"
+      ],
+      "pitches_low_to_high": [
+        61,
+        68,
+        73,
+        77,
+        80,
+        85,
+        89,
+        92
+      ],
+      "span_seconds": 0.12,
+      "source_ids": [
+        "lower:732",
+        "lower:733",
+        "lower:735",
+        "lower:734",
+        "upper:754",
+        "upper:755",
+        "upper:757",
+        "upper:756"
+      ]
+    }
+  ],
+  "explicit_source_pedal_marks": 0,
+  "editorial_pedal_renewal_count": 152,
+  "pedal_control_events": 305,
+  "same_key_finger_gates_cleaned": 251,
+  "final_pedal_value": 0,
+  "music_start": 0.6,
+  "notated_music_end": 325.5458674537631,
+  "duration": 327.0833333333333,
+  "minimum_velocity": 25,
+  "maximum_velocity": 87,
+  "source_sha256": {
+    "partitura.midi": "1aaec3cdbea39ec2b92de599cea275dcfdabe5090f3b5bb8e406ddc528203c8a",
+    "source-events.json": "2246c4463078ece3da4827a338ced71b0cb4487bc6c81c6248061ec9bec373af",
+    "mapped-midi-notes.json": "916ee996afb258f660b5c3552cfd6391254c13471d17609b2c26e8a5ec8f2380"
+  },
+  "scope": "Digital score coverage, physical note gates, voicing and pedal checks; no historical-facsimile collation or subjective audition."
+}

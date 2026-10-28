@@ -1,0 +1,60 @@
+Changing working directory to: `/workspace/scratch/debussy006-score'
+Processing `/workspace/scratch/debussy006-score/adapted/export-events.ly'
+Parsing...
+Interpreting music...[8][16][24][32][40][48][56][64][72]
+Preprocessing graphical objects...
+Finding the ideal number of pages...
+Fitting music on 4 or 5 pages...
+Drawing systems...
+/workspace/scratch/debussy006-score/adapted/export-events.ly:243:14: warning: no viable initial configuration found: may not find good beam slope
+  \clef bass 
+             df16\( af' df f\cu af df\)
+/workspace/scratch/debussy006-score/adapted/export-events.ly:244:13: warning: no viable initial configuration found: may not find good beam slope
+  %{ %} \cl 
+            f,,\( c' f\cu af c f\) \cl af,,\( ff' af\cu cf ff af\) \cl |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:244:40: warning: no viable initial configuration found: may not find good beam slope
+  %{ %} \cl f,,\( c' f\cu af c f\) \cl 
+                                       af,,\( ff' af\cu cf ff af\) \cl |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:250:3: warning: no viable initial configuration found: may not find good beam slope
+  
+  df,,,16\( af' df f\cu af df\)
+/workspace/scratch/debussy006-score/adapted/export-events.ly:251:13: warning: no viable initial configuration found: may not find good beam slope
+  %{ %} \cl 
+            f,,\( c' f\cu af c f\) \cl af,,\( ff' af\cu cf af' ff\) \cl |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:251:40: warning: no viable initial configuration found: may not find good beam slope
+  %{ %} \cl f,,\( c' f\cu af c f\) \cl 
+                                       af,,\( ff' af\cu cf af' ff\) \cl |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:267:3: warning: no viable initial configuration found: may not find good beam slope
+  
+  af16\(ef' gf bf\cu c gf'\)\cl gf,,\( df' gf bf\cu df gf\)\cl f,,\(\<c' f af\! c8\) |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:267:33: warning: no viable initial configuration found: may not find good beam slope
+  af16\(ef' gf bf\cu c gf'\)\cl 
+                                gf,,\( df' gf bf\cu df gf\)\cl f,,\(\<c' f af\! c8\) |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:272:3: warning: no viable initial configuration found: may not find good beam slope
+  
+  af,16\( ef' gf bf\cu c gf'\)\cl gf,,\( df' gf bf\cu df gf\)\cl f,,\(\< c' f af\! c8\) |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:272:35: warning: no viable initial configuration found: may not find good beam slope
+  af,16\( ef' gf bf\cu c gf'\)\cl 
+                                  gf,,\( df' gf bf\cu df gf\)\cl f,,\(\< c' f af\! c8\) |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:291:14: warning: no viable initial configuration found: may not find good beam slope
+  \clef bass 
+             df,,,16\( af' df f\cu af df\)\cl
+/workspace/scratch/debussy006-score/adapted/export-events.ly:292:8: warning: no viable initial configuration found: may not find good beam slope
+  %{%} 
+       af,\( c f af\cu c f\)\cl  cf,\( ff af\cu cf ff af\)\cl |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:292:34: warning: no viable initial configuration found: may not find good beam slope
+  %{%} af,\( c f af\cu c f\)\cl  
+                                 cf,\( ff af\cu cf ff af\)\cl |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:297:3: warning: no viable initial configuration found: may not find good beam slope
+  
+  df,,,16\( af' df f\cu af df\)\cl
+/workspace/scratch/debussy006-score/adapted/export-events.ly:298:9: warning: no viable initial configuration found: may not find good beam slope
+  %{ %} 
+        af,\( c f af\cu c f\)\cl  cf,\( ff af\cu cf af' ff\)\cl |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:298:35: warning: no viable initial configuration found: may not find good beam slope
+  %{ %} af,\( c f af\cu c f\)\cl  
+                                  cf,\( ff af\cu cf af' ff\)\cl |
+/workspace/scratch/debussy006-score/adapted/export-events.ly:328:61: warning: no viable initial configuration found: may not find good beam slope
+  fs,16\( a cs\cu fs cs' a\)\cl fs,\( a cs\cu fs cs' a\)\cl 
+                                                            e,\( a cs e\cu cs' cs,\)\cl |
+Success: compilation successfully completed

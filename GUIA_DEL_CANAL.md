@@ -28,7 +28,7 @@ La entrega anterior de Chopin fue una prueba técnica. El creador señaló falta
 
 ## Estado actual
 
-La programación automática ha sido cancelada por el creador. Cada vídeo se prepara únicamente cuando lo pide. Hay cinco entregas con archivos reales en videos/001–005. La 004 contiene El invierno de Vivaldi y la 005 el Nocturno op. 27 n.º 2 de Chopin con piano de cola Salamander y jardín de primavera nuevos. Las versiones base y larga de cada carpeta pertenecen a la misma entrega.
+La programación automática ha sido cancelada por el creador. Cada vídeo se prepara únicamente cuando lo pide. Hay seis entregas con archivos reales en videos/001–006. La 004 contiene El invierno de Vivaldi, la 005 el Nocturno op. 27 n.º 2 de Chopin y la 006 Clair de lune de Debussy con una cala nocturna nueva. La 006 reutiliza el piano Salamander de 005 con interpretación, MIDI y audio nuevos. Las versiones base y larga de cada carpeta pertenecen a la misma entrega.
 
 Cada nueva entrega necesita imágenes y propuesta audiovisual inéditas, música trabajada y créditos verificables. No contar una recodificación, una semilla o el orden de las mismas piezas como novedad suficiente. Los controles técnicos no equivalen a una valoración auditiva.
 

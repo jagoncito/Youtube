@@ -1,0 +1,32 @@
+[
+  {
+    "Package": "lilypond",
+    "Version": "2.24.4-5",
+    "Filename": "pool/main/l/lilypond/lilypond_2.24.4-5_amd64.deb",
+    "SHA256": "598888ac2ecfc89af67f88235f2073e42a82d35db465d2c9cbe64659a010fb1d"
+  },
+  {
+    "Package": "lilypond-data",
+    "Version": "2.24.4-5",
+    "Filename": "pool/main/l/lilypond/lilypond-data_2.24.4-5_all.deb",
+    "SHA256": "f35fb93ca5d3b9e00c941e8ea987b98a9dd20d7c73f0cde447596c8a258189f4"
+  },
+  {
+    "Package": "lilypond-fonts",
+    "Version": "2.24.4-5",
+    "Filename": "pool/main/l/lilypond/lilypond-fonts_2.24.4-5_all.deb",
+    "SHA256": "db304163fdac006fa404d7cb5c4c65ce89140ed78fa38408ae7a1f912cdc7e6c"
+  },
+  {
+    "Package": "guile-2.2-libs",
+    "Version": "2.2.7+1-9+b6",
+    "Filename": "pool/main/g/guile-2.2/guile-2.2-libs_2.2.7+1-9+b6_amd64.deb",
+    "SHA256": "4fa4e0de3b92da279af96c508796987660a735c37cbfe85761936ee3767db55e"
+  },
+  {
+    "Package": "guile-2.2",
+    "Version": "2.2.7+1-9+b6",
+    "Filename": "pool/main/g/guile-2.2/guile-2.2_2.2.7+1-9+b6_amd64.deb",
+    "SHA256": "3cfc37e8cb729199ffb0724f2f39a9a5a2e13ec2f134827e9dc0ba36176d3011"
+  }
+]

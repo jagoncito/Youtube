@@ -1,0 +1,43 @@
+{
+  "base_seconds": 327.0833333333333,
+  "long_seconds": 1962.5,
+  "complete_work_repetitions": 6,
+  "sample_rate": 48000,
+  "standalone_wav_channels": 2,
+  "visual_cycle_seconds": 60,
+  "tempos_changed_to_fit_duration": false,
+  "same_new_performance_repeated": true,
+  "audio_crossfade": false,
+  "join": "Complete release and room tail from the source WAV preserved, followed by its lead-in; no overlap/cut of musical notes.",
+  "container_note": "Stream-copied H.264 B pictures can retain up to two extra final video frames; exact audio duration checked separately.",
+  "files": [
+    "debussy-clair-de-lune.mp4",
+    "debussy-clair-de-lune-extended.mp4"
+  ],
+  "public_chapters": [
+    {
+      "start_seconds": 0.0,
+      "title": "Clair de lune (Suite bergamasque, III)"
+    },
+    {
+      "start_seconds": 327.0833333333333,
+      "title": "Clair de lune (Suite bergamasque, III) \u2014 repeat 2"
+    },
+    {
+      "start_seconds": 654.1666666666666,
+      "title": "Clair de lune (Suite bergamasque, III) \u2014 repeat 3"
+    },
+    {
+      "start_seconds": 981.25,
+      "title": "Clair de lune (Suite bergamasque, III) \u2014 repeat 4"
+    },
+    {
+      "start_seconds": 1308.3333333333333,
+      "title": "Clair de lune (Suite bergamasque, III) \u2014 repeat 5"
+    },
+    {
+      "start_seconds": 1635.4166666666665,
+      "title": "Clair de lune (Suite bergamasque, III) \u2014 repeat 6"
+    }
+  ]
+}

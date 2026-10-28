@@ -1,0 +1,10 @@
+ 4a2c63365eff8823a5221db86ef490e828306f9d external/abseil-cpp (4a2c633)
+ 8a2edd6d92ed820521d42c94d179462bf06b5ed3 external/filesystem (8a2edd6)
+ 2c1eabc2e20ab02961f95c704ff0c0818671ddd1 external/invoke.hpp (heads/main)
+-86892fc480f80fb57d9a3926cb506c0e974489d8 external/invoke.hpp/vendors/doctest
+ 2bf459d4ed6d7ed6b9f31bd9e07c91bace5009e0 external/simde (2bf459d)
+-da8f73412998e4f1adf1100dc187533a51af77fd external/simde/test/munit
+ e4a7765e598e9e54dc0f520b7e4416359bee80cc external/st_audiofile/thirdparty/dr_libs (e4a7765)
+-d1a166c83ab445b1c14bc83d37c84e18d172e5f5 external/st_audiofile/thirdparty/dr_libs/tests/external/miniaudio
+ 78864a4a2e769e426be8cfd78ae7f5f72e236c33 external/st_audiofile/thirdparty/libaiff (heads/master)
+ 07ffb331d23c16e2d2979370441f63ea722760bc external/st_audiofile/thirdparty/wavpack (07ffb33)

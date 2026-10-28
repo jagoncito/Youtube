@@ -1,0 +1,15 @@
+{
+  "all_samples_native_rate": 48000,
+  "all_samples_channels": 2,
+  "all_samples_subtype": "PCM_24",
+  "sample_count": 641,
+  "attack_sample_count": 480,
+  "shortest_attack_seconds": [
+    2.625958333333333,
+    "A7v1.flac"
+  ],
+  "longest_attack_seconds": [
+    25.862625,
+    "A0v16.flac"
+  ]
+}

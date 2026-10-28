@@ -1,0 +1,30 @@
+{
+  "period_seconds": 60,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "effects": [
+    "small open-sea reflection displacement",
+    "small right-hand surf displacement",
+    "six faint water glints"
+  ],
+  "characters_animated": false,
+  "lighthouse_animated": false,
+  "horizon_animated": false,
+  "source_artwork": "exec-31d11aa5-5ce6-403e-98b5-98cbc0b7d0f8.png",
+  "open_sea_patch": [
+    500,
+    320,
+    1400,
+    310
+  ],
+  "open_sea_alpha": "max78/255 with superellipse taper; zero for localX200..1000 and localY>=210",
+  "right_surf_patch": [
+    1570,
+    480,
+    340,
+    400
+  ],
+  "right_surf_alpha": "max68/255 with superellipse taper",
+  "qp": 1
+}

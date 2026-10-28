@@ -1,0 +1,56 @@
+VIDEO 006 — JAGONCITO
+MAIN FILE: debussy-clair-de-lune-extended.mp4
+BASE FILE: debussy-clair-de-lune.mp4
+STANDALONE AUDIO: debussy-clair-de-lune.wav (one complete performance; stereo 48 kHz / 24-bit PCM)
+THUMBNAIL: miniatura.jpg
+
+TITLE
+Debussy: Clair de Lune | Jagoncito by the Sea
+
+DESCRIPTION
+A moonlit cove, a distant lighthouse and a little warmth beside the sea. Jagoncito and a kitten rest on their blanket as silver reflections reach across the water.
+
+Debussy’s Clair de lune, from Suite bergamasque, accompanies the scene in a new digital grand-piano interpretation. Its delicate opening grows into flowing, more expressive passages before returning to stillness.
+
+The complete 5:27 performance is repeated 6 times for a 32:43 session. Every repeat uses the same newly rendered interpretation, with its full ending and measured natural decay preserved. No music is cut, and the tempo has not been changed to reach a fixed video length.
+
+This coastal scene was newly created for this video, with gently moving sea, surf and reflections. Jagoncito, the kitten and the lighthouse remain still. The soundtrack contains only the piano performance, with no sea or wind sound effects.
+
+REPEAT STARTS
+0:00 Clair de lune
+5:27 Clair de lune — repeat 2
+10:54 Clair de lune — repeat 3
+16:21 Clair de lune — repeat 4
+21:48 Clair de lune — repeat 5
+27:15 Clair de lune — repeat 6
+
+MUSIC & CREDITS
+Claude Debussy (1862–1918): Clair de lune, Suite bergamasque, III, original solo-piano version.
+Score transcription: Keith OHara / Mutopia Project, Mutopia-2010/12/21-1778. Historical edition identified by the transcriber: E. Fromont, 1905. The typesetter explicitly placed this transcription in the public domain.
+Score source: https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/DebussyC/L75/debussy_Ste_Bergamesq_Clair/debussy_Ste_Bergamesq_Clair.ly
+Piano samples: Salamander Grand Piano v3 (Yamaha C5), Alexander Holm. Retuned mapping by Markus Fiedler; SFZ reconstruction by kinwie / sfzinstruments. CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/
+Piano source: https://github.com/sfzinstruments/SalamanderGrandPiano/tree/3382bf9496bba2486f5ab0de55a264d1dfc38404
+New digital performance, expressive editing and audiovisual production for Jagoncito, shared under CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/ . Changes include timing, dynamics, voicing, written arpeggio realization, editorial pedal, mixing and new visuals. No finished third-party performance recording was used.
+Visuals: new AI-generated artwork and dedicated thumbnail, with original environmental animation.
+
+#Debussy #ClairDeLune #Jagoncito
+
+TAGS
+Debussy, Clair de lune, Suite bergamasque, classical piano, grand piano, impressionist piano, moonlit coast, quiet cove, lighthouse, Jagoncito, digital piano performance
+
+BASE VERSION — OPTIONAL TITLE
+Debussy: Clair de Lune — Complete | Jagoncito
+
+BASE VERSION — DESCRIPTION CHANGE
+Keep the scene description and all credits. Replace the repetition paragraph with:
+“One complete new digital performance of Debussy’s Clair de lune. Duration: 5:27.”
+Replace REPEAT STARTS with TRACKLIST:
+0:00 Clair de lune — Claude Debussy
+This is one continuous piece, the third movement of Suite bergamasque; no three internal movements or artificial chapters.
+
+CREATOR NOTES (not part of the public description)
+Exact PCM base duration: 327.083333333 s; 6 complete cycles: 1962.500000000 s. Actual MP4 container durations: 327.166667 s and 1962.583333 s (two final video frames beyond the audio). Times above are calculated from the exact audio and rounded to the nearest second.
+Six complete cycles are the nearest integer duration to 30 minutes. Five would be 1635.416667 s; music and tempo are preserved rather than forcing an exact target.
+The score transcription is declared Public Domain; the piano library and new realization are CC BY 3.0. Keep credits, license links and change notice. Do not describe the whole recording as CC0 or universally public domain; no Content ID guarantee is made.
+The pedal is editorial: this chosen score source contains no active pedal marks. No continuous half-pedal or separate recorded una-corda mechanism is claimed.
+Technical measurements, MIDI coverage and visual inspection do not replace subjective listening. No subjective audition has been performed here. The private reports and Studio exports are not included.

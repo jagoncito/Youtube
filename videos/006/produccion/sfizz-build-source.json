@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/sfztools/sfizz",
+  "revision": "f5c6e29f23b8057867c08e88f5f6ac6738baa30b",
+  "submodule_pin_file": "sfizz-submodule-pins.txt",
+  "build_script": "/workspace/Youtube/videos/005/produccion/build_sfizz.sh",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "options": {
+    "CMAKE_BUILD_TYPE": "Release",
+    "SFIZZ_JACK": false,
+    "SFIZZ_RENDER": true,
+    "SFIZZ_SHARED": true,
+    "ENABLE_LTO": false,
+    "SFIZZ_GIT_SUBMODULE_CHECK": false
+  },
+  "jobs": 4
+}

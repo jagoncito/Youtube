@@ -1,0 +1,483 @@
+{
+  "scope": "Technical validation; no subjective audition performed",
+  "wav": {
+    "frames": 15700000,
+    "sample_rate": 48000,
+    "channels": 2,
+    "subtype": "PCM_24",
+    "duration": 327.0833333333333,
+    "sample_peak": 0.8121486902236938,
+    "clipped_samples": 0,
+    "dc": [
+      -5.8067148658120705e-08,
+      -5.8004408125664775e-08
+    ],
+    "last_100ms_peak": 2.86102294921875e-06,
+    "ebur128": {
+      "integrated_lufs": -21.84,
+      "true_peak_dbtp": -1.8,
+      "loudness_range_lu": 13.8,
+      "gating_threshold_lufs": -32.94,
+      "method": "FFmpeg loudnorm input analysis; processed null output discarded."
+    }
+  },
+  "videos": {
+    "debussy-clair-de-lune.mp4": {
+      "duration": 327.166667,
+      "full_decode": "passed",
+      "audio_cycles": [
+        {
+          "cycle": 1,
+          "correlation": 0.9999836966601647,
+          "snr_db": 44.785418362477394
+        }
+      ],
+      "video_stream": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/24000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 7852000,
+        "duration": "327.166667",
+        "bit_rate": "4074055",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "7852",
+        "extradata_size": 48,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.19.101 libx264"
+        }
+      },
+      "audio_stream": {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 15699984,
+        "duration": "327.083000",
+        "bit_rate": "255572",
+        "nb_frames": "15334",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      },
+      "embedded_chapters": {
+        "chapters": [
+          {
+            "id": 0,
+            "time_base": "1/1000",
+            "start": 0,
+            "start_time": "0.000000",
+            "end": 327083,
+            "end_time": "327.083000",
+            "tags": {
+              "title": "Clair de lune (Suite bergamasque, III)"
+            }
+          }
+        ]
+      }
+    },
+    "debussy-clair-de-lune-extended.mp4": {
+      "duration": 1962.583333,
+      "full_decode": "passed",
+      "audio_cycles": [
+        {
+          "cycle": 1,
+          "correlation": 0.9999836966601647,
+          "snr_db": 44.7854183624774
+        },
+        {
+          "cycle": 2,
+          "correlation": 0.9999828312595974,
+          "snr_db": 44.56184977731696
+        },
+        {
+          "cycle": 3,
+          "correlation": 0.9999831635653742,
+          "snr_db": 44.64783684452296
+        },
+        {
+          "cycle": 4,
+          "correlation": 0.9999852795935087,
+          "snr_db": 45.224362219030326
+        },
+        {
+          "cycle": 5,
+          "correlation": 0.9999856343738476,
+          "snr_db": 45.32161910422785
+        },
+        {
+          "cycle": 6,
+          "correlation": 0.999984091989745,
+          "snr_db": 44.89089843417509
+        }
+      ],
+      "video_stream": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/24000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 47102000,
+        "duration": "1962.583333",
+        "bit_rate": "4067615",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "47102",
+        "extradata_size": 48,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.19.101 libx264"
+        }
+      },
+      "audio_stream": {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 94200000,
+        "duration": "1962.500000",
+        "bit_rate": "255499",
+        "nb_frames": "91994",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      },
+      "embedded_chapters": {
+        "chapters": [
+          {
+            "id": 0,
+            "time_base": "1/1000",
+            "start": 0,
+            "start_time": "0.000000",
+            "end": 327083,
+            "end_time": "327.083000",
+            "tags": {
+              "title": "Clair de lune (Suite bergamasque, III) (cycle 1)"
+            }
+          },
+          {
+            "id": 1,
+            "time_base": "1/1000",
+            "start": 327083,
+            "start_time": "327.083000",
+            "end": 654167,
+            "end_time": "654.167000",
+            "tags": {
+              "title": "Clair de lune (Suite bergamasque, III) (cycle 2)"
+            }
+          },
+          {
+            "id": 2,
+            "time_base": "1/1000",
+            "start": 654167,
+            "start_time": "654.167000",
+            "end": 981250,
+            "end_time": "981.250000",
+            "tags": {
+              "title": "Clair de lune (Suite bergamasque, III) (cycle 3)"
+            }
+          },
+          {
+            "id": 3,
+            "time_base": "1/1000",
+            "start": 981250,
+            "start_time": "981.250000",
+            "end": 1308333,
+            "end_time": "1308.333000",
+            "tags": {
+              "title": "Clair de lune (Suite bergamasque, III) (cycle 4)"
+            }
+          },
+          {
+            "id": 4,
+            "time_base": "1/1000",
+            "start": 1308333,
+            "start_time": "1308.333000",
+            "end": 1635417,
+            "end_time": "1635.417000",
+            "tags": {
+              "title": "Clair de lune (Suite bergamasque, III) (cycle 5)"
+            }
+          },
+          {
+            "id": 5,
+            "time_base": "1/1000",
+            "start": 1635417,
+            "start_time": "1635.417000",
+            "end": 1962500,
+            "end_time": "1962.500000",
+            "tags": {
+              "title": "Clair de lune (Suite bergamasque, III) (cycle 6)"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sha256": {
+    "README.md": "ff684c3253386a343e2cf5d3cc4d7e7f0fb5cb67a79a210bd9347030d27fc024",
+    "debussy-clair-de-lune-extended.mp4": "1ab1f233f2321cc57d46c8e3c8a009e1e74b70b36f66674c1f13c5fb83a7f3bd",
+    "debussy-clair-de-lune.mp4": "3934d7a9d764fd8a67b0e4214b07c04ea86a72c7e383644c8bf0366097f091f9",
+    "debussy-clair-de-lune.wav": "43477f319f3688eb439a0219867804a7b7a3097942219babc9de93f79d49c4e5",
+    "fuentes/LICENCIAS-Y-PROCEDENCIA.md": "779bbdc816daf001b981378d54e5558945569bc9a9a2a7f1368aa95bffb80ce4",
+    "fuentes/instrumento/FUENTES-PIANO.md": "0a556c784972ce90ef9f8fb7c52ea18236d180ad64a87af3cc28dad3b7f7928c",
+    "fuentes/instrumento/capability-test-006.json": "14b70bfa5b5ea5b7a3ca039fba3375b81209c3a5772cc52399c292d72c0973d6",
+    "fuentes/instrumento/instrument-sources.json": "144523561ac938c5061f1c3cbc9291c1be74a3a782285c13872a663eee631700",
+    "fuentes/instrumento/original/Data/hammer.txt": "8258e15e6058f88a3a3b1ef9a587411dd327c01b11486183caad3b8f1fe96297",
+    "fuentes/instrumento/original/Data/notes.txt": "6d8a8b978a442e582b6b7fa31b2afa76e033efcdf2f70c811a0d7a09060f5471",
+    "fuentes/instrumento/original/Data/pedal.txt": "ac027c0c658d9a74f74644013f141e7d8c524a35dab38d44ddb9b8a8c8b790c5",
+    "fuentes/instrumento/original/Data/region.txt": "f6341fe2e2a5417f4e7f3499a7dfdf0a4327a58bd6f12201d63d63ed7d557193",
+    "fuentes/instrumento/original/Data/str_res.txt": "1dc2c4d84668140eab1f206f0116aec5deefc818ae48d04374277d09a680f8f8",
+    "fuentes/instrumento/original/Data/tune_nat.txt": "85d40bf0956baceb99ec739b5270ea2d5957b73845e397a5d99ab10a08297337",
+    "fuentes/instrumento/original/Data/tune_ret.txt": "e19f23ad8e94dee71a4deda6b1f8aef85e8f79720a9dbcd165b189cbae8b9d50",
+    "fuentes/instrumento/original/Data/vel_01.txt": "89a44c1dbfa579e230fbc596a1ec45f12d3221ba6ecf5a1d409dcd2aa0c6dbeb",
+    "fuentes/instrumento/original/Data/vel_02.txt": "34078b907fc8cf0be93aa8de28084c0008654da5fee96a100ae90684b5107848",
+    "fuentes/instrumento/original/Data/vel_03.txt": "88690274780cd64185977ed0eefbab3f71ec7a0a1475728312b983815045d1cb",
+    "fuentes/instrumento/original/Data/vel_04.txt": "6512f0f95577a5bf94dd1ff373f3dcda95af0ebdd3f1966da6516395f906514b",
+    "fuentes/instrumento/original/Data/vel_05.txt": "76eef30708b4d4d8df5f78bd326da3a74bbd8a7ba5e2070e7baee6d06317d779",
+    "fuentes/instrumento/original/Data/vel_06.txt": "b1fddc8e11a778771095593e8ce39730c58b850cb01ee87ab34c770bb76bb77e",
+    "fuentes/instrumento/original/Data/vel_07.txt": "00798045ef7302f426e06d3dc6e3acef8c349ac54d70074be68dabd083013fa8",
+    "fuentes/instrumento/original/Data/vel_08.txt": "078cd53266fcca6421e830b3c176ad94b03c08d25247701cb7d2f534c0bf4ec7",
+    "fuentes/instrumento/original/Data/vel_09.txt": "eed3917e6bb92f921543360607d3a24189e223d818a02164e1b9916430a70e1d",
+    "fuentes/instrumento/original/Data/vel_10.txt": "a1f0ff3b7c975cc4bf2bfbf2a4d0fc594c181c97d354f5c9e838d6898e73ed4f",
+    "fuentes/instrumento/original/Data/vel_11.txt": "ac0e7ddda1871a6b89a410f2fb4d6317120996cc14b670f1bab496a5f79800c6",
+    "fuentes/instrumento/original/Data/vel_12.txt": "9814c0f9e44583b834b2a2b0a5a14c59d0dd1c7ce1bbc58eda697ea07c429d9d",
+    "fuentes/instrumento/original/Data/vel_13.txt": "4c71135aa3cc3e42c8c7b4980d0a9a66bbcd2f8eea31314f85fd3afaaf6ead26",
+    "fuentes/instrumento/original/Data/vel_14.txt": "f004d41dc10c69b11691fecacb6a2e4dafda0a7fec88a055290aa06f97f71090",
+    "fuentes/instrumento/original/Data/vel_15.txt": "ed0979ed6da8bd248d8b1fe5822a052aa3086d6ac2d2ae99a918ff8238cd72c5",
+    "fuentes/instrumento/original/Data/vel_16.txt": "0338becd5b2c87467c5ca6c1328d421bb56c7713d3352a17a3885088b531a7d7",
+    "fuentes/instrumento/original/LICENSE": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+    "fuentes/instrumento/original/README.md": "be275b843d10a22e614e5f52bd414fe2cbdcbfd6165894b1dcca738e8cbf391a",
+    "fuentes/instrumento/original/Salamander Grand Piano V3.sfz": "c8b282f03fdb2d9e6be24a99df0d97a05e7ece718d1a14e0b882c518161f7837",
+    "fuentes/instrumento/original/gitattributes.source.txt": "8dd0ba349a4d7ecf6d137925451f0fcaf0e0874c7da68334ffdc420a46f1442f",
+    "fuentes/instrumento/piano-capability-test.json": "14b70bfa5b5ea5b7a3ca039fba3375b81209c3a5772cc52399c292d72c0973d6",
+    "fuentes/instrumento/render-helper-test.json": "7b003e0768c691795cdba65087fd24d54904e270310ce4cf8777f8b562106df1",
+    "fuentes/instrumento/sample-format-validation.json": "2aaacb2ae5d99b660122ecceac83028cb7f5a46d3d27b4cc711d442a3231e557",
+    "fuentes/interpretacion-digital.midi": "6084281527d63d89a185b27932c0d809aee6462ff679bda4e823bd6694e331ee",
+    "fuentes/licencias/CC-BY-3.0.txt": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+    "fuentes/licencias/SFIZZ-AUTHORS.md": "34dfe10779d54393e07f1b5416d9816d9fb4e147d2d11c438342ca2dbed243de",
+    "fuentes/licencias/SFIZZ-BSD-2-Clause.txt": "21b2105196b4e6a769cebc2534f66852c8efad3e28dbd3bbd1cc3058fba89e7d",
+    "fuentes/partitura/FUENTES.md": "cc51b58292f277d70db5a9ce189f7331a0b32f9b99f88951797b2328ab2539b5",
+    "fuentes/partitura/README.md": "9249bb166b9ba8deafbd22933f320b7a9b22c5cb1e50fa066d051290eca156f3",
+    "fuentes/partitura/adapted/clair-de-lune.ly": "c78762a27972f0643a34b994bffa1d058b1bb51e3947c0b50029aa75359e2a49",
+    "fuentes/partitura/adapted/export-events.ly": "9adefbb45bcdb2a110545de3ec6dded65c1006add39660e6d56bd492ad48e280",
+    "fuentes/partitura/events.stderr.log": "c99f43993ad935e1d8fcb46cf32b64c9f30aa59895f1cf3db77b68c924816240",
+    "fuentes/partitura/export_events.py": "2895f379a9bab751fa89c4018bd1a291e9feac319c31d7667090fda5397902e9",
+    "fuentes/partitura/lily-install-sources.json": "bb71499f9d19d7fd18b0408582bc5b7d269d631639cb8f0e0fb2e7801f24d3b1",
+    "fuentes/partitura/lily.stderr.log": "873ea927c3b5cd271f30e918fb028e9f59ea4cb259885c61b777454c9392ff77",
+    "fuentes/partitura/mapped-midi-notes.json": "916ee996afb258f660b5c3552cfd6391254c13471d17609b2c26e8a5ec8f2380",
+    "fuentes/partitura/original/clair-de-lune.ly": "c78762a27972f0643a34b994bffa1d058b1bb51e3947c0b50029aa75359e2a49",
+    "fuentes/partitura/parse_events.py": "11ee4d7d02a1537c7183249b04a46fd401afc92bf66fcbaf8b4979597cb9b0c9",
+    "fuentes/partitura/partitura.midi": "1aaec3cdbea39ec2b92de599cea275dcfdabe5090f3b5bb8e406ddc528203c8a",
+    "fuentes/partitura/partitura.pdf": "4e8ec17f5e330b2faf1eacf9982d87a22989b1ac4a97b331b76c474931afd3d0",
+    "fuentes/partitura/score-validation.json": "be48825fffb27601db1ed3f0554fede69b8e40adaddb6d1a7b886642f324d16d",
+    "fuentes/partitura/source-events.json": "2246c4463078ece3da4827a338ced71b0cb4487bc6c81c6248061ec9bec373af",
+    "fuentes/partitura/validate_score.py": "7513c88b98af9c18480eeda6080c73164b48c56e5258ddbe1ade5dd4d8084739",
+    "imagen.png": "a22706ed179d646d86228f2131c0ff51431344b59accb3c0c95a16c7e6f9eac6",
+    "miniatura.jpg": "2ec8604fb601eb3c58b61bf6b04974ae0065f1a83192dcdea6f05cac86548fd5",
+    "montaje.json": "767bbfed8c4d47a4aa538ab39704e2fda5d6b362e783c3fefdcd76a2721635e5",
+    "produccion/LEEME-INTERPRETACION.md": "87ef97fcfaa023e676da2a0ca73749bcfc993bf64add57b3dd7d5b6ef451e973",
+    "produccion/README-VIDEO.md": "db3c2d5e6c461be575dc16d52e9cc377fa81b39fd4abbf8c0e2bdb90f8e75f33",
+    "produccion/README.md": "b275ac2a19548227494b01cc9a99d7fd18221edf28c947f3fadabe11df1a20d1",
+    "produccion/animar_costa.py": "9e4e72c93409a1fcef2c7fa3838cc39767d8395e0bdf7f6726ac2bb15598cc90",
+    "produccion/audio-validation.json": "7f4d4351f30ff9d6952b9bb8c78bb1836b4e6b7a569e8527447f91fce343a03c",
+    "produccion/build_sfizz.sh": "cee84482b1c906c5d637af530e0678fbde30428f334ecc8adbe71c282906a3bc",
+    "produccion/create_performance.py": "88a7d58fad36123d44e90f07eda877e7b7217736d6db292455782f513f6100b8",
+    "produccion/decisiones-editoriales.md": "993a7acd6c24a5fcd870e9c6e88929a6621f5020856a4e6df5f11efaa5e383cf",
+    "produccion/download_piano.py": "1db7cd780d095393911e7cb0bc59b7db18635d368fcfa59bb375cf0ecfcb0797",
+    "produccion/escena-config.json": "e41087120bb2b14e3c711f32af0ef8d9311f1205a73762f750ef4b66c9ee24e8",
+    "produccion/master_piano.py": "c28818660378b12d1a0b730d4947f097a188cf26ceb19127b4e9e1e12100f4ec",
+    "produccion/mastering.json": "990d3a7ebf99fce9392fb698c586c303aa5f21033f40c124e320da0750994e5b",
+    "produccion/montar_costa.py": "2ac899efd483c67487803bc04c53d1d904770edace419dae9b6e4efa9256f995",
+    "produccion/performance-validation.json": "60692547f86aeae80b7469d0214384cec36f7ae560ac9e432263cb34ab09a90c",
+    "produccion/performance.json": "535ff3a05ab6d82ede1d88d96e030d64239de1a84323ff4ff7a27e34d2370feb",
+    "produccion/piano-source-verification.json": "b60a87cb9eca2b123530c0ba01a2c527b8276c369724b6b998090c7036e65fab",
+    "produccion/python-versions.json": "f6bf5ec8d280f91e8feaee2797454ba2923387f9df47b12449700ee9094473e8",
+    "produccion/reflejos-mar.ass": "0f29bb221ff8b6a8dff66d0184658a5af270368195b8814d9940ca7a7d9bbba3",
+    "produccion/render-report.json": "9aca798ff5805edca3e27272f367f2f2850d54bb77bdf797927a40bd8e8bc221",
+    "produccion/render_piano.py": "471fe8a605b2990bfab5ebc852974cf39b7949b4dd11cc98b6dc716d7b02d1d2",
+    "produccion/requirements.txt": "5d2ab6844db73467d5cff627d41775f0eb2bf0bbb9d09a64ae15c99ef583182f",
+    "produccion/runtime-status.json": "ce165ca6b02064e39a8d0033ba4433028308041b40d34299bab2137bfe92ff90",
+    "produccion/sfizz-build-source.json": "77cd9ec660279a5f1884a68f3c7d0c4e923b9b7fdddce2c17d1be80bff088b61",
+    "produccion/sfizz-submodule-pins.txt": "1d4e257029f3a36a540a5a4b6e7830b508da070fa2b37cb4853e7826394c6df5",
+    "produccion/validacion-escena.json": "9dade98dbe098fe38b74fbf8add10d47ec99193f1cbbd3810168e26188d8bfe6",
+    "produccion/validar_costa.py": "c656fe41a2d276cc593cc0d7a6feef2d5915066b7eab38135cdb966b102f13bb",
+    "produccion/validar_piano.py": "91df65c1af942d0db6868adde757736db575a4daafe948304ae97deb4b0164fb",
+    "produccion/validate_audio.py": "0c585bf833691f398bc6a6150f6715ddadab69d376054f24c4579dd2eacdc1ec",
+    "produccion/verificar_entrega.py": "c0581fb0bdb52cc08e58956adb66c497c1cc40bf10a88b4264e53cfe1cf0aa1a",
+    "publicacion.txt": "eceece3a375081cf2253daca450188c74a2413e46e9d0499dd4fdd16adf2f075"
+  }
+}

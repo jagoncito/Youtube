@@ -1,0 +1,63 @@
+{
+  "runtime_ready": true,
+  "pythonpath": "/workspace/scratch/debussy006-tools/python",
+  "library": "/workspace/scratch/debussy006-tools/engine/sfizz/build/library/lib/libsfizz.so",
+  "library_sha256": "60270c5a5ad1626499ba670516e495db6a8ba86ae6cd7856705331f79a76927b",
+  "sample_sfz": "/workspace/scratch/chopin005-piano/salamander/Salamander Grand Piano V3.sfz",
+  "python_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mido": "1.3.3",
+    "soundfile": "0.14.0",
+    "cffi": "2.1.1",
+    "packaging": "26.3"
+  },
+  "engine_build": {
+    "repository": "https://github.com/sfztools/sfizz",
+    "revision": "f5c6e29f23b8057867c08e88f5f6ac6738baa30b",
+    "submodule_pin_file": "sfizz-submodule-pins.txt",
+    "build_script": "/workspace/Youtube/videos/005/produccion/build_sfizz.sh",
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "options": {
+      "CMAKE_BUILD_TYPE": "Release",
+      "SFIZZ_JACK": false,
+      "SFIZZ_RENDER": true,
+      "SFIZZ_SHARED": true,
+      "ENABLE_LTO": false,
+      "SFIZZ_GIT_SUBMODULE_CHECK": false
+    },
+    "jobs": 4
+  },
+  "piano_integrity": {
+    "instrument": "Salamander Grand Piano v3",
+    "commit": "3382bf9496bba2486f5ab0de55a264d1dfc38404",
+    "manifest": "/workspace/Youtube/videos/005/fuentes/instrumento/instrument-sources.json",
+    "files_expected": 668,
+    "files_verified": 668,
+    "sample_files": 641,
+    "total_bytes_read": 748451483,
+    "missing": [],
+    "mismatches": [],
+    "sha256_and_git_blob_verified": true,
+    "scope": "Data integrity only; no subjective audition."
+  },
+  "piano_test": {
+    "library": "Salamander Grand Piano v3 / Yamaha C5",
+    "sample_rate": 48000,
+    "loaded_regions": 1121,
+    "loaded_sample_files": 641,
+    "peak": 0.3115386962890625,
+    "rms": 0.011422854981348924,
+    "finite": true,
+    "subjective_listening": false,
+    "sustain_tail_rms": 0.001542601821374683,
+    "damped_tail_rms": 9.246094189506205e-06,
+    "left_rms": 0.007657305858039669,
+    "right_rms": 0.014224236318561614,
+    "sustain_tail_advantage_db": 44.44591053088321
+  },
+  "subjective_audition_performed": false,
+  "limitations": [
+    "Runtime and isolated-note/pedal tests only; no subjective assessment of the final music."
+  ]
+}
