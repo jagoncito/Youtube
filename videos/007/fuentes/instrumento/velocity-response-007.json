@@ -1,0 +1,41 @@
+{
+  "velocities": [
+    {
+      "velocity": 35,
+      "attack_rms": 0.00963672305553553,
+      "peak": 0.030590064823627472,
+      "regions": 1121,
+      "sample_files": 641
+    },
+    {
+      "velocity": 60,
+      "attack_rms": 0.02673780495352917,
+      "peak": 0.08901886641979218,
+      "regions": 1121,
+      "sample_files": 641
+    },
+    {
+      "velocity": 82,
+      "attack_rms": 0.04930509786367366,
+      "peak": 0.1624942123889923,
+      "regions": 1121,
+      "sample_files": 641
+    },
+    {
+      "velocity": 108,
+      "attack_rms": 0.09837000341643,
+      "peak": 0.3459147810935974,
+      "regions": 1121,
+      "sample_files": 641
+    }
+  ],
+  "attack_window_seconds": [
+    0.27,
+    0.42
+  ],
+  "shared_piano_per_chord": true,
+  "original_sfz_unmodified": true,
+  "finite": true,
+  "monotonic_attack_rms": true,
+  "subjective_listening": false
+}

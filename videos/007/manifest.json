@@ -1,0 +1,685 @@
+{
+  "schema": "jagoncito-delivery/2",
+  "number": 7,
+  "title": "Beethoven: Adagio cantabile | Jagoncito’s Autumn Morning",
+  "manual_delivery": true,
+  "scheduled_tasks_created": false,
+  "youtube_publication_performed": false,
+  "work": {
+    "composer": "Ludwig van Beethoven",
+    "title": "Adagio cantabile",
+    "collection": "Piano Sonata No.8 in C minor, op.13, Pathétique — II",
+    "version": "Original piano solo; second movement in A-flat major",
+    "continuous_works": 1,
+    "complete_movement": true,
+    "full_sonata": false,
+    "bars": 73,
+    "notated_quarter_beats": 146
+  },
+  "audio": {
+    "base_seconds": 286.6666666666667,
+    "long_seconds": 1720.0,
+    "complete_work_repetitions": 6,
+    "same_performance_repeated": true,
+    "sample_rate": 48000,
+    "channels": 2,
+    "standalone_format": "WAV PCM_24",
+    "standalone_audio_files": 1,
+    "instrument": "Salamander Grand Piano v3 / Yamaha C5; reused library, new Beethoven interpretation",
+    "velocity_layers": 16,
+    "integrated_lufs": -21.4,
+    "true_peak_dbtp": -1.81,
+    "loudness_range_lu": 5.9,
+    "gating_threshold_lufs": -31.58,
+    "method": "FFmpeg loudnorm input analysis; processed null output discarded.",
+    "subjective_audition_performed": false
+  },
+  "mp4_container_seconds": {
+    "beethoven-adagio-cantabile.mp4": 286.75,
+    "beethoven-adagio-cantabile-extended.mp4": 1720.083333
+  },
+  "creative_identity": {
+    "scene_id": "007-autumn-vineyard-terrace-dawn",
+    "new_artwork": true,
+    "new_thumbnail": true,
+    "new_scene_animation": true,
+    "scenario": "Stone terrace above an autumn vineyard at dawn",
+    "composition": "Dragon at left foreground; vineyard rows form diagonals toward a small stone village",
+    "perspective": "Side-oblique medium-low viewpoint from the terrace",
+    "microstory": "Jagoncito watches an autumn leaf; a small mouse waits beside a harvest basket",
+    "characters_animated": false,
+    "environmental_motion": [
+      "Two selected vine leaves oscillate",
+      "Three new vector autumn leaves drift through open air"
+    ],
+    "existing_step_leaf_animated": false,
+    "ambient_audio": false
+  },
+  "rights": {
+    "composition": "Historical Beethoven composition, public domain in usual life-plus-70/80 jurisdictions",
+    "score_transcription": "Chris Sawer; Javier Ruiz-Alma2011 / Mutopia-2011/10/25-295; explicitly marked Public Domain",
+    "source_declared_historical_editions": "Berners1908/Winterberger and Peters1910/Köhler & Ruthardt; no independent facsimile collation claimed",
+    "piano_samples": "Alexander Holm / Salamander Grand Piano v3, CC-BY-3.0",
+    "piano_retuning": "Markus Fiedler",
+    "sfz_reconstruction": "kinwie / sfzinstruments",
+    "new_performance_and_videos": "CC-BY-3.0; third-party sources retain their own notices",
+    "credits": "fuentes/LICENCIAS-Y-PROCEDENCIA.md"
+  },
+  "limitations": [
+    "Technical signal and notation checks do not establish perceived musical quality; no subjective audition performed.",
+    "Discrete sampled piano, not a continuous physical model or separately recorded una corda.",
+    "Pedal is an editorial harmonic realization; no active source pedal marks.",
+    "Source audit checks the selected digital transcription, not an independently collated critical edition."
+  ],
+  "validation": {
+    "complete_video_decode": "passed, both MP4s",
+    "aac_pcm_cycle_comparison": "passed, base plus all6 extended cycles",
+    "source_note_anchors_preserved": 1629,
+    "performance_note_events": 1641,
+    "written_grace_attacks_preserved": 6,
+    "graphical_turns_realized": 3,
+    "derived_turn_attacks": 12,
+    "midi_note_pairing": "passed",
+    "midi_final_damper": 0,
+    "visual_loop_boundary": "passed",
+    "previous_delivery_files_unchanged": 367,
+    "github_recovery_check": "After pushing, verify a fresh Git LFS clone against files[]. Report the result separately.",
+    "reports": [
+      "produccion/validacion-entrega.json",
+      "produccion/validacion-escena.json",
+      "produccion/performance-validation.json",
+      "produccion/audio-validation.json",
+      "fuentes/partitura/score-validation.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4176,
+      "sha256": "f8e67c947cab5652236c27fa927465cab6b7256e07ddb0274bd826db89a6c398",
+      "git_lfs": false
+    },
+    {
+      "path": "beethoven-adagio-cantabile-extended.mp4",
+      "bytes": 411347554,
+      "sha256": "fbaa1ebb969390f987458bd1921fe433b7fa7d91c964c6420d83edeaa686c655",
+      "git_lfs": true
+    },
+    {
+      "path": "beethoven-adagio-cantabile.mp4",
+      "bytes": 68861383,
+      "sha256": "2df7fd568f8808600e6352dc810910ceecee92b44a8d9954aef04ad85a193b47",
+      "git_lfs": true
+    },
+    {
+      "path": "beethoven-adagio-cantabile.wav",
+      "bytes": 82560044,
+      "sha256": "bd95c0e3a12ea633a23df6645ced5337bdb23788e3e4426e6a7a1ada8de06b57",
+      "git_lfs": true
+    },
+    {
+      "path": "fuentes/LICENCIAS-Y-PROCEDENCIA.md",
+      "bytes": 5979,
+      "sha256": "13e03ec99ca635e41521199ff91f6dab92578ad37b0d5fae40cdd6f0b0b0598e",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/FUENTES-PIANO.md",
+      "bytes": 6762,
+      "sha256": "e69ea48b44c6689e248380a9b04ab093b4fecfce05f7eea2ac128ba536c344a3",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/cache-verification-007.json",
+      "bytes": 437,
+      "sha256": "fe791fd5062243298cc717d6b33e55d916673d80860779937bb902e85d4a9598",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/instrument-sources.json",
+      "bytes": 247698,
+      "sha256": "144523561ac938c5061f1c3cbc9291c1be74a3a782285c13872a663eee631700",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/hammer.txt",
+      "bytes": 4497,
+      "sha256": "8258e15e6058f88a3a3b1ef9a587411dd327c01b11486183caad3b8f1fe96297",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/notes.txt",
+      "bytes": 1306,
+      "sha256": "6d8a8b978a442e582b6b7fa31b2afa76e033efcdf2f70c811a0d7a09060f5471",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/pedal.txt",
+      "bytes": 502,
+      "sha256": "ac027c0c658d9a74f74644013f141e7d8c524a35dab38d44ddb9b8a8c8b790c5",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/region.txt",
+      "bytes": 3787,
+      "sha256": "f6341fe2e2a5417f4e7f3499a7dfdf0a4327a58bd6f12201d63d63ed7d557193",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/str_res.txt",
+      "bytes": 6484,
+      "sha256": "1dc2c4d84668140eab1f206f0116aec5deefc818ae48d04374277d09a680f8f8",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/tune_nat.txt",
+      "bytes": 539,
+      "sha256": "85d40bf0956baceb99ec739b5270ea2d5957b73845e397a5d99ab10a08297337",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/tune_ret.txt",
+      "bytes": 576,
+      "sha256": "e19f23ad8e94dee71a4deda6b1f8aef85e8f79720a9dbcd165b189cbae8b9d50",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_01.txt",
+      "bytes": 621,
+      "sha256": "89a44c1dbfa579e230fbc596a1ec45f12d3221ba6ecf5a1d409dcd2aa0c6dbeb",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_02.txt",
+      "bytes": 620,
+      "sha256": "34078b907fc8cf0be93aa8de28084c0008654da5fee96a100ae90684b5107848",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_03.txt",
+      "bytes": 624,
+      "sha256": "88690274780cd64185977ed0eefbab3f71ec7a0a1475728312b983815045d1cb",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_04.txt",
+      "bytes": 622,
+      "sha256": "6512f0f95577a5bf94dd1ff373f3dcda95af0ebdd3f1966da6516395f906514b",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_05.txt",
+      "bytes": 622,
+      "sha256": "76eef30708b4d4d8df5f78bd326da3a74bbd8a7ba5e2070e7baee6d06317d779",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_06.txt",
+      "bytes": 622,
+      "sha256": "b1fddc8e11a778771095593e8ce39730c58b850cb01ee87ab34c770bb76bb77e",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_07.txt",
+      "bytes": 620,
+      "sha256": "00798045ef7302f426e06d3dc6e3acef8c349ac54d70074be68dabd083013fa8",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_08.txt",
+      "bytes": 621,
+      "sha256": "078cd53266fcca6421e830b3c176ad94b03c08d25247701cb7d2f534c0bf4ec7",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_09.txt",
+      "bytes": 621,
+      "sha256": "eed3917e6bb92f921543360607d3a24189e223d818a02164e1b9916430a70e1d",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_10.txt",
+      "bytes": 622,
+      "sha256": "a1f0ff3b7c975cc4bf2bfbf2a4d0fc594c181c97d354f5c9e838d6898e73ed4f",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_11.txt",
+      "bytes": 622,
+      "sha256": "ac0e7ddda1871a6b89a410f2fb4d6317120996cc14b670f1bab496a5f79800c6",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_12.txt",
+      "bytes": 622,
+      "sha256": "9814c0f9e44583b834b2a2b0a5a14c59d0dd1c7ce1bbc58eda697ea07c429d9d",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_13.txt",
+      "bytes": 622,
+      "sha256": "4c71135aa3cc3e42c8c7b4980d0a9a66bbcd2f8eea31314f85fd3afaaf6ead26",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_14.txt",
+      "bytes": 624,
+      "sha256": "f004d41dc10c69b11691fecacb6a2e4dafda0a7fec88a055290aa06f97f71090",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_15.txt",
+      "bytes": 622,
+      "sha256": "ed0979ed6da8bd248d8b1fe5822a052aa3086d6ac2d2ae99a918ff8238cd72c5",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Data/vel_16.txt",
+      "bytes": 623,
+      "sha256": "0338becd5b2c87467c5ca6c1328d421bb56c7713d3352a17a3885088b531a7d7",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/LICENSE",
+      "bytes": 19467,
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/README.md",
+      "bytes": 4980,
+      "sha256": "be275b843d10a22e614e5f52bd414fe2cbdcbfd6165894b1dcca738e8cbf391a",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/Salamander Grand Piano V3.sfz",
+      "bytes": 2113,
+      "sha256": "c8b282f03fdb2d9e6be24a99df0d97a05e7ece718d1a14e0b882c518161f7837",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/original/gitattributes.source.txt",
+      "bytes": 252,
+      "sha256": "8dd0ba349a4d7ecf6d137925451f0fcaf0e0874c7da68334ffdc420a46f1442f",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/piano-capability-test.json",
+      "bytes": 460,
+      "sha256": "14b70bfa5b5ea5b7a3ca039fba3375b81209c3a5772cc52399c292d72c0973d6",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/sample-format-validation.json",
+      "bytes": 589,
+      "sha256": "4449b4e29293569411020ac673a347a15d526c812aa4eac47a4621f80cb78a3c",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/instrumento/velocity-response-007.json",
+      "bytes": 867,
+      "sha256": "0273cbb52e1ff5ba545fcfe28a316ecc71f43efe6811e7f21f98739f92a506a5",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/interpretacion-digital.midi",
+      "bytes": 13889,
+      "sha256": "ae42e38e681462f99987b85e8688c602abc2942134bacd38097b455ba5eced6b",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/licencias/CC-BY-3.0.txt",
+      "bytes": 19467,
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/licencias/SFIZZ-AUTHORS.md",
+      "bytes": 364,
+      "sha256": "34dfe10779d54393e07f1b5416d9816d9fb4e147d2d11c438342ca2dbed243de",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/licencias/SFIZZ-BSD-2-Clause.txt",
+      "bytes": 1359,
+      "sha256": "21b2105196b4e6a769cebc2534f66852c8efad3e28dbd3bbd1cc3058fba89e7d",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/FUENTES.md",
+      "bytes": 3992,
+      "sha256": "94309544826dcd4e57244fe41ce790bddafb3a0196747ce2af5bd2363eed7271",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/README.md",
+      "bytes": 1622,
+      "sha256": "60a926a75169093b21ebd2e486545216879ef2aa97dfd85acb08d354e09be336",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/adapted/export-events.ly",
+      "bytes": 19642,
+      "sha256": "bf4812c643af0ccbdc578879008766b1d98629e09155380ec4e580989f5cd774",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/adapted/pathetique-2.ly",
+      "bytes": 17471,
+      "sha256": "7d7c233230bc558d6275119b1ca9af1b4f5ebe762e29855698fc1e08032acc7a",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/events.stderr.log",
+      "bytes": 3138,
+      "sha256": "78ee059a170e553f712b15ed7d8b5f2f893ca82ac51ccd5c88c19d0ee8f53562",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/events.stdout.log",
+      "bytes": 98155,
+      "sha256": "89008258d161b61b65e0a58434f7e66ca439129be0732659e3f7a47f9efb0848",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/export_events.py",
+      "bytes": 2847,
+      "sha256": "f520fcd07b79f5193f995d39d57623aed46bfee4a2793a8aaf92a18ed62b1e58",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/expression-map.json",
+      "bytes": 11463,
+      "sha256": "8efc53435962a87083eb0003fad4c6b002b57649cbf34f22a12bdd61aee3fb17",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/lily-install-sources.json",
+      "bytes": 1113,
+      "sha256": "bb71499f9d19d7fd18b0408582bc5b7d269d631639cb8f0e0fb2e7801f24d3b1",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/lily.stderr.log",
+      "bytes": 3330,
+      "sha256": "4f9a6c2f521ec474c35b19a64460cb64ddc4acc6ed11f4205ea4bab5e1dcfeb6",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/mapped-midi-notes.json",
+      "bytes": 529548,
+      "sha256": "55abc28517fb9563643acaf8620d8442771193cb1b5d344a081e5984273c0b86",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/original/pathetique-2.ly",
+      "bytes": 17471,
+      "sha256": "7d7c233230bc558d6275119b1ca9af1b4f5ebe762e29855698fc1e08032acc7a",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/ornament-realization.json",
+      "bytes": 4027,
+      "sha256": "632d754818fa0547007d1c96901d6a98eb0db3d339cc168477a4ad0e8ccbb7ec",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/parse_events.py",
+      "bytes": 1167,
+      "sha256": "11ee4d7d02a1537c7183249b04a46fd401afc92bf66fcbaf8b4979597cb9b0c9",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/partitura.midi",
+      "bytes": 13394,
+      "sha256": "0c8ec41aeafd45cb303a265a6b262286b3b7c10a0409e11186fad0a828e78a27",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/partitura.pdf",
+      "bytes": 176248,
+      "sha256": "333600bb90baa627ee46e08c020752c20df0cffc0ec543f1266a27e5c24d0b5a",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/score-validation.json",
+      "bytes": 9218,
+      "sha256": "4ffaf4973f1b2544fc9ab22aebd3bd66f2745da21a6af9d0f2113bddea0c329e",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/source-events.json",
+      "bytes": 429074,
+      "sha256": "29942280a8578f6b88de4e5c78cb992eb1a93242986682c8e0987d00107fa205",
+      "git_lfs": false
+    },
+    {
+      "path": "fuentes/partitura/validate_score.py",
+      "bytes": 6198,
+      "sha256": "23786f51d38c41e8ac091a9ba04028a8b3054f6ad2af69a5c09618b0cab410c4",
+      "git_lfs": false
+    },
+    {
+      "path": "imagen.png",
+      "bytes": 2928552,
+      "sha256": "7ea485991b4c2f1ef34d2785267f8d383f97e461231f3618aeb3af4c2f603f52",
+      "git_lfs": false
+    },
+    {
+      "path": "miniatura.jpg",
+      "bytes": 566293,
+      "sha256": "98547077732e975dce11368aa6c8cc0b97adde8df78b269e74fb30404c7b5610",
+      "git_lfs": false
+    },
+    {
+      "path": "montaje.json",
+      "bytes": 1412,
+      "sha256": "094c2e759716a5c4378beda68d98df7443dc31658df1a66b7aa4c0c07b0c9702",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/INTERPRETACION.md",
+      "bytes": 4489,
+      "sha256": "7af3ed4d2424f15cc4fdfb19f1ec7187220738253df5ea54d6de91341698ed93",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/README-ANIMACION.md",
+      "bytes": 2391,
+      "sha256": "e6f0031eaa993498a7ecb0f954af01e702b354573f0b72098d5000ee3120914b",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/README.md",
+      "bytes": 8038,
+      "sha256": "4e89af4be89eb9515f86d8d71786d3426f5996958c07ec1e42fc37ec93f79dd0",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/animar_vinedo.py",
+      "bytes": 6835,
+      "sha256": "b42a93eb8f94f47ec59736d1ecf0734a5839abf8beadbbf9bc1bf9e3e9da020c",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/audio-validation.json",
+      "bytes": 2134,
+      "sha256": "73456f332c7f120a084558764c1c9d6ec8cfd2a8aa5a5f242db6bf30c9506f05",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/build_sfizz.sh",
+      "bytes": 908,
+      "sha256": "cee84482b1c906c5d637af530e0678fbde30428f334ecc8adbe71c282906a3bc",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/create_performance.py",
+      "bytes": 16891,
+      "sha256": "d000a47453226770bedb52a51ec1378a1ae59cc96516a89ad968a84045d5ae20",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/decisiones-editoriales.md",
+      "bytes": 1362,
+      "sha256": "53d8d3f8344cd10517bb9619fb33210a462f2688d012c9e63314830ae56442d5",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/download_piano.py",
+      "bytes": 1665,
+      "sha256": "1db7cd780d095393911e7cb0bc59b7db18635d368fcfa59bb375cf0ecfcb0797",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/escena-config.json",
+      "bytes": 1671,
+      "sha256": "51f8876ee531cfe0bc5ed396110cf35731c28387576785999113225476d92043",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/hojas-otono.ass",
+      "bytes": 49432,
+      "sha256": "f59dcc41225693a92056ac9f3b6979c1f84df0f6c34ed5d102702924f1c7b7a6",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/loudness.json",
+      "bytes": 239,
+      "sha256": "33bfb751fff3767917fb16f308cfeaa24e80f718603e227c5207915765606bc4",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/master_piano.py",
+      "bytes": 5617,
+      "sha256": "99b207ffa81f2845c7fa4bb487134e1be69c36fb79803e314244bb856bc147a4",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/mastering.json",
+      "bytes": 3603,
+      "sha256": "51aeabacd9a68f614127bc122e5162b06a4059892cb6d5b2c996adeced12a38c",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/montar_video.py",
+      "bytes": 3033,
+      "sha256": "0462d46d484ad54693a95c189d5ba12903d53e777efa5fdd97689ae1d4640599",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/origen-visual.json",
+      "bytes": 1140,
+      "sha256": "0add27b25161213624676915de37e7772bb4f907864360ac9b7ffff22169681f",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/performance-validation.json",
+      "bytes": 10348,
+      "sha256": "f01967e91448de271e1fb8f37bedba9f07575589122f7ace3cfe0cbd42c3a1f2",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/performance.json",
+      "bytes": 744432,
+      "sha256": "b4a2806acda299e54c6a5f31914af3214bd19b0c86d573a52331756d28eda88d",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/python-versions.json",
+      "bytes": 91,
+      "sha256": "aef81bfd139976476f5b58c358fb3587f6a905c94715aadb6a784816ac686216",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/render.json",
+      "bytes": 916,
+      "sha256": "9f14b46f3c1c84311a10e53765e97106ef50aa6a6703408e5bf31fd0885f09f5",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/render_piano.py",
+      "bytes": 5184,
+      "sha256": "471fe8a605b2990bfab5ebc852974cf39b7949b4dd11cc98b6dc716d7b02d1d2",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/requirements.txt",
+      "bytes": 57,
+      "sha256": "5d2ab6844db73467d5cff627d41775f0eb2bf0bbb9d09a64ae15c99ef583182f",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/runtime-status.json",
+      "bytes": 403,
+      "sha256": "9d1efa50e51df6969190d2db00dbd5ea6bf05309b0e2ecb617ec75c7f67885d1",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/sfizz-build-source.json",
+      "bytes": 637,
+      "sha256": "f9febcff0a7683297827bf9dbe9a4e453e87fb1e3e3a9472416d8092e614c24f",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/sfizz-submodule-pins.txt",
+      "bytes": 824,
+      "sha256": "1d4e257029f3a36a540a5a4b6e7830b508da070fa2b37cb4853e7826394c6df5",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/validacion-entrega.json",
+      "bytes": 21635,
+      "sha256": "2e3fc105d7c8548af695e231c70692cc33ff6a5aef5afc258d24273f03a018a4",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/validacion-escena.json",
+      "bytes": 1155,
+      "sha256": "9c082734a94df1a471deda595cf4d2ca0d63da2f3a5edbd1a58b344336cff1b1",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/validar_piano.py",
+      "bytes": 3403,
+      "sha256": "91df65c1af942d0db6868adde757736db575a4daafe948304ae97deb4b0164fb",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/validar_vinedo.py",
+      "bytes": 4242,
+      "sha256": "646c44baf901a8d2753f18a3ea14bdd1c3fb42b0f4c10dfe5d536cba4f4c2af3",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/validate_audio.py",
+      "bytes": 4786,
+      "sha256": "48d02201bd66bf36ebffd0a798e148598508e8e33bd50780175eef60c9157e1d",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/verificar_entrega.py",
+      "bytes": 6326,
+      "sha256": "f3493655443a59c7d17c4a5058132277b601c502f6f03f19d188911912bd9f70",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/verify_instrument.py",
+      "bytes": 5453,
+      "sha256": "5f5d338e50d4305f66a0749ab4382a5cabadca9a29ac82c71227f328129c819c",
+      "git_lfs": false
+    },
+    {
+      "path": "produccion/vinedo-parametros.json",
+      "bytes": 928,
+      "sha256": "050d2d6f7102c1aab720d31336abe232286ed940d2ecd1d79fbf75559805cd7f",
+      "git_lfs": false
+    },
+    {
+      "path": "publicacion.txt",
+      "bytes": 5472,
+      "sha256": "9d2541fa1a41d83e1fd9bb488ec677d1077b9790c118d672e3e8329dfafdd826",
+      "git_lfs": false
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "jagoncito-ornament-realization/1",
+  "scope": "Editorial realization of three graphical turn marks in the chosen transcription; added pitches are derived from the printed symbols, key, local accidentals and explicit natural below the bar21 turn. Quarter-beat timings are editorial and may be shaped expressively without deleting written anchors.",
+  "turns": [
+    {
+      "id": "turn-bar20",
+      "bar": 20,
+      "mark_quarter": 39.0,
+      "principal_midi_id": "upper:188",
+      "principal_source_index": 422,
+      "principal_pitch": 74,
+      "principal_onset_quarter": 38.5,
+      "principal_original_end_quarter": 39.5,
+      "principal_end_quarter": 39.0,
+      "mark_source": "topmain, D5 tied eighth at bar20; scripts.turn; fingering3212",
+      "new_attacks": [
+        {
+          "pitch": 75,
+          "quarter": 39,
+          "duration_quarters": 0.125
+        },
+        {
+          "pitch": 74,
+          "quarter": 39.125,
+          "duration_quarters": 0.125
+        },
+        {
+          "pitch": 72,
+          "quarter": 39.25,
+          "duration_quarters": 0.125
+        },
+        {
+          "pitch": 74,
+          "quarter": 39.375,
+          "duration_quarters": 0.125
+        }
+      ],
+      "pitch_names": [
+        "Eb5",
+        "D5",
+        "C5",
+        "D5"
+      ],
+      "explanation": "The tied D5 is sustained from38.5 until the turn begins at39.0. No extra attack is assigned to the tied continuation itself."
+    },
+    {
+      "id": "turn-bar21",
+      "bar": 21,
+      "mark_quarter": 41.0,
+      "principal_midi_id": "upper:192",
+      "principal_source_index": 463,
+      "principal_pitch": 65,
+      "principal_onset_quarter": 41.0,
+      "principal_original_end_quarter": 41.75,
+      "principal_end_quarter": 41.25,
+      "mark_source": "topmain, F4 dotted eighth at bar21; scripts.turn with explicit natural below symbol; fingering4321",
+      "new_attacks": [
+        {
+          "pitch": 67,
+          "quarter": 41.25,
+          "duration_quarters": 0.125
+        },
+        {
+          "pitch": 65,
+          "quarter": 41.375,
+          "duration_quarters": 0.125
+        },
+        {
+          "pitch": 64,
+          "quarter": 41.5,
+          "duration_quarters": 0.125
+        },
+        {
+          "pitch": 65,
+          "quarter": 41.625,
+          "duration_quarters": 0.125
+        }
+      ],
+      "pitch_names": [
+        "G4",
+        "F4",
+        "E-natural4",
+        "F4"
+      ],
+      "explanation": "Delayed turn follows the principal F4; the lower E is natural because of the explicit sign below the turn."
+    },
+    {
+      "id": "turn-bar68",
+      "bar": 68,
+      "mark_quarter": 134.0,
+      "principal_midi_id": "upper:983",
+      "principal_source_index": 2071,
+      "principal_pitch": 68,
+      "principal_onset_quarter": 134.0,
+      "principal_original_end_quarter": 134.375,
+      "principal_end_quarter": 134.125,
+      "mark_source": "topmain, Ab4 dotted sixteenth at bar68; scripts.turn; fingering3213",
+      "new_attacks": [
+        {
+          "pitch": 70,
+          "quarter": 134.125,
+          "duration_quarters": 0.0625
+        },
+        {
+          "pitch": 68,
+          "quarter": 134.1875,
+          "duration_quarters": 0.0625
+        },
+        {
+          "pitch": 67,
+          "quarter": 134.25,
+          "duration_quarters": 0.0625
+        },
+        {
+          "pitch": 68,
+          "quarter": 134.3125,
+          "duration_quarters": 0.0625
+        }
+      ],
+      "pitch_names": [
+        "Bb4",
+        "Ab4",
+        "G4",
+        "Ab4"
+      ],
+      "explanation": "Delayed compact turn within the dotted-sixteenth value, before the written C5 at134.375."
+    }
+  ],
+  "added_attacks": 12,
+  "preserved_printed_grace_attacks": 6,
+  "historical_collation": "Not independently collated against autograph or historical facsimile. The rendered five-page PDF was inspected at bars20,21,68 and the ending to verify glyph placement, explicit natural, final fermata and full movement boundary."
+}

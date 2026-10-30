@@ -1,0 +1,57 @@
+VIDEO 007 — JAGONCITO
+MAIN FILE: beethoven-adagio-cantabile-extended.mp4
+BASE FILE: beethoven-adagio-cantabile.mp4
+STANDALONE AUDIO: beethoven-adagio-cantabile.wav (one complete performance; stereo 48 kHz / 24-bit PCM)
+THUMBNAIL: miniatura.jpg
+
+TITLE
+Beethoven: Adagio cantabile | Jagoncito’s Autumn Morning
+
+DESCRIPTION
+Morning light reaches across the vineyard as Jagoncito watches an autumn leaf from a stone step. A tiny mouse waits beside the harvest basket, with copper-coloured vines and a village on the hills beyond.
+
+Beethoven’s Adagio cantabile accompanies this autumn morning in a new digital grand-piano interpretation. Its lyrical main theme gives way to more expressive episodes before returning. This is the complete second movement of the Pathétique Sonata, not the full three-movement sonata.
+
+The complete 4:47 performance is repeated 6 times for a 28:40 session. Each cycle uses the same newly rendered interpretation, with the full ending and natural piano decay preserved. No music is cut, and the tempo has not been changed to fit a fixed video length.
+
+The vineyard scene and thumbnail were newly created for this video. A few vine leaves move gently, with occasional dry leaves drifting across the scene. Jagoncito, the mouse and the leaf on the step remain still. The soundtrack contains only the piano performance, with no outdoor sound effects.
+
+REPEAT STARTS
+0:00 Adagio cantabile
+4:47 Adagio cantabile — repeat 2
+9:33 Adagio cantabile — repeat 3
+14:20 Adagio cantabile — repeat 4
+19:07 Adagio cantabile — repeat 5
+23:53 Adagio cantabile — repeat 6
+
+MUSIC & CREDITS
+Ludwig van Beethoven (1770–1827): Piano Sonata No. 8 in C minor, op. 13, Pathétique — II. Adagio cantabile, in A-flat major, original solo-piano version.
+Score transcription: Chris Sawer, revised by Javier Ruiz-Alma (2011), Mutopia Project, Mutopia-2011/10/25-295. Declared historical sources: Berners, 1908 (edited by A. Winterberger), and Peters, 1910 (Köhler & Ruthardt). The typesetter explicitly placed this transcription in the public domain.
+Score source: https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/BeethovenLv/O13/pathetique-2/pathetique-2.ly
+Piano samples: Salamander Grand Piano v3 (Yamaha C5), Alexander Holm. Retuned mapping by Markus Fiedler; SFZ reconstruction by kinwie / sfzinstruments. CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/
+Piano source: https://github.com/sfzinstruments/SalamanderGrandPiano/tree/3382bf9496bba2486f5ab0de55a264d1dfc38404
+New digital performance, expressive editing and audiovisual production for Jagoncito, shared under CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/ . Changes include timing, dynamics, voicing, written-ornament realization, editorial pedal, mixing and new visuals. No finished third-party performance recording was used.
+Visuals: new AI-generated artwork and dedicated thumbnail, with original environmental animation.
+
+#Beethoven #AdagioCantabile #Jagoncito
+
+TAGS
+Beethoven, Adagio cantabile, Pathétique Sonata, Pathetique Sonata, Sonata No. 8, Op. 13, classical piano, grand piano, autumn morning, vineyard, Jagoncito, digital piano performance
+
+BASE VERSION — OPTIONAL TITLE
+Beethoven: Adagio cantabile — Complete Movement | Jagoncito
+
+BASE VERSION — DESCRIPTION CHANGE
+Keep the scene description, complete-movement identification and all credits. Replace the repetition paragraph with:
+“One complete new digital performance of Beethoven’s Adagio cantabile, the second movement of the Pathétique Sonata. Duration: 4:47.”
+Replace REPEAT STARTS with TRACKLIST:
+0:00 Adagio cantabile — Ludwig van Beethoven
+This is one complete movement, not the full sonata. Do not invent internal movements or artificial chapters.
+
+CREATOR NOTES (not part of the public description)
+Exact PCM base duration: 286.666666667 s; 6 complete cycles: 1720.000000000 s. Actual MP4 container durations: 286.750000 s and 1720.083333 s. Repeat times above are calculated from the exact audio and rounded to the nearest second.
+Six complete cycles are the nearest integer duration to 30 minutes. Five would be 1433.333333333 s (23:53), and seven would be 2006.666666667 s (33:27). The music and its natural tempo are preserved instead of forcing an exact target.
+The composition, score transcription, piano library and new recording have separate provenance. Preserve the attribution, license links and change notice. Do not describe the entire recording as CC0 or universally public domain; no Content ID guarantee is made.
+The source identifies historical editions and includes editorial additions and omissions; technical coverage means correspondence with this chosen transcription, not independent historical-facsimile collation or a critical edition.
+The source contains no active pedal marks, so the pedal is an editorial realization. All 1629 reference attacks, including six written grace notes, are preserved; the three printed turn ornaments receive twelve explicitly documented additional attacks. The source’s hidden quarter-note = 36 MIDI setting is editorial, not claimed as Beethoven’s own metronome mark. No continuous half-pedal simulation or separate recorded una-corda mechanism is claimed.
+Technical measurements, score/MIDI coverage and visual inspection do not replace subjective listening. No subjective audition has been performed here. The private reports and Studio exports are not included.

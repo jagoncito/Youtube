@@ -1,0 +1,54 @@
+Processing `adapted/export-events.ly'
+Parsing...
+adapted/export-events.ly:55:36: warning: deprecated: missing `.' in property path TextScript.avoid-slur
+	\once \override TextScript 
+                                   #'avoid-slur = #'inside
+adapted/export-events.ly:56:36: warning: deprecated: missing `.' in property path TextScript.outside-staff-priority
+	\once \override TextScript 
+                                   #'outside-staff-priority = ##f}
+adapted/export-events.ly:57:32: warning: deprecated: missing `.' in property path Stem.details.beamed-lengths
+lengthenStems = \override Stem 
+                               #'(details beamed-lengths) = #'(5)
+adapted/export-events.ly:58:34: warning: deprecated: missing `.' in property path Stem.details.beamed-lengths
+revertStemLenghts = \revert Stem 
+                                 #'(details beamed-lengths)
+adapted/export-events.ly:59:43: warning: deprecated: missing `.' in property path TupletNumber.stencil
+hideTupletNumber = \override TupletNumber 
+                                          #'stencil = ##f
+adapted/export-events.ly:60:43: warning: deprecated: missing `.' in property path TupletNumber.stencil
+unhideTupletNumber = \revert TupletNumber 
+                                          #'stencil 
+adapted/export-events.ly:61:45: warning: deprecated: missing `.' in property path TupletBracket.bracket-visibility
+hideTupletBracket = \override TupletBracket 
+                                            #'bracket-visibility = ##f
+adapted/export-events.ly:170:48: warning: deprecated: missing `.' in property path Stem.stroke-style
+   <as as,>8-4 b,\rest \grace{ \override Stem  
+                                               #'stroke-style = #"grace" {\stemUp es8^3_(_\markup{\dynamic rf} \stemNeutral}
+adapted/export-events.ly:171:17: warning: deprecated: missing `.' in property path Stem.stroke-style
+   \revert Stem 
+                #'stroke-style }
+adapted/export-events.ly:175:18: warning: deprecated: missing `.' in property path Stem.stroke-style
+\override Stem   
+                 #'stroke-style = #"grace"
+adapted/export-events.ly:177:16: warning: deprecated: missing `.' in property path Stem.stroke-style
+  \revert Stem 
+               #'stroke-style }
+adapted/export-events.ly:181:18: warning: deprecated: missing `.' in property path Stem.stroke-style
+\override Stem   
+                 #'stroke-style = #"grace"
+adapted/export-events.ly:183:16: warning: deprecated: missing `.' in property path Stem.stroke-style
+  \revert Stem 
+               #'stroke-style }
+adapted/export-events.ly:263:30: warning: deprecated: missing `.' in property path Fingering.staff-padding
+   \once \override Fingering 
+                             #'staff-padding = #'()
+Interpreting music...
+warning: cannot find property type-check for `tupletNumberFormatFunction' (translation-type?).  perhaps a typing error?
+warning: skipping assignment
+[8][16][24][32][40][48][56][64]
+Preprocessing graphical objects...
+Finding the ideal number of pages...
+Fitting music on 4 or 5 pages...
+Drawing systems...
+Converting to `analisis.pdf'...
+Success: compilation successfully completed

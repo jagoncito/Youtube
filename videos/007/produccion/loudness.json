@@ -1,0 +1,8 @@
+{
+  "input_i": "-21.40",
+  "input_tp": "-1.81",
+  "input_lra": "5.90",
+  "input_thresh": "-31.58",
+  "measurement": "FFmpeg loudnorm input statistics only; no loudness processing applied to delivered WAV",
+  "subjective_audition": false
+}

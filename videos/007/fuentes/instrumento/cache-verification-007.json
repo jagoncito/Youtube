@@ -1,0 +1,13 @@
+{
+  "schema": "jagoncito-piano-source-verification/1",
+  "instrument": "Salamander Grand Piano v3",
+  "commit": "3382bf9496bba2486f5ab0de55a264d1dfc38404",
+  "source_files_verified": 668,
+  "sample_files_verified": 641,
+  "source_bytes": 748451483,
+  "all_sha256_match": true,
+  "all_git_blob_sha1_match": true,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "subjective_listening": false
+}

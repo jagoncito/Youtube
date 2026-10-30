@@ -1,0 +1,84 @@
+{
+  "foliage_patches": [
+    {
+      "name": "large hanging vine leaf, upper centre-left",
+      "rectangle": [
+        738,
+        128,
+        156,
+        160
+      ],
+      "mask_center_radii": [
+        75,
+        79,
+        66,
+        72
+      ],
+      "alpha": 230
+    },
+    {
+      "name": "small vine leaf, upper canopy edge",
+      "rectangle": [
+        960,
+        35,
+        172,
+        144
+      ],
+      "mask_center_radii": [
+        85,
+        65,
+        75,
+        61
+      ],
+      "alpha": 210
+    }
+  ],
+  "protected_regions_1920x1080": {
+    "dragon": [
+      90,
+      510,
+      740,
+      340
+    ],
+    "mouse_and_basket": [
+      900,
+      600,
+      350,
+      270
+    ],
+    "village": [
+      1270,
+      300,
+      350,
+      210
+    ],
+    "vine_trunk_and_stone": [
+      0,
+      270,
+      400,
+      310
+    ],
+    "foreground_stone": [
+      50,
+      890,
+      1250,
+      150
+    ]
+  },
+  "description": "Two small masks displace selected upper vine leaves by about 1-3 pixels. Three original vector dry leaves drift through open air at 10-20, 30-42 and 47-57 seconds. Source leaf on the step and all animals remain still. No camera or architecture animation; no environmental audio.",
+  "period_seconds": 60,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "source_artwork": "exec-e1870ba2-bb0e-4da3-a159-e57aa4909b6a.png",
+  "qp": 1,
+  "effects": [
+    "local periodic vine-foliage displacement",
+    "three new drifting vector autumn leaves"
+  ],
+  "characters_animated": false,
+  "camera_animated": false,
+  "architecture_animated": false,
+  "existing_near_dragon_leaf_animated": false,
+  "ambient_audio": false
+}

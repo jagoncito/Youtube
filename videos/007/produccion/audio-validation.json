@@ -1,0 +1,69 @@
+{
+  "full_wav_read": "passed",
+  "midi_reimport_all_attacks_and_controls": "passed",
+  "midi_final_damper": 0,
+  "no_hanging_notes": true,
+  "no_physical_key_overlap": true,
+  "source_note_anchors": 1629,
+  "preserved_written_graces": 6,
+  "written_turns": 3,
+  "written_turn_derived_attacks": 12,
+  "rendered_note_events": 1641,
+  "frames": 13760000,
+  "sample_rate": 48000,
+  "channels": 2,
+  "duration": 286.6666666666667,
+  "clipped_samples": 0,
+  "sample_peak_dbfs": -1.8055273294448853,
+  "final_100ms_peak": 5.841255187988281e-06,
+  "dc_offset": [
+    -5.7649014647616894e-08,
+    -5.746618086515471e-08
+  ],
+  "score_sections_for_signal_check_only": [
+    {
+      "editorial_section_label": "Opening theme and written-out upper-register return",
+      "start": 0.55,
+      "end": 62.34313958696035,
+      "rms_dbfs": -24.402524907998,
+      "peak_dbfs": -6.511443138122559
+    },
+    {
+      "editorial_section_label": "First contrasting episode",
+      "start": 62.34313958696035,
+      "end": 108.22326917313599,
+      "rms_dbfs": -23.540083562380154,
+      "peak_dbfs": -6.215219497680664
+    },
+    {
+      "editorial_section_label": "Theme return",
+      "start": 108.22326917313599,
+      "end": 139.36814550077742,
+      "rms_dbfs": -24.6703197277426,
+      "peak_dbfs": -6.892513751983643
+    },
+    {
+      "editorial_section_label": "Second contrasting episode and sforzando climax",
+      "start": 139.36814550077742,
+      "end": 192.33358874462132,
+      "rms_dbfs": -22.10415154466753,
+      "peak_dbfs": -1.8055273294448853
+    },
+    {
+      "editorial_section_label": "Theme with triplet accompaniment",
+      "start": 192.33358874462132,
+      "end": 250.0627656816701,
+      "rms_dbfs": -23.835626050658668,
+      "peak_dbfs": -6.435096263885498
+    },
+    {
+      "editorial_section_label": "Coda and final fermata",
+      "start": 250.0627656816701,
+      "end": 284.9099051454144,
+      "rms_dbfs": -24.922371873573077,
+      "peak_dbfs": -4.9539666175842285
+    }
+  ],
+  "subjective_audition": false,
+  "technical_limit": "Signal and notation measurements do not establish perceived musical quality."
+}

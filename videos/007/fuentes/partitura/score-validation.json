@@ -1,0 +1,331 @@
+{
+  "source_repository": "https://github.com/MutopiaProject/MutopiaProject",
+  "source_commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+  "source_path": "ftp/BeethovenLv/O13/pathetique-2/pathetique-2.ly",
+  "source_transcription": "Chris Sawer; Javier Ruiz-Alma revision / Mutopia-2011/10/25-295",
+  "source_declared_edition": "Berners, 1908 (A. Winterberger); Peters, 1910 (K\u00f6hler & Ruthardt, IMSLP30364)",
+  "source_license": "Public Domain declaration by typesetter",
+  "status": "passed",
+  "bars": 73,
+  "meter": [
+    2,
+    4
+  ],
+  "quarter_beats": 146,
+  "midi_onsets": 1629,
+  "printed_notes": 1648,
+  "mapped_grace_notes": 6,
+  "no_hanging_notes": true,
+  "staff_end_alignment_quarters": 146,
+  "omitted_written_attacks": {
+    "simultaneous unison consolidated": 2,
+    "tied continuation": 17
+  },
+  "explained_omissions": [
+    {
+      "kind": "NOTE",
+      "staff": "lower",
+      "voice": "2",
+      "quarter": 26.0,
+      "grace_quarter": 0.0,
+      "bar": 14,
+      "pitch": 48,
+      "duration_quarters": 1.0,
+      "source_index": 270,
+      "reason": "simultaneous unison consolidated",
+      "matching_source_index": 269
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 33.0,
+      "grace_quarter": 0.0,
+      "bar": 17,
+      "pitch": 72,
+      "duration_quarters": 0.25,
+      "source_index": 340,
+      "reason": "tied continuation",
+      "previous_source_index": 334
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 35.0,
+      "grace_quarter": 0.0,
+      "bar": 18,
+      "pitch": 84,
+      "duration_quarters": 0.25,
+      "source_index": 364,
+      "reason": "tied continuation",
+      "previous_source_index": 350
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 37.0,
+      "grace_quarter": 0.0,
+      "bar": 19,
+      "pitch": 72,
+      "duration_quarters": 0.25,
+      "source_index": 396,
+      "reason": "tied continuation",
+      "previous_source_index": 382
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 39.0,
+      "grace_quarter": 0.0,
+      "bar": 20,
+      "pitch": 74,
+      "duration_quarters": 0.5,
+      "source_index": 431,
+      "reason": "tied continuation",
+      "previous_source_index": 422
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 42.5,
+      "grace_quarter": 0.0,
+      "bar": 22,
+      "pitch": 79,
+      "duration_quarters": 0.25,
+      "source_index": 492,
+      "reason": "tied continuation",
+      "previous_source_index": 486
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 54.0,
+      "grace_quarter": 0.0,
+      "bar": 28,
+      "pitch": 58,
+      "duration_quarters": 2.0,
+      "source_index": 623,
+      "reason": "tied continuation",
+      "previous_source_index": 598
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 54.0,
+      "grace_quarter": 0.0,
+      "bar": 28,
+      "pitch": 55,
+      "duration_quarters": 2.0,
+      "source_index": 624,
+      "reason": "tied continuation",
+      "previous_source_index": 599
+    },
+    {
+      "kind": "NOTE",
+      "staff": "lower",
+      "voice": "",
+      "quarter": 54.0,
+      "grace_quarter": 0.0,
+      "bar": 28,
+      "pitch": 39,
+      "duration_quarters": 2.0,
+      "source_index": 627,
+      "reason": "tied continuation",
+      "previous_source_index": 604
+    },
+    {
+      "kind": "NOTE",
+      "staff": "lower",
+      "voice": "",
+      "quarter": 74.5,
+      "grace_quarter": 0.0,
+      "bar": 38,
+      "pitch": 58,
+      "duration_quarters": 0.16666666666666666,
+      "source_index": 834,
+      "reason": "tied continuation",
+      "previous_source_index": 824
+    },
+    {
+      "kind": "NOTE",
+      "staff": "lower",
+      "voice": "",
+      "quarter": 78.5,
+      "grace_quarter": 0.0,
+      "bar": 40,
+      "pitch": 51,
+      "duration_quarters": 0.16666666666666666,
+      "source_index": 917,
+      "reason": "tied continuation",
+      "previous_source_index": 907
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 82.5,
+      "grace_quarter": 0.0,
+      "bar": 42,
+      "pitch": 78,
+      "duration_quarters": 0.16666666666666666,
+      "source_index": 1009,
+      "reason": "tied continuation",
+      "previous_source_index": 993
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 83.5,
+      "grace_quarter": 0.0,
+      "bar": 42,
+      "pitch": 83,
+      "duration_quarters": 0.16666666666666666,
+      "source_index": 1042,
+      "reason": "tied continuation",
+      "previous_source_index": 1026
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 84.5,
+      "grace_quarter": 0.0,
+      "bar": 43,
+      "pitch": 88,
+      "duration_quarters": 0.16666666666666666,
+      "source_index": 1075,
+      "reason": "tied continuation",
+      "previous_source_index": 1059
+    },
+    {
+      "kind": "NOTE",
+      "staff": "lower",
+      "voice": "",
+      "quarter": 90.5,
+      "grace_quarter": 0.0,
+      "bar": 46,
+      "pitch": 54,
+      "duration_quarters": 0.16666666666666666,
+      "source_index": 1195,
+      "reason": "tied continuation",
+      "previous_source_index": 1185
+    },
+    {
+      "kind": "NOTE",
+      "staff": "lower",
+      "voice": "2",
+      "quarter": 129.5,
+      "grace_quarter": 0.0,
+      "bar": 65,
+      "pitch": 39,
+      "duration_quarters": 0.5,
+      "source_index": 1970,
+      "reason": "simultaneous unison consolidated",
+      "matching_source_index": 1968
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 132.5,
+      "grace_quarter": 0.0,
+      "bar": 67,
+      "pitch": 77,
+      "duration_quarters": 0.16666666666666666,
+      "source_index": 2021,
+      "reason": "tied continuation",
+      "previous_source_index": 2009
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 136.5,
+      "grace_quarter": 0.0,
+      "bar": 69,
+      "pitch": 89,
+      "duration_quarters": 0.16666666666666666,
+      "source_index": 2119,
+      "reason": "tied continuation",
+      "previous_source_index": 2106
+    },
+    {
+      "kind": "NOTE",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 136.5,
+      "grace_quarter": 0.0,
+      "bar": 69,
+      "pitch": 77,
+      "duration_quarters": 0.16666666666666666,
+      "source_index": 2120,
+      "reason": "tied continuation",
+      "previous_source_index": 2107
+    }
+  ],
+  "event_counts": {
+    "TEMPO": 1,
+    "NOTE": 1648,
+    "SLUR": 404,
+    "DYNAMIC": 11,
+    "TEXT": 37,
+    "ART": 137,
+    "TIE": 15,
+    "CRESCENDO": 9,
+    "DECRESCENDO": 3
+  },
+  "scope": "Fidelity to chosen digital transcription; not an independent historical facsimile collation or subjective listening assessment.",
+  "files": {
+    "original/pathetique-2.ly": {
+      "bytes": 17471,
+      "sha256": "7d7c233230bc558d6275119b1ca9af1b4f5ebe762e29855698fc1e08032acc7a"
+    },
+    "adapted/pathetique-2.ly": {
+      "bytes": 17471,
+      "sha256": "7d7c233230bc558d6275119b1ca9af1b4f5ebe762e29855698fc1e08032acc7a"
+    },
+    "partitura.pdf": {
+      "bytes": 176248,
+      "sha256": "333600bb90baa627ee46e08c020752c20df0cffc0ec543f1266a27e5c24d0b5a"
+    },
+    "partitura.midi": {
+      "bytes": 13394,
+      "sha256": "0c8ec41aeafd45cb303a265a6b262286b3b7c10a0409e11186fad0a828e78a27"
+    },
+    "source-events.json": {
+      "bytes": 429074,
+      "sha256": "29942280a8578f6b88de4e5c78cb992eb1a93242986682c8e0987d00107fa205"
+    },
+    "mapped-midi-notes.json": {
+      "bytes": 529548,
+      "sha256": "55abc28517fb9563643acaf8620d8442771193cb1b5d344a081e5984273c0b86"
+    },
+    "expression-map.json": {
+      "bytes": 11463,
+      "sha256": "8efc53435962a87083eb0003fad4c6b002b57649cbf34f22a12bdd61aee3fb17"
+    },
+    "ornament-realization.json": {
+      "bytes": 4027,
+      "sha256": "632d754818fa0547007d1c96901d6a98eb0db3d339cc168477a4ad0e8ccbb7ec"
+    }
+  },
+  "source_git_blob": "4212a90c817218eab11e23e03cad6e53995735b5",
+  "typesetter_public_domain_declaration": "Original header copyright=Public Domain; tagline explicitly places this sheet music in the public domain.",
+  "authorial_numeric_tempo_verified": false,
+  "numeric_midi_tempo_note": "Quarter=36 is present in the digital transcription MIDI instructions; no claim that it is an authorial metronome marking.",
+  "written_repeat_signs": 0,
+  "form": "73 bars; returning themes and varied accompaniment are fully written out.",
+  "pedal_marks_in_transcription": 0,
+  "ornament_policy": "Six explicitly notated grace attacks compiled and mapped. Three graphical turn marks are documented separately in ornament-realization.json, and must be realized in the new expressive MIDI.",
+  "graphical_turn_marks": 3,
+  "graphical_turn_realization_file": "ornament-realization.json",
+  "graphical_turn_realization_additional_attacks": 12,
+  "expected_new_performance_attacks_with_turns": 1641
+}

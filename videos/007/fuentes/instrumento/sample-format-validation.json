@@ -1,0 +1,40 @@
+{
+  "all_samples_native_rate": 48000,
+  "all_samples_channels": 2,
+  "all_samples_subtype": "PCM_24",
+  "sample_count": 641,
+  "attack_sample_count": 480,
+  "velocity_layers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "mapped_midi_keys": [
+    21,
+    108
+  ],
+  "mapped_key_count": 88,
+  "mapping_has_gaps_or_overlaps": false,
+  "shortest_attack_seconds": [
+    2.625958333333333,
+    "A7v1.flac"
+  ],
+  "longest_attack_seconds": [
+    25.862625,
+    "A0v16.flac"
+  ],
+  "subjective_listening": false
+}

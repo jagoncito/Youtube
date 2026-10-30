@@ -1,0 +1,450 @@
+{
+  "schema": "jagoncito-score-expression/1",
+  "work": "Beethoven Sonata op13 II Adagio cantabile",
+  "key": "A-flat major",
+  "meter": [
+    2,
+    4
+  ],
+  "bars": 73,
+  "quarter_beats": 146,
+  "source_voice_roles": {
+    "upper:melody": "Main cantabile melody, octave doublings, written ornaments and final chords.",
+    "upper:accompaniment": "Inner accompanying figuration; contributes rhythmic/dynamic motion and some connecting figures.",
+    "lower:": "Bass and accompaniment; source also contains temporary nested polyphony.",
+    "lower:1": "Upper component of temporary lower-staff polyphony.",
+    "lower:2": "Bass component of temporary lower-staff polyphony."
+  },
+  "form": [
+    {
+      "bar": 1,
+      "quarter": 0,
+      "section": "A: opening theme and upper-register restatement"
+    },
+    {
+      "bar": 17,
+      "quarter": 32,
+      "section": "B: F-minor contrasting episode"
+    },
+    {
+      "bar": 29,
+      "quarter": 56,
+      "section": "A: return of main theme"
+    },
+    {
+      "bar": 37,
+      "quarter": 72,
+      "section": "C: contrasting episode, triplet texture and stronger accents"
+    },
+    {
+      "bar": 51,
+      "quarter": 100,
+      "section": "A: main theme with triplet accompaniment"
+    },
+    {
+      "bar": 67,
+      "quarter": 132,
+      "section": "Closing passage and final cadence"
+    }
+  ],
+  "repeat_signs": 0,
+  "repeat_note": "All thematic returns are written out. Baseline MIDI has no unexpanded repeat sections.",
+  "tempo": {
+    "character": "Adagio cantabile",
+    "transcription_midi_quarter_bpm": 36,
+    "authorial_numeric_tempo_claim": false,
+    "note": "The number is encoded by the digital typesetter; new performance tempo/rubato must be documented as editorial, not adjusted to force duration."
+  },
+  "pedal": {
+    "written_events": 0,
+    "realization": "All sustain-pedal choices in the new performance are editorial and should follow the harmonic changes; no printed pedal directions are claimed."
+  },
+  "events": [
+    {
+      "kind": "DYNAMIC",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 0.0,
+      "grace_quarter": 0.0,
+      "bar": 1,
+      "dynamic": "p",
+      "source_event_index": 4
+    },
+    {
+      "kind": "TEXT",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 46.0,
+      "grace_quarter": 0.0,
+      "bar": 24,
+      "text": "(#<procedure line-markup (a b c)> ((#<procedure vspace-markup (a b c)> 0.5) (#<procedure italic-markup (a b c)> \"cresc.\")))",
+      "source_event_index": 533,
+      "normalized_text": "cresc."
+    },
+    {
+      "kind": "TEXT",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 50.0,
+      "grace_quarter": 0.0,
+      "bar": 26,
+      "text": "(#<procedure line-markup (a b c)> ((#<procedure vspace-markup (a b c)> 0.5) (#<procedure italic-markup (a b c)> \"cresc.\")))",
+      "source_event_index": 579,
+      "normalized_text": "cresc."
+    },
+    {
+      "kind": "DYNAMIC",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 52.0,
+      "grace_quarter": 0.0,
+      "bar": 27,
+      "dynamic": "p",
+      "source_event_index": 603
+    },
+    {
+      "kind": "CRESCENDO",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 52.25,
+      "grace_quarter": 0.0,
+      "bar": 27,
+      "direction": -1,
+      "text": "()",
+      "source_event_index": 609
+    },
+    {
+      "kind": "CRESCENDO",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 53.75,
+      "grace_quarter": 0.0,
+      "bar": 27,
+      "direction": 1,
+      "text": "()",
+      "source_event_index": 622
+    },
+    {
+      "kind": "DECRESCENDO",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 54.25,
+      "grace_quarter": 0.0,
+      "bar": 28,
+      "direction": -1,
+      "text": "()",
+      "source_event_index": 630
+    },
+    {
+      "kind": "TEXT",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 55.0,
+      "grace_quarter": 0.0,
+      "bar": 28,
+      "text": "(#<procedure line-markup (a b c)> ((#<procedure dynamic-markup (a b c)> \"pp\")))",
+      "source_event_index": 637,
+      "normalized_text": "pp"
+    },
+    {
+      "kind": "CRESCENDO",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 55.75,
+      "grace_quarter": 0.0,
+      "bar": 28,
+      "direction": 1,
+      "text": "()",
+      "source_event_index": 644
+    },
+    {
+      "kind": "DYNAMIC",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 56.0,
+      "grace_quarter": 0.0,
+      "bar": 29,
+      "dynamic": "p",
+      "source_event_index": 650
+    },
+    {
+      "kind": "DYNAMIC",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 72.0,
+      "grace_quarter": 0.0,
+      "bar": 37,
+      "dynamic": "pp",
+      "source_event_index": 790
+    },
+    {
+      "kind": "TEXT",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 80.5,
+      "grace_quarter": 0.0,
+      "bar": 41,
+      "text": "(#<procedure line-markup (a b c)> ((#<procedure vspace-markup (a b c)> 0.5) (#<procedure italic-markup (a b c)> \"cresc.\")))",
+      "source_event_index": 972,
+      "normalized_text": "cresc."
+    },
+    {
+      "kind": "DYNAMIC",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 82.0,
+      "grace_quarter": 0.0,
+      "bar": 42,
+      "dynamic": "sf",
+      "source_event_index": 996
+    },
+    {
+      "kind": "DYNAMIC",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 83.0,
+      "grace_quarter": 0.0,
+      "bar": 42,
+      "dynamic": "sf",
+      "source_event_index": 1029
+    },
+    {
+      "kind": "DYNAMIC",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 84.0,
+      "grace_quarter": 0.0,
+      "bar": 43,
+      "dynamic": "sf",
+      "source_event_index": 1062
+    },
+    {
+      "kind": "DYNAMIC",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 86.0,
+      "grace_quarter": 0.0,
+      "bar": 44,
+      "dynamic": "fp",
+      "source_event_index": 1121
+    },
+    {
+      "kind": "TEXT",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 87.0,
+      "grace_quarter": 0.0,
+      "bar": 44,
+      "text": "(#<procedure line-markup (a b c)> ((#<procedure vspace-markup (a b c)> 0.5) (#<procedure italic-markup (a b c)> \"decresc.\")))",
+      "source_event_index": 1136,
+      "normalized_text": "decresc."
+    },
+    {
+      "kind": "DYNAMIC",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 88.0,
+      "grace_quarter": 0.0,
+      "bar": 45,
+      "dynamic": "pp",
+      "source_event_index": 1151
+    },
+    {
+      "kind": "TEXT",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 98.0,
+      "grace_quarter": 0.0,
+      "bar": 50,
+      "text": "(#<procedure line-markup (a b c)> ((#<procedure vspace-markup (a b c)> 0.8) (#<procedure italic-markup (a b c)> \"cresc.\")))",
+      "source_event_index": 1365,
+      "normalized_text": "cresc."
+    },
+    {
+      "kind": "DYNAMIC",
+      "staff": "upper",
+      "voice": "accompaniment",
+      "quarter": 100.0,
+      "grace_quarter": 0.0,
+      "bar": 51,
+      "dynamic": "p",
+      "source_event_index": 1419
+    },
+    {
+      "kind": "TEXT",
+      "staff": "lower",
+      "voice": "",
+      "quarter": 130.16666666666666,
+      "grace_quarter": 0.0,
+      "bar": 66,
+      "text": "(#<procedure line-markup (a b c)> ((#<procedure vspace-markup (a b c)> -0.3) (#<procedure halign-markup (a b c d)> 0.7 (#<procedure dynamic-markup (a b c)> \"pp\"))))",
+      "source_event_index": 1987,
+      "normalized_text": "pp"
+    },
+    {
+      "kind": "CRESCENDO",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 132.0,
+      "grace_quarter": 0.0,
+      "bar": 67,
+      "direction": -1,
+      "text": "()",
+      "source_event_index": 2011
+    },
+    {
+      "kind": "CRESCENDO",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 133.0,
+      "grace_quarter": 0.0,
+      "bar": 67,
+      "direction": 1,
+      "text": "()",
+      "source_event_index": 2039
+    },
+    {
+      "kind": "DECRESCENDO",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 133.16666666666666,
+      "grace_quarter": 0.0,
+      "bar": 67,
+      "direction": -1,
+      "text": "()",
+      "source_event_index": 2045
+    },
+    {
+      "kind": "CRESCENDO",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 133.875,
+      "grace_quarter": 0.0,
+      "bar": 67,
+      "direction": 1,
+      "text": "()",
+      "source_event_index": 2070
+    },
+    {
+      "kind": "CRESCENDO",
+      "staff": "lower",
+      "voice": "",
+      "quarter": 136.0,
+      "grace_quarter": 0.0,
+      "bar": 69,
+      "direction": -1,
+      "text": "()",
+      "source_event_index": 2112
+    },
+    {
+      "kind": "CRESCENDO",
+      "staff": "lower",
+      "voice": "",
+      "quarter": 136.83333333333334,
+      "grace_quarter": 0.0,
+      "bar": 69,
+      "direction": 1,
+      "text": "()",
+      "source_event_index": 2138
+    },
+    {
+      "kind": "DECRESCENDO",
+      "staff": "lower",
+      "voice": "",
+      "quarter": 137.0,
+      "grace_quarter": 0.0,
+      "bar": 69,
+      "direction": -1,
+      "text": "()",
+      "source_event_index": 2145
+    },
+    {
+      "kind": "CRESCENDO",
+      "staff": "lower",
+      "voice": "",
+      "quarter": 137.83333333333334,
+      "grace_quarter": 0.0,
+      "bar": 69,
+      "direction": 1,
+      "text": "()",
+      "source_event_index": 2176
+    },
+    {
+      "kind": "TEXT",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 139.0,
+      "grace_quarter": -0.5,
+      "bar": 70,
+      "text": "(#<procedure line-markup (a b c)> ((#<procedure dynamic-markup (a b c)> \"rf\")))",
+      "source_event_index": 2184,
+      "normalized_text": "rf"
+    },
+    {
+      "kind": "TEXT",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 141.0,
+      "grace_quarter": 0.0,
+      "bar": 71,
+      "text": "(#<procedure line-markup (a b c)> ((#<procedure dynamic-markup (a b c)> \"rf\")))",
+      "source_event_index": 2208,
+      "normalized_text": "rf"
+    },
+    {
+      "kind": "TEXT",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 143.0,
+      "grace_quarter": 0.0,
+      "bar": 72,
+      "text": "(#<procedure line-markup (a b c)> ((#<procedure dynamic-markup (a b c)> \"rf\")))",
+      "source_event_index": 2233,
+      "normalized_text": "rf"
+    },
+    {
+      "kind": "DYNAMIC",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 144.0,
+      "grace_quarter": 0.0,
+      "bar": 73,
+      "dynamic": "pp",
+      "source_event_index": 2249
+    },
+    {
+      "kind": "ART",
+      "staff": "upper",
+      "voice": "melody",
+      "quarter": 145.0,
+      "grace_quarter": 0.0,
+      "bar": 73,
+      "articulation": "fermata"
+    },
+    {
+      "kind": "ART",
+      "staff": "lower",
+      "voice": "",
+      "quarter": 145.0,
+      "grace_quarter": 0.0,
+      "bar": 73,
+      "articulation": "fermata"
+    }
+  ],
+  "articulation_summary": {
+    "staccato_events": 135,
+    "fermata_events": 2,
+    "fermata_locations": [
+      145.0
+    ]
+  },
+  "source_coverage": {
+    "printed_notes": 1648,
+    "baseline_attacks": 1629,
+    "ties_explained": 17,
+    "unisons_explained": 2,
+    "explicit_grace_attacks": 6,
+    "graphical_turns": 3,
+    "turn_realization_extra_attacks": 12
+  }
+}

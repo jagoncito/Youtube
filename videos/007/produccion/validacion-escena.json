@@ -1,0 +1,34 @@
+{
+  "file": "escena-60s.mp4",
+  "full_decode": "passed",
+  "frames": 1440,
+  "width": 1920,
+  "height": 1080,
+  "duration_seconds": 60.0,
+  "codec": "h264",
+  "profile": "High",
+  "pixel_format": "yuv420p",
+  "fps": "24/1",
+  "audio_streams": 0,
+  "loop_boundary_gray_mae": 0.004083719104528427,
+  "adjacent_gray_mae_median": 0.0010513117304071784,
+  "boundary_criterion": "boundary <= max(0.15, 4 * ordinary adjacent MAE)",
+  "loop_boundary_passed": true,
+  "foliage_change_15s_gray_mae": {
+    "large hanging vine leaf, upper centre-left": 7.059615612030029,
+    "small vine leaf, upper canopy edge": 7.259528636932373
+  },
+  "protected_regions_change_15s_gray_mae": {
+    "dragon": 0.001573926885612309,
+    "mouse_and_basket": 0.0020317460875958204,
+    "village": 0.0011972789652645588,
+    "vine_trunk_and_stone": 0.001322580617852509,
+    "foreground_stone": 0.0016213333001360297
+  },
+  "drifting_leaf_pixels_changed_gt2_15s_to16s_half_resolution": 53,
+  "environment_motion_present": true,
+  "characters_animated": false,
+  "architecture_animated": false,
+  "existing_near_dragon_leaf_animated": false,
+  "subjective_audition_performed": false
+}

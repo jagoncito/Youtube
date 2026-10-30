@@ -1,0 +1,156 @@
+{
+  "sample_rate": 48000,
+  "channels": 2,
+  "wav_subtype": "PCM_24",
+  "frames": 13760000,
+  "duration": 286.6666666666667,
+  "input_channel_rms": [
+    0.009497790443159881,
+    0.011721718166106785
+  ],
+  "input_right_minus_left_db": 1.8273738384205567,
+  "whole_program_balance_correction_each_side_db": 0.7309495353682227,
+  "stereo_side_factor": 0.78,
+  "subsonic_highpass_hz": 20,
+  "room": "Original deterministic stereo mathematical chamber; RT60 1.30 s, diffusion gain .085 and quiet early reflections",
+  "target_true_peak_dbtp": -1.8,
+  "master_gain_db": 16.39697375349668,
+  "compression": false,
+  "limiter": false,
+  "tail_last_second_rms_before_final_sub_audible_fade": 1.7441477501687924e-05,
+  "tail_last_second_dbfs": -95.16833455819437,
+  "tail_final_200ms_peak_before_fade": 1.842430174292531e-05,
+  "final_fade_seconds": 0.2,
+  "input_buffer_duration_seconds": 286.6666666666667,
+  "last_key_off_seconds": 284.922378,
+  "last_pedal_off_seconds": 284.954905,
+  "first_stable_below_minus80dbfs_seconds": 285.5548958333333,
+  "stable_confirmation_seconds": 0.5,
+  "breath_after_confirmation_seconds": 0.6,
+  "only_post_music_quiet_buffer_trimmed_seconds": 0.0,
+  "final_channel_rms": [
+    0.062336831253613216,
+    0.0675333925657051
+  ],
+  "stereo_correlation": 0.4250012713657414,
+  "ten_second_rms_dbfs": [
+    {
+      "start": 0.0,
+      "rms_dbfs": -24.996662278536583
+    },
+    {
+      "start": 10.0,
+      "rms_dbfs": -24.67853269867028
+    },
+    {
+      "start": 20.0,
+      "rms_dbfs": -23.889969691546433
+    },
+    {
+      "start": 30.0,
+      "rms_dbfs": -24.948496901247722
+    },
+    {
+      "start": 40.0,
+      "rms_dbfs": -24.362763661274478
+    },
+    {
+      "start": 50.0,
+      "rms_dbfs": -23.478558060409952
+    },
+    {
+      "start": 60.0,
+      "rms_dbfs": -24.957514666158644
+    },
+    {
+      "start": 70.0,
+      "rms_dbfs": -24.58952488289374
+    },
+    {
+      "start": 80.0,
+      "rms_dbfs": -22.587588681787132
+    },
+    {
+      "start": 90.0,
+      "rms_dbfs": -22.077501437282354
+    },
+    {
+      "start": 100.0,
+      "rms_dbfs": -24.84286582935423
+    },
+    {
+      "start": 110.0,
+      "rms_dbfs": -24.47898566856384
+    },
+    {
+      "start": 120.0,
+      "rms_dbfs": -25.0456489549843
+    },
+    {
+      "start": 130.0,
+      "rms_dbfs": -24.892569333744717
+    },
+    {
+      "start": 140.0,
+      "rms_dbfs": -25.78442240781908
+    },
+    {
+      "start": 150.0,
+      "rms_dbfs": -21.221996440037337
+    },
+    {
+      "start": 160.0,
+      "rms_dbfs": -19.60708999973162
+    },
+    {
+      "start": 170.0,
+      "rms_dbfs": -24.931782272260268
+    },
+    {
+      "start": 180.0,
+      "rms_dbfs": -22.015125275928078
+    },
+    {
+      "start": 190.0,
+      "rms_dbfs": -23.188800495604074
+    },
+    {
+      "start": 200.0,
+      "rms_dbfs": -24.549769123207632
+    },
+    {
+      "start": 210.0,
+      "rms_dbfs": -22.81396860027529
+    },
+    {
+      "start": 220.0,
+      "rms_dbfs": -24.221954226131487
+    },
+    {
+      "start": 230.0,
+      "rms_dbfs": -23.351007120610774
+    },
+    {
+      "start": 240.0,
+      "rms_dbfs": -24.36989900920327
+    },
+    {
+      "start": 250.0,
+      "rms_dbfs": -23.65795851551631
+    },
+    {
+      "start": 260.0,
+      "rms_dbfs": -22.370785295717305
+    },
+    {
+      "start": 270.0,
+      "rms_dbfs": -30.387465881939626
+    },
+    {
+      "start": 280.0,
+      "rms_dbfs": -34.75601558956465
+    }
+  ],
+  "subjective_listening_performed": false,
+  "note": "Only a whole-program stereo correction and master gain; pianist voicing resides in note velocities. No tempo changes."
+}

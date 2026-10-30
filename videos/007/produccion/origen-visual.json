@@ -1,0 +1,22 @@
+{
+  "tool": "OpenAI Image Generation",
+  "new_artwork": true,
+  "main_artwork": "imagen.png",
+  "thumbnail": "miniatura.jpg",
+  "scene": "New stone terrace above a vineyard at autumn dawn; diagonal vine rows and distant stone village, Jagoncito at the left watching a leaf and a mouse beside a harvest basket",
+  "character_reference_only": "videos/006/imagen.png; identity reference for Jagoncito only, not reused scene content",
+  "thumbnail_reference": "New videos/007/imagen.png",
+  "image_generation_outputs": {
+    "main": "exec-e1870ba2-bb0e-4da3-a159-e57aa4909b6a.png",
+    "thumbnail": "exec-729e9b8c-7366-4a3c-91f7-9fcc189f6787.png"
+  },
+  "thumbnail_conversion": "FFmpeg Lanczos resize to 1280x720 and JPEG q=2",
+  "visual_inspection": {
+    "main_image": "Performed",
+    "thumbnail": "Full size and160x90 inspected; both words legible",
+    "animation_frames": "Frames at15s and16s inspected separately; full1440frame loop decoded technically"
+  },
+  "animals_static": true,
+  "ambient_audio_added": false,
+  "reproduction_limit": "Generated artwork retained; new image generation cannot be guaranteed bit-for-bit identical"
+}
