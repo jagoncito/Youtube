@@ -1,0 +1,33 @@
+TITLE
+Beethoven: Symphony No. 1 | Jagoncito’s Cozy Village Evening
+
+DESCRIPTION
+Beethoven’s complete First Symphony accompanies Jagoncito and a little hedgehog beneath a stone arch, after the rain.
+
+This new digital orchestral realization includes all four movements, with the score’s internal repeats and Menuetto return. Expect lyrical passages, lively rhythms and strong changes in energy throughout. The complete programme plays once; no movement is cut or repeated to fill a target duration.
+
+The village scene and thumbnail were created for this video. Small drips, puddle ripples and fern leaves move gently; the animals remain still. The soundtrack contains only the orchestra.
+
+Duration: 21:10.
+
+CHAPTERS
+0:00 I. Adagio molto — Allegro con brio
+7:59 II. Andante cantabile con moto
+12:55 III. Menuetto. Allegro molto e vivace — Trio
+16:15 IV. Adagio — Allegro molto e vivace
+
+CREDITS
+Ludwig van Beethoven (1770–1827): Symphony No. 1 in C major, op. 21.
+Score: Hauptstimme contributors, CC0 1.0 Universal. Source revision 8f677853c45b74ca0afcd79677e5379c06c82354; historical reference identified by the transcribers: IMSLP #13842.
+https://github.com/MarkGotham/Hauptstimme/tree/8f677853c45b74ca0afcd79677e5379c06c82354/data/Beethoven,_Ludwig_van/Symphony_No.1,_Op.21
+Instrument samples: VS Chamber Orchestra 2, Community Edition — Sam Gossner and Simon Dalzell; sample editing by Elan Hickler / Soundemote. CC0 1.0 Universal.
+https://github.com/sgossner/VSCO-2-CE
+New digital performance, mixing, AI-generated artwork and environmental animation produced for Jagoncito. No finished third-party performance recording was used. New contributions are dedicated under CC0 1.0 to the extent applicable; original research annotations retain their separate notice. Source credits and production files accompany the delivery. No guarantee concerning automated copyright claims is made.
+
+#Beethoven #ClassicalMusic #Jagoncito
+
+TAGS
+Beethoven, Symphony No. 1, Op. 21, classical music, orchestral music, digital orchestra, cozy village, Jagoncito
+
+UPLOAD FILE: beethoven-symphony-no1.mp4
+THUMBNAIL: miniatura.jpg

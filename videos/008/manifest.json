@@ -1,0 +1,99 @@
+{
+  "number": 8,
+  "work": "Beethoven: Symphony No.1 in C major, Op.21, complete four movements",
+  "duration_seconds": 1270.2583333333334,
+  "mp4_container_seconds": 1270.375,
+  "chapters": [
+    {
+      "movement": 1,
+      "title": "Adagio molto - Allegro con brio",
+      "start_seconds": 0.0,
+      "duration_seconds": 477.5,
+      "notated_end_local": 476.44983016603067,
+      "last_note_off_local": 476.44983016603067,
+      "stable_below_minus80_local": 476.44983333333334,
+      "final_200ms_peak_before_fade": 8.592687805730748e-08,
+      "note_events": 16761,
+      "pause_after_seconds": 1.1
+    },
+    {
+      "movement": 2,
+      "title": "Andante cantabile con moto",
+      "start_seconds": 478.6,
+      "duration_seconds": 295.1666666666667,
+      "notated_end_local": 293.11332344331146,
+      "last_note_off_local": 293.11332344331146,
+      "stable_below_minus80_local": 294.11333333333334,
+      "final_200ms_peak_before_fade": 1.101182078855345e-05,
+      "note_events": 5694,
+      "pause_after_seconds": 1.1
+    },
+    {
+      "movement": 3,
+      "title": "Minuet. Allegro molto e vivace - Trio",
+      "start_seconds": 774.8666666666667,
+      "duration_seconds": 198.875,
+      "notated_end_local": 196.72178347390218,
+      "last_note_off_local": 196.72178347390218,
+      "stable_below_minus80_local": 197.82179166666666,
+      "final_200ms_peak_before_fade": 1.0480833225301467e-05,
+      "note_events": 6964,
+      "pause_after_seconds": 1.1
+    },
+    {
+      "movement": 4,
+      "title": "Finale. Adagio - Allegro molto e vivace",
+      "start_seconds": 974.8416666666667,
+      "duration_seconds": 295.4166666666667,
+      "notated_end_local": 293.432047551475,
+      "last_note_off_local": 293.432047551475,
+      "stable_below_minus80_local": 294.33204166666667,
+      "final_200ms_peak_before_fade": 1.1471348443592433e-05,
+      "note_events": 10986,
+      "pause_after_seconds": 0
+    }
+  ],
+  "program_repeated": false,
+  "standalone_audio": "One WAV PCM24 stereo48kHz",
+  "technical_checks": "passed; complete MP4 decode, WAV, source coverage, MIDI and AAC/PCM comparison",
+  "subjective_audition_performed": false,
+  "previous_deliveries_unchanged": true,
+  "files": [
+    {
+      "path": "beethoven-symphony-no1.mp4",
+      "bytes": 299476669,
+      "sha256": "7439239e3e27fb264c9d0e5b8c0f307a5a5ea1cb58ae11a25255d5e79fa507f0",
+      "git_lfs": true
+    },
+    {
+      "path": "beethoven-symphony-no1.wav",
+      "bytes": 365834444,
+      "sha256": "95ce8446f52bcb98b61e80af7b5889793cecf0db5621f40f1038c26905d9c686",
+      "git_lfs": true
+    },
+    {
+      "path": "fuentes-y-produccion.zip",
+      "bytes": 4359489,
+      "sha256": "de17302915e5abc5c176588d4f5aa326e96ca59afb8958e00890496719a9e031",
+      "git_lfs": false
+    },
+    {
+      "path": "imagen.png",
+      "bytes": 2912630,
+      "sha256": "fca226c31e5f12ce186c8e163bcf7adfcc2eebe97a020607fe13daae5a95e820",
+      "git_lfs": false
+    },
+    {
+      "path": "miniatura.jpg",
+      "bytes": 567289,
+      "sha256": "e07b1a0473090f89523c27a4b73d56edd6f97067b38384ef14aa061c460ed7b9",
+      "git_lfs": false
+    },
+    {
+      "path": "publicacion.txt",
+      "bytes": 2125,
+      "sha256": "90415836d32896a3970b1d186edb8527f17dafea21eaa65021f307089a891fec",
+      "git_lfs": false
+    }
+  ]
+}
